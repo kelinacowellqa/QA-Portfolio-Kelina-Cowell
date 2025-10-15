@@ -202,3 +202,9 @@ a:focus-visible, .btn:focus-visible {
   outline-offset: 2px;
   border-radius: 10px;
 }
+/* actions row inside project cards */
+.project-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+.project-actions .btn { margin-left: 6px; }
