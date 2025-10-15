@@ -9,7 +9,7 @@ Here you’ll find six fully documented QA projects designed to demonstrate a pr
 
 ### 🧠 Self-Directed QA Learning Program
 
-This portfolio was built through my independent QA learning framework — a six-project roadmap I designed to replicate real studio workflows.
+This portfolio was built through my independent QA learning framework — a six-project roadmap I designed myself to replicate real studio workflows.
 
 Each project demonstrates practical testing disciplines — from bug documentation and regression testing to player-experience analysis — across multiple platforms and genres.
 
