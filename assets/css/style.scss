@@ -1,68 +1,46 @@
----
----
-@import "{{ site.theme }}";
-
-/* ========== Base palette ========== */
-$bg: #121416;         /* charcoal */
-$text: #e5e5e5;       /* light grey */
-$teal: #00fff0;       /* neon teal */
-$teal-soft: #66fff7;  /* hover teal */
-
-/* ========== Page base ========== */
-html, body {
-  background-color: $bg !important;
-  color: $text !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Headings + links in teal */
-h1, h2, h3, h4, h5, h6,
-a,
-.project-tagline {
-  color: $teal !important;
-}
-a:hover { color: $teal-soft !important; }
-
-/* Subtle rule accent */
-hr { border-color: $teal !important; opacity: 0.35; }
-
-/* ========== Hero banner ========== */
-.hero { margin: 18px 0 8px 0; }
-.hero img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 14px;
-  /* soft glow under the banner */
-  box-shadow:
-    0 14px 42px rgba(0, 255, 240, 0.18),
-    0 6px 20px rgba(0, 0, 0, 0.55);
-  outline: 1px solid rgba(255,255,255,0.03);
-  margin-bottom: -10px;
-  margin-top: -6px;
-}
-
-/* ========== Quick-nav buttons (with pulse) ========== */
+/* ========== Quick-nav buttons (with obvious pulse ring) ========== */
 .quick-nav {
   text-align: center;
   margin: 8px 0 22px 0;
 }
+
 .quick-nav .btn {
+  position: relative;           /* needed for the ring */
   display: inline-block;
   padding: 8px 14px;
   margin: 0 6px 8px;
   border-radius: 10px;
   border: 1px solid rgba(0,255,240,0.45);
   background: rgba(0,255,240,0.08);
-  color: $teal !important;
+  color: #00fff0 !important;
   text-decoration: none;
   transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
-  box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0);
+  box-shadow: 0 0 10px rgba(0,255,240,.25);
+  overflow: visible;            /* let the ring show outside */
+  will-change: transform, box-shadow;
 }
 
-/* --- BIG, VISIBLE pulse --- */
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 10px rgba(0,255,240,.35), 0 0 0 rgba(0,255,240,0);
-    text-shadow: 0 0 2px rgba(
+/* expanding teal ring using a pseudo-element */
+.quick-nav .btn.pulse::after {
+  content: "";
+  position: absolute;
+  inset: -6px;                   /* ring sits outside the button */
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(0,255,240,.55);
+  opacity: .65;
+  animation: pulseRing 1.9s ease-out infinite;
+}
+
+/* button hover (keeps the lift you had) */
+.quick-nav .btn:hover {
+  background: rgba(0,255,240,0.16);
+  transform: translateY(-1px);
+}
+
+/* keyframes for the ring */
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(0,255,240,.55); opacity: .65; }
+  60%  { box-shadow: 0 0 0 14px rgba(0,255,240,0); opacity: 0; }
+  100% { box-shadow: 0 0 0 14px rgba(0,255,240,0); opacity: 0; }
+}
