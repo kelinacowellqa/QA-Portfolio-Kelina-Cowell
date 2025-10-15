@@ -1,154 +1,204 @@
 ---
 ---
+
 @import "{{ site.theme }}";
 
-/* ========== Base palette ========== */
-$bg: #121416;         /* charcoal */
-$text: #e5e5e5;       /* light grey */
+/* ===============================
+   GLOBAL PALETTE & BASE SETTINGS
+   =============================== */
+$bg: #121416;         /* charcoal background */
+$text: #e5e5e5;       /* soft light text */
 $teal: #00fff0;       /* neon teal */
 $teal-soft: #66fff7;  /* hover teal */
 
-/* ========== Page base ========== */
 html, body {
   background-color: $bg !important;
   color: $text !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Headings + links in teal */
 h1, h2, h3, h4, h5, h6,
 a,
 .project-tagline {
   color: $teal !important;
 }
-a:hover { color: $teal-soft !important; }
 
-/* Subtle rule accent */
-hr { border-color: $teal !important; opacity: 0.35; }
+a:hover {
+  color: $teal-soft !important;
+  text-decoration: none;
+}
 
-/* ========== Hero banner ========== */
+hr {
+  border-color: $teal !important;
+  opacity: 0.35;
+}
+
+/* ===============================
+   HERO BANNER
+   =============================== */
 .hero {
-  margin: 24px 0 40px 0; /* Adds breathing room below the banner */
+  margin: 30px 0 20px 0;
   text-align: center;
 }
 
-.hero img,
-img[alt*="Portfolio Banner"] {
+.hero img {
   display: block;
-  margin: 0 auto 36px auto; /* Centers and adds visual spacing below */
   max-width: 100%;
   height: auto;
   border-radius: 14px;
-  outline: 1px solid rgba(255,255,255,0.03);
-
-  /* base teal glow */
+  margin: 0 auto 24px;
   box-shadow:
-    0 14px 42px rgba(0, 255, 240, 0.18),
-    0 6px 20px rgba(0, 0, 0, 0.55);
-
-  /* breathing aura animation */
-  animation: bannerGlow 5s ease-in-out infinite;
+    0 18px 48px rgba(0,255,240,0.20),
+    0 8px 24px rgba(0,0,0,0.55);
+  outline: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Teal breathing glow */
-@keyframes bannerGlow {
-  0%, 100% {
-    box-shadow:
-      0 14px 42px rgba(0, 255, 240, 0.12),
-      0 6px 20px rgba(0, 0, 0, 0.55);
-  }
-  50% {
-    box-shadow:
-      0 20px 60px rgba(0, 255, 240, 0.35),
-      0 8px 24px rgba(0, 0, 0, 0.6);
-  }
-}
-
-/* ========== Quick-nav buttons (with synced pulse) ========== */
+/* ===============================
+   QUICK NAV BUTTONS (PULSING)
+   =============================== */
 .quick-nav {
   text-align: center;
-  margin: 8px 0 22px 0;
+  margin: 12px 0 26px;
 }
 
-/* Base style for buttons and fallback anchors */
-.quick-nav .btn,
-.quick-nav a {
-  position: relative;
+.quick-nav .btn {
   display: inline-block;
-  padding: 8px 14px;
-  margin: 0 6px 8px;
+  padding: 8px 20px;
+  margin: 6px;
   border-radius: 10px;
   border: 1px solid rgba(0,255,240,0.45);
   background: rgba(0,255,240,0.08);
-  color: #00fff0 !important;
+  color: $teal !important;
   text-decoration: none;
-  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
-  box-shadow: 0 0 10px rgba(0,255,240,.25);
-  overflow: visible;
-  will-change: transform, box-shadow;
+  transition: transform .1s ease, background .15s ease, box-shadow .15s ease;
+  box-shadow: 0 0 8px rgba(0,255,240,0.25);
 }
 
-/* Pulse glow effect synced to banner rhythm */
-.quick-nav .btn.pulse::after,
-.quick-nav a.pulse::after {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: inherit;
-  pointer-events: none;
-  box-shadow: 0 0 0 0 rgba(0,255,240,.4);
-  opacity: .5;
-  animation: pulseRing 5s ease-in-out infinite;
-}
-
-/* Hover lift + glow pop */
-.quick-nav .btn:hover,
-.quick-nav a:hover {
+.quick-nav .btn:hover {
   background: rgba(0,255,240,0.16);
+  box-shadow: 0 0 16px rgba(0,255,240,0.6), 0 0 30px rgba(0,255,240,0.3);
+  transform: translateY(-2px);
+}
+
+/* --- Slow pulsing glow animation --- */
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
+  50%  { box-shadow: 0 0 18px rgba(0,255,240,.55), 0 0 28px rgba(0,255,240,.20); }
+  100% { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
+}
+
+.pulse {
+  animation: pulseGlow 4.5s ease-in-out infinite; /* slowed to match header rhythm */
+}
+
+.pulse:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse { animation: none !important; }
+}
+
+/* ===============================
+   PROJECT LINEUP ENHANCEMENTS
+   =============================== */
+
+/* Each “🧩 Project Lineup” sub-section */
+h2, h3 {
+  color: $teal !important;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* Numbered project titles (e.g. 1️⃣ Functional Testing – Skyrim) */
+p strong:first-child {
+  display: block;
+  font-size: 1.2em;
+  color: $teal;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+/* Add subtle box effect around each project entry */
+.project-block {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(0,255,240,0.15);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 16px 0 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  transition: transform .1s ease;
+}
+
+.project-block:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 18px rgba(0,255,240,0.4);
+  border-color: rgba(0,255,240,0.25);
 }
 
-/* Gentle 5s pulse animation (same timing as bannerGlow) */
-@keyframes pulseRing {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(0,255,240,.4);
-    opacity: .5;
-  }
-  50% {
-    box-shadow: 0 0 0 16px rgba(0,255,240,0);
-    opacity: 0;
-  }
+/* Style “🕹️ Why this game” lines */
+p:has(em) {
+  color: #ccc;
+  font-style: italic;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
-/* ========== Typography polish ========== */
-p, li { line-height: 1.65; }
-h1 { letter-spacing: .3px; margin-top: 8px; margin-bottom: 8px; }
-h2 { margin-top: 32px; }
+/* ===============================
+   TABLES (TOOLS & SKILLS)
+   =============================== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+}
 
-/* Optional: round any inline images a bit */
-img { border-radius: 10px; }
+th, td {
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 8px;
+}
 
-/* --- focus ring for keyboard nav (a11y) --- */
+th {
+  background: rgba(0,255,240,0.08);
+  color: $teal;
+}
+
+/* ===============================
+   CTA + FOOTER
+   =============================== */
+.cta {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.cta .btn {
+  margin: 0 6px 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  opacity: 0.6;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ===============================
+   MISC. STYLING
+   =============================== */
+img {
+  border-radius: 10px;
+  transition: transform .12s ease-out;
+}
+
+img:hover {
+  transform: translateY(-1px);
+}
+
 a:focus-visible, .btn:focus-visible {
   outline: 2px solid #00fff0 !important;
   outline-offset: 2px;
   border-radius: 10px;
-}
-
-/* Faint teal laser-style section rule */
-hr { opacity: .25; }
-
-/* subtle lift on any inline images */
-img:hover { transform: translateY(-1px); transition: transform .12s ease-out; }
-
-/* ========== Optional: soft ambient page glow ========== */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at center top, rgba(0,255,240,0.05), transparent 70%);
-  z-index: 0;
 }
