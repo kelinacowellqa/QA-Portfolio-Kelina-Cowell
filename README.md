@@ -7,7 +7,8 @@ Welcome to my QA portfolio!
 
 Here you’ll find six fully documented QA projects designed to demonstrate a professional range of testing skills — from functional and exploratory testing to cross-platform and narrative QA.  
 
-These projects were developed as part of my **self-directed QA learning program**, a six-project framework I designed and completed independently to build a full professional portfolio.  
+These projects were developed as part of my **self-directed QA learning program** —  
+a six-project framework I designed and completed independently to build a full professional portfolio.  
 
 Each project applies real industry workflows — bug documentation, regression testing, and player-experience analysis — across a range of platforms and genres, demonstrating a complete, hands-on understanding of QA processes.
 
