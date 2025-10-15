@@ -18,7 +18,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 ---
 
 ## 🧩 Project Lineup
----
+
 ### 1️⃣ Functional Testing – *Skyrim (PC)*
 **Goal:** Showcase core QA fundamentals — bug hunting, documentation clarity, and gameplay analysis.  
 **Focus:** Gameplay logic · UI · Audio · Performance  
