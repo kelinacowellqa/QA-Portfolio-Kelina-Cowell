@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "{{ site.theme }}";
 
 /* ===============================
@@ -43,7 +42,9 @@ hr {
   text-align: center;
 }
 
-.hero img {
+/* Add the breathing animation back */
+.hero img,
+img[alt*="Portfolio Banner"] {
   display: block;
   max-width: 100%;
   height: auto;
@@ -53,6 +54,23 @@ hr {
     0 18px 48px rgba(0,255,240,0.20),
     0 8px 24px rgba(0,0,0,0.55);
   outline: 1px solid rgba(255,255,255,0.03);
+
+  /* 👇 this line restores the header animation */
+  animation: bannerGlow 4.5s ease-in-out infinite;
+}
+
+/* Breathing glow (synced to button pulse at 4.5s) */
+@keyframes bannerGlow {
+  0%, 100% {
+    box-shadow:
+      0 14px 42px rgba(0,255,240,0.14),
+      0 6px 20px rgba(0,0,0,0.55);
+  }
+  50% {
+    box-shadow:
+      0 22px 62px rgba(0,255,240,0.36),
+      0 10px 28px rgba(0,0,0,0.60);
+  }
 }
 
 /* ===============================
@@ -90,7 +108,7 @@ hr {
 }
 
 .pulse {
-  animation: pulseGlow 4.5s ease-in-out infinite; /* slowed to match header rhythm */
+  animation: pulseGlow 4.5s ease-in-out infinite; /* synced with banner */
 }
 
 .pulse:hover {
@@ -104,15 +122,12 @@ hr {
 /* ===============================
    PROJECT LINEUP ENHANCEMENTS
    =============================== */
-
-/* Each “🧩 Project Lineup” sub-section */
 h2, h3 {
   color: $teal !important;
   margin-top: 28px;
   margin-bottom: 10px;
 }
 
-/* Numbered project titles (e.g. 1️⃣ Functional Testing – Skyrim) */
 p strong:first-child {
   display: block;
   font-size: 1.2em;
@@ -121,7 +136,6 @@ p strong:first-child {
   margin-bottom: 8px;
 }
 
-/* Add subtle box effect around each project entry */
 .project-block {
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(0,255,240,0.15);
@@ -202,9 +216,11 @@ a:focus-visible, .btn:focus-visible {
   outline-offset: 2px;
   border-radius: 10px;
 }
+
 /* actions row inside project cards */
 .project-actions {
   margin-top: 10px;
   text-align: right;
 }
 .project-actions .btn { margin-left: 6px; }
+
