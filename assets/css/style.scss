@@ -29,18 +29,34 @@ hr { border-color: $teal !important; opacity: 0.35; }
 
 /* ========== Hero banner ========== */
 .hero { margin: 18px 0 8px 0; }
+
 .hero img {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 14px;
-  /* soft glow under the banner */
+  /* teal glow */
   box-shadow:
     0 14px 42px rgba(0, 255, 240, 0.18),
     0 6px 20px rgba(0, 0, 0, 0.55);
   outline: 1px solid rgba(255,255,255,0.03);
   margin-bottom: -10px;
   margin-top: -6px;
+  animation: bannerGlow 5s ease-in-out infinite;
+}
+
+/* Subtle breathing glow animation */
+@keyframes bannerGlow {
+  0%, 100% {
+    box-shadow:
+      0 14px 42px rgba(0, 255, 240, 0.12),
+      0 6px 20px rgba(0, 0, 0, 0.55);
+  }
+  50% {
+    box-shadow:
+      0 20px 60px rgba(0, 255, 240, 0.35),
+      0 8px 24px rgba(0, 0, 0, 0.6);
+  }
 }
 
 /* ========== Quick-nav buttons (with safety-net + pulse) ========== */
