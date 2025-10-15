@@ -9,6 +9,33 @@ Here you’ll find six fully documented QA projects designed to demonstrate a pr
 
 These projects were developed as part of my **Game Academy QA Bootcamp**, where I focused on applying industry-standard testing workflows, bug documentation, and player-experience analysis.
 
+<div class="cards">
+  <a class="card" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">
+    <h3>Functional Testing</h3>
+    <p>Core gameplay + UI validation with clear bug docs and repro steps.</p>
+    <span class="chip">Jira / Trello</span> <span class="chip">PC</span>
+  </a>
+
+  <a class="card" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">
+    <h3>Exploratory Sessions</h3>
+    <p>Heuristics & playtests; fast discovery → structured follow-up.</p>
+    <span class="chip">Heuristics</span> <span class="chip">Mobile + PC</span>
+  </a>
+
+  <a class="card" href="https://github.com/kelinacowellqa/Bug-Reports-Samples">
+    <h3>Bug Reports</h3>
+    <p>Polished report examples (redacted) with screenshots & expected/actual.</p>
+    <span class="chip">Templates</span> <span class="chip">Evidence</span>
+  </a>
+
+  <a class="card" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">
+    <h3>QA Templates</h3>
+    <p>Reusable test cases, severity matrix, session notes, checklist packs.</p>
+    <span class="chip">Docs</span> <span class="chip">Reusable</span>
+  </a>
+</div>
+
+
 <p class="quick-nav">
   <a class="btn pulse" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">Functional</a>
   <a class="btn pulse" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">Exploratory</a>
