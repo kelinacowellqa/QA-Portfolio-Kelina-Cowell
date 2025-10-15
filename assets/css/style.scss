@@ -28,24 +28,23 @@ a:hover { color: $teal-soft !important; }
 hr { border-color: $teal !important; opacity: 0.35; }
 
 /* ========== Hero banner ========== */
-.hero {
-  margin: 18px 0 8px 0;
-}
+.hero { margin: 18px 0 8px 0; }
 .hero img {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 14px;
-  /* soft “glow” under the banner */
+  /* soft glow under the banner */
   box-shadow:
     0 14px 42px rgba(0, 255, 240, 0.18),
     0 6px 20px rgba(0, 0, 0, 0.55);
   outline: 1px solid rgba(255,255,255,0.03);
+  /* tuck spacing */
+  margin-bottom: -10px;
+  margin-top: -6px;
 }
-margin-bottom: -10px;
-margin-top: -6px;
 
-/* ========== Quick-nav buttons ========== */
+/* ========== Quick-nav buttons (with pulse) ========== */
 .quick-nav {
   text-align: center;
   margin: 8px 0 22px 0;
@@ -60,81 +59,35 @@ margin-top: -6px;
   color: $teal !important;
   text-decoration: none;
   transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
-}
-.quick-nav .btn:hover {
-  background: rgba(0,255,240,0.16);
-  box-shadow: 0 6px 20px rgba(0,255,240,0.18);
-  transform: translateY(-1px);
+  /* baseline shadow so animation has something to interpolate from */
+  box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0);
 }
 
-/* ========== Typography polish ========== */
-p, li { line-height: 1.65; }
-h1 { letter-spacing: .3px; }
-h2 { margin-top: 32px; }
-
-/* Optional: round any inline images a bit */
-img { border-radius: 10px; }
-/* --- Button Glow Effect --- */
-a.btn,
-.btn {
-  display: inline-block;
-  padding: 8px 20px;
-  border: 1px solid #00fff0;
-  border-radius: 8px;
-  color: #00fff0;
-  background: rgba(0, 255, 240, 0.05);
-  text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 0 8px rgba(0, 255, 240, 0.25);
-}
-
-a.btn:hover,
-.btn:hover {
-  background: rgba(0, 255, 240, 0.12);
-  box-shadow: 0 0 16px rgba(0, 255, 240, 0.6), 0 0 30px rgba(0, 255, 240, 0.3);
-  transform: translateY(-2px);
-}
-/* ===== Pulsing glow animation (respect reduced motion) ===== */
+/* pulse keyframes + class */
 @keyframes pulseGlow {
   0%   { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
   50%  { box-shadow: 0 0 18px rgba(0,255,240,.55), 0 0 28px rgba(0,255,240,.20); }
   100% { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
 }
-
-/* default pulse class (apply to elements you want “alive”) */
-.pulse {
-  animation: pulseGlow 2.6s ease-in-out infinite;
+.quick-nav .btn.pulse { animation: pulseGlow 2.6s ease-in-out infinite !important; }
+.quick-nav .btn:hover {
+  background: rgba(0,255,240,0.16);
+  transform: translateY(-1px);
 }
 
-/* pause pulse when user hovers (feels responsive) */
-.pulse:hover {
-  animation-play-state: paused;
-}
+/* ========== Typography polish ========== */
+p, li { line-height: 1.65; }
+h1 { letter-spacing: .3px; margin-top: 8px; margin-bottom: 8px; }
+h2 { margin-top: 32px; }
 
-/* accessibility: turn off animation for users who prefer no motion */
-@media (prefers-reduced-motion: reduce) {
-  .pulse { animation: none !important; }
-}
-
-/* --- slightly deeper banner aura --- */
-.hero img,
-img[alt*="Portfolio Banner"] {
-  box-shadow:
-    0 18px 48px rgba(0,255,240,.20),
-    0 8px 24px rgba(0,0,0,.55);
-}
+/* Optional: round any inline images a bit */
+img { border-radius: 10px; }
 
 /* --- focus ring for keyboard nav (a11y) --- */
 a:focus-visible, .btn:focus-visible {
   outline: 2px solid #00fff0 !important;
   outline-offset: 2px;
   border-radius: 10px;
-}
-
-/* soften main title spacing */
-h1 {
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 /* section rule looks like a faint teal laser */
