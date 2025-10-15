@@ -94,6 +94,43 @@ a.btn:hover,
   box-shadow: 0 0 16px rgba(0, 255, 240, 0.6), 0 0 30px rgba(0, 255, 240, 0.3);
   transform: translateY(-2px);
 }
+/* ===== Pulsing glow animation (respect reduced motion) ===== */
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
+  50%  { box-shadow: 0 0 18px rgba(0,255,240,.55), 0 0 28px rgba(0,255,240,.20); }
+  100% { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
+}
+
+/* default pulse class (apply to elements you want “alive”) */
+.pulse {
+  animation: pulseGlow 2.6s ease-in-out infinite;
+}
+
+/* pause pulse when user hovers (feels responsive) */
+.pulse:hover {
+  animation-play-state: paused;
+}
+
+/* accessibility: turn off animation for users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+  .pulse { animation: none !important; }
+}
+
+/* --- slightly deeper banner aura --- */
+.hero img,
+img[alt*="Portfolio Banner"] {
+  box-shadow:
+    0 18px 48px rgba(0,255,240,.20),
+    0 8px 24px rgba(0,0,0,.55);
+}
+
+/* --- focus ring for keyboard nav (a11y) --- */
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid #00fff0 !important;
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
 /* soften main title spacing */
 h1 {
   margin-top: 8px;
