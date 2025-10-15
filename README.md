@@ -11,10 +11,10 @@ Here you’ll find six fully documented QA projects designed to demonstrate a pr
 These projects were developed as part of my **Game Academy QA Bootcamp**, where I focused on applying industry-standard testing workflows, bug documentation, and player-experience analysis.
 
 <p class="quick-nav">
-  <a class="btn" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">Functional</a>
-  <a class="btn" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">Exploratory</a>
-  <a class="btn" href="https://github.com/kelinacowellqa/Bug-Reports-Samples">Bug Reports</a>
-  <a class="btn" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">Templates</a>
+  <a class="btn" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">[Functional](#) {.btn}
+  <a class="btn" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">[Exploratory](#) {.btn}
+  <a class="btn" href="https://github.com/kelinacowellqa/Bug-Reports-Samples">[Bug Reports](#) {.btn}
+  <a class="btn" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">[Templates](#) {.btn}
 </p>
 
 ---
