@@ -2,32 +2,73 @@
 ---
 @import "{{ site.theme }}";
 
-/* ---- Custom Midnight Theme Tweaks ---- */
+/* ========== Base palette ========== */
+$bg: #121416;         /* charcoal */
+$text: #e5e5e5;       /* light grey */
+$teal: #00fff0;       /* neon teal */
+$teal-soft: #66fff7;  /* hover teal */
 
-/* background + base text */
-body {
-  background-color: #121416 !important;  /* softer charcoal */
-  color: #e5e5e5 !important;
+/* ========== Page base ========== */
+html, body {
+  background-color: $bg !important;
+  color: $text !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* links + section headers = teal glow */
-a,
+/* Headings + links in teal */
 h1, h2, h3, h4, h5, h6,
+a,
 .project-tagline {
-  color: #00fff0 !important;  /* neon-teal accent */
+  color: $teal !important;
+}
+a:hover { color: $teal-soft !important; }
+
+/* Subtle rule accent */
+hr { border-color: $teal !important; opacity: 0.35; }
+
+/* ========== Hero banner ========== */
+.hero {
+  margin: 18px 0 8px 0;
+}
+.hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  /* soft “glow” under the banner */
+  box-shadow:
+    0 14px 42px rgba(0, 255, 240, 0.18),
+    0 6px 20px rgba(0, 0, 0, 0.55);
+  outline: 1px solid rgba(255,255,255,0.03);
 }
 
-/* subtle hover color */
-a:hover {
-  color: #66fff7 !important;
+/* ========== Quick-nav buttons ========== */
+.quick-nav {
+  text-align: center;
+  margin: 8px 0 22px 0;
+}
+.quick-nav .btn {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,240,0.45);
+  background: rgba(0,255,240,0.08);
+  color: $teal !important;
+  text-decoration: none;
+  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
+}
+.quick-nav .btn:hover {
+  background: rgba(0,255,240,0.16);
+  box-shadow: 0 6px 20px rgba(0,255,240,0.18);
+  transform: translateY(-1px);
 }
 
-/* horizontal rule accent */
-hr {
-  border-color: #00fff0 !important;
-}
+/* ========== Typography polish ========== */
+p, li { line-height: 1.65; }
+h1 { letter-spacing: .3px; }
+h2 { margin-top: 32px; }
 
-/* optional: round banner edges */
-img {
-  border-radius: 12px;
-}
+/* Optional: round any inline images a bit */
+img { border-radius: 10px; }
