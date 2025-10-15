@@ -99,6 +99,27 @@ I’m passionate about combining **testing discipline** with **creative insight*
 
 ---
 
+## 🧩 Additional QA Repositories
+
+If you'd like to explore more of my QA documentation and resources, you can find them here:
+
+| Repository | Description |
+|-------------|-------------|
+| 🧪 [Functional Testing Examples](https://github.com/kelinacowellqa/Functional-Testing-Examples) | Structured test plans, bug sheets, and validation workflows. |
+| 🔍 [Exploratory Testing Sessions](https://github.com/kelinacowellqa/Exploratory-Testing-Sessions) | Freeform session logs and qualitative gameplay analysis. |
+| 🪲 [Bug Report Samples](https://github.com/kelinacowellqa/Bug-Reports-Samples) | Reproducible defect reports showing communication and clarity. |
+| 🧰 [QA Templates & Resources](https://github.com/kelinacowellqa/QA-Templates-and-Resources) | My personal QA toolkit — reusable templates, checklists, and documentation standards. |
+
+---
+
+## 🍀 Connect
+**Kelina Cowell – Multiplatform Games Tester**  
+🔗 [LinkedIn](https://www.linkedin.com/in/kelina-cowell-qa-tester)  
+📧 kelinacowell.qa@gmail.com  
+
+
+---
+
 📫 **Connect with Me**
 [💼 LinkedIn – Kelina Cowell](https://www.linkedin.com/in/kelina-cowell)  
 🎮 *Multiplatform Games Tester | QA Enthusiast | Player Experience Advocate*  
