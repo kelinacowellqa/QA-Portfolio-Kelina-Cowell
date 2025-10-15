@@ -1,4 +1,4 @@
-![Kelina Cowell – QA Portfolio Banner](./qa-tester-multi-platform-pc-console-vr-mobile.png)
+<img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Kelina Cowell – QA Portfolio Banner" style="max-width:100%; height:auto; border-radius:8px;" />
 
 # 🎮 Kelina Cowell – QA Portfolio
 
