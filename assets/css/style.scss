@@ -94,4 +94,15 @@ a.btn:hover,
   box-shadow: 0 0 16px rgba(0, 255, 240, 0.6), 0 0 30px rgba(0, 255, 240, 0.3);
   transform: translateY(-2px);
 }
+/* soften main title spacing */
+h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* section rule looks like a faint teal laser */
+hr { opacity: .25; }
+
+/* subtle lift on any inline images */
+img:hover { transform: translateY(-1px); transition: transform .12s ease-out; }
 
