@@ -2,7 +2,6 @@
   <img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner" />
 </div>
 
-# 🎮 Kelina Cowell – QA Portfolio
 
 Welcome to my QA portfolio!  
 
