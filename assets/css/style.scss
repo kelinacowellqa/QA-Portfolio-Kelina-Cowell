@@ -54,12 +54,10 @@ img[alt*="Portfolio Banner"] {
     0 18px 48px rgba(0,255,240,0.20),
     0 8px 24px rgba(0,0,0,0.55);
   outline: 1px solid rgba(255,255,255,0.03);
-
-  /* 👇 this line restores the header animation */
   animation: bannerGlow 4.5s ease-in-out infinite;
 }
 
-/* Breathing glow (synced to button pulse at 4.5s) */
+/* Breathing glow (synced to button pulse) */
 @keyframes bannerGlow {
   0%, 100% {
     box-shadow:
@@ -136,19 +134,24 @@ p strong:first-child {
   margin-bottom: 8px;
 }
 
+/* Project card base style */
 .project-block {
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(0,255,240,0.15);
   border-radius: 12px;
-  padding: 14px 18px;
-  margin: 16px 0 24px;
+  padding: 16px 20px;
+  margin: 18px 0 26px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-  transition: transform .1s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
+/* Smooth teal glow on hover (no movement) */
 .project-block:hover {
-  transform: translateY(-1px);
-  border-color: rgba(0,255,240,0.25);
+  border-color: rgba(0,255,240,0.35);
+  box-shadow:
+    0 0 20px rgba(0,255,240,0.25),
+    0 0 40px rgba(0,255,240,0.15),
+    0 6px 24px rgba(0,0,0,0.45);
 }
 
 /* Style “🕹️ Why this game” lines */
@@ -222,5 +225,6 @@ a:focus-visible, .btn:focus-visible {
   margin-top: 10px;
   text-align: right;
 }
+
 .project-actions .btn { margin-left: 6px; }
 
