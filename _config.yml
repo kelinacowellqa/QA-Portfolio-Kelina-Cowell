@@ -2,10 +2,6 @@ title: "Kelina Cowell – QA Portfolio"
 description: "Multiplatform Games Tester | Functional, Exploratory, and Cross-Platform QA"
 theme: minima
 minima:
-  skin: classic
-  social_links:
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/kelina-cowell-qa-tester" }
-minima:
   skin: dark
   social_links:
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/kelina-cowell-qa-tester" }
