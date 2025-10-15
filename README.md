@@ -21,7 +21,10 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 ## 🧩 Project Lineup
 
+<div class="project-block">
+
 ### 1️⃣ Functional Testing – *Skyrim (PC)*
+
 **Goal:** Showcase core QA fundamentals — bug hunting, documentation clarity, and gameplay analysis.  
 **Focus:** Gameplay logic · UI · Audio · Performance  
 **Tools:** Jira / Trello + Excel Test Plan  
@@ -30,9 +33,12 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 🕹️ *Why this game:* A classic QA stress test — big, buggy, and instantly recognisable.
 
----
+</div>
+
+<div class="project-block">
 
 ### 2️⃣ Exploratory Testing – *Stardew Valley (Mobile / PC)*
+
 **Goal:** Demonstrate creativity and adaptability across devices.  
 **Focus:** Device compatibility · Screen scaling · Input responsiveness  
 **Tools:** Mobile test plan spreadsheet + screenshots  
@@ -41,9 +47,12 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 🕹️ *Why this game:* A beloved indie title that shows analytical testing for casual players.
 
----
+</div>
+
+<div class="project-block">
 
 ### 3️⃣ Regression Testing – *The Sims 4 (Console / PC)*
+
 **Goal:** Demonstrate disciplined retesting and verification after fixes.  
 **Focus:** Save/load systems · Controller mapping · UI scaling  
 **Tools:** Simple bug tracker + before/after test notes  
@@ -52,9 +61,12 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 🕹️ *Why this game:* Constantly patched; mirrors real-world QA cycles.
 
----
+</div>
+
+<div class="project-block">
 
 ### 4️⃣ Cross-Platform QA – *Asgard’s Wrath 2 (VR vs PC)*
+
 **Goal:** Highlight awareness of VR-specific QA — comfort, immersion, tracking accuracy.  
 **Focus:** Performance stability · Motion comfort · Boundary issues  
 **Tools:** Google Sheets test log + PowerPoint summary deck  
@@ -63,9 +75,12 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 🕹️ *Why this game:* Leverages my Quest 3 experience — rare and valuable QA coverage.
 
----
+</div>
+
+<div class="project-block">
 
 ### 5️⃣ Input QA – *Hades (PC w/ Xbox Controller via Cloud)*
+
 **Goal:** Simulate console QA workflows via cloud input testing.  
 **Focus:** Controller mapping · Latency · UI feedback · Input compatibility  
 **Tools:** Excel or Notion test plan + annotated screenshots  
@@ -74,9 +89,12 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 🕹️ *Why this game:* Stylish, fast-paced title — perfect for controller QA precision.
 
----
+</div>
+
+<div class="project-block">
 
 ### 6️⃣ Narrative & Localization Testing – *Life Is Strange (PC)*
+
 **Goal:** Evaluate subtitle accuracy, dialogue timing, and tone consistency.  
 **Focus:** Subtitle sync · Typo spotting · Emotional tone  
 **Tools:** Google Sheets bug list + screenshots or short video clips  
@@ -84,6 +102,8 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Result:** Logged 12 subtitle mismatches and dialogue trigger delays, improving narrative pacing and player immersion.  
 
 🕹️ *Why this game:* Combines creative sensitivity with technical QA discipline.
+
+</div>
 
 ---
 
