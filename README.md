@@ -1,5 +1,6 @@
-<img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Kelina Cowell – QA Portfolio Banner" style="max-width:100%; height:auto; border-radius:8px;" alt="Kelina Cowell – QA Portfolio Banner" />
-</div>
+<p align="center">
+  <img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Kelina Cowell – QA Portfolio Banner" width="100%" style="border-radius:14px; box-shadow:0 14px 42px rgba(0,255,240,0.18), 0 6px 20px rgba(0,0,0,0.55); outline:1px solid rgba(255,255,255,0.03);" />
+</p>
 
 # 🎮 Kelina Cowell – QA Portfolio
 
