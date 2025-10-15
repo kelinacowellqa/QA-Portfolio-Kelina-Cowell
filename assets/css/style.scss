@@ -2,15 +2,32 @@
 ---
 @import "{{ site.theme }}";
 
+/* ---- Custom Midnight Theme Tweaks ---- */
+
+/* background + base text */
 body {
-  background-color: #111 !important;
-  color: #ddd !important;
+  background-color: #0d0f12 !important;
+  color: #e0e0e0 !important;
 }
 
-a, h1, h2, h3, h4, h5, h6 {
-  color: #00b7a1 !important;  /* teal accent */
+/* links + section headers = teal glow */
+a,
+h1, h2, h3, h4, h5, h6,
+.project-tagline {
+  color: #00fff0 !important;  /* neon-teal accent */
 }
 
+/* subtle hover color */
+a:hover {
+  color: #66fff7 !important;
+}
+
+/* horizontal rule accent */
 hr {
-  border-color: #00b7a1 !important;
+  border-color: #00fff0 !important;
+}
+
+/* optional: round banner edges */
+img {
+  border-radius: 12px;
 }
