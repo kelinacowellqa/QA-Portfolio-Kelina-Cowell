@@ -1,3 +1,5 @@
 title: "Kelina Cowell – QA Portfolio"
 description: "Multiplatform Games Tester | Functional, Exploratory, and Cross-Platform QA"
-theme: jekyll-theme-slate
+theme: minima
+minima:
+  skin: classic
