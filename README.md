@@ -3,6 +3,7 @@
 # 🎮 Kelina Cowell – QA Portfolio
 
 Welcome to my QA portfolio!  
+
 Here you’ll find six fully documented QA projects designed to demonstrate a professional range of testing skills — from functional and exploratory testing to cross-platform and narrative QA.  
 
 These projects were developed as part of my **Game Academy QA Bootcamp**, where I focused on applying industry-standard testing workflows, bug documentation, and player-experience analysis.
@@ -18,12 +19,14 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 
 ## 🧩 Project Lineup
 
+
 ### 1️⃣ Functional Testing – *Skyrim (PC)*
 **Goal:** Showcase core QA fundamentals — bug hunting, documentation clarity, and gameplay analysis.  
 **Focus:** Gameplay logic · UI · Audio · Performance  
 **Tools:** Jira / Trello + Excel Test Plan  
 **Deliverables:** Bug report samples · Summary sheet · Annotated screenshots  
 **Result:** Identified 25 unique gameplay and quest logic bugs, improving UI flow clarity in menu systems.  
+
 🕹️ *Why this game:* A classic QA stress test — big, buggy, and instantly recognisable.
 
 ---
@@ -34,6 +37,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Tools:** Mobile test plan spreadsheet + screenshots  
 **Deliverables:** Session logs · Issue list · Device comparison chart  
 **Result:** Discovered layout inconsistencies and latency issues across multiple screen ratios.  
+
 🕹️ *Why this game:* A beloved indie title that shows analytical testing for casual players.
 
 ---
@@ -44,6 +48,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Tools:** Simple bug tracker + before/after test notes  
 **Deliverables:** Regression log · Verification report · Screenshots  
 **Result:** Re-tested 18 resolved issues; verified 15 as fixed, logged 3 regressions.  
+
 🕹️ *Why this game:* Constantly patched; mirrors real-world QA cycles.
 
 ---
@@ -54,6 +59,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Tools:** Google Sheets test log + PowerPoint summary deck  
 **Deliverables:** Comparative test results · Comfort report · Screenshots  
 **Result:** Compared VR and PC performance; identified 5 immersion-breaking bugs tied to headset tracking.  
+
 🕹️ *Why this game:* Leverages my Quest 3 experience — rare and valuable QA coverage.
 
 ---
@@ -64,6 +70,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Tools:** Excel or Notion test plan + annotated screenshots  
 **Deliverables:** Input response matrix · Latency notes · Issue report  
 **Result:** Logged responsiveness discrepancies and UI input mismatches.  
+
 🕹️ *Why this game:* Stylish, fast-paced title — perfect for controller QA precision.
 
 ---
@@ -74,6 +81,7 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
 **Tools:** Google Sheets bug list + screenshots or short video clips  
 **Deliverables:** Localization report · Timing log · Tone assessment sheet  
 **Result:** Logged 12 subtitle mismatches and dialogue trigger delays, improving narrative pacing and player immersion.  
+
 🕹️ *Why this game:* Combines creative sensitivity with technical QA discipline.
 
 ---
