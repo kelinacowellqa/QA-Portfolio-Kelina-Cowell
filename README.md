@@ -17,7 +17,6 @@ These projects were developed as part of my **Game Academy QA Bootcamp**, where 
   <a class="btn pulse" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">Templates</a>
 </p>
 
-
 ---
 
 ## 🧩 Project Lineup
