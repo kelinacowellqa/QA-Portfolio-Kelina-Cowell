@@ -1,3 +1,5 @@
+![Kelina Cowell – QA Portfolio Banner](./banner.png)
+
 # 🎮 Kelina Cowell – QA Portfolio
 
 Welcome to my QA portfolio!  
