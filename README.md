@@ -1,4 +1,5 @@
-<img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Kelina Cowell – QA Portfolio Banner" style="max-width:100%; height:auto; border-radius:8px;" />
+<img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Kelina Cowell – QA Portfolio Banner" style="max-width:100%; height:auto; border-radius:8px;" alt="Kelina Cowell – QA Portfolio Banner" />
+</div>
 
 # 🎮 Kelina Cowell – QA Portfolio
 
@@ -8,11 +9,11 @@ Here you’ll find six fully documented QA projects designed to demonstrate a pr
 
 These projects were developed as part of my **Game Academy QA Bootcamp**, where I focused on applying industry-standard testing workflows, bug documentation, and player-experience analysis.
 
-<p align="center">
-  <a href="https://github.com/kelinacowellqa/Functional-Testing-Examples">Functional</a> ·
-  <a href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">Exploratory</a> ·
-  <a href="https://github.com/kelinacowellqa/Bug-Reports-Samples">Bug Reports</a> ·
-  <a href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">Templates</a>
+<p class="quick-nav">
+  <a class="btn" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">Functional</a>
+  <a class="btn" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">Exploratory</a>
+  <a class="btn" href="https://github.com/kelinacowellqa/Bug-Reports-Samples">Bug Reports</a>
+  <a class="btn" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">Templates</a>
 </p>
 
 ---
