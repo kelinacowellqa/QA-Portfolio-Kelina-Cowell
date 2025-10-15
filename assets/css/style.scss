@@ -1,11 +1,58 @@
-/* ========== Quick-nav buttons (with obvious pulse ring) ========== */
+---
+---
+@import "{{ site.theme }}";
+
+/* ========== Base palette ========== */
+$bg: #121416;         /* charcoal */
+$text: #e5e5e5;       /* light grey */
+$teal: #00fff0;       /* neon teal */
+$teal-soft: #66fff7;  /* hover teal */
+
+/* ========== Page base ========== */
+html, body {
+  background-color: $bg !important;
+  color: $text !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings + links in teal */
+h1, h2, h3, h4, h5, h6,
+a,
+.project-tagline {
+  color: $teal !important;
+}
+a:hover { color: $teal-soft !important; }
+
+/* Subtle rule accent */
+hr { border-color: $teal !important; opacity: 0.35; }
+
+/* ========== Hero banner ========== */
+.hero { margin: 18px 0 8px 0; }
+.hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  /* soft glow under the banner */
+  box-shadow:
+    0 14px 42px rgba(0, 255, 240, 0.18),
+    0 6px 20px rgba(0, 0, 0, 0.55);
+  outline: 1px solid rgba(255,255,255,0.03);
+  margin-bottom: -10px;
+  margin-top: -6px;
+}
+
+/* ========== Quick-nav buttons (with safety-net + pulse) ========== */
 .quick-nav {
   text-align: center;
   margin: 8px 0 22px 0;
 }
 
-.quick-nav .btn {
-  position: relative;           /* needed for the ring */
+/* Style both .btn and plain <a> fallback */
+.quick-nav .btn,
+.quick-nav a {
+  position: relative;
   display: inline-block;
   padding: 8px 14px;
   margin: 0 6px 8px;
@@ -16,15 +63,16 @@
   text-decoration: none;
   transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
   box-shadow: 0 0 10px rgba(0,255,240,.25);
-  overflow: visible;            /* let the ring show outside */
+  overflow: visible;
   will-change: transform, box-shadow;
 }
 
-/* expanding teal ring using a pseudo-element */
-.quick-nav .btn.pulse::after {
+/* Expanding teal ring (pulse) — works for .btn.pulse or <a class="pulse"> */
+.quick-nav .btn.pulse::after,
+.quick-nav a.pulse::after {
   content: "";
   position: absolute;
-  inset: -6px;                   /* ring sits outside the button */
+  inset: -6px;
   border-radius: inherit;
   pointer-events: none;
   box-shadow: 0 0 0 0 rgba(0,255,240,.55);
@@ -32,15 +80,37 @@
   animation: pulseRing 1.9s ease-out infinite;
 }
 
-/* button hover (keeps the lift you had) */
-.quick-nav .btn:hover {
+/* Hover lift */
+.quick-nav .btn:hover,
+.quick-nav a:hover {
   background: rgba(0,255,240,0.16);
   transform: translateY(-1px);
 }
 
-/* keyframes for the ring */
+/* Keyframes for the ring */
 @keyframes pulseRing {
   0%   { box-shadow: 0 0 0 0 rgba(0,255,240,.55); opacity: .65; }
   60%  { box-shadow: 0 0 0 14px rgba(0,255,240,0); opacity: 0; }
   100% { box-shadow: 0 0 0 14px rgba(0,255,240,0); opacity: 0; }
 }
+
+/* ========== Typography polish ========== */
+p, li { line-height: 1.65; }
+h1 { letter-spacing: .3px; margin-top: 8px; margin-bottom: 8px; }
+h2 { margin-top: 32px; }
+
+/* Optional: round any inline images a bit */
+img { border-radius: 10px; }
+
+/* --- focus ring for keyboard nav (a11y) --- */
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid #00fff0 !important;
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* section rule looks like a faint teal laser */
+hr { opacity: .25; }
+
+/* subtle lift on any inline images */
+img:hover { transform: translateY(-1px); transition: transform .12s ease-out; }
