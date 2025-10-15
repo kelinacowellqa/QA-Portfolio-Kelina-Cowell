@@ -30,7 +30,6 @@ hr { border-color: $teal !important; opacity: 0.35; }
 /* ========== Hero banner ========== */
 .hero { margin: 18px 0 8px 0; }
 
-/* Target either .hero img OR any image whose alt contains “Portfolio Banner” */
 .hero img,
 img[alt*="Portfolio Banner"] {
   display: block;
@@ -50,7 +49,7 @@ img[alt*="Portfolio Banner"] {
   animation: bannerGlow 5s ease-in-out infinite;
 }
 
-/* Teal breathing glow */
+/* Smooth breathing animation for banner */
 @keyframes bannerGlow {
   0%, 100% {
     box-shadow:
@@ -64,4 +63,80 @@ img[alt*="Portfolio Banner"] {
   }
 }
 
-/* ========== Quick-nav buttons (with safety-net + p*
+/* ========== Quick-nav buttons (with synced pulse) ========== */
+.quick-nav {
+  text-align: center;
+  margin: 8px 0 22px 0;
+}
+
+/* Base style for buttons and fallback anchors */
+.quick-nav .btn,
+.quick-nav a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,240,0.45);
+  background: rgba(0,255,240,0.08);
+  color: #00fff0 !important;
+  text-decoration: none;
+  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
+  box-shadow: 0 0 10px rgba(0,255,240,.25);
+  overflow: visible;
+  will-change: transform, box-shadow;
+}
+
+/* Pulse glow effect synced to banner rhythm */
+.quick-nav .btn.pulse::after,
+.quick-nav a.pulse::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(0,255,240,.4);
+  opacity: .5;
+  animation: pulseRing 5s ease-in-out infinite;
+}
+
+/* Hover lift + glow pop */
+.quick-nav .btn:hover,
+.quick-nav a:hover {
+  background: rgba(0,255,240,0.16);
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(0,255,240,0.4);
+}
+
+/* Gentle 5s pulse animation (same timing as bannerGlow) */
+@keyframes pulseRing {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0,255,240,.4);
+    opacity: .5;
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(0,255,240,0);
+    opacity: 0;
+  }
+}
+
+/* ========== Typography polish ========== */
+p, li { line-height: 1.65; }
+h1 { letter-spacing: .3px; margin-top: 8px; margin-bottom: 8px; }
+h2 { margin-top: 32px; }
+
+/* Optional: round any inline images a bit */
+img { border-radius: 10px; }
+
+/* --- focus ring for keyboard nav (a11y) --- */
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid #00fff0 !important;
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* Faint teal laser-style section rule */
+hr { opacity: .25; }
+
+/* subtle lift on any inline images */
+img:hover { transform: translateY(-1px); transition: transform .12s ease-out; }
