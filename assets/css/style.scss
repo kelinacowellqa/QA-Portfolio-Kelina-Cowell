@@ -74,3 +74,24 @@ h2 { margin-top: 32px; }
 
 /* Optional: round any inline images a bit */
 img { border-radius: 10px; }
+/* --- Button Glow Effect --- */
+a.btn,
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #00fff0;
+  border-radius: 8px;
+  color: #00fff0;
+  background: rgba(0, 255, 240, 0.05);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 240, 0.25);
+}
+
+a.btn:hover,
+.btn:hover {
+  background: rgba(0, 255, 240, 0.12);
+  box-shadow: 0 0 16px rgba(0, 255, 240, 0.6), 0 0 30px rgba(0, 255, 240, 0.3);
+  transform: translateY(-2px);
+}
+
