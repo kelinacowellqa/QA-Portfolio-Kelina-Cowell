@@ -28,17 +28,19 @@ a:hover { color: $teal-soft !important; }
 hr { border-color: $teal !important; opacity: 0.35; }
 
 /* ========== Hero banner ========== */
-.hero { margin: 18px 0 8px 0; }
+.hero {
+  margin: 24px 0 40px 0; /* Adds breathing room below the banner */
+  text-align: center;
+}
 
 .hero img,
 img[alt*="Portfolio Banner"] {
   display: block;
+  margin: 0 auto 36px auto; /* Centers and adds visual spacing below */
   max-width: 100%;
   height: auto;
   border-radius: 14px;
   outline: 1px solid rgba(255,255,255,0.03);
-  margin-bottom: -10px;
-  margin-top: -6px;
 
   /* base teal glow */
   box-shadow:
@@ -49,7 +51,7 @@ img[alt*="Portfolio Banner"] {
   animation: bannerGlow 5s ease-in-out infinite;
 }
 
-/* Smooth breathing animation for banner */
+/* Teal breathing glow */
 @keyframes bannerGlow {
   0%, 100% {
     box-shadow:
@@ -140,3 +142,13 @@ hr { opacity: .25; }
 
 /* subtle lift on any inline images */
 img:hover { transform: translateY(-1px); transition: transform .12s ease-out; }
+
+/* ========== Optional: soft ambient page glow ========== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center top, rgba(0,255,240,0.05), transparent 70%);
+  z-index: 0;
+}
