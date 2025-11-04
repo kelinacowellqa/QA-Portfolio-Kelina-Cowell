@@ -34,12 +34,14 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
+
 **Goal:** Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
 **Focus:** Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage  
 **Tools:** Google Sheets session charters & notes · On-device screen recordings (iOS/Android) · Network throttling (Airplane/Low-bandwidth) · Device matrix  
 **Deliverables:** Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
-**Result:** In progress — early passes are mapping risks across device classes and network conditions.  
-🕹️ *Why this game:* Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
+**Result:** In progress — early passes are mapping risks across device classes and network conditions. 
+
+🕹️ *Why this game?* Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
 
 **Coming soon:** full case study page with evidence, risk map, and metrics.
 
@@ -48,12 +50,14 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 3: Regression Testing – *Sworn (PC)*
+
 **Goal:** Re-test recent fixes to confirm they hold up and catch any side-effects before release.  
 **Focus:** Save/load integrity · Input/control mapping · UI scaling & readability · Patch-notes verification  
 **Tools:** Jira regression suite · Before/after evidence clips · Build notes  
 **Deliverables:** Regression log · Verification matrix · Before/after screenshots & short videos  
 **Result:** In progress — working through the first patch set and tracking any reopens or knock-on issues.  
-🕹️ *Why this game:* Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
+
+🕹️ *Why this game?* Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
 
 **Coming soon:** full case study page with verification matrix, before/after clips, and regression metrics.
 
@@ -62,12 +66,14 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
+
 **Goal:** Show VR-specific QA awareness — comfort, tracking stability, and parity between standalone and PCVR.  
 **Focus:** Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes  
 **Tools:** Google Sheets session charters & test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side comparison notes  
 **Deliverables:** Comfort checklist (ratings) · Tracking test results · Parity comparison clips/screens · Issue list with risk tags  
 **Result:** In progress — building like-for-like runs on headset and PCVR, logging any comfort dips, judder, or interaction/visual parity gaps.  
-🕹️ *Why this game:* A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
+
+🕹️ *Why this game?* A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
 
 **Coming soon:** full case study page with comfort metrics, frame-timing snapshots, and a parity gallery.
 
@@ -76,12 +82,14 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
+
 **Goal:** Validate controller responsiveness and ensure input mappings behave consistently across devices and contexts.  
 **Focus:** Mapping parity (Xbox/PlayStation layouts) · Latency & responsiveness · Haptics/rumble cues · UI prompts vs. active device · Keyboard/controller hand-off · Rebinds & edge cases  
 **Tools:** Google Sheets test matrix · Input latency notes (video timestamps) · OBS/Game Bar captures · Controller layout references  
 **Deliverables:** Input mapping matrix · Latency observations with clips · Mismatch log (prompts vs. device) · Rebind test results  
 **Result:** In progress — building parity checks and timing captures across menus, gameplay, and pause/overlay states.  
-🕹️ *Why this game:* Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
+
+🕹️ *Why this game?* Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
 
 **Coming soon:** full case study page with mapping matrix, timing clips, and parity findings.
 
@@ -90,12 +98,13 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
   
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
+
 **Goal:** Check that dialogue, subtitles, and UI text read naturally and stay in sync on mobile — no typos, timing slips, or speaker mix-ups.  
 **Focus:** Subtitle timing & sync · Line breaks/overflow · Speaker tags · Tone/idiom checks · Punctuation & typography · UI text legibility · Locale/device language behaviour  
 **Tools:** Google Sheets script log & timing notes · On-device screen recordings (Android) · Style/terminology checklist · Font/size legibility checks  
 **Deliverables:** Subtitle timing log · Text/typo issue list with screenshots · Style/terminology notes · Short evidence clips  
 **Result:** In progress — mapping dialogue-heavy scenes, checking subtitle pacing against VO/SFX, and flagging any truncation or misattribution.  
-🕹️ *Why this game:* Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
+🕹️ *Why this game?* Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
 
 **Coming soon:** full case study page with timing examples, before/after text fixes, and readability findings across devices.
 
@@ -104,6 +113,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 8️: Automation Testing – *PowerWash Simulator (PC)*
+
 **Goal:** Demonstrate early automation skills by scripting repeatable checks and quick regressions on core flows.  
 **Focus:** Launch → menu → job select smoke · Settings persistence · Save/load state · Input macro checks (KB/mouse/controller) · Simple visual comparisons for “clean/dirty” states  
 **Tools:** Lightweight scripts (AutoHotkey/Python) · Timed input macros · OBS for capture · (Trial) image-compare snapshots for before/after  
@@ -135,7 +145,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 - **Planning & tracking:** Jira · GitHub
 - **Docs & data:** Google Sheets (QA workbook)
 - **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording
-- - **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
+- **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
 - **Automation (PowerWash):** AutoHotkey · Python (light scripts)
 
 ---
@@ -156,6 +166,7 @@ I test games the way players experience them: clearly, patiently, and with evide
 ---
 
 ## 🍀 Connect
+
 **Kelina Cowell – Multiplatform Games Tester**  
 🔗 [LinkedIn](https://www.linkedin.com/in/kelina-cowell-qa-tester)  
 📧 kelinacowell.qa@gmail.com  
