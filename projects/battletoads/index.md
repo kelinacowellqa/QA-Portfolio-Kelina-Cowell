@@ -73,7 +73,7 @@ Brief note connecting this project to your current Jira course learnings (board 
 |:-----------------------------------|:------------|
 | **QA Workbook (Google Sheets)**    | [Open Workbook](https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing) |
 | **QA Workbook (PDF Export)**       | [Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf](./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf) |
-| Jira Board Screenshots              | ### ### Jira Board — Overview
+| Jira Board Screenshots              | ### Jira Board — Overview
 
 <a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank">
   <img src="./jira_workflow/battletoads_jira_board_overview.png"
