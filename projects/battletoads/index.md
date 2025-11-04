@@ -2,8 +2,8 @@
 
 [⬅ Back to Portfolio Home](https://kelinacowellqa.github.io/QA-Portfolio-Kelina-Cowell/)
 
-**Studio:** Dlala Studios / Rare
-**Platform:** PC (Game Pass)
+**Studio:** Dlala Studios / Rare  
+**Platform:** PC (Game Pass)  
 **Scope:** Gameplay logic • UI • Audio • Performance
 
 ---
