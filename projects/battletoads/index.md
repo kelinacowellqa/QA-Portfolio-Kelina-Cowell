@@ -70,10 +70,10 @@ I applied fundamentals from two beginner Jira courses to keep this project struc
 - Created issues directly from test runs, attaching repro clips and exact steps.
 - Used **Blocked** to surface input-ownership problems quickly, then moved to **Verified** with video proof after re-test.
 - Maintained short, consistent titles so tickets were scannable on the board and in the README.
-
+- 
 **Certificates (PDF)**
-- [Intro to JIRA — certificate](https://github.com/kelinacowellqa/kelinacowellqa.github.io/raw/main/jira_training/screenshots/intro-to-jira_simplilearn_cert.pdf)
-- [Get Started with Jira — certificate](https://github.com/kelinacowellqa/kelinacowellqa.github.io/raw/main/jira_training/screenshots/get-started-with-jira_coursera_cert.pdf)
+- [Intro to JIRA — certificate](../../jira_training/screenshots/intro-to-jira_simplilearn_cert.pdf)
+- [Get Started with Jira — certificate](../../jira_training/screenshots/get-started-with-jira_coursera_cert.pdf)
 
 ---
 
