@@ -5,7 +5,7 @@
 
 Welcome to my QA portfolio.
 
-Here you’ll find **eight** full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
+Here you’ll find eight full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
 
 ### 🧠 Self-Directed QA Learning Programme
 
