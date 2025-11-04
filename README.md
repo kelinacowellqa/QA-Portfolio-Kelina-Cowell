@@ -9,7 +9,7 @@ Here you’ll find eight full case studies that show a professional range of tes
 
 ### 🧠 Self-Directed QA Learning Programme
 
-This portfolio follows an eight-project roadmap I designed to mirror real studio workflows. Each project includes a clear goal, a complete practical QA workbook, Jira workflow, evidence clips and scxreenshots, and a concise STAR summary — focusing on reproducible bugs, readable documentation, and player-centred quality.
+This portfolio follows an eight-project roadmap I designed to mirror real studio workflows. Each project includes a clear goal, a complete practical QA workbook, Jira workflow, evidence clips and screenshots, and a concise STAR summary — focusing on reproducible bugs, readable documentation, and player-centred quality.
 
 ---
 
