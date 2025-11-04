@@ -122,36 +122,34 @@ Brief note connecting this project to your current Jira course learnings (board 
 
 | ID | Title | Sev | Repro | Video |
 |:--:|:------|:---:|:-----:|:------|
-| 01 | Pause: keyboard (Esc/P) doesn’t open Pause; controller Start works | High | 5/5 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_01&t=0s](https://youtu.be/2CAUt8gxH3M)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_01/hqdefault.jpg" alt="Bug 01 video" width="140"></a> |
-| 02 | Pause menu: controller→keyboard hand-off fails (keyboard ignored) | High | 5/5 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_02&t=0s](https://youtu.be/5DZjJc4y_yA)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_02/hqdefault.jpg" alt="Bug 02 video" width="140"></a> |
-| 03 | Resume misroute: **Enter** on *Resume* opens *Join In* overlay | High | 3/3 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_03&t=0s](https://youtu.be/EJFduFM28Is)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_03/hqdefault.jpg" alt="Bug 03 video" width="140"></a> |
-| 04 | Keyboard-only path blocked for local co-op start | High | 3/3 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_04&t=0](https://youtu.be/CXFI2a6DEpM)s" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_04/hqdefault.jpg" alt="Bug 04 video" width="140"></a> |
+| 01 | Pause: keyboard (Esc/P) does not open Pause - controller Start works | High | 5/5 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_01&t=0s](https://youtu.be/2CAUt8gxH3M)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_01/hqdefault.jpg" alt="Bug 01 video" width="140"></a> |
+| 02 | Keyboard Input Ignored on Pause Menu After Using Controller | High | 5/5 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_02&t=0s](https://youtu.be/5DZjJc4y_yA)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_02/hqdefault.jpg" alt="Bug 02 video" width="140"></a> |
+| 03 | Pause Menu keyboard/controller hand-off | High | 3/3 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_03&t=0s](https://youtu.be/EJFduFM28Is)" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_03/hqdefault.jpg" alt="Bug 03 video" width="140"></a> |
+| 04 | Pause/Join In: Keyboard Enter Opens Join In & Disables Controller Input (Only Enter/Esc Work) | High | 3/3 | <a href="[https://www.youtube.com/watch?v=YOUTUBE_ID_04&t=0](https://youtu.be/CXFI2a6DEpM)s" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/YOUTUBE_ID_04/hqdefault.jpg" alt="Bug 04 video" width="140"></a> |
 
 <details>
   <summary><strong>Show inline videos</strong> (opens four embeds)</summary>
 
+| 01 | Pause: keyboard (Esc/P) does not open Pause - controller Start works | High | 5/5 |
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="[[https://www.youtube.com/embed/YOUTUBE_ID_01?modestbranding=1&rel=0](https://youtu.be/2CAUt8gxH3M](https://www.youtube.com/watch?v=2CAUt8gxH3M))" title="Bug 01" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
+| 02 | Keyboard Input Ignored on Pause Menu After Using Controller | High | 5/5 |
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="[https://www.youtube.com/embed/YOUTUBE_ID_02?modestbranding=1&rel=0](https://youtu.be/5DZjJc4y_yA)" title="Bug 02" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
+| 03 | Pause Menu keyboard/controller hand-off | High | 3/3 | 
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="[https://www.youtube.com/embed/YOUTUBE_ID_03?modestbranding=1&rel=0](https://youtu.be/EJFduFM28Is)" title="Bug 3" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 
+| 04 | Pause/Join In: Keyboard Enter Opens Join In & Disables Controller Input (Only Enter/Esc Work) | High | 3/3 |
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="[https://www.youtube.com/embed/YOUTUBE_ID_04?modestbranding=1&rel=0](https://youtu.be/CXFI2a6DEpM)" title="Bug 4" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </details>
-
- |
-| Workflow Screenshot                | [workflow.png](./jira_workflow/workflow.png) |
-| Video Clip (YouTube)               | [Watch evidence clip](https://www.youtube.com/...) |
-| Key Bug Screenshot 1               | [bug_01.png](./media/bug_01.png) |
-| Key Bug Screenshot 2               | [bug_02.png](./media/bug_02.png) |
 
 ---
 
