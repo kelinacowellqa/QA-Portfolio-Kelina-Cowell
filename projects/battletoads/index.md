@@ -15,8 +15,7 @@
 ---
 
 ## 🎯 Goal
-
-Validate core gameplay flows and document reproducible defects with clear severity and repro steps.
+Demonstrate core QA fundamentals by validating key gameplay flows and documenting reproducible defects with clear severity and repro steps.
 
 ---
 
