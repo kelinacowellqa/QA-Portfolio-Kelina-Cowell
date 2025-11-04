@@ -3,7 +3,7 @@
 </div>
 
 
-Welcome to my QA portfolio.
+### Welcome to my QA portfolio.
 
 Here you’ll find eight full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
 
