@@ -3,23 +3,13 @@
 </div>
 
 
-Welcome to my QA portfolio!  
+Welcome to my QA portfolio.
 
-Here you’ll find six fully documented QA projects designed to demonstrate a professional range of testing skills — from functional and exploratory testing to cross-platform and narrative QA.  
+Here you’ll find **eight** full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
 
-### 🧠 Self-Directed QA Learning Program
+### 🧠 Self-Directed QA Learning Programme
 
-This portfolio was built through my independent QA learning framework — a six-project roadmap I designed myself to replicate real studio workflows.
-
-Each project demonstrates practical testing disciplines — from bug documentation and regression testing to player-experience analysis — across multiple platforms and genres.
-
-
-<p class="quick-nav">
-  <a class="btn pulse" href="https://github.com/kelinacowellqa/Functional-Testing-Examples">Functional</a>
-  <a class="btn pulse" href="https://github.com/kelinacowellqa/Exploratory-Testing-Sessions">Exploratory</a>
-  <a class="btn pulse" href="https://github.com/kelinacowellqa/Bug-Reports-Samples">Bug Reports</a>
-  <a class="btn pulse" href="https://github.com/kelinacowellqa/QA-Templates-and-Resources">Templates</a>
-</p>
+This portfolio follows an eight-project roadmap I designed to mirror real studio workflows. Each project includes a clear goal, a complete practical QA workbook, Jira workflow, evidence clips and scxreenshots, and a concise STAR summary — focusing on reproducible bugs, readable documentation, and player-centred quality.
 
 ---
 
