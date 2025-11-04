@@ -128,7 +128,19 @@ Brief note connecting this project to your current Jira course learnings (board 
 | 04 | Pause/Join In: Enter opens Join In & disables controller input (only Enter/Esc work) | High | 3/3 | <a href="https://www.youtube.com/watch?v=CXFI2a6DEpM" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/CXFI2a6DEpM/hqdefault.jpg" alt="Bug 04 video" width="140"></a> |
 
 <details>
-  <summary><strong>Show inline videos</strong> (expand to watch on the page)</summary>
+  <summary>
+    <span style="
+      display:inline-block;
+      padding:10px 14px;
+      border:1px solid #d0d7de;
+      border-radius:8px;
+      background:#f6f8fa;
+      font-weight:600;
+      font-size:14px;
+      line-height:1;
+      cursor:pointer;
+    ">▶ Show inline videos</span>
+  </summary>
 
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0"
