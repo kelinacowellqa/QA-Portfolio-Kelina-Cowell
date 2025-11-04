@@ -28,118 +28,134 @@ Each project demonstrates practical testing disciplines — from bug documentati
 <section markdown="1" class="project-block">
 
 ### 1️: Functional Testing – *Battletoads (Gamepass PC)*
-**Goal:** Showcase core QA fundamentals — bug hunting, documentation clarity, and gameplay analysis.  
-**Focus:** Gameplay logic · UI · Audio · Performance  
-**Tools:** Jira + Google Sheets Test Plan  
-**Deliverables:** Bug report samples · Summary sheet · Annotated screenshots  
-**Result:** Identified 25 unique gameplay and quest logic bugs, improving UI flow clarity in menu systems.  
-🕹️ *Why this game:* A classic QA stress test — big, buggy, and instantly recognisable.
+**Goal:** Make sure the core gameplay works and log clear, repeatable bugs with sensible severity — with a special focus on keyboard ↔ controller hand-off.  
+**Focus:** Gameplay logic · UI/menus · Input (keyboard/controller) · Audio cues · Performance sanity  
+**Tools:** Jira · Google Sheets QA Workbook · Xbox Game Bar / OBS  
+**Deliverables:** QA Workbook (Sheets + PDF) · Evidence videos (YouTube) · Jira board + verified thumbnails  
+**Result:** Overall stable, but uncovered **4 high-impact input/hand-off defects** around Pause/Join-In/Resume — all **16/16** reproducible with video evidence.  
+🕹️ *Why this game:* A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
 [Read the case study →](projects/battletoads/)
 
 </section>
 
 <section markdown="1" class="project-block">
 
-### 2️: Exploratory Testing – *Stardew Valley (Mobile / PC)*
-**Goal:** Demonstrate creativity and adaptability across devices.  
-**Focus:** Device compatibility · Screen scaling · Input responsiveness  
-**Tools:** Mobile test plan spreadsheet + screenshots  
-**Deliverables:** Session logs · Issue list · Device comparison chart  
-**Result:** Discovered layout inconsistencies and latency issues across multiple screen ratios.  
-🕹️ *Why this game:* A beloved indie title that shows analytical testing for casual players.
+### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
+**Goal:** Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
+**Focus:** Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage  
+**Tools:** Google Sheets session charters & notes · On-device screen recordings (iOS/Android) · Network throttling (Airplane/Low-bandwidth) · Device matrix  
+**Deliverables:** Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
+**Result:** In progress — early passes are mapping risks across device classes and network conditions.  
+🕹️ *Why this game:* Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
+
+**Coming soon:** full case study page with evidence, risk map, and metrics.
 
 </section>
 
 <section markdown="1" class="project-block">
 
-### 3️: Regression Testing – *The Sims 4 (Console / PC)*
-**Goal:** Demonstrate disciplined retesting and verification after fixes.  
-**Focus:** Save/load systems · Controller mapping · UI scaling  
-**Tools:** Simple bug tracker + before/after test notes  
-**Deliverables:** Regression log · Verification report · Screenshots  
-**Result:** Re-tested 18 resolved issues; verified 15 as fixed, logged 3 regressions.  
-🕹️ *Why this game:* Constantly patched; mirrors real-world QA cycles.
+### 3: Regression Testing – *Sworn (PC)*
+**Goal:** Re-test recent fixes to confirm they hold up and catch any side-effects before release.  
+**Focus:** Save/load integrity · Input/control mapping · UI scaling & readability · Patch-notes verification  
+**Tools:** Jira regression suite · Before/after evidence clips · Build notes  
+**Deliverables:** Regression log · Verification matrix · Before/after screenshots & short videos  
+**Result:** In progress — working through the first patch set and tracking any reopens or knock-on issues.  
+🕹️ *Why this game:* Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
+
+**Coming soon:** full case study page with verification matrix, before/after clips, and regression metrics.
 
 </section>
 
 <section markdown="1" class="project-block">
 
-### 4️: Cross-Platform QA – *Asgard’s Wrath 2 (VR vs PC)*
-**Goal:** Highlight awareness of VR-specific QA — comfort, immersion, tracking accuracy.  
-**Focus:** Performance stability · Motion comfort · Boundary issues  
-**Tools:** Google Sheets test log + PowerPoint summary deck  
-**Deliverables:** Comparative test results · Comfort report · Screenshots  
-**Result:** Compared VR and PC performance; identified 5 immersion-breaking bugs tied to headset tracking.  
-🕹️ *Why this game:* Leverages my Quest 3 experience — rare and valuable QA coverage.
+### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
+**Goal:** Show VR-specific QA awareness — comfort, tracking stability, and parity between standalone and PCVR.  
+**Focus:** Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes  
+**Tools:** Google Sheets session charters & test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side comparison notes  
+**Deliverables:** Comfort checklist (ratings) · Tracking test results · Parity comparison clips/screens · Issue list with risk tags  
+**Result:** In progress — building like-for-like runs on headset and PCVR, logging any comfort dips, judder, or interaction/visual parity gaps.  
+🕹️ *Why this game:* A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
+
+**Coming soon:** full case study page with comfort metrics, frame-timing snapshots, and a parity gallery.
 
 </section>
 
 <section markdown="1" class="project-block">
 
-### 5️: Input QA – *Hades (PC w/ Xbox Controller via Cloud)*
-**Goal:** Simulate console QA workflows via cloud input testing.  
-**Focus:** Controller mapping · Latency · UI feedback · Input compatibility  
-**Tools:** Excel or Notion test plan + annotated screenshots  
-**Deliverables:** Input response matrix · Latency notes · Issue report  
-**Result:** Logged responsiveness discrepancies and UI input mismatches.  
-🕹️ *Why this game:* Stylish, fast-paced title — perfect for controller QA precision.
+### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
+**Goal:** Validate controller responsiveness and ensure input mappings behave consistently across devices and contexts.  
+**Focus:** Mapping parity (Xbox/PlayStation layouts) · Latency & responsiveness · Haptics/rumble cues · UI prompts vs. active device · Keyboard/controller hand-off · Rebinds & edge cases  
+**Tools:** Google Sheets test matrix · Input latency notes (video timestamps) · OBS/Game Bar captures · Controller layout references  
+**Deliverables:** Input mapping matrix · Latency observations with clips · Mismatch log (prompts vs. device) · Rebind test results  
+**Result:** In progress — building parity checks and timing captures across menus, gameplay, and pause/overlay states.  
+🕹️ *Why this game:* Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
+
+**Coming soon:** full case study page with mapping matrix, timing clips, and parity findings.
+
+</section>
+
+<section markdown="1" class="project-block">
+  
+### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
+**Goal:** Check that dialogue, subtitles, and UI text read naturally and stay in sync on mobile — no typos, timing slips, or speaker mix-ups.  
+**Focus:** Subtitle timing & sync · Line breaks/overflow · Speaker tags · Tone/idiom checks · Punctuation & typography · UI text legibility · Locale/device language behaviour  
+**Tools:** Google Sheets script log & timing notes · On-device screen recordings (Android) · Style/terminology checklist · Font/size legibility checks  
+**Deliverables:** Subtitle timing log · Text/typo issue list with screenshots · Style/terminology notes · Short evidence clips  
+**Result:** In progress — mapping dialogue-heavy scenes, checking subtitle pacing against VO/SFX, and flagging any truncation or misattribution.  
+🕹️ *Why this game:* Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
+
+**Coming soon:** full case study page with timing examples, before/after text fixes, and readability findings across devices.
 
 </section>
 
 <section markdown="1" class="project-block">
 
-### 6️: Narrative & Localization Testing – *Life Is Strange (PC)*
-**Goal:** Evaluate subtitle accuracy, dialogue timing, and tone consistency.  
-**Focus:** Subtitle sync · Typo spotting · Emotional tone  
-**Tools:** Google Sheets bug list + screenshots or short video clips  
-**Deliverables:** Localization report · Timing log · Tone assessment sheet  
-**Result:** Logged 12 subtitle mismatches and dialogue trigger delays, improving narrative pacing and player immersion.  
-🕹️ *Why this game:* Combines creative sensitivity with technical QA discipline.
+### 8️: Automation Testing – *PowerWash Simulator (PC)*
+**Goal:** Demonstrate early automation skills by scripting repeatable checks and quick regressions on core flows.  
+**Focus:** Launch → menu → job select smoke · Settings persistence · Save/load state · Input macro checks (KB/mouse/controller) · Simple visual comparisons for “clean/dirty” states  
+**Tools:** Lightweight scripts (AutoHotkey/Python) · Timed input macros · OBS for capture · (Trial) image-compare snapshots for before/after  
+**Deliverables:** Smoke macro scripts · Regression checklist · Short evidence clips · Comparison snapshots  
+**Result:** In progress — first smoke passes cover launch-to-job select and settings persistence; exploring image comparisons to sanity-check “clean” completion states.  
+🕹️ *Why this game:* Clear, repeatable loops make it ideal for simple automation and quick regression validation without full engine hooks.
 
-</section>
+**Coming soon:** full case study page with scripts, run logs, and before/after comparisons.
 
 ---
 
 ## ✅ Coverage Map
 
-| Project | QA Type | Platform | Focus |
-|----------|----------|-----------|--------|
-| Skyrim | Functional | PC | Technical |
-| Stardew Valley | Exploratory | Mobile / PC | Creative |
-| The Sims 4 | Regression | Console / PC | Systematic |
-| Asgard’s Wrath 2 | Cross-Platform | VR / PC | Immersive |
-| Hades | Input QA | Cloud / Controller | Precision |
-| Life Is Strange | Narrative / Localization | PC / Multi | Creative |
+| Project              | QA Type                      | Platform            | Focus                                     | Status        |
+|----------------------|------------------------------|---------------------|-------------------------------------------|---------------|
+| Battletoads          | Functional                   | PC (Game Pass)      | Core flows · Input ownership · UI/menus   | Live          |
+| Rebel Racing         | Exploratory & Edge-Case      | Mobile              | Scaling · Touch · Interruptions · Network | Coming soon   |
+| Sworn                | Regression                   | PC                  | Save/load · Input mapping · UI scaling    | Coming soon   |
+| Shadow Point         | Cross-Platform (VR & PCVR)   | VR / PCVR           | Comfort · Tracking · Parity               | Coming soon   |
+| Recompile            | Cross-Platform Input         | PC / Controller     | Mapping parity · Latency · Prompts        | Coming soon   |
+| Oxenfree             | Narrative / Localisation     | Netflix Mobile      | Subtitles · Timing · Readability          | Coming soon   |
+| PowerWash Simulator  | Automation                   | PC                  | Smoke scripts · Regression checks         | Coming soon   |
 
 ---
 
 ## 🧰 Tools Used
-JIRA · Trello · Google Sheets · Excel · OBS · Notion · PowerPoint  
+- **Planning & tracking:** Jira · GitHub
+- **Docs & data:** Google Sheets (QA workbook)
+- **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording
+- - **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
+- **Automation (PowerWash):** AutoHotkey · Python (light scripts)
 
 ---
-
 ## 🧠 Skills
-Functional Testing · Exploratory Testing · Regression Testing · Cross-Platform QA · Input QA · Bug Reporting · Test Case Design · Narrative QA · Player Experience Testing  
+- **Core QA:** Functional · Exploratory & edge-case · Regression
+- **Platforms:** PC · Mobile · VR/PCVR · Controller/keyboard parity
+- **Specialisms:** Input QA · Narrative/localisation · Player experience
+- **Test design:** Test cases · Session charters · Risk/priority tagging
+- **Execution:** Clear repro steps · Evidence capture (video) · Jira workflows
+- **Automation (early):** Simple scripts/macros for smoke & regression
 
 ---
 
 ## 🌟 Summary
-This portfolio demonstrates practical QA experience across multiple platforms — showing how strong documentation, attention to detail, and clear communication lead to better player experiences.  
-
-I’m passionate about combining **testing discipline** with **creative insight**, and I’m always looking to refine my approach to make games smoother, clearer, and more immersive.  
-
----
-
-## 🧩 Additional QA Repositories
-
-If you'd like to explore more of my QA documentation and resources, you can find them here:
-
-| Repository | Description |
-|-------------|-------------|
-| 🧪 [Functional Testing Examples](https://github.com/kelinacowellqa/Functional-Testing-Examples) | Structured test plans, bug sheets, and validation workflows. |
-| 🔍 [Exploratory Testing Sessions](https://github.com/kelinacowellqa/Exploratory-Testing-Sessions) | Freeform session logs and qualitative gameplay analysis. |
-| 🪲 [Bug Report Samples](https://github.com/kelinacowellqa/Bug-Reports-Samples) | Reproducible defect reports showing communication and clarity. |
-| 🧰 [QA Templates & Resources](https://github.com/kelinacowellqa/QA-Templates-and-Resources) | My personal QA toolkit — reusable templates, checklists, and documentation standards. |
+I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer, more enjoyable games.
 
 ---
 
@@ -148,12 +164,12 @@ If you'd like to explore more of my QA documentation and resources, you can find
 🔗 [LinkedIn](https://www.linkedin.com/in/kelina-cowell-qa-tester)  
 📧 kelinacowell.qa@gmail.com  
 
-
 ---
 
-📫 **Connect with Me**
-[💼 LinkedIn – Kelina Cowell](https://www.linkedin.com/in/kelina-cowell)  
-🎮 *Multiplatform Games Tester | QA Enthusiast | Player Experience Advocate*  
+## 📎 Disclaimer
+This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.
+
+
 
 
 
