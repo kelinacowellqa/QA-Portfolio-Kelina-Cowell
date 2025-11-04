@@ -1,5 +1,5 @@
 <p>
-  <img src="./media/battletoads_header_1600.jpg"
+  <img src="./media/battletoads_header.jpg"
        alt="Battletoads — cover"
        style="width:100%;max-width:980px;height:240px;object-fit:cover;border-radius:12px;display:block;margin:0 auto;">
 </p>
