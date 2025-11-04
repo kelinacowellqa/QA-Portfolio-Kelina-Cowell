@@ -28,9 +28,8 @@ Validate core gameplay flows and document reproducible defects with clear severi
 
 * Test plan (Google Sheets)
 * Bug report (PDF)
-* Evidence screenshots
-* Evidence video (YouTube)
-* Jira workflow / board screenshot
+* Evidence videos (YouTube)
+* Jira workflow / board screenshots
 * STAR summary
 
 ---
@@ -39,13 +38,11 @@ Validate core gameplay flows and document reproducible defects with clear severi
 
 | Metric            | Value |
 | :---------------- | :---- |
-| Total Bugs Logged |       |
-| Critical          |       |
-| Major             |       |
-| Minor             |       |
-| Repro Consistency |       |
-
-> Replace values with your actual counts from the board/report.
+| Total Bugs Logged |   4    |
+| Critical          |   0    |
+| Major             |    4  |
+| Minor             |   0    |
+| Repro Consistency |    **100%** (16/16 across 4 issues)   |
 
 ---
 
@@ -57,13 +54,26 @@ Validate core gameplay flows and document reproducible defects with clear severi
 
 **Action:**  Built a test plan, executed the suite daily, captured repro video with Xbox Game Bar/OBS, and logged defects in Jira with clear titles, steps, and evidence.
 
-**Result:**  Surface-level stability is good, but testing revealed several high-impact defects blocking keyboard-only play and local co-op start; findings are prioritised and linked with clips for rapid triage.
+**Result:**  All four issues were fully reproducible (**16/16 attempts**), with clear evidence clips for each.
+
 
 ---
 
 ## ⚙ Jira & Agile Practice
 
-Brief note connecting this project to your current Jira course learnings (board setup, transitions, evidence attachments, etc.).
+I applied fundamentals from two beginner Jira courses to keep this project structured and evidence-driven.
+
+- **Intro to JIRA (Simplilearn):** Set up a clean board and project from scratch, defined issue types, and used attachments/comments for evidence (short clips + screenshots). This kept every defect self-contained and easy to triage.
+- **Get Started with Jira (Coursera):** Built a Kanban workflow with clear transitions (To Do → In Progress → Blocked → Verified), added simple WIP limits, and used labels (e.g., `pc-gamepass`, `test-execution`) so the board stayed filterable during runs.
+
+**Practice in this project**
+- Created issues directly from test runs, attaching repro clips and exact steps.
+- Used **Blocked** to surface input-ownership problems quickly, then moved to **Verified** with video proof after re-test.
+- Maintained short, consistent titles so tickets were scannable on the board and in the README.
+
+**Certificates**
+- [Intro to JIRA — certificate](../../jira_training/screenshots/intro-to-jira_simplilearn_cert.png)
+- [Get Started with Jira — certificate](../../jira_training/screenshots/get-started-with-jira_coursera_cert.png)
 
 ---
 
@@ -128,6 +138,8 @@ Brief note connecting this project to your current Jira course learnings (board 
 | 03 | Pause menu keyboard/controller hand-off | High | 3/3 | <a href="https://www.youtube.com/watch?v=EJFduFM28Is" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/EJFduFM28Is/hqdefault.jpg" alt="Bug 03 video" width="140"></a> |
 | 04 | Pause/Join In: Enter opens Join In & disables controller input (only Enter/Esc work) | High | 3/3 | <a href="https://www.youtube.com/watch?v=CXFI2a6DEpM" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/CXFI2a6DEpM/hqdefault.jpg" alt="Bug 04 video" width="140"></a> |
 
+<sub>Repro totals = sum of all successful attempts ÷ sum of attempts (e.g., 5/5 + 5/5 + 3/3 + 3/3 = 16/16 = 100%).</sub>
+
 <details>
   <summary>
     <span style="
@@ -181,12 +193,9 @@ Brief note connecting this project to your current Jira course learnings (board 
 
 ## 🧩 Lessons Learned
 
-One to two concise insights on documentation clarity, reproducibility, or workflow.
+- Clear steps beat clever wording — they made my re-tests painless.
+- Input hand-off needed its own checks; that’s where the real bugs were.
+- Short videos did the heavy lifting when explaining severity.
 
 ---
 
-## 🔗 Related Files
-
-* [`bug_reports/`](./bug_reports/)
-* [`jira_workflow/`](./jira_workflow/)
-* [`media/`](./media/)
