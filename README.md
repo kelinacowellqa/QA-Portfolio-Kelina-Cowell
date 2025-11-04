@@ -34,6 +34,7 @@ Each project demonstrates practical testing disciplines — from bug documentati
 **Deliverables:** Bug report samples · Summary sheet · Annotated screenshots  
 **Result:** Identified 25 unique gameplay and quest logic bugs, improving UI flow clarity in menu systems.  
 🕹️ *Why this game:* A classic QA stress test — big, buggy, and instantly recognisable.
+[Read the case study →](projects/battletoads/)
 
 </section>
 
