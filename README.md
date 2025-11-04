@@ -18,12 +18,15 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <section markdown="1" class="project-block">
 
 ### 1️: Functional Testing – *Battletoads (Gamepass PC)*
+
 **Goal:** Make sure the core gameplay works and log clear, repeatable bugs with sensible severity — with a special focus on keyboard ↔ controller hand-off.  
 **Focus:** Gameplay logic · UI/menus · Input (keyboard/controller) · Audio cues · Performance sanity  
 **Tools:** Jira · Google Sheets QA Workbook · Xbox Game Bar / OBS  
 **Deliverables:** QA Workbook (Sheets + PDF) · Evidence videos (YouTube) · Jira board + verified thumbnails  
-**Result:** Overall stable, but uncovered **4 high-impact input/hand-off defects** around Pause/Join-In/Resume — all **16/16** reproducible with video evidence.  
-🕹️ *Why this game:* A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
+**Result:** Overall stable, but uncovered **4 high-impact input/hand-off defects** around Pause/Join-In/Resume — all **16/16** reproducible with video evidence. 
+
+🕹️ *Why this game?* A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
+
 [Read the case study →](projects/battletoads/)
 
 </section>
@@ -110,7 +113,9 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 **Coming soon:** full case study page with scripts, run logs, and before/after comparisons.
 
----
+</section>
+
+<section markdown="1" class="project-block">
 
 ## ✅ Coverage Map
 
@@ -124,7 +129,9 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 | Oxenfree             | Narrative / Localisation     | Netflix Mobile      | Subtitles · Timing · Readability          | Coming soon   |
 | PowerWash Simulator  | Automation                   | PC                  | Smoke scripts · Regression checks         | Coming soon   |
 
----
+</section>
+
+<section markdown="1" class="project-block">
 
 ## 🧰 Tools Used
 - **Planning & tracking:** Jira · GitHub
@@ -133,7 +140,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 - - **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
 - **Automation (PowerWash):** AutoHotkey · Python (light scripts)
 
----
+</section>
+
+<section markdown="1" class="project-block">
+
 ## 🧠 Skills
 - **Core QA:** Functional · Exploratory & edge-case · Regression
 - **Platforms:** PC · Mobile · VR/PCVR · Controller/keyboard parity
@@ -142,19 +152,25 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 - **Execution:** Clear repro steps · Evidence capture (video) · Jira workflows
 - **Automation (early):** Simple scripts/macros for smoke & regression
 
----
+</section>
+
+<section markdown="1" class="project-block">
 
 ## 🌟 Summary
 I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer, more enjoyable games.
 
----
+</section>
+
+<section markdown="1" class="project-block">
 
 ## 🍀 Connect
 **Kelina Cowell – Multiplatform Games Tester**  
 🔗 [LinkedIn](https://www.linkedin.com/in/kelina-cowell-qa-tester)  
 📧 kelinacowell.qa@gmail.com  
 
----
+</section>
+
+<section markdown="1" class="project-block">
 
 ## 📎 Disclaimer
 This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.
