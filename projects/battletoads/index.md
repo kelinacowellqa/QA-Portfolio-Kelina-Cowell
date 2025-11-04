@@ -73,8 +73,27 @@ Brief note connecting this project to your current Jira course learnings (board 
 |:-----------------------------------|:------------|
 | **QA Workbook (Google Sheets)**    | [Open Workbook](https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing) |
 | **QA Workbook (PDF Export)**       | [Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf](./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf) |
-| Jira Board Screenshots              | ### Jira Board (Overview)
-<img src="./jira_workflow/battletoads_jira_board_overview.png" alt="Battletoads QA board overview — To Do, Blocked, In Progress, Verified columns" width="900" />
+| Jira Board Screenshots              | ### Jira Board — Verified (thumbnails)
+
+<table>
+  <tr>
+    <td><a href="./jira_workflow/battletoads_jira_board_verified.png">
+      <img src="./jira_workflow/battletoads_jira_board_verified.png" alt="Verified cards – set 1" width="260"></a></td>
+    <td><a href="./jira_workflow/battletoads_jira_board_verified2.png">
+      <img src="./jira_workflow/battletoads_jira_board_verified2.png" alt="Verified cards – set 2" width="260"></a></td>
+    <td><a href="./jira_workflow/battletoads_jira_board_verified3.png">
+      <img src="./jira_workflow/battletoads_jira_board_verified3.png" alt="Verified cards – set 3" width="260"></a></td>
+  </tr>
+  <tr>
+    <td><a href="./jira_workflow/battletoads_jira_board_verified4.png">
+      <img src="./jira_workflow/battletoads_jira_board_verified4.png" alt="Verified cards – set 4" width="260"></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<sub>Click any thumbnail to view the full-size image.</sub>
+
  |
 | Workflow Screenshot                | [workflow.png](./jira_workflow/workflow.png) |
 | Video Clip (YouTube)               | [Watch evidence clip](https://www.youtube.com/...) |
