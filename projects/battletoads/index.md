@@ -1,7 +1,6 @@
 # 🎮 Battletoads — Functional Testing (PC Game Pass)
 
-[⬅ Back to Portfolio Home](QA-Portfolio-Kelina-Cowell
-/index.md)
+[⬅ Back to Portfolio Home](QA-Portfolio-Kelina-Cowell/index.md)
 
 **Studio:** Dlala Studios / Rare
 **Platform:** PC (Game Pass)
