@@ -80,6 +80,7 @@ Brief note connecting this project to your current Jira course learnings (board 
        alt="Battletoads QA board overview — To Do, Blocked, In Progress, Verified"
        style="max-width:100%; width:900px;">
 </a>
+
 ### Jira Board — Verified (thumbnails)
 
 <table>
