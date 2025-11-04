@@ -115,7 +115,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+---
 
 ## ✅ Coverage Map
 
