@@ -147,7 +147,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 - **Docs & data:** Google Sheets (QA workbook)
 - **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording
 - **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
-- **Automation (PowerWash):** AutoHotkey · Python (light scripts)
+- **Automation:** AutoHotkey · Python (light scripts)
 
 ---
 
