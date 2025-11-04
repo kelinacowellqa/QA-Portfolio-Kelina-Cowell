@@ -1,13 +1,3 @@
----
-
-# Minimal front‑matter ensures GitHub Pages renders this Markdown as HTML.
-
-# You can keep just the first and last lines if you prefer.
-
-layout: default
-title: "Battletoads — Functional Testing (PC Game Pass)"
---------------------------------------------------------
-
 # 🎮 Battletoads — Functional Testing (PC Game Pass)
 
 [⬅ Back to Portfolio Home](/index.md)
