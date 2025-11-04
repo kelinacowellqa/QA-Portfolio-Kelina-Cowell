@@ -49,12 +49,15 @@ Validate core gameplay flows and document reproducible defects with clear severi
 
 ---
 
-## 🧠 STAR Summary
+## 🧠 STAR SUMMARY – Battletoads QA (PC Game Pass)
 
-**Situation:**
-**Task:**
-**Action:**
-**Result:**
+**Situation:** One-week functional test of Battletoads on Win11, Game Pass build 1.1F.42718, 1920×1080@144Hz, Xbox-layout controllers + keyboard.
+
+** Task:**  Validate core gameplay logic, UI flow, input handling (keyboard/controller focus), audio cues, and basic performance.
+
+** Action:**  Built a test plan, executed the suite daily, captured repro video with Xbox Game Bar/OBS, and logged defects in Jira with clear titles, steps, and evidence.
+
+** Result:**  Surface-level stability is good, but testing revealed several high-impact defects blocking keyboard-only play and local co-op start; findings are prioritised and linked with clips for rapid triage.
 
 ---
 
