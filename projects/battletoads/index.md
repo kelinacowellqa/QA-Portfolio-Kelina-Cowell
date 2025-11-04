@@ -160,7 +160,7 @@ details[open] .details-btn::before{ content:"▼ "; }
 <details id="inline-videos">
   <summary><span class="details-btn">Show inline videos</span></summary>
 
-  <p><em>If you’re viewing this on <strong>github.com</strong>, embeds may not display. 
+  <p><em>If you’re viewing this on github.com, embeds may not display. 
   Use the thumbnails/links above or open this page on the published site (GitHub Pages) to watch inline.</em></p>
 
   <div class="embed">
