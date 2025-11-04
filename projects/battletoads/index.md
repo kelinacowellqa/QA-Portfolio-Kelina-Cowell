@@ -73,7 +73,9 @@ Brief note connecting this project to your current Jira course learnings (board 
 |:-----------------------------------|:------------|
 | **QA Workbook (Google Sheets)**    | [Open Workbook](https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing) |
 | **QA Workbook (PDF Export)**       | [Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf](./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf) |
-| Jira Board Screenshot              | [jira_board_sprint1.png](./jira_workflow/jira_board_sprint1.png) |
+| Jira Board Screenshots              | ### Jira Board (Overview)
+<img src="./jira_workflow/battletoads_jira_board_overview.png" alt="Battletoads QA board overview — To Do, Blocked, In Progress, Verified columns" width="900" />
+ |
 | Workflow Screenshot                | [workflow.png](./jira_workflow/workflow.png) |
 | Video Clip (YouTube)               | [Watch evidence clip](https://www.youtube.com/...) |
 | Key Bug Screenshot 1               | [bug_01.png](./media/bug_01.png) |
