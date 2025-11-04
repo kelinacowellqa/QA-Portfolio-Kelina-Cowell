@@ -73,22 +73,45 @@ Brief note connecting this project to your current Jira course learnings (board 
 |:-----------------------------------|:------------|
 | **QA Workbook (Google Sheets)**    | [Open Workbook](https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing) |
 | **QA Workbook (PDF Export)**       | [Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf](./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf) |
-| Jira Board Screenshots              | ### Jira Board — Verified (thumbnails)
+| Jira Board Screenshots              | ### ### Jira Board — Overview
+
+<a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank">
+  <img src="./jira_workflow/battletoads_jira_board_overview.png"
+       alt="Battletoads QA board overview — To Do, Blocked, In Progress, Verified"
+       style="max-width:100%; width:900px;">
+</a>
+### Jira Board — Verified (thumbnails)
 
 <table>
   <tr>
-    <td><a href="./jira_workflow/battletoads_jira_board_verified.png">
-      <img src="./jira_workflow/battletoads_jira_board_verified.png" alt="Verified cards – set 1" width="260"></a></td>
-    <td><a href="./jira_workflow/battletoads_jira_board_verified2.png">
-      <img src="./jira_workflow/battletoads_jira_board_verified2.png" alt="Verified cards – set 2" width="260"></a></td>
-    <td><a href="./jira_workflow/battletoads_jira_board_verified3.png">
-      <img src="./jira_workflow/battletoads_jira_board_verified3.png" alt="Verified cards – set 3" width="260"></a></td>
-  </tr>
-  <tr>
-    <td><a href="./jira_workflow/battletoads_jira_board_verified4.png">
-      <img src="./jira_workflow/battletoads_jira_board_verified4.png" alt="Verified cards – set 4" width="260"></a></td>
-    <td></td>
-    <td></td>
+    <td>
+      <a href="./jira_workflow/battletoads_jira_board_verified.png" target="_blank">
+        <img src="./jira_workflow/battletoads_jira_board_verified.png"
+             alt="Verified – set 1"
+             style="width:160px; height:160px; object-fit:cover; border-radius:8px;">
+      </a>
+    </td>
+    <td>
+      <a href="./jira_workflow/battletoads_jira_board_verified2.png" target="_blank">
+        <img src="./jira_workflow/battletoads_jira_board_verified2.png"
+             alt="Verified – set 2"
+             style="width:160px; height:160px; object-fit:cover; border-radius:8px;">
+      </a>
+    </td>
+    <td>
+      <a href="./jira_workflow/battletoads_jira_board_verified3.png" target="_blank">
+        <img src="./jira_workflow/battletoads_jira_board_verified3.png"
+             alt="Verified – set 3"
+             style="width:160px; height:160px; object-fit:cover; border-radius:8px;">
+      </a>
+    </td>
+    <td>
+      <a href="./jira_workflow/battletoads_jira_board_verified4.png" target="_blank">
+        <img src="./jira_workflow/battletoads_jira_board_verified4.png"
+             alt="Verified – set 4"
+             style="width:160px; height:160px; object-fit:cover; border-radius:8px;">
+      </a>
+    </td>
   </tr>
 </table>
 
