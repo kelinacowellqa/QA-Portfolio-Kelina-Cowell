@@ -141,7 +141,6 @@ I applied fundamentals from two beginner Jira courses to keep this project struc
 <sub>Repro totals = sum of all successful attempts ÷ sum of attempts (e.g., 5/5 + 5/5 + 3/3 + 3/3 = 16/16 = 100%).</sub>
 
 <style>
-/* Button style */
 .details-btn{
   display:inline-block;padding:12px 18px;border-radius:12px;
   background:#0d1117;border:1px solid #2b2f36;
@@ -149,55 +148,49 @@ I applied fundamentals from two beginner Jira courses to keep this project struc
   box-shadow:0 2px 10px rgba(0,0,0,.25);cursor:pointer;
   transition:background .15s ease,color .15s ease;
 }
-/* Hover → teal background, black text */
 .details-btn:hover{ background:#14b8a6; color:#0b0f14; }
-/* Triangle icon + hide default marker */
-details summary { list-style:none; }
-details summary::-webkit-details-marker { display:none; }
+details summary{ list-style:none; }
+details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
+.embed{ position:relative; padding-top:56.25%; margin:12px 0; }
+.embed > iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
 </style>
 
-<details>
+<details id="inline-videos">
   <summary><span class="details-btn">Show inline videos</span></summary>
 
-  <!-- your iframe blocks here -->
+  <p><em>If you’re viewing this on <strong>github.com</strong>, embeds may not display. 
+  Use the thumbnails/links above or open this page on the published site (GitHub Pages) to watch inline.</em></p>
 
-</details>
-
-  <div style="position:relative;padding-top:56.25%;margin:12px 0;">
+  <div class="embed">
     <iframe src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0"
             title="Bug 01 — Pause: keyboard does not open Pause"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </div>
 
-  <div style="position:relative;padding-top:56.25%;margin:12px 0;">
+  <div class="embed">
     <iframe src="https://www.youtube.com/embed/5DZjJc4y_yA?modestbranding=1&rel=0"
             title="Bug 02 — Keyboard input ignored on Pause menu after controller use"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </div>
 
-  <div style="position:relative;padding-top:56.25%;margin:12px 0;">
+  <div class="embed">
     <iframe src="https://www.youtube.com/embed/EJFduFM28Is?modestbranding=1&rel=0"
             title="Bug 03 — Pause menu keyboard/controller hand-off"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </div>
 
-  <div style="position:relative;padding-top:56.25%;margin:12px 0;">
+  <div class="embed">
     <iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0"
             title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </div>
 </details>
-
 
 ---
 
