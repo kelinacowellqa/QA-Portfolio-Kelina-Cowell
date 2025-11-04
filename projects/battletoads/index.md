@@ -204,6 +204,10 @@ details[open] .details-btn::before{ content:"▼ "; }
 - Clear steps beat clever wording — they made my re-tests painless.
 - Input hand-off needed its own checks; that’s where the real bugs were.
 - Short videos did the heavy lifting when explaining severity.
+  
+  ## 📎 Disclaimer
+This is a personal, non-commercial portfolio project for learning and job-search purposes. I’m not affiliated with or endorsed by Dlala Studios, Rare, or Microsoft. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If something here needs to be removed or credited differently, please contact me and I’ll fix it promptly.
+
 
 ---
 
