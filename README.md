@@ -27,10 +27,10 @@ Each project demonstrates practical testing disciplines — from bug documentati
 
 <section markdown="1" class="project-block">
 
-### 1️: Functional Testing – *Skyrim (PC)*
+### 1️: Functional Testing – *Battletoads (Gamepass PC)*
 **Goal:** Showcase core QA fundamentals — bug hunting, documentation clarity, and gameplay analysis.  
 **Focus:** Gameplay logic · UI · Audio · Performance  
-**Tools:** Jira / Trello + Excel Test Plan  
+**Tools:** Jira + Google Sheets Test Plan  
 **Deliverables:** Bug report samples · Summary sheet · Annotated screenshots  
 **Result:** Identified 25 unique gameplay and quest logic bugs, improving UI flow clarity in menu systems.  
 🕹️ *Why this game:* A classic QA stress test — big, buggy, and instantly recognisable.
