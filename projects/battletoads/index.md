@@ -140,20 +140,30 @@ I applied fundamentals from two beginner Jira courses to keep this project struc
 
 <sub>Repro totals = sum of all successful attempts ÷ sum of attempts (e.g., 5/5 + 5/5 + 3/3 + 3/3 = 16/16 = 100%).</sub>
 
+<style>
+/* Button style */
+.details-btn{
+  display:inline-block;padding:12px 18px;border-radius:12px;
+  background:#0d1117;border:1px solid #2b2f36;
+  color:#14b8a6;font-weight:700;letter-spacing:.2px;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);cursor:pointer;
+  transition:background .15s ease,color .15s ease;
+}
+/* Hover → teal background, black text */
+.details-btn:hover{ background:#14b8a6; color:#0b0f14; }
+/* Triangle icon + hide default marker */
+details summary { list-style:none; }
+details summary::-webkit-details-marker { display:none; }
+.details-btn::before{ content:"▶ "; }
+details[open] .details-btn::before{ content:"▼ "; }
+</style>
+
 <details>
-  <summary>
-    <span style="
-      display:inline-block;
-      padding:10px 14px;
-      border:1px solid #d0d7de;
-      border-radius:8px;
-      background:#f6f8fa;
-      font-weight:600;
-      font-size:14px;
-      line-height:1;
-      cursor:pointer;
-    ">▶ Show inline videos</span>
-  </summary>
+  <summary><span class="details-btn">Show inline videos</span></summary>
+
+  <!-- your iframe blocks here -->
+
+</details>
 
   <div style="position:relative;padding-top:56.25%;margin:12px 0;">
     <iframe src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0"
