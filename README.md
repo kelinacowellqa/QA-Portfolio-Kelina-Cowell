@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
+<div class="container">
+  <!-- your markdown/HTML content goes here (sections, tables, etc.) -->
+</div>
+
 <div class="hero">
   <img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner" />
 </div>
