@@ -23,6 +23,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <section markdown="1" class="project-block">
 
+<img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
+
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
 <strong style="color:inherit">Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ↔ controller hand-off.  
