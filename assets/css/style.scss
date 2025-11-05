@@ -145,3 +145,37 @@ details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
 
+/* ===== Final polish: spacing + readability ===== */
+
+/* Give big sections breathing room */
+section, .section, .page-content { margin-bottom: 28px; }
+
+/* Space above/below horizontal rule */
+hr { margin: 18px 0; }
+
+/* Paragraph rhythm and max-width for long lines inside cards */
+p { line-height: 1.7; margin: 0 0 14px; }
+.project-block p { max-width: 78ch; } /* ~78 characters per line for readability */
+
+/* Card spacing so they don’t feel smushed */
+.project-block { margin: 26px auto; padding: 18px 22px; }
+.project-block + .project-block { margin-top: 34px; }
+
+/* Lists inside cards */
+.project-block ul, .project-block ol { margin: 8px 0 16px; padding-left: 1.2rem; }
+
+/* Headings: a touch more gap */
+h2, h3 { margin-top: 36px; margin-bottom: 12px; }
+
+/* Buttons row alignment below cards */
+.project-actions { margin-top: 14px; text-align: right; }
+
+/* Mobile refinements */
+@media (max-width: 760px) {
+  body > *:not(header):not(footer):not(.hero),
+  .markdown-body, .page-content, article, .post { padding-left: 14px; padding-right: 14px; }
+
+  .hero { margin: 22px auto 14px; }
+  .project-block { padding: 14px 16px; margin: 20px auto; border-radius: 10px; }
+  table { font-size: .95rem; }
+}
