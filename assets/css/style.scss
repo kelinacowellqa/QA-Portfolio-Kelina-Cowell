@@ -151,6 +151,11 @@ th { background: rgba(0,255,240,0.08); color: $teal; }
 .cta { text-align: center; margin: 40px 0 20px; }
 .cta .btn { margin: 0 6px 10px; }
 
+/* ✅ Override: left-align CTAs inside project cards only */
+.project-block .cta {
+  text-align: left;
+}
+
 /* NEW: CTA link-as-button (dark → teal invert on hover) */
 a.cta-btn{
   display:inline-block;
@@ -219,5 +224,4 @@ details summary{ list-style:none; }
 details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
-
 
