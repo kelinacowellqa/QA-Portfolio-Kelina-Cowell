@@ -12,10 +12,11 @@
   @media (max-width:680px){.grid-3{grid-template-columns:1fr}}
 </style>
 
-<p>
+<!-- Banner: show full image (no cropping) -->
+<p style="background:#0f1215;border-radius:12px;display:block;max-width:980px;margin:0 auto;padding:8px 0;">
   <img src="./media/battletoads_header.jpg"
        alt="Battletoads — cover"
-       style="width:100%;max-width:980px;height:240px;object-fit:cover;border-radius:12px;display:block;margin:0 auto;">
+       style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:10px;object-fit:contain;">
 </p>
 
 <h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
