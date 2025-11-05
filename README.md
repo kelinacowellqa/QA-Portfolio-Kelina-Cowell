@@ -27,8 +27,9 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 🕹️ **Why this game?** A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
 
-
-**[Read the case study →](projects/battletoads/)**
+<p class="cta">
+  <a class="cta-btn" href="./projects/battletoads/index.md">Read the case study →</a>
+</p>
 
 </section>
 
