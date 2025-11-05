@@ -34,15 +34,17 @@ hr {
   opacity: 0.35;
 }
 
+/* Optional teal highlight when desired */
+.accent { color: $teal !important; }
+
+/* Make all strong text inherit normal colour/size by default */
+strong { color: inherit; }
+
 /* ===============================
    HERO BANNER
    =============================== */
-.hero {
-  margin: 30px 0 20px 0;
-  text-align: center;
-}
+.hero { margin: 30px 0 20px; text-align: center; }
 
-/* Add the breathing animation back */
 .hero img,
 img[alt*="Portfolio Banner"] {
   display: block;
@@ -50,34 +52,24 @@ img[alt*="Portfolio Banner"] {
   height: auto;
   border-radius: 14px;
   margin: 0 auto 24px;
-  box-shadow:
-    0 18px 48px rgba(0,255,240,0.20),
-    0 8px 24px rgba(0,0,0,0.55);
+  box-shadow: 0 18px 48px rgba(0,255,240,0.20), 0 8px 24px rgba(0,0,0,0.55);
   outline: 1px solid rgba(255,255,255,0.03);
   animation: bannerGlow 4.5s ease-in-out infinite;
 }
 
-/* Breathing glow (synced to button pulse) */
 @keyframes bannerGlow {
   0%, 100% {
-    box-shadow:
-      0 14px 42px rgba(0,255,240,0.14),
-      0 6px 20px rgba(0,0,0,0.55);
+    box-shadow: 0 14px 42px rgba(0,255,240,0.14), 0 6px 20px rgba(0,0,0,0.55);
   }
   50% {
-    box-shadow:
-      0 22px 62px rgba(0,255,240,0.36),
-      0 10px 28px rgba(0,0,0,0.60);
+    box-shadow: 0 22px 62px rgba(0,255,240,0.36), 0 10px 28px rgba(0,0,0,0.60);
   }
 }
 
 /* ===============================
    QUICK NAV BUTTONS (PULSING)
    =============================== */
-.quick-nav {
-  text-align: center;
-  margin: 12px 0 26px;
-}
+.quick-nav { text-align: center; margin: 12px 0 26px; }
 
 .quick-nav .btn {
   display: inline-block;
@@ -98,24 +90,14 @@ img[alt*="Portfolio Banner"] {
   transform: translateY(-2px);
 }
 
-/* --- Slow pulsing glow animation --- */
 @keyframes pulseGlow {
   0%   { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
   50%  { box-shadow: 0 0 18px rgba(0,255,240,.55), 0 0 28px rgba(0,255,240,.20); }
   100% { box-shadow: 0 0 10px rgba(0,255,240,.25), 0 0 0 rgba(0,255,240,0); }
 }
-
-.pulse {
-  animation: pulseGlow 4.5s ease-in-out infinite; /* synced with banner */
-}
-
-.pulse:hover {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .pulse { animation: none !important; }
-}
+.pulse { animation: pulseGlow 4.5s ease-in-out infinite; }
+.pulse:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none !important; } }
 
 /* ===============================
    PROJECT LINEUP ENHANCEMENTS
@@ -124,14 +106,6 @@ h2, h3 {
   color: $teal !important;
   margin-top: 28px;
   margin-bottom: 10px;
-}
-
-p strong:first-child {
-  display: block;
-  font-size: 1.2em;
-  color: $teal;
-  margin-top: 18px;
-  margin-bottom: 8px;
 }
 
 /* Project card base style */
@@ -145,7 +119,6 @@ p strong:first-child {
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Smooth teal glow on hover (no movement) */
 .project-block:hover {
   border-color: rgba(0,255,240,0.35);
   box-shadow:
@@ -154,44 +127,29 @@ p strong:first-child {
     0 6px 24px rgba(0,0,0,0.45);
 }
 
-/* Style “🕹️ Why this game” lines */
-p:has(em) {
-  color: #ccc;
-  font-style: italic;
-  margin-top: 6px;
-  margin-bottom: 0;
+/* 🔧 FIX: labels like "Goal:" shouldn't look like headings */
+.project-block p > strong:first-child {
+  color: inherit;          /* keep normal text colour */
+  font-size: inherit;      /* prevent heading-like size */
+  display: inline;         /* stay inline with the sentence */
+  margin: 0;
 }
+
+/* Safer styling for the “Why this game” line */
+.project-block em { color: #cfcfcf; }
 
 /* ===============================
-   TABLES (TOOLS & SKILLS)
+   TABLES
    =============================== */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 12px 0;
-}
-
-th, td {
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 8px;
-}
-
-th {
-  background: rgba(0,255,240,0.08);
-  color: $teal;
-}
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid rgba(255,255,255,0.08); padding: 8px; }
+th { background: rgba(0,255,240,0.08); color: $teal; }
 
 /* ===============================
    CTA + FOOTER
    =============================== */
-.cta {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.cta .btn {
-  margin: 0 6px 10px;
-}
+.cta { text-align: center; margin: 40px 0 20px; }
+.cta .btn { margin: 0 6px 10px; }
 
 footer {
   text-align: center;
@@ -205,26 +163,32 @@ footer {
 /* ===============================
    MISC. STYLING
    =============================== */
-img {
-  border-radius: 10px;
-  transition: transform .12s ease-out;
-}
-
-img:hover {
-  transform: translateY(-1px);
-}
+img { border-radius: 10px; transition: transform .12s ease-out; }
+img:hover { transform: translateY(-1px); }
 
 a:focus-visible, .btn:focus-visible {
-  outline: 2px solid #00fff0 !important;
+  outline: 2px solid $teal !important;
   outline-offset: 2px;
   border-radius: 10px;
 }
 
 /* actions row inside project cards */
-.project-actions {
-  margin-top: 10px;
-  text-align: right;
-}
-
+.project-actions { margin-top: 10px; text-align: right; }
 .project-actions .btn { margin-left: 6px; }
+
+/* ===============================
+   DETAILS "BUTTON" (inline videos toggle)
+   =============================== */
+.details-btn{
+  display:inline-block;padding:12px 18px;border-radius:12px;
+  background:#0d1117;border:1px solid #2b2f36;
+  color:$teal;font-weight:700;letter-spacing:.2px;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);cursor:pointer;
+  transition:background .15s ease,color .15s ease;
+}
+.details-btn:hover{ background:$teal; color:#0b0f14; }
+details summary{ list-style:none; }
+details summary::-webkit-details-marker{ display:none; }
+.details-btn::before{ content:"▶ "; }
+details[open] .details-btn::before{ content:"▼ "; }
 
