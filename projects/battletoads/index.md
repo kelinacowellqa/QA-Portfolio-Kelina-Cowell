@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
 <p>
   <img src="./media/battletoads_header.jpg"
        alt="Battletoads — cover"
