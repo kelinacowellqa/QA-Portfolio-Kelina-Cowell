@@ -116,3 +116,21 @@ details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
 
+/* ===== LAYOUT CONTAINER (readable width) ===== */
+.container { max-width: 980px; margin: 0 auto; padding: 0 18px; }
+
+/* Apply a default readable width to typical content blocks */
+main, .page-content, .content, article, .post, section:not(.hero) {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* Hero can be a bit wider */
+.hero { max-width: 1100px; margin: 30px auto 20px; padding: 0 18px; }
+
+/* Make project cards align nicely within the container */
+.project-block { margin-left: auto; margin-right: auto; }
+
+/* Optional: improve paragraph readability */
+p { line-height: 1.6; }
