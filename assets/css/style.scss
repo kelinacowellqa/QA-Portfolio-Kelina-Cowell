@@ -210,6 +210,29 @@ body { outline: none !important; }
 /* remove teal dividers when inside the grid */
 .grid-3 hr{ display:none; }
 
+/* === Compact project cards (Manual QA home) === */
+.project-block{
+  max-width: 860px;        /* was full width; now pleasantly narrow */
+  margin: 18px auto 22px;  /* center + smaller gaps between cards */
+  padding: 14px 16px;      /* tighter padding */
+}
+
+/* Tighter text rhythm inside cards */
+.project-block p{ margin: 6px 0 8px; line-height: 1.5; }
+.project-block ul{ margin: 6px 0 10px; }
+.project-block li{ margin: 2px 0; }
+
+/* Title line within the card (e.g., "2: Exploratory & Edge-Case…") */
+.project-block h3, .project-block h2{
+  margin: 0 0 8px !important;  /* reduce big header top/bottom space */
+}
+
+/* Label rows like Goal/Focus/Tools/Result look less chunky */
+.project-block p > strong:first-child{
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
 /* spacing above/below the grid vs other sections */
 .grid-3 + h2, .grid-3 + .section { margin-top:28px; }
 
