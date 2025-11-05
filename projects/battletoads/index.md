@@ -1,14 +1,13 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v=3">
 
-<!-- Page-scoped CSS (3-column grid + neutral wrapper) -->
+<!-- Page-scoped CSS for the 3-column grid (single, clean block) -->
 <style>
-  .grid-3-wrapper{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;margin:14px 0 6px!important}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0;align-items:stretch}
-  .grid-3 .card{background:#0f1215;border:1px solid rgba(0,255,240,.15);border-radius:12px;padding:16px 18px;box-shadow:0 4px 20px rgba(0,0,0,.25);display:flex;flex-direction:column}
-  .grid-3 .card h3{color:#00fff0;margin:0 0 10px}
-  .grid-3 .card p{margin:0 0 6px}
-  .grid-3 .card ul{margin:6px 0 0;padding-left:1.1rem}
-  .grid-3 .card li{margin:4px 0}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:16px 0}
+  .card{background:#0f1215;border:1px solid rgba(0,255,240,.15);border-radius:12px;padding:16px 18px;box-shadow:0 4px 20px rgba(0,0,0,.25)}
+  .card h3{color:#00fff0;margin:0 0 10px}
+  .card p{margin:0 0 6px}
+  .card ul{margin:6px 0 0;padding-left:1.1rem}
+  .card li{margin:4px 0}
   @media (max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}
   @media (max-width:680px){.grid-3{grid-template-columns:1fr}}
 </style>
@@ -30,38 +29,36 @@
   </tbody>
 </table>
 
-<!-- === Three-up feature grid (no outer box) === -->
-<div class="grid-3-wrapper">
-  <div class="grid-3">
-    <section class="card">
-      <h3>🎯 Goal</h3>
-      <p>Demonstrate core QA fundamentals by validating key gameplay flows and documenting reproducible defects with clear severity and repro steps.</p>
-    </section>
+<!-- === Three-up feature grid (single block) === -->
+<div class="grid-3">
+  <section class="card">
+    <h3>🎯 Goal</h3>
+    <p>Demonstrate core QA fundamentals by validating key gameplay flows and documenting reproducible defects with clear severity and repro steps.</p>
+  </section>
 
-    <section class="card">
-      <h3>🧭 Focus Areas</h3>
-      <ul>
-        <li>Gameplay logic</li>
-        <li>UI / navigation</li>
-        <li>Input &amp; controller</li>
-        <li>Audio</li>
-        <li>Performance</li>
-      </ul>
-    </section>
+  <section class="card">
+    <h3>🧭 Focus Areas</h3>
+    <ul>
+      <li>Gameplay logic</li>
+      <li>UI / navigation</li>
+      <li>Input &amp; controller</li>
+      <li>Audio</li>
+      <li>Performance</li>
+    </ul>
+  </section>
 
-    <section class="card">
-      <h3>📄 Deliverables</h3>
-      <ul>
-        <li>Test plan (Google Sheets)</li>
-        <li>Bug report (PDF)</li>
-        <li>Evidence videos (YouTube)</li>
-        <li>Jira workflow / board screenshots</li>
-        <li>STAR summary</li>
-      </ul>
-    </section>
-  </div>
+  <section class="card">
+    <h3>📄 Deliverables</h3>
+    <ul>
+      <li>Test plan (Google Sheets)</li>
+      <li>Bug report (PDF)</li>
+      <li>Evidence videos (YouTube)</li>
+      <li>Jira workflow / board screenshots</li>
+      <li>STAR summary</li>
+    </ul>
+  </section>
 </div>
-<!-- === end three-up cards === -->
+<!-- === end grid === -->
 
 <h2>📊 Metrics</h2>
 <table>
@@ -140,6 +137,6 @@
   <tbody>
     <tr><td>01</td><td>Pause: keyboard (Esc/P) does not open Pause – controller Start works</td><td>High</td><td>5/5</td><td><a href="https://www.youtube.com/watch?v=2CAUt8gxH3M" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/2CAUt8gxH3M/hqdefault.jpg" alt="Bug 01 video" width="140"></a></td></tr>
     <tr><td>02</td><td>Keyboard input ignored on Pause menu after using controller</td><td>High</td><td>5/5</td><td><a href="https://www.youtube.com/watch?v=5DZjJc4y_yA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/5DZjJc4y_yA/hqdefault.jpg" alt="Bug 02 video" width="140"></a></td></tr>
-    <tr><td>03</td><td>Pause menu keyboard/controller hand-off</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=EJFduFM28Is" target="_blank" rel="noopener"><img src="https://img.youtube.com_
-
+    <tr><td>03</td><td>Pause menu keyboard/controller hand-off</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=EJFduFM28Is" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/EJFduFM28Is/hqdefault.jpg" alt="Bug 03 video" width="140"></a></td></tr>
+    <tr><td>04</td><td>Pause/Join In: Enter opens Join In &amp; disables controller input (only Enter/Esc work)</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=CXFI2a6DEpM" target="_blank" rel="noope_
 
