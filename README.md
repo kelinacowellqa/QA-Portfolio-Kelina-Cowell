@@ -34,9 +34,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
 
 <p class="cta">
-  <a class="cta-btn" href="[Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads
-/index.md](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/)
-">Read the case study →</a>
+  <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
 </p>
 
 </section>
