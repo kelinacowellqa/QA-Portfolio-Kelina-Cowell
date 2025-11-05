@@ -19,11 +19,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
-**Goal** — Validate core gameplay and document repeatable defects, with extra attention to keyboard ↔ controller hand-off.  
-**Focus** — Gameplay logic · UI/menus · Input parity · Audio cues · Performance sanity  
-**Tools** — Jira · Google Sheets QA workbook · Xbox Game Bar / OBS  
-**Deliverables** — QA workbook (Sheets + PDF) · Evidence videos (YouTube) · Jira board + verified thumbnails  
-**Result** — Stable overall; surfaced 4 high-impact input/hand-off issues around Pause/Join-In/Resume with 16/16 reproducible runs.
+<strong style="color:inherit">Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ↔ controller hand-off.  
+<strong style="color:inherit">Focus:</strong> Gameplay logic · UI/menus · Input parity · Audio cues · Performance sanity  
+<strong style="color:inherit">Tools:</strong> Jira · Google Sheets QA workbook · Xbox Game Bar / OBS  
+<strong style="color:inherit">Deliverables:</strong> QA workbook (Sheets + PDF) · Evidence videos (YouTube) · Jira board + verified thumbnails  
+<strong style="color:inherit">Result:</strong> Stable overall; surfaced 4 high-impact input/hand-off issues around Pause/Join-In/Resume with 16/16 reproducible runs.
 
 🕹️ **Why this game?** A fast, recognisable brawler that’s perfect for testing input ownership and local co-op edge cases.  
 
