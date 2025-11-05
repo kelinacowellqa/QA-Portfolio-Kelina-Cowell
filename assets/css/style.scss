@@ -262,3 +262,13 @@ body { outline: none !important; }
 
 @media (max-width:780px){ .grid-3{ grid-template-columns:1fr 1fr; } }
 @media (max-width:680px){ .grid-3{ grid-template-columns:1fr; } }
+
+.project-block .thumb{
+  width:140px; aspect-ratio:3/4; object-fit:cover;
+  border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.08);
+  float:right; margin:0 0 10px 16px;
+}
+@media (max-width:780px){
+  .project-block .thumb{ float:none; display:block; width:60%; max-width:260px; margin:0 auto 10px; }
+}
