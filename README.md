@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
 <div class="hero">
   <img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner" />
 </div>
