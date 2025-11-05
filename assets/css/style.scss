@@ -182,3 +182,38 @@ h2, h3 { margin-top: 36px; margin-bottom: 12px; }
 
 /* kill any leftover debug outline from cached CSS */
 body { outline: none !important; }
+
+/* === Reusable 3-column feature grid === */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin:18px 0 20px;
+  align-items:stretch;            /* equal height */
+}
+.card{
+  background:#0f1215;             /* matches $panel */
+  border:1px solid rgba(0,255,240,.15);
+  border-radius:12px;
+  padding:16px 18px;
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+  display:flex; flex-direction:column;
+}
+.card h3{
+  color:#00fff0;                  /* $teal */
+  margin:0 0 10px;
+}
+.card p{ margin:0 0 6px; }
+.card ul{ margin:6px 0 0; padding-left:1.1rem; }
+.card li{ margin:4px 0; }
+
+/* remove teal dividers when inside the grid */
+.grid-3 hr{ display:none; }
+
+/* spacing above/below the grid vs other sections */
+.grid-3 + h2, .grid-3 + .section { margin-top:28px; }
+
+/* Tablet/phone stacking */
+@media (max-width: 980px){ .grid-3{ grid-template-columns:1fr 1fr; } }
+@media (max-width: 680px){ .grid-3{ grid-template-columns:1fr; } }
+
