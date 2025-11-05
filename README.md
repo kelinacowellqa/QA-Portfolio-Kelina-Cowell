@@ -42,7 +42,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
 <strong style="color:inherit">Result:</strong> In progress — early passes are mapping risks across device classes and network conditions. 
 
-🕹️ *Why this game?* Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
+🕹️ **Why this game?** Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
 
 **Coming soon:** full case study page with evidence, risk map, and metrics.
 
@@ -58,7 +58,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Deliverables:</strong> Regression log · Verification matrix · Before/after screenshots & short videos  
 <strong style="color:inherit">Result:</strong> In progress — working through the first patch set and tracking any reopens or knock-on issues.  
 
-🕹️ *Why this game?* Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
+🕹️ **Why this game?** Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
 
 **Coming soon:** full case study page with verification matrix, before/after clips, and regression metrics.
 
@@ -74,7 +74,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Deliverables:</strong> Comfort checklist (ratings) · Tracking test results · Parity comparison clips/screens · Issue list with risk tags  
 <strong style="color:inherit">Result:</strong> In progress — building like-for-like runs on headset and PCVR, logging any comfort dips, judder, or interaction/visual parity gaps.  
 
-🕹️ *Why this game?* A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
+🕹️ **Why this game?** A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
 
 **Coming soon:** full case study page with comfort metrics, frame-timing snapshots, and a parity gallery.
 
@@ -90,7 +90,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Deliverables:</strong> Input mapping matrix · Latency observations with clips · Mismatch log (prompts vs. device) · Rebind test results  
 <strong style="color:inherit">Result:</strong> In progress — building parity checks and timing captures across menus, gameplay, and pause/overlay states.  
 
-🕹️ *Why this game?* Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
+🕹️ **Why this game?** Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
 
 **Coming soon:** full case study page with mapping matrix, timing clips, and parity findings.
 
@@ -105,7 +105,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Tools:</strong> Google Sheets script log & timing notes · On-device screen recordings (Android) · Style/terminology checklist · Font/size legibility checks  
 <strong style="color:inherit">Deliverables:</strong> Subtitle timing log · Text/typo issue list with screenshots · Style/terminology notes · Short evidence clips  
 <strong style="color:inherit">Result:</strong> In progress — mapping dialogue-heavy scenes, checking subtitle pacing against VO/SFX, and flagging any truncation or misattribution.  
-🕹️ *Why this game?* Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
+
+🕹️ **Why this game?** Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
 
 **Coming soon:** full case study page with timing examples, before/after text fixes, and readability findings across devices.
 
@@ -120,7 +121,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <strong style="color:inherit">Tools:</strong> Lightweight scripts (AutoHotkey/Python) · Timed input macros · OBS for capture · (Trial) image-compare snapshots for before/after  
 <strong style="color:inherit">Deliverables:</strong> Smoke macro scripts · Regression checklist · Short evidence clips · Comparison snapshots  
 <strong style="color:inherit">Result:</strong> In progress — first smoke passes cover launch-to-job select and settings persistence; exploring image comparisons to sanity-check “clean” completion states.  
-🕹️ *Why this game:* Clear, repeatable loops make it ideal for simple automation and quick regression validation without full engine hooks.
+
+🕹️ **Why this game?** Clear, repeatable loops make it ideal for simple automation and quick regression validation without full engine hooks.
 
 **Coming soon:** full case study page with scripts, run logs, and before/after comparisons.
 
