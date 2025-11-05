@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
+<div class="container">
+  <!-- your markdown/HTML content goes here (sections, tables, etc.) -->
+</div>
+
 <p>
   <img src="./media/battletoads_header.jpg"
        alt="Battletoads — cover"
