@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v=3">
 
-<!-- Page-scoped CSS for the 3-column grid (single, clean block) -->
+<!-- Page-scoped CSS (3-column grid) -->
 <style>
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:16px 0}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:16px 0;align-items:stretch}
   .card{background:#0f1215;border:1px solid rgba(0,255,240,.15);border-radius:12px;padding:16px 18px;box-shadow:0 4px 20px rgba(0,0,0,.25)}
   .card h3{color:#00fff0;margin:0 0 10px}
   .card p{margin:0 0 6px}
@@ -29,7 +29,7 @@
   </tbody>
 </table>
 
-<!-- === Three-up feature grid (single block) === -->
+<!-- Three-up feature grid -->
 <div class="grid-3">
   <section class="card">
     <h3>🎯 Goal</h3>
@@ -58,7 +58,7 @@
     </ul>
   </section>
 </div>
-<!-- === end grid === -->
+<!-- /grid -->
 
 <h2>📊 Metrics</h2>
 <table>
@@ -173,3 +173,4 @@
 
 <h2>📎 Disclaimer</h2>
 <p>This is a personal, non-commercial portfolio project for learning and recruitment purposes. I’m not affiliated with or endorsed by Dlala Studios, Rare, or Microsoft. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If something here needs to be removed or credited differently, please contact me and I’ll fix it promptly.</p>
+
