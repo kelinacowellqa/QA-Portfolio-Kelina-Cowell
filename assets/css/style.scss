@@ -151,6 +151,34 @@ th { background: rgba(0,255,240,0.08); color: $teal; }
 .cta { text-align: center; margin: 40px 0 20px; }
 .cta .btn { margin: 0 6px 10px; }
 
+/* NEW: CTA link-as-button (dark → teal invert on hover) */
+a.cta-btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:12px;
+  background:#0d1117;
+  border:1px solid #2b2f36;
+  color:$teal !important;                 /* override global a color */
+  font-weight:700;
+  letter-spacing:.2px;
+  text-decoration:none;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+  transition:background .15s ease, color .15s ease, transform .05s ease;
+}
+a.cta-btn:hover{
+  background:$teal;
+  color:#0b0f14 !important;               /* override global a:hover */
+}
+a.cta-btn:active{ transform:translateY(1px); }
+a.cta-btn:focus-visible{
+  outline:2px solid $teal !important;
+  outline-offset:3px;
+  box-shadow:0 0 0 4px rgba(0,255,240,.15);
+}
+
+/* Optional block variant */
+a.cta-btn.block{ display:block; width:max-content; }
+
 footer {
   text-align: center;
   font-size: 0.85em;
@@ -191,4 +219,5 @@ details summary{ list-style:none; }
 details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
+
 
