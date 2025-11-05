@@ -1,6 +1,5 @@
 ---
 ---
-
 /* ===============================
    HOUSE PALETTE (unified)
    =============================== */
@@ -24,15 +23,15 @@ html, body {
 }
 a { color: $teal !important; text-decoration: none; }
 a:hover { color: $teal-soft !important; }
-hr { border-color: $teal !important; opacity: .35; }
 strong { color: inherit; }
+hr { border-color: $teal !important; opacity: .35; margin: 18px 0; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6, .project-tagline { color: $teal !important; }
 h2, h3 { margin-top: 34px; margin-bottom: 12px; }
 
 /* ===============================
-   LAYOUT WIDTH (key fix)
+   LAYOUT WIDTH (readable)
    =============================== */
 .markdown-body,
 main, .page-content, .content, article, .post,
@@ -88,23 +87,50 @@ a:focus-visible, .btn:focus-visible { outline:2px solid $teal !important; outlin
 /* ===============================
    PROJECT CARDS
    =============================== */
-.project-block {
-  background:$panel; border:1px solid rgba(0,255,240,.15);
-  border-radius:12px; padding:16px 20px; margin:22px auto 28px;
+.project-block{
+  background:$panel;
+  border:1px solid rgba(0,255,240,.15);
+  border-radius:12px;
   box-shadow:0 4px 20px rgba(0,0,0,.25);
   transition: box-shadow .3s ease, border-color .3s ease;
+
+  /* compact sizing + readable width */
+  max-width: 860px;
+  margin: 22px auto;
+  padding: 16px 18px;
+
+  /* contains floated thumbnail */
+  overflow: auto;
 }
 .project-block + .project-block { margin-top: 30px; }
 .project-block:hover {
   border-color:rgba(0,255,240,.35);
   box-shadow:0 0 20px rgba(0,255,240,.25), 0 0 40px rgba(0,255,240,.15), 0 6px 24px rgba(0,0,0,.45);
 }
-/* keep "Goal:" etc. as inline text */
-.project-block p > strong:first-child { color:inherit; font-size:inherit; display:inline; margin:0; }
+/* keep "Goal:" etc. inline */
+.project-block p > strong:first-child { color:inherit; font-size:inherit; display:inline; margin:0 4px 0 0; white-space:nowrap; }
 .project-block em { color:$muted; }
-.project-actions { margin-top:10px; text-align:right; }
-.project-actions .btn { margin-left:6px; }
+.project-block p { margin: 6px 0 8px; line-height: 1.5; max-width: 78ch; }
+.project-block ul{ margin: 6px 0 10px; }
+.project-block li{ margin: 2px 0; }
+.project-block h3, .project-block h2{ margin: 0 0 8px !important; }
+.project-actions { margin-top: 14px; text-align: right; }
 .project-block .cta { text-align:left; }
+
+/* === Poster thumbnail inside project cards === */
+.project-block .thumb{
+  width:140px;              /* tweak to 120/160/180 as you like */
+  aspect-ratio:3/4;
+  object-fit:cover;
+  float:right;
+  margin:0 0 10px 16px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+@media (max-width:780px){
+  .project-block .thumb{ float:none; display:block; width:60%; max-width:260px; margin:0 auto 10px; }
+}
 
 /* ===============================
    TABLES
@@ -145,32 +171,36 @@ details summary::-webkit-details-marker{ display:none; }
 .details-btn::before{ content:"▶ "; }
 details[open] .details-btn::before{ content:"▼ "; }
 
-/* ===== Final polish: spacing + readability ===== */
+/* ===============================
+   REUSABLE 3-COLUMN FEATURE GRID
+   =============================== */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin:18px 0 20px;
+  align-items:stretch;
+}
+.card{
+  background:$panel;
+  border:1px solid rgba(0,255,240,.15);
+  border-radius:12px;
+  padding:16px 18px;
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+  display:flex; flex-direction:column;
+}
+.card h3{ color:$teal; margin:0 0 10px; }
+.card p{ margin:0 0 6px; }
+.card ul{ margin:6px 0 0; padding-left:1.1rem; }
+.card li{ margin:4px 0; }
+.grid-3 hr{ display:none; }
 
-/* Give big sections breathing room */
-section, .section, .page-content { margin-bottom: 28px; }
-
-/* Space above/below horizontal rule */
-hr { margin: 18px 0; }
-
-/* Paragraph rhythm and max-width for long lines inside cards */
-p { line-height: 1.7; margin: 0 0 14px; }
-.project-block p { max-width: 78ch; } /* ~78 characters per line for readability */
-
-/* Card spacing so they don’t feel smushed */
-.project-block { margin: 26px auto; padding: 18px 22px; }
-.project-block + .project-block { margin-top: 34px; }
-
-/* Lists inside cards */
-.project-block ul, .project-block ol { margin: 8px 0 16px; padding-left: 1.2rem; }
-
-/* Headings: a touch more gap */
-h2, h3 { margin-top: 36px; margin-bottom: 12px; }
-
-/* Buttons row alignment below cards */
-.project-actions { margin-top: 14px; text-align: right; }
-
-/* Mobile refinements */
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 980px){
+  .grid-3{ grid-template-columns:1fr 1fr; }
+}
 @media (max-width: 760px) {
   body > *:not(header):not(footer):not(.hero),
   .markdown-body, .page-content, article, .post { padding-left: 14px; padding-right: 14px; }
@@ -179,96 +209,9 @@ h2, h3 { margin-top: 36px; margin-bottom: 12px; }
   .project-block { padding: 14px 16px; margin: 20px auto; border-radius: 10px; }
   table { font-size: .95rem; }
 }
+@media (max-width: 680px){
+  .grid-3{ grid-template-columns:1fr; }
+}
 
-/* kill any leftover debug outline from cached CSS */
+/* kill any leftover debug outline */
 body { outline: none !important; }
-
-/* === Reusable 3-column feature grid === */
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:18px 0 20px;
-  align-items:stretch;            /* equal height */
-}
-.card{
-  background:#0f1215;             /* matches $panel */
-  border:1px solid rgba(0,255,240,.15);
-  border-radius:12px;
-  padding:16px 18px;
-  box-shadow:0 4px 20px rgba(0,0,0,.25);
-  display:flex; flex-direction:column;
-}
-.card h3{
-  color:#00fff0;                  /* $teal */
-  margin:0 0 10px;
-}
-.card p{ margin:0 0 6px; }
-.card ul{ margin:6px 0 0; padding-left:1.1rem; }
-.card li{ margin:4px 0; }
-
-/* remove teal dividers when inside the grid */
-.grid-3 hr{ display:none; }
-
-/* === Compact project cards (Manual QA home) === */
-.project-block{
-  max-width: 860px;        /* was full width; now pleasantly narrow */
-  margin: 18px auto 22px;  /* center + smaller gaps between cards */
-  padding: 14px 16px;      /* tighter padding */
-}
-
-/* Tighter text rhythm inside cards */
-.project-block p{ margin: 6px 0 8px; line-height: 1.5; }
-.project-block ul{ margin: 6px 0 10px; }
-.project-block li{ margin: 2px 0; }
-
-/* Title line within the card (e.g., "2: Exploratory & Edge-Case…") */
-.project-block h3, .project-block h2{
-  margin: 0 0 8px !important;  /* reduce big header top/bottom space */
-}
-
-/* Label rows like Goal/Focus/Tools/Result look less chunky */
-.project-block p > strong:first-child{
-  margin-right: 4px;
-  white-space: nowrap;
-}
-
-/* spacing above/below the grid vs other sections */
-.grid-3 + h2, .grid-3 + .section { margin-top:28px; }
-
-/* Tablet/phone stacking */
-@media (max-width: 980px){ .grid-3{ grid-template-columns:1fr 1fr; } }
-@media (max-width: 680px){ .grid-3{ grid-template-columns:1fr; } }
-
-/* === Reusable 3-column feature grid === */
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin:16px 0;
-  align-items:stretch;
-}
-.card{
-  background:#0f1215;
-  border:1px solid rgba(0,255,240,.15);
-  border-radius:12px;
-  padding:16px 18px;
-  box-shadow:0 4px 20px rgba(0,0,0,.25);
-}
-.card h3{ color:#00fff0; margin:0 0 10px; }
-.card p{ margin:0 0 6px; }
-.card ul{ margin:6px 0 0; padding-left:1.1rem; }
-.card li{ margin:4px 0; }
-
-@media (max-width:780px){ .grid-3{ grid-template-columns:1fr 1fr; } }
-@media (max-width:680px){ .grid-3{ grid-template-columns:1fr; } }
-
-.project-block .thumb{
-  width:140px; aspect-ratio:3/4; object-fit:cover;
-  border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);
-  border:1px solid rgba(255,255,255,.08);
-  float:right; margin:0 0 10px 16px;
-}
-@media (max-width:780px){
-  .project-block .thumb{ float:none; display:block; width:60%; max-width:260px; margin:0 auto 10px; }
-}
