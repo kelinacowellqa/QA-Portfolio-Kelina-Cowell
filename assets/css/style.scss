@@ -179,3 +179,6 @@ h2, h3 { margin-top: 36px; margin-bottom: 12px; }
   .project-block { padding: 14px 16px; margin: 20px auto; border-radius: 10px; }
   table { font-size: .95rem; }
 }
+
+/* kill any leftover debug outline from cached CSS */
+body { outline: none !important; }
