@@ -32,6 +32,20 @@
 <!-- === Three-up feature grid === -->
 <div class="grid-3">
   <section class="card">
+<!-- 3-up cards (self-contained styles so it works immediately) -->
+<style>
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 20px;align-items:stretch}
+  .grid-3 .card{background:#0f1215;border:1px solid rgba(0,255,240,.15);border-radius:12px;padding:16px 18px;box-shadow:0 4px 20px rgba(0,0,0,.25);display:flex;flex-direction:column}
+  .grid-3 .card h3{color:#00fff0;margin:0 0 10px}
+  .grid-3 .card p{margin:0 0 6px}
+  .grid-3 .card ul{margin:6px 0 0;padding-left:1.1rem}
+  .grid-3 .card li{margin:4px 0}
+  @media (max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}
+  @media (max-width:680px){.grid-3{grid-template-columns:1fr}}
+</style>
+
+<div class="grid-3">
+  <section class="card">
     <h3>🎯 Goal</h3>
     <p>Demonstrate core QA fundamentals by validating key gameplay flows and documenting reproducible defects with clear severity and repro steps.</p>
   </section>
