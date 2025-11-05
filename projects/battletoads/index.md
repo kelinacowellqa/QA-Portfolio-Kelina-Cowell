@@ -138,5 +138,38 @@
     <tr><td>01</td><td>Pause: keyboard (Esc/P) does not open Pause – controller Start works</td><td>High</td><td>5/5</td><td><a href="https://www.youtube.com/watch?v=2CAUt8gxH3M" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/2CAUt8gxH3M/hqdefault.jpg" alt="Bug 01 video" width="140"></a></td></tr>
     <tr><td>02</td><td>Keyboard input ignored on Pause menu after using controller</td><td>High</td><td>5/5</td><td><a href="https://www.youtube.com/watch?v=5DZjJc4y_yA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/5DZjJc4y_yA/hqdefault.jpg" alt="Bug 02 video" width="140"></a></td></tr>
     <tr><td>03</td><td>Pause menu keyboard/controller hand-off</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=EJFduFM28Is" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/EJFduFM28Is/hqdefault.jpg" alt="Bug 03 video" width="140"></a></td></tr>
-    <tr><td>04</td><td>Pause/Join In: Enter opens Join In &amp; disables controller input (only Enter/Esc work)</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=CXFI2a6DEpM" target="_blank" rel="noope_
+    <tr><td>04</td><td>Pause/Join In: Enter opens Join In &amp; disables controller input (only Enter/Esc work)</td><td>High</td><td>3/3</td><td><a href="https://www.youtube.com/watch?v=CXFI2a6DEpM" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/CXFI2a6DEpM/hqdefault.jpg" alt="Bug 04 video" width="140"></a></td></tr>
+  </tbody>
+</table>
+<p><sub>Repro totals = sum of all successful attempts ÷ sum of attempts (e.g., 5/5 + 5/5 + 3/3 + 3/3 = 16/16 = 100%).</sub></p>
 
+<!-- Inline video toggle -->
+<style>
+  .details-btn{display:inline-block;padding:12px 18px;border-radius:12px;background:#0d1117;border:1px solid #2b2f36;color:#14b8a6;font-weight:700;letter-spacing:.2px;box-shadow:0 2px 10px rgba(0,0,0,.25);cursor:pointer;transition:background .15s ease,color .15s ease}
+  .details-btn:hover{background:#14b8a6;color:#0b0f14}
+  details summary{list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  .details-btn::before{content:"▶ "}
+  details[open] .details-btn::before{content:"▼ "}
+  .embed{position:relative;padding-top:56.25%;margin:12px 0}
+  .embed>iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+</style>
+
+<details id="inline-videos">
+  <summary><span class="details-btn">Show inline videos</span></summary>
+  <p><em>If you’re viewing this on github.com, embeds may not display. Use the thumbnails/links above or open this page on the published site (GitHub Pages) to watch inline.</em></p>
+  <div class="embed"><iframe src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0" title="Bug 01 — Pause: keyboard does not open Pause" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="embed"><iframe src="https://www.youtube.com/embed/5DZjJc4y_yA?modestbranding=1&rel=0" title="Bug 02 — Keyboard input ignored on Pause menu after controller use" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="embed"><iframe src="https://www.youtube.com/embed/EJFduFM28Is?modestbranding=1&rel=0" title="Bug 03 — Pause menu keyboard/controller hand-off" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="embed"><iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0" title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</details>
+
+<h2>🧩 Lessons Learned</h2>
+<ul>
+  <li>Clear steps beat clever wording — they made my re-tests painless.</li>
+  <li>Input hand-off needed its own checks; that’s where the real bugs were.</li>
+  <li>Short videos did the heavy lifting when explaining severity.</li>
+</ul>
+
+<h2>📎 Disclaimer</h2>
+<p>This is a personal, non-commercial portfolio project for learning and recruitment purposes. I’m not affiliated with or endorsed by Dlala Studios, Rare, or Microsoft. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If something here needs to be removed or credited differently, please contact me and I’ll fix it promptly.</p>
