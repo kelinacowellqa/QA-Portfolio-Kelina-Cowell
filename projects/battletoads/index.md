@@ -143,7 +143,7 @@
 </ul>
 <hr>
 
-<h2>🧭 Comparative Findings — First-Minute &amp; Pause → Back</h2>
+<h2>🧭 Comparative Findings — First-Minute &amp; Pause → Back <small style="font-weight:400; opacity:.8;">(hands-on for Battletoads/TMNT, footage review for Illusion Island)</small></h2>
 
 <p><em>Quick comparison against <strong>Disney Illusion Island</strong> and <strong>TMNT: Shredder’s Revenge</strong> to give context to Battletoads’ UX.</em></p>
 
@@ -244,15 +244,14 @@
         </a>
       </td>
     </tr>
-    <tr>
-      <td></td>
-      <td>—</td>
-      <td>Pause → Back</td>
-      <td>Not observed in source video</td>
-      <td>Data gap — needs hands-on or clip</td>
-      <td>—</td>
-    </tr>
-    <tr>
+  <tr>
+  <td></td>
+  <td>—</td>
+  <td>Pause → Back</td>
+  <td>Not observed in available public footage (longplay/stream review)</td>
+  <td>No inference without evidence</td>
+  <td>—</td>
+</tr>
       <td></td>
       <td>3:11</td>
       <td>Onboarding</td>
@@ -304,6 +303,8 @@
     </tr>
   </tbody>
 </table>
+
+<p><sub><strong>Method (Illusion Island rows):</strong> Not hands-on — I reviewed public longplay/stream footage. Where behaviour wasn’t visible, it’s recorded as <em>Not observed in available footage</em> rather than guessed.</sub></p>
 
 <blockquote><strong>Takeaway:</strong> Battletoads reaches first control fastest (<strong>4 presses</strong>) and resumes cleanly from Pause. Biggest risk is <strong>HUD readability</strong> during combat. Next test: verify onboarding prompt timing and confirm Pause → Back on Illusion Island with hands-on capture.</blockquote>
 
