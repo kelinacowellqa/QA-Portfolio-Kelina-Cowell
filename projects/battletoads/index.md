@@ -113,6 +113,31 @@
   </tbody>
 </table>
 
+---
+
+## 🧭 Comparative Findings — First-Minute & Pause → Back
+
+> Quick comparison against *Disney Illusion Island* and *TMNT: Shredder’s Revenge* to give context to Battletoads’ UX.
+
+### Key Metrics
+- **Presses to first control (Title → Play):**  
+  **Battletoads:** 4  •  **TMNT:** 6  •  **Illusion Island:** 13
+- **Pause → Back (resume control):**  
+  **Battletoads:** immediate, no stray inputs  •  **TMNT:** immediate  •  **Illusion Island:** *not observed* in source video
+- **HUD readability (combat):**  
+  **Battletoads:** info spread to corners — harder to track health/rank/combo during fights  
+  **TMNT:** tiny unlabeled bars; pop-ups obscure UI
+
+### Comparison Table
+
+| Game | Timestamp | Area / Feature | What happened | Why it matters | Evidence |
+|---|---|---|---|---|---|
+| **Battletoads** | 0:07–1:12 (1:05) | Title → New Game | **4 presses** to first control | Smooth first minute; low friction | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-newgame.mp4) |
+|  | 0:01–0:20 (0:19) | Title → Continue | **4 presses**; intro dialogue skipped | Faster return-to-play; risk of missed context | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-continue.mp4) |
+|  | 0:04–0:13 (0:09) | Pause → Back | Immediate control; no unintended actions | Prevents stray menu inputs | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-pause-back.mp4) |
+|  | — | HUD readability | Info spread across corners; tracking health/rank/combo is hard mid-fight | Accessibility/readability risk | [Screenshot]({{ site.baseurl }}/projects/battletoads/media/bt-hud.png) |
+| **Illusion Island** | 0:09–3:11 (3:02) | Title → Play | **13 presses** to first control | Higher start friction than Battletoads (4) & TMNT (6) |
+
 <h3>Jira Board Screenshot - Overview</h3>
 <p>
   <a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank">
