@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v=3">
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=5' | relative_url }}">
 
 <!-- Page-scoped CSS (3-column grid) -->
 <style>
@@ -113,51 +113,30 @@
   </tbody>
 </table>
 
----
-## 🤝 Networking & Applied Insight
+<hr>
+<h2>🤝 Networking &amp; Applied Insight</h2>
 
-**Who:** Radu Posoi — Founder, Alkotech Labs; ex-Ubisoft QA Lead  
-**Context:** Short LinkedIn exchange on building a “keeper of the promise” mindset in QA.  
-**Key advice (summary):**
-- Play *mindfully* — notice when experience/mechanics feel good or clunky.
-- Compare **same-dev** and **same-genre** titles to spot patterns and differences.
-- **Write things down** — impressions, issues, why they matter.
-- Practise with **active intent** (don’t play mindlessly).
+<p><strong>Who:</strong> Radu Posoi — Founder, Alkotech Labs; ex-Ubisoft QA Lead<br>
+<strong>Source:</strong> <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">LinkedIn</a></p>
 
-> “Be mindful of how the game feels overall… then check other games from the same developer and the same genre. Write down impressions — that habit translates into QA skills that are hard to teach.”
+<p><strong>One-line takeaway:</strong> Be deliberate — compare same-dev and same-genre titles, and write <em>what happened</em> + <em>why it matters</em>.</p>
 
-**How I applied it in this project:**
-- Added a **comparative pass** against *TMNT: Shredder’s Revenge* (same dev) and *Disney Illusion Island* (same genre).
-- Logged **first-minute friction** (presses to control), **Pause → Back** behaviour, and **HUD readability**.
-- Wrote **why-it-matters** notes beside each observation, not just what happened.
-- Planned next tests based on gaps (e.g., confirm Illusion Island’s Pause → Back hands-on).
+<p><em>How I applied it here:</em> Added a comparative pass (Battletoads vs TMNT vs Illusion Island), logged first-minute friction &amp; Pause→Back behaviour, and included “why it matters” on each row.</p>
 
-**Evidence:**
-- LinkedIn discussion (screenshot):  
-  ![LinkedIn conversation screenshot]({{ site.baseurl }}/projects/battletoads/media/linkedin-radu-posoi-qa-mindset.png)
-- **Source Post:** [Radu Posoi — Alkotech Labs (LinkedIn)]([https://www.linkedin.com/in/raduposoi/](https://www.linkedin.com/posts/raduposoi_i-like-to-think-of-qa-as-the-keeper-of-the-activity-7386719297152225280-RX3R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFqoJPIBhgleQvEhtPGK7V0V7Tx6qVm06c8))
- 
-**Where this shows up in my case study:**
-- See **Comparative Findings — First-Minute & Pause → Back** (below) for the applied table and metrics.
+<hr>
 
----
+<h2>🧭 Comparative Findings — First-Minute &amp; Pause → Back</h2>
 
-## 🧭 Comparative Findings — First-Minute & Pause → Back
+<p><em>Quick comparison against <strong>Disney Illusion Island</strong> and <strong>TMNT: Shredder’s Revenge</strong> to give context to Battletoads’ UX.</em></p>
 
-> Quick comparison against *Disney Illusion Island* and *TMNT: Shredder’s Revenge* to give context to Battletoads’ UX.
+<h3>Key Metrics</h3>
+<ul>
+  <li><strong>Presses to first control (Title → Play):</strong> <strong>Battletoads:</strong> 4 • <strong>TMNT:</strong> 6 • <strong>Illusion Island:</strong> 13</li>
+  <li><strong>Pause → Back (resume control):</strong> <strong>Battletoads:</strong> immediate • <strong>TMNT:</strong> immediate • <strong>Illusion Island:</strong> <em>not observed</em></li>
+  <li><strong>HUD readability (combat):</strong> <strong>Battletoads:</strong> info spread to corners • <strong>TMNT:</strong> tiny unlabeled bars; pop-ups obscure UI</li>
+</ul>
 
-### Key Metrics
-- **Presses to first control (Title → Play):**  
-  **Battletoads:** 4  •  **TMNT:** 6  •  **Illusion Island:** 13
-- **Pause → Back (resume control):**  
-  **Battletoads:** immediate, no stray inputs  •  **TMNT:** immediate  •  **Illusion Island:** *not observed* in source video
-- **HUD readability (combat):**  
-  **Battletoads:** info spread to corners — harder to track health/rank/combo during fights  
-  **TMNT:** tiny unlabeled bars; pop-ups obscure UI
-
-### Comparison Table
-
-<!-- Comparison Table with thumbnails (scoped styles) -->
+<!-- Comparison Table with thumbnails (fixed) -->
 <style>
 .table-compare { width:100%; border-collapse:collapse; }
 .table-compare th, .table-compare td { border:1px solid rgba(255,255,255,.08); padding:10px 12px; vertical-align:middle; }
@@ -169,7 +148,7 @@
   width:160px; height:90px; object-fit:cover; border-radius:10px; display:block;
   border:1px solid rgba(255,255,255,.08); box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
-.thumb.square { width:120px; height:120px; } /* for square-ish screenshots if needed */
+.thumb.square { width:120px; height:120px; }
 </style>
 
 <table class="table-compare">
@@ -192,8 +171,8 @@
       <td><strong>4 presses</strong> to first control</td>
       <td>Smooth first minute; low friction</td>
       <td>
-        <a href="https://youtu.be/BT_NEWGAME_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/BT_NEWGAME_ID/hqdefault.jpg](https://youtu.be/CN3oHz5fnFw)" alt="Battletoads — New Game video">
+        <a href="https://youtu.be/CN3oHz5fnFw" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/CN3oHz5fnFw/hqdefault.jpg" alt="Battletoads — New Game video">
         </a>
       </td>
     </tr>
@@ -204,8 +183,8 @@
       <td><strong>4 presses</strong>; intro dialogue skipped</td>
       <td>Faster return-to-play; risk of missed context</td>
       <td>
-        <a href="https://youtu.be/BT_CONTINUE_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/BT_CONTINUE_ID/hqdefault.jpg](https://youtu.be/iGk1TNBuZWc)" alt="Battletoads — Continue video">
+        <a href="https://youtu.be/iGk1TNBuZWc" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/iGk1TNBuZWc/hqdefault.jpg" alt="Battletoads — Continue video">
         </a>
       </td>
     </tr>
@@ -216,8 +195,8 @@
       <td>Immediate control; no unintended actions</td>
       <td>Prevents stray menu inputs</td>
       <td>
-        <a href="https://youtu.be/BT_PAUSE_BACK_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/BT_PAUSE_BACK_ID/hqdefault.jpg](https://youtu.be/P7QNSN-6wqI)" alt="Battletoads — Pause to Back video">
+        <a href="https://youtu.be/P7QNSN-6wqI" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/P7QNSN-6wqI/hqdefault.jpg" alt="Battletoads — Pause to Back video">
         </a>
       </td>
     </tr>
@@ -240,10 +219,10 @@
       <td>0:09–3:11 (3:02)</td>
       <td>Title → Play</td>
       <td><strong>13 presses</strong> to first control</td>
-      <td>Higher start friction than Battletoads (4) & TMNT (6)</td>
+      <td>Higher start friction than Battletoads (4) &amp; TMNT (6)</td>
       <td>
-        <a href="https://youtu.be/ILLUSION_PLAY_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/ILLUSION_PLAY_ID/hqdefault.jpg](https://youtu.be/Xq_XEP8lKZI)" alt="Illusion Island — Play video">
+        <a href="https://youtu.be/Xq_XEP8lKZI" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/Xq_XEP8lKZI/hqdefault.jpg" alt="Illusion Island — Play video">
         </a>
       </td>
     </tr>
@@ -276,8 +255,8 @@
       <td><strong>6 presses</strong> to first control</td>
       <td>Higher friction than Battletoads</td>
       <td>
-        <a href="https://youtu.be/TMNT_START_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/TMNT_START_ID/hqdefault.jpg](https://youtu.be/Xq_XEP8lKZI)" alt="TMNT — Start video">
+        <a href="https://youtu.be/Xq_XEP8lKZI" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/Xq_XEP8lKZI/hqdefault.jpg" alt="TMNT — Start video">
         </a>
       </td>
     </tr>
@@ -288,8 +267,8 @@
       <td>Immediate control; no unintended actions</td>
       <td>Consistent resume behaviour</td>
       <td>
-        <a href="https://youtu.be/TMNT_PAUSE_BACK_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="[https://img.youtube.com/vi/TMNT_PAUSE_BACK_ID/hqdefault.jpg](https://youtu.be/MDEyQjmjfFU)" alt="TMNT — Pause to Back video">
+        <a href="https://youtu.be/MDEyQjmjfFU" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/MDEyQjmjfFU/hqdefault.jpg" alt="TMNT — Pause to Back video">
         </a>
       </td>
     </tr>
@@ -308,25 +287,24 @@
   </tbody>
 </table>
 
-
-> **Takeaway:** Battletoads reaches first control fastest (**4 presses**) and resumes cleanly from Pause. Biggest risk is **HUD readability** during combat. Next test: verify onboarding prompt timing and confirm Pause → Back behaviour on Illusion Island with hands-on capture.
+<blockquote><strong>Takeaway:</strong> Battletoads reaches first control fastest (<strong>4 presses</strong>) and resumes cleanly from Pause. Biggest risk is <strong>HUD readability</strong> during combat. Next test: verify onboarding prompt timing and confirm Pause → Back on Illusion Island with hands-on capture.</blockquote>
 
 <details>
 <summary class="details-btn">Show raw notes (from QA workbook)</summary>
 
-**Environment:** Win11 · 1080p@144Hz · Xbox-layout controller (Dhaose 360) · Tools: Xbox Game Bar, Snipping Tool, YouTube  
-**Builds:** Battletoads (PC Game Pass) v1.1F.42718 · TMNT (PC Game Pass) v1.2407.17.0 · Illusion Island (Switch video reference)
+<strong>Environment:</strong> Win11 · 1080p@144Hz · Xbox-layout controller (Dhaose 360) · Tools: Xbox Game Bar, Snipping Tool, YouTube  
+<strong>Builds:</strong> Battletoads (PC Game Pass) v1.1F.42718 · TMNT (PC Game Pass) v1.2407.17.0 · Illusion Island (Switch video reference)
 
-**Lenses:** First-minute · Co-op join/leave · Pause→Back · HUD · Retry · Onboarding
+<strong>Lenses:</strong> First-minute · Co-op join/leave · Pause→Back · HUD · Retry · Onboarding
 
-**Evidence:** Timestamps + up to 2 screenshots per title
+<strong>Evidence:</strong> Timestamps + up to 2 screenshots per title
 
-- **Similarity (same-dev):** Both resume cleanly after Pause (immediate control; no unintended actions).  
-- **Difference (same-dev):** Start friction — TMNT needs 6 presses vs Battletoads 4; TMNT HUD uses small, unlabeled bars; Battletoads spreads info to corners.  
-- **Takeaway (same-dev):** Battletoads is faster to first control; both have readability risks in different ways.
+- <strong>Similarity (same-dev):</strong> Both resume cleanly after Pause (immediate control; no unintended actions).  
+- <strong>Difference (same-dev):</strong> Start friction — TMNT needs 6 presses vs Battletoads 4; TMNT HUD uses small, unlabeled bars; Battletoads spreads info to corners.  
+- <strong>Takeaway (same-dev):</strong> Battletoads is faster to first control; both have readability risks in different ways.
 
-- **Difference (same-genre):** Illusion Island shows higher start friction; onboarding prompts are timely.  
-- **Takeaway (same-genre):** Illusion Island emphasises guided onboarding; Battletoads faster to first control.
+- <strong>Difference (same-genre):</strong> Illusion Island shows higher start friction; onboarding prompts are timely.  
+- <strong>Takeaway (same-genre):</strong> Illusion Island emphasises guided onboarding; Battletoads faster to first control.
 
 </details>
 
@@ -389,7 +367,9 @@
   <li>Input hand-off needed its own checks; that’s where the real bugs were.</li>
   <li>Short videos did the heavy lifting when explaining severity.</li>
 </ul>
+<hr>
 
 <h2>📎 Disclaimer</h2>
-<p>This is a personal, non-commercial portfolio project for learning and recruitment purposes. I’m not affiliated with or endorsed by Dlala Studios, Rare, or Microsoft. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If something here needs to be removed or credited differently, please contact me and I’ll fix it promptly.</p>
+<p><em>This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.</em></p>
+
 
