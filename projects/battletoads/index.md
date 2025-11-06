@@ -143,9 +143,14 @@
 </ul>
 <hr>
 
-<h2>🧭 Comparative Findings — First-Minute &amp; Pause → Back <small style="font-weight:400; opacity:.8;">(hands-on for Battletoads/TMNT, footage review for Illusion Island)</small></h2>
+<h2>🧭 Comparative Findings — First-Minute to Control, Pause → Back, HUD Readability</h2>
+<p class="method-note">Method: <strong>hands-on</strong> for Battletoads/TMNT; <strong>footage review</strong> for Illusion Island.</p>
 
-<p><em>Quick comparison against <strong>Disney Illusion Island</strong> and <strong>TMNT: Shredder’s Revenge</strong> to give context to Battletoads’ UX.</em></p>
+<style>
+.method-note{ margin:-6px 0 10px; font-size:.95rem; color:#a9b3bd; opacity:.9; }
+</style>
+
+<h3>Summary metrics (across all three tests)</h3>
 
 <h3>Key Metrics</h3>
 <ul>
