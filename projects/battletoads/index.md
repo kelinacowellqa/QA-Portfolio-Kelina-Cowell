@@ -157,18 +157,157 @@
 
 ### Comparison Table
 
-| Game | Timestamp | Area / Feature | What happened | Why it matters | Evidence |
-|---|---|---|---|---|---|
-| **Battletoads** | 0:07–1:12 (1:05) | Title → New Game | **4 presses** to first control | Smooth first minute; low friction | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-newgame.mp4) |
-|  | 0:01–0:20 (0:19) | Title → Continue | **4 presses**; intro dialogue skipped | Faster return-to-play; risk of missed context | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-continue.mp4) |
-|  | 0:04–0:13 (0:09) | Pause → Back | Immediate control; no unintended actions | Prevents stray menu inputs | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-pause-back.mp4) |
-|  | — | HUD readability | Info spread across corners; tracking health/rank/combo is hard mid-fight | Accessibility/readability risk | [Screenshot]({{ site.baseurl }}/projects/battletoads/media/bt-hud.png) |
-| **Illusion Island** | 0:09–3:11 (3:02) | Title → Play | **13 presses** to first control | Higher start friction than Battletoads (4) & TMNT (6) | [Video](#) |
-|  | — | Pause → Back | Not observed in source video | Data gap — needs hands-on or clip | — |
-|  | 3:11 | Onboarding | Just-in-time jump prompt | Clear guidance for new players | [Screenshot](#) |
-| **TMNT** | 0:01–3:55 (3:54) | Title → Start | **6 presses** to first control | Higher friction than Battletoads | [Video](#) |
-|  | 0:06–0:16 (0:10) | Pause → Back | Immediate control; no unintended actions | Consistent resume behaviour | [Video](#) |
-|  | — | HUD readability | Tiny blue/green unlabeled bars; score pop-ups obstruct | Readability risk in combat | [Screenshot](#) |
+<!-- Comparison Table with thumbnails (scoped styles) -->
+<style>
+.table-compare { width:100%; border-collapse:collapse; }
+.table-compare th, .table-compare td { border:1px solid rgba(255,255,255,.08); padding:10px 12px; vertical-align:middle; }
+.table-compare thead th { background:rgba(0,255,240,.08); color:#00fff0; }
+.table-compare td:nth-child(1){ width:140px; font-weight:700; }
+.table-compare td:nth-child(2){ width:140px; white-space:nowrap; }
+.table-compare td:nth-child(6){ width:190px; }
+.thumb {
+  width:160px; height:90px; object-fit:cover; border-radius:10px; display:block;
+  border:1px solid rgba(255,255,255,.08); box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+.thumb.square { width:120px; height:120px; } /* for square-ish screenshots if needed */
+</style>
+
+<table class="table-compare">
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Timestamp</th>
+      <th>Area / Feature</th>
+      <th>What happened</th>
+      <th>Why it matters</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- === Battletoads === -->
+    <tr>
+      <td><strong>Battletoads</strong></td>
+      <td>0:07–1:12 (1:05)</td>
+      <td>Title → New Game</td>
+      <td><strong>4 presses</strong> to first control</td>
+      <td>Smooth first minute; low friction</td>
+      <td>
+        <a href="https://youtu.be/BT_NEWGAME_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/BT_NEWGAME_ID/hqdefault.jpg" alt="Battletoads — New Game video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0:01–0:20 (0:19)</td>
+      <td>Title → Continue</td>
+      <td><strong>4 presses</strong>; intro dialogue skipped</td>
+      <td>Faster return-to-play; risk of missed context</td>
+      <td>
+        <a href="https://youtu.be/BT_CONTINUE_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/BT_CONTINUE_ID/hqdefault.jpg" alt="Battletoads — Continue video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0:04–0:13 (0:09)</td>
+      <td>Pause → Back</td>
+      <td>Immediate control; no unintended actions</td>
+      <td>Prevents stray menu inputs</td>
+      <td>
+        <a href="https://youtu.be/BT_PAUSE_BACK_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/BT_PAUSE_BACK_ID/hqdefault.jpg" alt="Battletoads — Pause to Back video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>—</td>
+      <td>HUD readability</td>
+      <td>Info spread across corners; tracking health/rank/combo is hard mid-fight</td>
+      <td>Accessibility/readability risk</td>
+      <td>
+        <a href="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" alt="Battletoads HUD screenshot">
+        </a>
+      </td>
+    </tr>
+
+    <!-- === Illusion Island === -->
+    <tr>
+      <td><strong>Illusion Island</strong></td>
+      <td>0:09–3:11 (3:02)</td>
+      <td>Title → Play</td>
+      <td><strong>13 presses</strong> to first control</td>
+      <td>Higher start friction than Battletoads (4) & TMNT (6)</td>
+      <td>
+        <a href="https://youtu.be/ILLUSION_PLAY_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/ILLUSION_PLAY_ID/hqdefault.jpg" alt="Illusion Island — Play video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>—</td>
+      <td>Pause → Back</td>
+      <td>Not observed in source video</td>
+      <td>Data gap — needs hands-on or clip</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3:11</td>
+      <td>Onboarding</td>
+      <td>Just-in-time jump prompt</td>
+      <td>Clear guidance for new players</td>
+      <td>
+        <a href="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" alt="Illusion Island onboarding screenshot">
+        </a>
+      </td>
+    </tr>
+
+    <!-- === TMNT === -->
+    <tr>
+      <td><strong>TMNT</strong></td>
+      <td>0:01–3:55 (3:54)</td>
+      <td>Title → Start</td>
+      <td><strong>6 presses</strong> to first control</td>
+      <td>Higher friction than Battletoads</td>
+      <td>
+        <a href="https://youtu.be/TMNT_START_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/TMNT_START_ID/hqdefault.jpg" alt="TMNT — Start video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0:06–0:16 (0:10)</td>
+      <td>Pause → Back</td>
+      <td>Immediate control; no unintended actions</td>
+      <td>Consistent resume behaviour</td>
+      <td>
+        <a href="https://youtu.be/TMNT_PAUSE_BACK_ID" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/TMNT_PAUSE_BACK_ID/hqdefault.jpg" alt="TMNT — Pause to Back video">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>—</td>
+      <td>HUD readability</td>
+      <td>Tiny blue/green unlabeled bars; score pop-ups obstruct</td>
+      <td>Readability risk in combat</td>
+      <td>
+        <a href="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" alt="TMNT HUD screenshot">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 > **Takeaway:** Battletoads reaches first control fastest (**4 presses**) and resumes cleanly from Pause. Biggest risk is **HUD readability** during combat. Next test: verify onboarding prompt timing and confirm Pause → Back behaviour on Illusion Island with hands-on capture.
 
