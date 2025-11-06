@@ -316,21 +316,45 @@
 <details>
 <summary class="details-btn">Show raw notes (from QA workbook)</summary>
 
-<strong>Environment:</strong> Win11 · 1080p@144Hz · Xbox-layout controller (Dhaose 360) · Tools: Xbox Game Bar, Snipping Tool, YouTube  
-<strong>Builds:</strong> Battletoads (PC Game Pass) v1.1F.42718 · TMNT (PC Game Pass) v1.2407.17.0 · Illusion Island (Switch video reference)
+<details class="notes">
+  <summary><span class="details-btn">Show raw notes (from QA workbook)</span></summary>
 
-<strong>Lenses:</strong> First-minute · Co-op join/leave · Pause→Back · HUD · Retry · Onboarding
+  <div class="notes-wrap">
+    <h4>Context</h4>
+    <ul>
+      <li><strong>Environment:</strong> Win11 · 1080p@144Hz · Xbox-layout controller (Dhaose 360)</li>
+      <li><strong>Tools:</strong> Xbox Game Bar · Snipping Tool · YouTube</li>
+      <li><strong>Builds:</strong> Battletoads (PC Game Pass) v1.1F.42718 · TMNT (PC Game Pass) v1.2407.17.0 · Illusion Island (Switch video reference)</li>
+      <li><strong>Lenses:</strong> First-minute · Co-op join/leave · Pause→Back · HUD · Retry · Onboarding</li>
+      <li><strong>Evidence:</strong> Timestamps + up to 2 screenshots per title</li>
+    </ul>
 
-<strong>Evidence:</strong> Timestamps + up to 2 screenshots per title
-
-- <strong>Similarity (same-dev):</strong> Both resume cleanly after Pause (immediate control; no unintended actions).  
-- <strong>Difference (same-dev):</strong> Start friction — TMNT needs 6 presses vs Battletoads 4; TMNT HUD uses small, unlabeled bars; Battletoads spreads info to corners.  
-- <strong>Takeaway (same-dev):</strong> Battletoads is faster to first control; both have readability risks in different ways.
-
-- <strong>Difference (same-genre):</strong> Illusion Island shows higher start friction; onboarding prompts are timely.  
-- <strong>Takeaway (same-genre):</strong> Illusion Island emphasises guided onboarding; Battletoads faster to first control.
-
+    <h4>Comparative highlights</h4>
+    <ul>
+      <li><strong>Similarity (same-dev):</strong> Both resume cleanly after Pause (immediate control; no unintended actions).</li>
+      <li><strong>Difference (same-dev):</strong> Start friction — TMNT needs <strong>6 presses</strong> vs Battletoads <strong>4</strong>; TMNT HUD uses small, unlabeled bars; Battletoads spreads info to corners.</li>
+      <li><strong>Takeaway (same-dev):</strong> Battletoads is faster to first control; both have readability risks in different ways.</li>
+      <li><strong>Difference (same-genre):</strong> Illusion Island shows higher start friction; onboarding prompts are timely.</li>
+      <li><strong>Takeaway (same-genre):</strong> Illusion Island emphasises guided onboarding; Battletoads faster to first control.</li>
+    </ul>
+  </div>
 </details>
+
+<!-- Scoped styles for the notes block -->
+<style>
+.notes .details-btn{display:inline-block;padding:12px 18px;border-radius:12px;background:#0d1117;border:1px solid #2b2f36;color:#14b8a6;font-weight:700;letter-spacing:.2px;box-shadow:0 2px 10px rgba(0,0,0,.25);cursor:pointer;transition:background .15s,color .15s}
+.notes .details-btn:hover{background:#14b8a6;color:#0b0f14}
+.notes summary{list-style:none}
+.notes summary::-webkit-details-marker{display:none}
+.notes .details-btn::before{content:"▶ "}
+.notes[open] .details-btn::before{content:"▼ "}
+
+.notes-wrap{margin:12px 0 2px; padding:12px 14px; background:#0f1215; border:1px solid rgba(255,255,255,.08); border-radius:10px}
+.notes-wrap h4{margin:4px 0 8px; color:#cfd6dd; opacity:.95}
+.notes-wrap ul{margin:0 0 10px 0; padding-left:1.1rem}
+.notes-wrap li{margin:6px 0; line-height:1.55}
+.notes-wrap strong{color:#cfd6dd}
+</style>
 
 <h3>Jira Board Screenshot - Overview</h3>
 <p>
