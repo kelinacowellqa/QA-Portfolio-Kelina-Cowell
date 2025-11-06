@@ -241,8 +241,8 @@
       <td>Just-in-time jump prompt</td>
       <td>Clear guidance for new players</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_obsersvatgion6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_obsersvatgion6onboarding_prompt_00MM_playable_v01.png" alt="Illusion Island onboarding screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" alt="Illusion Island onboarding screenshot">
         </a>
       </td>
     </tr>
