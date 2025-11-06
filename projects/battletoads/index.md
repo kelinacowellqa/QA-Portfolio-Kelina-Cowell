@@ -50,6 +50,7 @@
   <li><strong>Evidence:</strong> comparison snapshots, bugs table with YouTube thumbnails, and Jira board screenshots.</li>
 </ul>
 
+<hr>
 <table>
   <thead>
     <tr><th>Studio</th><th>Platform</th><th>Scope</th></tr>
@@ -94,6 +95,7 @@
 </div>
 <!-- /grid -->
 
+<hr>
 <h2>📊 Metrics</h2>
 <table>
   <thead><tr><th>Metric</th><th>Value</th></tr></thead>
@@ -106,12 +108,14 @@
   </tbody>
 </table>
 
+<hr>
 <h2>🧠 STAR SUMMARY – Battletoads QA (PC Game Pass)</h2>
 <p><strong>Situation:</strong> One-week functional test of Battletoads on Win11, Game Pass build 1.1F.42718, 1920×1080@144Hz, Xbox-layout controllers + keyboard.</p>
 <p><strong>Task:</strong> Validate core gameplay logic, UI flow, input handling (keyboard/controller focus), audio cues, and basic performance.</p>
 <p><strong>Action:</strong> Built a test plan, executed the suite daily, captured repro video with Xbox Game Bar/OBS, and logged defects in Jira with clear titles, steps, and evidence.</p>
 <p><strong>Result:</strong> All four issues were fully reproducible (<strong>16/16 attempts</strong>), with clear evidence clips for each.</p>
 
+<hr>
 <h2>⚙ Jira &amp; Agile Practice</h2>
 <p>I applied fundamentals from two beginner Jira courses to keep this project structured and evidence-driven.</p>
 <ul>
@@ -374,6 +378,7 @@
 .notes-wrap strong{color:#cfd6dd}
 </style>
 
+<hr>
 <h3>Jira Board Screenshot - Overview</h3>
 <p>
   <a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank">
@@ -395,6 +400,7 @@
 
 <p><sub>Click any thumbnail to view the full-size image.</sub></p>
 
+<hr>
 <h3>Bugs — summary + videos</h3>
 <table>
   <thead><tr><th>ID</th><th>Title</th><th>Sev</th><th>Repro</th><th>Video</th></tr></thead>
@@ -428,6 +434,7 @@
   <div class="embed"><iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0" title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </details>
 
+<hr>
 <h2>🧩 What I learned</h2>
 <ul>
   <li><strong>Write steps so “future me” and any teammate can rerun them first try.</strong> Plain, tight repros meant I could pick the test back up days later without thinking.</li>
