@@ -21,7 +21,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 ## 🧩 Project Lineup
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
 
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
@@ -37,25 +38,15 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
   <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
 </p>
 
-<div class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
-  <h3>1: Functional Testing – <em>Battletoads</em> (PC Game Pass)</h3>
-  <p><strong>Goal:</strong> Validate core gameplay and document repeatable defects…</p>
-  <p><strong>Focus:</strong> Gameplay logic • UI/menus • Input parity • Audio • Performance sanity</p>
-  <p><strong>Tools:</strong> Jira • Google Sheets QA workbook • Xbox Game Bar / OBS</p>
-  <p><strong>Deliverables:</strong> QA workbook (Sheets + PDF) • Evidence videos (YouTube) • Jira board + verified thumbnails</p>
-  <p><strong>Result:</strong> 16/16 reproducible across 4 issues; key input hand-off defects surfaced.</p>
-  <p class="cta"><a class="cta-btn" href="{{ site.baseurl }}/projects/battletoads/">Read the case study →</a></p>
-</div>
-
 </section>
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/rebelracing/media/poster.jpg" alt="Rebel Racing poster">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 
 <strong style="color:inherit">Goal:</strong> Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
-<strong style="color:inherit">Focus:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · <strong style="color:inherit">Orientation switches · Low battery/storage  
+<strong style="color:inherit">Focus:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</strong>  
 <strong style="color:inherit">Tools:</strong> Google Sheets session charters & notes · On-device screen recordings (iOS/Android) · Network throttling (Airplane/Low-bandwidth) · Device matrix  
 <strong style="color:inherit">Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
 <strong style="color:inherit">Result:</strong> In progress — early passes are mapping risks across device classes and network conditions. 
@@ -66,7 +57,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/sworn/media/poster.jpg" alt="Sworn poster">
 
 ### 3: Regression Testing – *Sworn (PC)*
 
@@ -82,7 +74,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/shadowpoint/media/poster.jpg" alt="Shadow Point poster">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 
@@ -98,7 +91,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/recompile/media/poster.jpg" alt="Recompile poster">
 
 ### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
 
@@ -114,7 +108,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/oxenfree/media/poster.jpg" alt="Oxenfree poster">
   
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
 
@@ -130,7 +125,26 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block">
+<!-- ===== Placeholder for missing #7 section (add real content/links when ready) ===== -->
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/<your-project-folder>/media/poster.jpg" alt="Project 7 poster">
+
+### 7️: <em>Your Seventh Project</em> – *(Platform)*
+
+<strong style="color:inherit">Goal:</strong> …  
+<strong style="color:inherit">Focus:</strong> …  
+<strong style="color:inherit">Tools:</strong> …  
+<strong style="color:inherit">Deliverables:</strong> …  
+<strong style="color:inherit">Result:</strong> …
+
+<p class="cta">
+  <a class="cta-btn" href="{{ site.baseurl }}/projects/<your-project-folder>/">Case study (coming soon) →</a>
+</p>
+</section>
+<!-- ===== End placeholder ===== -->
+
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash/media/poster.jpg" alt="PowerWash Simulator poster">
 
 ### 8️: Automation Testing – *PowerWash Simulator (PC)*
 
@@ -158,6 +172,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 | Shadow Point         | Cross-Platform (VR & PCVR)   | VR / PCVR           | Comfort · Tracking · Parity               | Coming soon   |
 | Recompile            | Cross-Platform Input         | PC / Controller     | Mapping parity · Latency · Prompts        | Coming soon   |
 | Oxenfree             | Narrative / Localisation     | Netflix Mobile      | Subtitles · Timing · Readability          | Coming soon   |
+| Project 7            | (TBD)                        | (TBD)               | (TBD)                                     | Coming soon   |
 | PowerWash Simulator  | Automation                   | PC                  | Smoke scripts · Regression checks         | Coming soon   |
 
 ---
