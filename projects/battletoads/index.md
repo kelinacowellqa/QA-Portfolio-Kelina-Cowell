@@ -248,8 +248,8 @@
       <td>Info spread across corners; tracking health/rank/combo is hard mid-fight</td>
       <td>Accessibility/readability risk</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/bt-observation4-hud-readability.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt-observation4-hud-readability.png" alt="Battletoads HUD screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" alt="Battletoads HUD screenshot">
         </a>
       </td>
     </tr>
@@ -282,8 +282,8 @@
       <td>Just-in-time jump prompt</td>
       <td>Clear guidance for new players</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_OOMM_playable_v01.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_OOMM_playable_v01.png" alt="Illusion Island onboarding screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" alt="Illusion Island onboarding screenshot">
         </a>
       </td>
     </tr>
