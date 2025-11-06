@@ -41,7 +41,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/rebelracing/media/poster.jpg" alt="Rebel Racing poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/rebelracing/media/rr-poster.jpg" alt="Rebel Racing poster">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 
@@ -58,7 +58,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/sworn/media/poster.jpg" alt="Sworn poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/sworn/media/s-poster.jpg" alt="Sworn poster">
 
 ### 3: Regression Testing – *Sworn (PC)*
 
@@ -75,7 +75,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/shadowpoint/media/poster.jpg" alt="Shadow Point poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/shadowpoint/media/sp-poster.jpg" alt="Shadow Point poster">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 
@@ -92,7 +92,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/recompile/media/poster.jpg" alt="Recompile poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/recompile/media/rec-poster.jpg" alt="Recompile poster">
 
 ### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
 
@@ -109,7 +109,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/oxenfree/media/poster.jpg" alt="Oxenfree poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/oxenfree/media/o-poster.jpg" alt="Oxenfree poster">
   
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
 
@@ -125,28 +125,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<!-- ===== Placeholder for missing #7 section (add real content/links when ready) ===== -->
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/<your-project-folder>/media/poster.jpg" alt="Project 7 poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash/media/pws-poster.jpg" alt="PowerWash Simulator poster">
 
-### 7️: <em>Your Seventh Project</em> – *(Platform)*
-
-<strong style="color:inherit">Goal:</strong> …  
-<strong style="color:inherit">Focus:</strong> …  
-<strong style="color:inherit">Tools:</strong> …  
-<strong style="color:inherit">Deliverables:</strong> …  
-<strong style="color:inherit">Result:</strong> …
-
-<p class="cta">
-  <a class="cta-btn" href="{{ site.baseurl }}/projects/<your-project-folder>/">Case study (coming soon) →</a>
-</p>
-</section>
-<!-- ===== End placeholder ===== -->
-
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash/media/poster.jpg" alt="PowerWash Simulator poster">
-
-### 8️: Automation Testing – *PowerWash Simulator (PC)*
+### 7: Automation Testing – *PowerWash Simulator (PC)*
 
 <strong style="color:inherit">Goal:</strong> Demonstrate early automation skills by scripting repeatable checks and quick regressions on core flows.  
 <strong style="color:inherit">Focus:</strong> Launch → menu → job select smoke · Settings persistence · Save/load state · Input macro checks (KB/mouse/controller) · Simple visual comparisons for “clean/dirty” states  
