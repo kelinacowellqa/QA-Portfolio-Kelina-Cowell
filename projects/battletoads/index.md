@@ -20,11 +20,19 @@
     style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:10px;object-fit:contain;">
 </p>
 
-<p>
+<p class="cta-row" style="text-align:center;">
   <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
   <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
-  <a class="cta-btn" href="[https://www.linkedin.com/in/kelina-cowell-qa-tester](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/)" target="_blank" rel="noopener">Back to Portfolio hub</a>
+  <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/" target="_blank" rel="noopener">Back to Portfolio hub</a>
 </p>
+
+<style>
+/* spacing + mobile stack for the CTA row */
+.cta-row .cta-btn { margin: 6px 8px; }
+@media (max-width: 560px){
+  .cta-row .cta-btn { display:block; margin:8px auto; width:fit-content; }
+}
+</style>
 
 <h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
 
@@ -441,11 +449,19 @@
 
 <p><strong>Up next:</strong> I’m moving on to an <em>Exploratory &amp; Edge-Case Testing</em> project on <em>Rebel Racing</em> (Mobile) focused on <strong>device compatibility</strong>, <strong>input latency</strong>, <strong>UI scaling</strong>, and <strong>crash handling</strong>.</p>
 
-<p>
+<p class="cta-row" style="text-align:center;">
   <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
   <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
-  <a class="cta-btn" href="[https://www.linkedin.com/in/kelina-cowell-qa-tester](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/)" target="_blank" rel="noopener">Back to Portfolio hub</a>
+  <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/" target="_blank" rel="noopener">Back to Portfolio hub</a>
 </p>
+
+<style>
+/* spacing + mobile stack for the CTA row */
+.cta-row .cta-btn { margin: 6px 8px; }
+@media (max-width: 560px){
+  .cta-row .cta-btn { display:block; margin:8px auto; width:fit-content; }
+}
+</style>
 
 <h2>📎 Disclaimer</h2>
 <p><em>This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.</em></p>
