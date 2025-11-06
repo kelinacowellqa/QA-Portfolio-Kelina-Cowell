@@ -37,19 +37,29 @@
 <h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
 
 <!-- Intro -->
-<h2>Introduction:</h2> 
-  One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership. I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.</p>
+<h2>Introduction</h2>
+
+<p>
+  One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership.
+  I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.
+</p>
 
 <ul>
-  <li><strong>Scope:</strong> start → first control, Pause/Resume, keyboard ↔ controller hand-off, local co-op join/leave, HUD/readability, respawn & checkpoints, Game Over flow, stability/performance sanity.</li>
+  <li><strong>Scope:</strong> start → first control, Pause/Resume, keyboard ↔ controller hand-off, local co-op join/leave, HUD/readability, respawn & checkpoints, Game Over flow, and stability/performance sanity.</li>
   <li><strong>Outcome:</strong> <strong>4 input-ownership issues</strong> with <strong>100% repro</strong> (16/16), each with a 10–30s video thumbnail below.</li>
-  <li><strong>Evidence:</strong> comparison snapshots, bug table with YouTube thumbnails, and Jira board screenshots.</li>
+  <li><strong>Evidence:</strong> comparison snapshots, bugs table with YouTube thumbnails, and Jira board screenshots.</li>
 </ul>
 
 <table>
-  <thead><tr><th>Studio</th><th>Platform</th><th>Scope</th></tr></thead>
+  <thead>
+    <tr><th>Studio</th><th>Platform</th><th>Scope</th></tr>
+  </thead>
   <tbody>
-    <tr><td>Dlala Studios / Rare</td><td>PC (Game Pass)</td><td>Gameplay logic • UI • Audio • Performance</td></tr>
+    <tr>
+      <td>Dlala Studios / Rare</td>
+      <td>PC (Game Pass)</td>
+      <td>Gameplay logic • UI • Audio • Performance</td>
+    </tr>
   </tbody>
 </table>
 
