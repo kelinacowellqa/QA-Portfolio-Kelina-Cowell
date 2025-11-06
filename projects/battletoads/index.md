@@ -428,11 +428,10 @@
 
 <p><strong>Up next:</strong> I’m moving on to an <em>Exploratory &amp; Edge-Case Testing</em> project on <em>Rebel Racing</em> (Mobile) focused on <strong>device compatibility</strong>, <strong>input latency</strong>, <strong>UI scaling</strong>, and <strong>crash handling</strong>.</p>
 
-<p><strong>Links:</strong> <a href="#inline-videos">inline videos</a> ·
-<a href="https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing" target="_blank" rel="noopener">QA workbook</a> ·
-<a href="./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf">test plan (PDF)</a> ·
-<a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank" rel="noopener">Jira board</a></p>
-
+<p>
+  <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
+  <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
+</p>
 
 <h2>📎 Disclaimer</h2>
 <p><em>This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.</em></p>
