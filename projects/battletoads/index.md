@@ -15,7 +15,7 @@
 <!-- Banner: show full image (no cropping) -->
 <p style="background:#0f1215;border-radius:12px;display:block;max-width:980px;margin:0 auto;padding:8px 0;">
   <img
-    src="{{ site.baseurl }}/projects/battletoads/media/poster.jpg"
+    src="{{ site.baseurl }}/projects/battletoads/media/battletoads_header.jpg"
     alt="Battletoads — cover"
     style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:10px;object-fit:contain;">
 </p>
