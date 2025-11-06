@@ -120,10 +120,6 @@
 
 <p><strong>One-line takeaway:</strong> Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down <em>what happened</em> + <em>why it matters</em> for the player.</p>
 
-<blockquote>
-  “Be mindful of how the game feels overall, then compare with the same developer and the same genre. Write the observations and why they matter.”
-</blockquote>
-
 <p><strong>How I applied it in this project</strong></p>
 <ul>
   <li>Added a comparative pass: <em>Battletoads</em> vs <em>TMNT: Shredder’s Revenge</em> (same dev) and <em>Disney Illusion Island</em> (same genre).</li>
