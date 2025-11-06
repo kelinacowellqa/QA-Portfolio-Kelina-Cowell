@@ -194,6 +194,31 @@ I test games the way players experience them: clearly, patiently, and with evide
 ## 📎 Disclaimer
 *This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.*
 
+<style>
+/* TEMP OVERRIDE to force poster size/position */
+.project-block.with-thumb{ padding-right:235px !important; min-height:180px !important; }
+.project-block .thumb{
+  position:absolute !important;
+  top:16px !important;
+  right:18px !important;
+  width:170px !important;      /* Balanced size */
+  height:auto !important;
+  aspect-ratio:3/4 !important;
+  object-fit:cover !important;
+  float:none !important;        /* kill old float rule */
+  border-radius:10px !important;
+  box-shadow:0 6px 18px rgba(0,0,0,.35) !important;
+}
+@media (max-width:780px){
+  .project-block.with-thumb{ padding-right:18px !important; }
+  .project-block .thumb{
+    position:static !important;
+    display:block !important;
+    margin:0 0 10px auto !important;
+    width:60% !important; max-width:260px !important;
+  }
+}
+</style>
 
 
 
