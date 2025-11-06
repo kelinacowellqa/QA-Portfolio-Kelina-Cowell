@@ -51,6 +51,7 @@
 </ul>
 
 <hr>
+
 <table>
   <thead>
     <tr><th>Studio</th><th>Platform</th><th>Scope</th></tr>
