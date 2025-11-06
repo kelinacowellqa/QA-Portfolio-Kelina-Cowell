@@ -114,15 +114,37 @@
 </table>
 
 <hr>
-<h2>🤝 Networking &amp; Applied Insight</h2>
+<h2 id="applied-insight">🤝 Networking &amp; Applied Insight</h2>
 
-<p><strong>Who:</strong> Radu Posoi — Founder, Alkotech Labs; ex-Ubisoft QA Lead<br>
-<strong>Source:</strong> <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><strong>Source:</strong> <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">Radu Posoi — Founder, Alkotech Labs (ex-Ubisoft QA Lead)</a></p>
 
-<p><strong>One-line takeaway:</strong> Be deliberate — compare same-dev and same-genre titles, and write <em>what happened</em> + <em>why it matters</em>.</p>
+<p><strong>One-line takeaway:</strong> Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down <em>what happened</em> + <em>why it matters</em> for the player.</p>
 
-<p><em>How I applied it here:</em> Added a comparative pass (Battletoads vs TMNT vs Illusion Island), logged first-minute friction &amp; Pause→Back behaviour, and included “why it matters” on each row.</p>
+<blockquote>
+  “Be mindful of how the game feels overall, then compare with the same developer and the same genre. Write the observations and why they matter.”
+</blockquote>
 
+<p><strong>How I applied it in this project</strong></p>
+<ul>
+  <li>Added a comparative pass: <em>Battletoads</em> vs <em>TMNT: Shredder’s Revenge</em> (same dev) and <em>Disney Illusion Island</em> (same genre).</li>
+  <li>Logged <strong>presses to first control</strong>, <strong>Pause → Back</strong> behaviour, and <strong>HUD readability</strong> with “why it matters” notes.</li>
+  <li>Turned notes into a <strong>comparison table + metrics</strong> (see next section).</li>
+</ul>
+
+<!-- Screenshot proof of networking (click to open full size) -->
+<p>
+  <a href="{{ site.baseurl }}/projects/battletoads/media/linkedin-radu-posoi-qa-mindset.png" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/projects/battletoads/media/linkedin-radu-posoi-qa-mindset.png"
+         alt="LinkedIn conversation with Radu Posoi about QA mindset"
+         style="max-width:100%; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,.08); box-shadow:0 6px 18px rgba(0,0,0,.35);">
+  </a>
+  <br><sub>Screenshot of LinkedIn exchange — demonstrating industry networking and applied learning.</sub>
+</p>
+
+<p><strong>Concrete outcome</strong></p>
+<ul>
+  <li><em>Battletoads</em> reaches first control in <strong>4 presses</strong> (faster than TMNT <strong>6</strong> and Illusion Island <strong>13</strong>) and resumes cleanly from Pause — a UX strength to highlight.</li>
+</ul>
 <hr>
 
 <h2>🧭 Comparative Findings — First-Minute &amp; Pause → Back</h2>
