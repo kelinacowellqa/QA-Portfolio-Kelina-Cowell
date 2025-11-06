@@ -160,7 +160,7 @@
 
 <p><strong>How I applied it in this project</strong></p>
 <ul>
-  <li>Added a comparative pass: <em>Battletoads</em> vs <em>TMNT: Shredder’s Revenge</em> (same dev) and <em>Disney Illusion Island</em> (same genre).</li>
+  <li>Added a comparative pass: <em>Battletoads</em> vs <em>Disney Illusion Island</em> (same dev) and <em><hr>Teenage Mutant Ninja Turtles: Shredder's Revenge</em> (same genre).</li>
   <li>Logged <strong>presses to first control</strong>, <strong>Pause → Back</strong> behaviour, and <strong>HUD readability</strong> with “why it matters” notes.</li>
   <li>Turned notes into a <strong>comparison table + metrics</strong> (see next section).</li>
 </ul>
@@ -251,7 +251,7 @@
       <td></td>
       <td>—</td>
       <td>HUD readability</td>
-      <td>Info spread across corners; tracking health/rank/combo is hard mid-fight</td>
+      <td>Info spread across corners; tracking health/rank/combo is difficult mid-fight (tester is dyslexic and Dyscalculic)</td>
       <td>Accessibility/readability risk</td>
       <td>
         <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
@@ -438,7 +438,7 @@
 <hr>
 <h2>🧩 What I learned</h2>
 <ul>
-  <li><strong>Write steps so “future me” and any teammate can rerun them first try.</strong> Plain, tight repros meant I could pick the test back up days later without thinking.</li>
+  <li><strong>Write steps so “future me” and any teammate can re-run them first try.</strong> Plain, tight repros meant I could pick the test back up days later without thinking.</li>
   <li><strong>Input hand-off needs its own mini-suite.</strong> Treat keyboard↔controller focus like a feature; that’s where the bugs on this project lived.</li>
   <li><strong>Short clips beat long recordings.</strong> 10–30s videos told the story quicker than paragraphs and made severity obvious.</li>
   <li><strong>Baseline numbers help.</strong> “4 presses to first control” became a simple guardrail to spot regressions fast.</li>
