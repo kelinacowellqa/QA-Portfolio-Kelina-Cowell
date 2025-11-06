@@ -406,14 +406,6 @@
   <div class="embed"><iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0" title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </details>
 
-<h2>🧩 Lessons Learned</h2>
-<ul>
-  <li>Clear steps beat clever wording — they made my re-tests painless.</li>
-  <li>Input hand-off needed its own checks; that’s where the real bugs were.</li>
-  <li>Short videos did the heavy lifting when explaining severity.</li>
-</ul>
-<hr>
-
 <h3>Jira Board Screenshot - Overview</h3>
 <p>
   <a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank">
