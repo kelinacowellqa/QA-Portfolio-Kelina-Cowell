@@ -75,7 +75,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/shadowpoint/media/sp-poster.png" alt="Shadow Point poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/shadow-point/media/sp-poster.png" alt="Shadow Point poster">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 
@@ -126,9 +126,9 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash/media/pws-poster.png" alt="PowerWash Simulator poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash-simulator/media/pws-poster.png" alt="PowerWash Simulator poster">
 
-### 7: Automation Testing – *PowerWash Simulator (PC)*
+### 7: Automation Testing – *PowerWash Simulator 2 (PC Game Pass)*
 
 <strong style="color:inherit">Goal:</strong> Demonstrate early automation skills by scripting repeatable checks and quick regressions on core flows.  
 <strong style="color:inherit">Focus:</strong> Launch → menu → job select smoke · Settings persistence · Save/load state · Input macro checks (KB/mouse/controller) · Simple visual comparisons for “clean/dirty” states  
