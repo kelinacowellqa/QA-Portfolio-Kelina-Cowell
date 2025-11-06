@@ -99,14 +99,15 @@ a:focus-visible, .btn:focus-visible { outline:2px solid $teal !important; outlin
   margin: 22px auto;
   padding: 16px 18px;
 
-  /* contains floated thumbnail */
-  overflow: auto;
+  position: relative;       /* for the docked image */
+  overflow: hidden;         /* trims any spill */
 }
 .project-block + .project-block { margin-top: 30px; }
 .project-block:hover {
   border-color:rgba(0,255,240,.35);
   box-shadow:0 0 20px rgba(0,255,240,.25), 0 0 40px rgba(0,255,240,.15), 0 6px 24px rgba(0,0,0,.45);
 }
+
 /* keep "Goal:" etc. inline */
 .project-block p > strong:first-child { color:inherit; font-size:inherit; display:inline; margin:0 4px 0 0; white-space:nowrap; }
 .project-block em { color:$muted; }
@@ -117,19 +118,35 @@ a:focus-visible, .btn:focus-visible { outline:2px solid $teal !important; outlin
 .project-actions { margin-top: 14px; text-align: right; }
 .project-block .cta { text-align:left; }
 
-/* === Poster thumbnail inside project cards === */
+/* === Docked-right poster inside project cards === */
+.project-block.with-thumb {            /* reserve space for the poster */
+  padding-right: 220px;               /* adjust 200–260px to taste */
+  min-height: 180px;
+}
+
 .project-block .thumb{
-  width:140px;              /* tweak to 120/160/180 as you like */
-  aspect-ratio:3/4;
+  position:absolute;
+  top:16px;
+  right:18px;
+  width:160px;                        /* poster size; try 140–180px */
+  height:auto;
+  aspect-ratio: 3/4;
   object-fit:cover;
-  float:right;
-  margin:0 0 10px 16px;
   border-radius:10px;
   border:1px solid rgba(255,255,255,.08);
   box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
+
+/* Mobile: stack poster above text */
 @media (max-width:780px){
-  .project-block .thumb{ float:none; display:block; width:60%; max-width:260px; margin:0 auto 10px; }
+  .project-block.with-thumb { padding-right: 18px; }
+  .project-block .thumb{
+    position: static;
+    display:block;
+    margin:0 0 10px auto;   /* sits above, aligned right */
+    width: 60%;
+    max-width: 260px;
+  }
 }
 
 /* ===============================
@@ -215,3 +232,4 @@ details[open] .details-btn::before{ content:"▼ "; }
 
 /* kill any leftover debug outline */
 body { outline: none !important; }
+
