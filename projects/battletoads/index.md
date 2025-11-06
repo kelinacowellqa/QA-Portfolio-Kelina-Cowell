@@ -406,12 +406,33 @@
   <div class="embed"><iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0" title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </details>
 
-<h2>🧩 Lessons Learned</h2>
+<h2>🧩 What I learned</h2>
 <ul>
-  <li>Clear steps beat clever wording — they made my re-tests painless.</li>
-  <li>Input hand-off needed its own checks; that’s where the real bugs were.</li>
-  <li>Short videos did the heavy lifting when explaining severity.</li>
+  <li><strong>Write steps so “future me” and any teammate can rerun them first try.</strong> Plain, tight repros meant I could pick the test back up days later without thinking.</li>
+  <li><strong>Input hand-off needs its own mini-suite.</strong> Treat keyboard↔controller focus like a feature; that’s where the bugs on this project lived.</li>
+  <li><strong>Short clips beat long recordings.</strong> 10–30s videos told the story quicker than paragraphs and made severity obvious.</li>
+  <li><strong>Baseline numbers help.</strong> “4 presses to first control” became a simple guardrail to spot regressions fast.</li>
+  <li><strong>Evidence where you triage.</strong> Jira thumbnails + links kept every issue self-contained and easy to review.</li>
 </ul>
+
+<hr>
+<h2>✅ Conclusion</h2>
+
+<p><strong>TL;DR:</strong> Full functional pass complete on <em>Battletoads</em> (PC Game Pass). I validated core flows end-to-end, stress-checked stability/performance, and documented <strong>4 input-ownership defects</strong> with <strong>100% repro</strong> (16/16), each backed by short videos and tidy Jira cards.</p>
+
+<ul>
+  <li><strong>Coverage delivered:</strong> start→first control (4-press baseline), Pause/Resume behaviour, keyboard↔controller focus/hand-off, local co-op Join/Leave, respawn & checkpoint integrity, arena-clear progression timing, audio pause/resume, HUD restoration/readability, Game Over flow, controller disconnect/reconnect, performance sanity (avg ~140 FPS; no sustained dips), and stress/transition checks.</li>
+  <li><strong>Highest-impact finding:</strong> Pause/Join-In hand-off issues that can confuse or block input ownership.</li>
+  <li><strong>Evidence maturity:</strong> Every finding has a video thumbnail in the bugs table plus clear repro steps and severity in Jira.</li>
+</ul>
+
+<p><strong>Up next:</strong> I’m moving on to an <em>Exploratory &amp; Edge-Case Testing</em> project on <em>Rebel Racing</em> (Mobile) focused on <strong>device compatibility</strong>, <strong>input latency</strong>, <strong>UI scaling</strong>, and <strong>crash handling</strong>.</p>
+
+<p><strong>Links:</strong> <a href="#inline-videos">inline videos</a> ·
+<a href="https://docs.google.com/spreadsheets/d/17_BCpZrtCTItn-ieGcG1PExIGnlLe1Bg/edit?usp=sharing" target="_blank" rel="noopener">QA workbook</a> ·
+<a href="./bug_reports/Battletoads_QA_Functional_TestPlan_PCGamePass_Kelina_Cowell_PORTFOLIO.pdf">test plan (PDF)</a> ·
+<a href="./jira_workflow/battletoads_jira_board_overview.png" target="_blank" rel="noopener">Jira board</a></p>
+
 
 <h2>📎 Disclaimer</h2>
 <p><em>This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.</em></p>
