@@ -233,3 +233,24 @@ details[open] .details-btn::before{ content:"▼ "; }
 /* kill any leftover debug outline */
 body { outline: none !important; }
 
+/* --- Final poster override --- */
+.project-block.with-thumb{ padding-right:235px !important; }
+.project-block .thumb{
+  position:absolute !important;
+  top:16px !important;
+  right:18px !important;
+  width:170px !important;
+  height:auto !important;
+  aspect-ratio:3/4 !important;
+  object-fit:cover !important;
+  float:none !important;
+}
+@media (max-width:780px){
+  .project-block.with-thumb{ padding-right:18px !important; }
+  .project-block .thumb{
+    position:static !important;
+    width:60% !important;
+    max-width:260px !important;
+    margin:0 0 10px auto !important;
+  }
+}
