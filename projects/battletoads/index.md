@@ -207,7 +207,7 @@
       <td>Info spread across corners; tracking health/rank/combo is hard mid-fight</td>
       <td>Accessibility/readability risk</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" target="_blank" rel="noopener">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
           <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" alt="Battletoads HUD screenshot">
         </a>
       </td>
@@ -241,7 +241,7 @@
       <td>Just-in-time jump prompt</td>
       <td>Clear guidance for new players</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" target="_blank" rel="noopener">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_obsersvatgion6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
           <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" alt="Illusion Island onboarding screenshot">
         </a>
       </td>
