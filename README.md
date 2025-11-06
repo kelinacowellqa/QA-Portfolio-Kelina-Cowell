@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ '/assets/css/style.css?v=4' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=5' | relative_url }}">
 
 <div class="container">
   <!-- your markdown/HTML content goes here (sections, tables, etc.) -->
@@ -21,8 +21,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 ## 🧩 Project Lineup
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg"
+       alt="Battletoads poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
@@ -40,13 +43,16 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/rebel-racing/media/rr-poster.png" alt="Rebel Racing poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/rebel-racing/media/rr-poster.png"
+       alt="Rebel Racing poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 
 <strong style="color:inherit">Goal:</strong> Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
-<strong style="color:inherit">Focus:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</strong>  
+<strong style="color:inherit">Focus:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage  
 <strong style="color:inherit">Tools:</strong> Google Sheets session charters & notes · On-device screen recordings (iOS/Android) · Network throttling (Airplane/Low-bandwidth) · Device matrix  
 <strong style="color:inherit">Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
 <strong style="color:inherit">Result:</strong> In progress — early passes are mapping risks across device classes and network conditions. 
@@ -57,8 +63,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/sworn/media/s-poster.png" alt="Sworn poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/sworn/media/s-poster.png"
+       alt="Sworn poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 3: Regression Testing – *Sworn (PC)*
 
@@ -74,8 +83,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/shadow-point/media/sp-poster.png" alt="Shadow Point poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/shadow-point/media/sp-poster.png"
+       alt="Shadow Point poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 
@@ -91,8 +103,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/recompile/media/rec-poster.png" alt="Recompile poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/recompile/media/rec-poster.png"
+       alt="Recompile poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
 
@@ -108,8 +123,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/oxenfree/media/o-poster.png" alt="Oxenfree poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/oxenfree/media/o-poster.png"
+       alt="Oxenfree poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
   
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
 
@@ -125,8 +143,11 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/powerwash-simulator/media/pws-poster.png" alt="PowerWash Simulator poster">
+<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
+  <img class="thumb"
+       src="{{ site.baseurl }}/projects/powerwash-simulator/media/pws-poster.png"
+       alt="PowerWash Simulator poster"
+       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
 ### 7: Automation Testing – *PowerWash Simulator 2 (PC Game Pass)*
 
@@ -179,46 +200,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 ---
 
 ## 🌟 Summary
-I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer, more enjoyable games.
+I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, cle
 
----
-
-## 🍀 Connect
-
-**Kelina Cowell – Multiplatform Games Tester**  
-🔗 [LinkedIn](https://www.linkedin.com/in/kelina-cowell-qa-tester)  
-📧 kelinacowell.qa@gmail.com  
-
----
-
-## 📎 Disclaimer
-*This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.*
-
-<style>
-/* TEMP OVERRIDE to force poster size/position */
-.project-block.with-thumb{ padding-right:235px !important; min-height:180px !important; }
-.project-block .thumb{
-  position:absolute !important;
-  top:16px !important;
-  right:18px !important;
-  width:170px !important;      /* Balanced size */
-  height:auto !important;
-  aspect-ratio:3/4 !important;
-  object-fit:cover !important;
-  float:none !important;        /* kill old float rule */
-  border-radius:10px !important;
-  box-shadow:0 6px 18px rgba(0,0,0,.35) !important;
-}
-@media (max-width:780px){
-  .project-block.with-thumb{ padding-right:18px !important; }
-  .project-block .thumb{
-    position:static !important;
-    display:block !important;
-    margin:0 0 10px auto !important;
-    width:60% !important; max-width:260px !important;
-  }
-}
-</style>
 
 
 
