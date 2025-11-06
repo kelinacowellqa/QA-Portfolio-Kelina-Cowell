@@ -251,7 +251,7 @@
       <td></td>
       <td>—</td>
       <td>HUD readability</td>
-      <td>Info spread across corners; tracking health/rank/combo is difficult mid-fight (tester is dyslexic and Dyscalculic)</td>
+      <td>Info spread across corners; tracking health/rank/combo is difficult mid-fight (tester is dyslexic and dyscalculic)</td>
       <td>Accessibility/readability risk</td>
       <td>
         <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
