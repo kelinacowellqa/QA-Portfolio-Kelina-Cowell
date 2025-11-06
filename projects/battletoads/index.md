@@ -186,26 +186,12 @@
 
 <h3>Key Metrics</h3>
 <ul>
-  <li><strong>Presses to first control (Title → Play):</strong> <strong>Battletoads:</strong> 4 • <strong>TMNT:</strong> 6 • <strong>Illusion Island:</strong> 13</li>
-  <li><strong>Pause → Back (resume control):</strong> <strong>Battletoads:</strong> immediate • <strong>TMNT:</strong> immediate • <strong>Illusion Island:</strong> <em>not observed</em></li>
-  <li><strong>HUD readability (combat):</strong> <strong>Battletoads:</strong> info spread to corners • <strong>TMNT:</strong> tiny unlabeled bars; pop-ups obscure UI</li>
+  <li><strong>Presses to first control (Title → Play):</strong> Battletoads: 4 • TMNT: 6 • Illusion Island: 13</li>
+  <li><strong>Pause → Back (resume control):</strong> Battletoads: immediate • TMNT: immediate • Illusion Island: <em>not observed in available footage</em></li>
+  <li><strong>HUD readability (combat):</strong> Battletoads: info spread to corners • TMNT: tiny unlabeled bars; pop-ups obscure UI</li>
 </ul>
 
-<!-- Comparison Table with thumbnails (fixed) -->
-<style>
-.table-compare { width:100%; border-collapse:collapse; }
-.table-compare th, .table-compare td { border:1px solid rgba(255,255,255,.08); padding:10px 12px; vertical-align:middle; }
-.table-compare thead th { background:rgba(0,255,240,.08); color:#00fff0; }
-.table-compare td:nth-child(1){ width:140px; font-weight:700; }
-.table-compare td:nth-child(2){ width:140px; white-space:nowrap; }
-.table-compare td:nth-child(6){ width:190px; }
-.thumb {
-  width:160px; height:90px; object-fit:cover; border-radius:10px; display:block;
-  border:1px solid rgba(255,255,255,.08); box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
-.thumb.square { width:120px; height:120px; }
-</style>
-
+<!-- Comparison Table -->
 <table class="table-compare">
   <thead>
     <tr>
@@ -218,7 +204,7 @@
     </tr>
   </thead>
   <tbody>
-    <!-- === Battletoads === -->
+    <!-- Battletoads -->
     <tr>
       <td><strong>Battletoads</strong></td>
       <td>0:07–1:12 (1:05)</td>
@@ -262,13 +248,13 @@
       <td>Info spread across corners; tracking health/rank/combo is hard mid-fight</td>
       <td>Accessibility/readability risk</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" alt="Battletoads HUD screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" alt="Battletoads HUD screenshot">
         </a>
       </td>
     </tr>
 
-    <!-- === Illusion Island === -->
+    <!-- Illusion Island -->
     <tr>
       <td><strong>Illusion Island</strong></td>
       <td>0:09–3:11 (3:02)</td>
@@ -281,27 +267,28 @@
         </a>
       </td>
     </tr>
-  <tr>
-  <td></td>
-  <td>—</td>
-  <td>Pause → Back</td>
-  <td>Not observed in available public footage (longplay/stream review)</td>
-  <td>No inference without evidence</td>
-  <td>—</td>
-</tr>
+    <tr>
+      <td></td>
+      <td>—</td>
+      <td>Pause → Back</td>
+      <td>Not observed in available public footage (longplay/stream review)</td>
+      <td>No inference without evidence</td>
+      <td>—</td>
+    </tr>
+    <tr>
       <td></td>
       <td>3:11</td>
       <td>Onboarding</td>
       <td>Just-in-time jump prompt</td>
       <td>Clear guidance for new players</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_observation6onboarding_prompt_00MM_playable_v01.png" alt="Illusion Island onboarding screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" alt="Illusion Island onboarding screenshot">
         </a>
       </td>
     </tr>
 
-    <!-- === TMNT === -->
+    <!-- TMNT -->
     <tr>
       <td><strong>TMNT</strong></td>
       <td>0:01–3:55 (3:54)</td>
@@ -309,8 +296,8 @@
       <td><strong>6 presses</strong> to first control</td>
       <td>Higher friction than Battletoads</td>
       <td>
-        <a href="https://youtu.be/Xq_XEP8lKZI" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/Xq_XEP8lKZI/hqdefault.jpg" alt="TMNT — Start video">
+        <a href="https://youtu.be/MDEyQjmjfFU" target="_blank" rel="noopener">
+          <img class="thumb" src="https://img.youtube.com/vi/MDEyQjmjfFU/hqdefault.jpg" alt="TMNT — Pause to Back video">
         </a>
       </td>
     </tr>
@@ -333,13 +320,14 @@
       <td>Tiny blue/green unlabeled bars; score pop-ups obstruct</td>
       <td>Readability risk in combat</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/TMNT_observation7-hud-readability.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/TMNT_observation7-hud-readability.png" alt="TMNT HUD screenshot">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" target="_blank" rel="noopener">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" alt="TMNT HUD screenshot">
         </a>
       </td>
     </tr>
   </tbody>
 </table>
+
 
 <p><sub><strong>Method (Illusion Island rows):</strong> Not hands-on — I reviewed public longplay/stream footage. Where behaviour wasn’t visible, it’s recorded as <em>Not observed in available footage</em> rather than guessed.</sub></p>
 
@@ -403,6 +391,7 @@
     <td><a href="./jira_workflow/battletoads_jira_board_verified4.png" target="_blank"><img src="./jira_workflow/battletoads_jira_board_verified4.png" alt="Verified – set 4" style="width:160px;height:160px;object-fit:cover;border-radius:8px;"></a></td>
   </tr>
 </table>
+
 <p><sub>Click any thumbnail to view the full-size image.</sub></p>
 
 <h3>Bugs — summary + videos</h3>
