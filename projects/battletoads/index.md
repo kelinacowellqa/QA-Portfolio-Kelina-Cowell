@@ -193,7 +193,7 @@
       <td>Smooth first minute; low friction</td>
       <td>
         <a href="https://youtu.be/BT_NEWGAME_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/BT_NEWGAME_ID/hqdefault.jpg" alt="Battletoads — New Game video">
+          <img class="thumb" src="[https://img.youtube.com/vi/BT_NEWGAME_ID/hqdefault.jpg](https://youtu.be/CN3oHz5fnFw)" alt="Battletoads — New Game video">
         </a>
       </td>
     </tr>
@@ -205,7 +205,7 @@
       <td>Faster return-to-play; risk of missed context</td>
       <td>
         <a href="https://youtu.be/BT_CONTINUE_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/BT_CONTINUE_ID/hqdefault.jpg" alt="Battletoads — Continue video">
+          <img class="thumb" src="[https://img.youtube.com/vi/BT_CONTINUE_ID/hqdefault.jpg](https://youtu.be/iGk1TNBuZWc)" alt="Battletoads — Continue video">
         </a>
       </td>
     </tr>
@@ -217,7 +217,7 @@
       <td>Prevents stray menu inputs</td>
       <td>
         <a href="https://youtu.be/BT_PAUSE_BACK_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/BT_PAUSE_BACK_ID/hqdefault.jpg" alt="Battletoads — Pause to Back video">
+          <img class="thumb" src="[https://img.youtube.com/vi/BT_PAUSE_BACK_ID/hqdefault.jpg](https://youtu.be/P7QNSN-6wqI)" alt="Battletoads — Pause to Back video">
         </a>
       </td>
     </tr>
@@ -243,7 +243,7 @@
       <td>Higher start friction than Battletoads (4) & TMNT (6)</td>
       <td>
         <a href="https://youtu.be/ILLUSION_PLAY_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/ILLUSION_PLAY_ID/hqdefault.jpg" alt="Illusion Island — Play video">
+          <img class="thumb" src="[https://img.youtube.com/vi/ILLUSION_PLAY_ID/hqdefault.jpg](https://youtu.be/Xq_XEP8lKZI)" alt="Illusion Island — Play video">
         </a>
       </td>
     </tr>
@@ -277,7 +277,7 @@
       <td>Higher friction than Battletoads</td>
       <td>
         <a href="https://youtu.be/TMNT_START_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/TMNT_START_ID/hqdefault.jpg" alt="TMNT — Start video">
+          <img class="thumb" src="[https://img.youtube.com/vi/TMNT_START_ID/hqdefault.jpg](https://youtu.be/Xq_XEP8lKZI)" alt="TMNT — Start video">
         </a>
       </td>
     </tr>
@@ -289,7 +289,7 @@
       <td>Consistent resume behaviour</td>
       <td>
         <a href="https://youtu.be/TMNT_PAUSE_BACK_ID" target="_blank" rel="noopener">
-          <img class="thumb" src="https://img.youtube.com/vi/TMNT_PAUSE_BACK_ID/hqdefault.jpg" alt="TMNT — Pause to Back video">
+          <img class="thumb" src="[https://img.youtube.com/vi/TMNT_PAUSE_BACK_ID/hqdefault.jpg](https://youtu.be/MDEyQjmjfFU)" alt="TMNT — Pause to Back video">
         </a>
       </td>
     </tr>
