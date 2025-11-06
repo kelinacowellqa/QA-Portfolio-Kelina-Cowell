@@ -41,7 +41,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/projects/rebelracing/media/rr-poster.png" alt="Rebel Racing poster">
+  <img class="thumb" src="{{ site.baseurl }}/projects/rebel-racing/media/rr-poster.png" alt="Rebel Racing poster">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 
