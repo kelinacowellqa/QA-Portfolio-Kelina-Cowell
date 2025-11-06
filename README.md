@@ -23,8 +23,6 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <section markdown="1" class="project-block">
 
-<img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
-
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
 <strong style="color:inherit">Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ↔ controller hand-off.  
@@ -38,6 +36,17 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <p class="cta">
   <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
 </p>
+
+<div class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
+  <h3>1: Functional Testing – <em>Battletoads</em> (PC Game Pass)</h3>
+  <p><strong>Goal:</strong> Validate core gameplay and document repeatable defects…</p>
+  <p><strong>Focus:</strong> Gameplay logic • UI/menus • Input parity • Audio • Performance sanity</p>
+  <p><strong>Tools:</strong> Jira • Google Sheets QA workbook • Xbox Game Bar / OBS</p>
+  <p><strong>Deliverables:</strong> QA workbook (Sheets + PDF) • Evidence videos (YouTube) • Jira board + verified thumbnails</p>
+  <p><strong>Result:</strong> 16/16 reproducible across 4 issues; key input hand-off defects surfaced.</p>
+  <p class="cta"><a class="cta-btn" href="{{ site.baseurl }}/projects/battletoads/">Read the case study →</a></p>
+</div>
 
 </section>
 
