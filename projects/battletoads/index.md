@@ -466,4 +466,25 @@
 <h2>📎 Disclaimer</h2>
 <p><em>This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.</em></p>
 
+<style>
+/* Force thumbnails in the Evidence column, even if the img lacks a class */
+.table-compare td:last-child { width: 190px; }
+.table-compare td:last-child a,
+.table-compare td:last-child img { display:block; }
+
+.table-compare td:last-child img {
+  width:160px;           /* 16:9 YouTube thumb size */
+  height:90px;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+
+/* For square screenshots (non-video) */
+.table-compare td:last-child img.square {
+  width:120px;
+  height:120px;
+}
+</style>
 
