@@ -130,6 +130,7 @@
   <li><a href="../../jira_training/screenshots/get-started-with-jira_coursera_cert.pdf">Get Started with Jira — certificate</a></li>
 </ul>
 
+<hr>
 <h2>📷 Evidence &amp; Media</h2>
 <table>
   <thead><tr><th>Type</th><th>File / Link</th></tr></thead>
@@ -150,7 +151,7 @@
 
 <p><strong>Source:</strong> <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">Radu Posoi — Founder, Alkotech Labs (ex-Ubisoft QA Lead)</a></p>
 
-<p><strong>One-line takeaway:</strong> Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down <em>what happened</em> + <em>why it matters</em> for the player.</p>
+<p><strong>Takeaway:</strong> Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down <em>what happened</em> + <em>why it matters</em> for the player.</p>
 
 <p><strong>How I applied it in this project</strong></p>
 <ul>
