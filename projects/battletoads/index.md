@@ -37,7 +37,7 @@
 <h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
 
 <!-- Intro -->
-<p><strong>Introduction:</strong> One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership. I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.</p>
+<h2>Introduction:<h2> One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership. I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.</p>
 
 <ul>
   <li><strong>Scope:</strong> start → first control, Pause/Resume, keyboard ↔ controller hand-off, local co-op join/leave, HUD/readability, respawn & checkpoints, Game Over flow, stability/performance sanity.</li>
