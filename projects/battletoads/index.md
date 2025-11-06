@@ -135,10 +135,8 @@
 **Evidence:**
 - LinkedIn discussion (screenshot):  
   ![LinkedIn conversation screenshot]({{ site.baseurl }}/projects/battletoads/media/linkedin-radu-posoi-qa-mindset.png)
-- Profile context (screenshots):  
-  ![Alkotech profile snippet]({{ site.baseurl }}/projects/battletoads/media/radu-posoi-alkotech.png)
-  ![Experience summary]({{ site.baseurl }}/projects/battletoads/media/radu-posoi-experience.png)
-
+- **Source Post:** [Radu Posoi — Alkotech Labs (LinkedIn)]([https://www.linkedin.com/in/raduposoi/](https://www.linkedin.com/posts/raduposoi_i-like-to-think-of-qa-as-the-keeper-of-the-activity-7386719297152225280-RX3R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFqoJPIBhgleQvEhtPGK7V0V7Tx6qVm06c8))
+ 
 **Where this shows up in my case study:**
 - See **Comparative Findings — First-Minute & Pause → Back** (below) for the applied table and metrics.
 
