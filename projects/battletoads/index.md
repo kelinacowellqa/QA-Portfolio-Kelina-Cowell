@@ -22,7 +22,20 @@
 
 <h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
 
-<p><a href="{{ site.baseurl }}/">⬅ Back to Portfolio Home</a></p>
+<p>
+  <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
+  <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  <a class="cta-btn" href="[https://www.linkedin.com/in/kelina-cowell-qa-tester](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/)" target="_blank" rel="noopener">Back to Portfolio hub</a>
+</p>
+
+<!-- Intro -->
+<p><strong>Introduction:</strong> One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership. I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.</p>
+
+<ul>
+  <li><strong>Scope:</strong> start → first control, Pause/Resume, keyboard ↔ controller hand-off, local co-op join/leave, HUD/readability, respawn & checkpoints, Game Over flow, stability/performance sanity.</li>
+  <li><strong>Outcome:</strong> <strong>4 input-ownership issues</strong> with <strong>100% repro</strong> (16/16), each with a 10–30s video thumbnail below.</li>
+  <li><strong>Evidence:</strong> comparison snapshots, bug table with YouTube thumbnails, and Jira board screenshots.</li>
+</ul>
 
 <table>
   <thead><tr><th>Studio</th><th>Platform</th><th>Scope</th></tr></thead>
@@ -431,6 +444,7 @@
 <p>
   <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
   <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  <a class="cta-btn" href="[https://www.linkedin.com/in/kelina-cowell-qa-tester](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/)" target="_blank" rel="noopener">Back to Portfolio hub</a>
 </p>
 
 <h2>📎 Disclaimer</h2>
