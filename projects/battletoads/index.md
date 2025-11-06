@@ -114,6 +114,33 @@
 </table>
 
 ---
+## 🤝 Networking & Applied Insight
+
+**Who:** Radu Posoi — Founder, Alkotech Labs; ex-Ubisoft QA Lead  
+**Context:** Short LinkedIn exchange on building a “keeper of the promise” mindset in QA.  
+**Key advice (summary):**
+- Play *mindfully* — notice when experience/mechanics feel good or clunky.
+- Compare **same-dev** and **same-genre** titles to spot patterns and differences.
+- **Write things down** — impressions, issues, why they matter.
+- Practise with **active intent** (don’t play mindlessly).
+
+> “Be mindful of how the game feels overall… then check other games from the same developer and the same genre. Write down impressions — that habit translates into QA skills that are hard to teach.”
+
+**How I applied it in this project:**
+- Added a **comparative pass** against *TMNT: Shredder’s Revenge* (same dev) and *Disney Illusion Island* (same genre).
+- Logged **first-minute friction** (presses to control), **Pause → Back** behaviour, and **HUD readability**.
+- Wrote **why-it-matters** notes beside each observation, not just what happened.
+- Planned next tests based on gaps (e.g., confirm Illusion Island’s Pause → Back hands-on).
+
+**Evidence:**
+- LinkedIn discussion (screenshot):  
+  ![LinkedIn conversation screenshot]({{ site.baseurl }}/projects/battletoads/media/linkedin-radu-posoi-qa-mindset.png)
+- Profile context (screenshots):  
+  ![Alkotech profile snippet]({{ site.baseurl }}/projects/battletoads/media/radu-posoi-alkotech.png)
+  ![Experience summary]({{ site.baseurl }}/projects/battletoads/media/radu-posoi-experience.png)
+
+**Where this shows up in my case study:**
+- See **Comparative Findings — First-Minute & Pause → Back** (below) for the applied table and metrics.
 
 ---
 
