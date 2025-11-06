@@ -208,7 +208,7 @@
       <td>Accessibility/readability risk</td>
       <td>
         <a href="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt-hud.png" alt="Battletoads HUD screenshot">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/bt_observation4-hud-readability.png" alt="Battletoads HUD screenshot">
         </a>
       </td>
     </tr>
@@ -242,7 +242,7 @@
       <td>Clear guidance for new players</td>
       <td>
         <a href="{{ site.baseurl }}/projects/battletoads/media/ii_obsersvatgion6onboarding_prompt_00MM_playable_v01.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/illusion-onboarding.png" alt="Illusion Island onboarding screenshot">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/ii_obsersvatgion6onboarding_prompt_00MM_playable_v01.png" alt="Illusion Island onboarding screenshot">
         </a>
       </td>
     </tr>
@@ -280,7 +280,7 @@
       <td>Readability risk in combat</td>
       <td>
         <a href="{{ site.baseurl }}/projects/battletoads/media/TMNT_observation7-hud-readability.png" target="_blank" rel="noopener">
-          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" alt="TMNT HUD screenshot">
+          <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/TMNT_observation7-hud-readability.png" alt="TMNT HUD screenshot">
         </a>
       </td>
     </tr>
