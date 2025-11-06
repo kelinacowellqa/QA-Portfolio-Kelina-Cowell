@@ -20,13 +20,13 @@
     style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:10px;object-fit:contain;">
 </p>
 
-<h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
-
 <p>
   <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email me</a>
   <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
   <a class="cta-btn" href="[https://www.linkedin.com/in/kelina-cowell-qa-tester](https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/)" target="_blank" rel="noopener">Back to Portfolio hub</a>
 </p>
+
+<h1>🎮 Battletoads — Functional Testing (PC Game Pass)</h1>
 
 <!-- Intro -->
 <p><strong>Introduction:</strong> One-week functional test pass on <em>Battletoads</em> (PC Game Pass, Win11 @1080p/144Hz) focused on core gameplay flows and input ownership. I built a compact suite, captured short evidence clips, and logged four reproducible defects with clear Jira tickets.</p>
