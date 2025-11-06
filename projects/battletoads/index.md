@@ -279,7 +279,7 @@
       <td>Tiny blue/green unlabeled bars; score pop-ups obstruct</td>
       <td>Readability risk in combat</td>
       <td>
-        <a href="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" target="_blank" rel="noopener">
+        <a href="{{ site.baseurl }}/projects/battletoads/media/TMNT_observation7-hud-readability.png" target="_blank" rel="noopener">
           <img class="thumb square" src="{{ site.baseurl }}/projects/battletoads/media/tmnt-hud.png" alt="TMNT HUD screenshot">
         </a>
       </td>
