@@ -115,6 +115,8 @@
 
 ---
 
+---
+
 ## 🧭 Comparative Findings — First-Minute & Pause → Back
 
 > Quick comparison against *Disney Illusion Island* and *TMNT: Shredder’s Revenge* to give context to Battletoads’ UX.
@@ -136,7 +138,33 @@
 |  | 0:01–0:20 (0:19) | Title → Continue | **4 presses**; intro dialogue skipped | Faster return-to-play; risk of missed context | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-continue.mp4) |
 |  | 0:04–0:13 (0:09) | Pause → Back | Immediate control; no unintended actions | Prevents stray menu inputs | [Video]({{ site.baseurl }}/projects/battletoads/media/bt-pause-back.mp4) |
 |  | — | HUD readability | Info spread across corners; tracking health/rank/combo is hard mid-fight | Accessibility/readability risk | [Screenshot]({{ site.baseurl }}/projects/battletoads/media/bt-hud.png) |
-| **Illusion Island** | 0:09–3:11 (3:02) | Title → Play | **13 presses** to first control | Higher start friction than Battletoads (4) & TMNT (6) |
+| **Illusion Island** | 0:09–3:11 (3:02) | Title → Play | **13 presses** to first control | Higher start friction than Battletoads (4) & TMNT (6) | [Video](#) |
+|  | — | Pause → Back | Not observed in source video | Data gap — needs hands-on or clip | — |
+|  | 3:11 | Onboarding | Just-in-time jump prompt | Clear guidance for new players | [Screenshot](#) |
+| **TMNT** | 0:01–3:55 (3:54) | Title → Start | **6 presses** to first control | Higher friction than Battletoads | [Video](#) |
+|  | 0:06–0:16 (0:10) | Pause → Back | Immediate control; no unintended actions | Consistent resume behaviour | [Video](#) |
+|  | — | HUD readability | Tiny blue/green unlabeled bars; score pop-ups obstruct | Readability risk in combat | [Screenshot](#) |
+
+> **Takeaway:** Battletoads reaches first control fastest (**4 presses**) and resumes cleanly from Pause. Biggest risk is **HUD readability** during combat. Next test: verify onboarding prompt timing and confirm Pause → Back behaviour on Illusion Island with hands-on capture.
+
+<details>
+<summary class="details-btn">Show raw notes (from QA workbook)</summary>
+
+**Environment:** Win11 · 1080p@144Hz · Xbox-layout controller (Dhaose 360) · Tools: Xbox Game Bar, Snipping Tool, YouTube  
+**Builds:** Battletoads (PC Game Pass) v1.1F.42718 · TMNT (PC Game Pass) v1.2407.17.0 · Illusion Island (Switch video reference)
+
+**Lenses:** First-minute · Co-op join/leave · Pause→Back · HUD · Retry · Onboarding
+
+**Evidence:** Timestamps + up to 2 screenshots per title
+
+- **Similarity (same-dev):** Both resume cleanly after Pause (immediate control; no unintended actions).  
+- **Difference (same-dev):** Start friction — TMNT needs 6 presses vs Battletoads 4; TMNT HUD uses small, unlabeled bars; Battletoads spreads info to corners.  
+- **Takeaway (same-dev):** Battletoads is faster to first control; both have readability risks in different ways.
+
+- **Difference (same-genre):** Illusion Island shows higher start friction; onboarding prompts are timely.  
+- **Takeaway (same-genre):** Illusion Island emphasises guided onboarding; Battletoads faster to first control.
+
+</details>
 
 <h3>Jira Board Screenshot - Overview</h3>
 <p>
