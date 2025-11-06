@@ -316,9 +316,6 @@
 <details>
 <summary class="details-btn">Show raw notes (from QA workbook)</summary>
 
-<details class="notes">
-  <summary><span class="details-btn">Show raw notes (from QA workbook)</span></summary>
-
   <div class="notes-wrap">
     <h4>Context</h4>
     <ul>
