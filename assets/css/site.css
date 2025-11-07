@@ -162,3 +162,43 @@ footer{
   .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
   .hero{margin:22px auto 14px}
 }
+
+/* === Teal glow on project cards === */
+.project-block{
+  transition: box-shadow .22s ease, border-color .22s ease, transform .18s ease;
+}
+.project-block > *{ position: relative; z-index: 1; }
+
+/* glow layer */
+.project-block::before{
+  content:"";
+  position:absolute; inset:-2px;
+  border-radius:12px;
+  background:
+    radial-gradient(40% 50% at 85% 10%, rgba(0,255,240,.30) 0%, transparent 70%),
+    radial-gradient(100% 100% at 50% 50%, rgba(0,255,240,.18) 0%, transparent 60%);
+  opacity:0;
+  filter: blur(14px);
+  pointer-events:none;
+  transition: opacity .22s ease, filter .22s ease;
+  z-index:0;
+}
+
+.project-block:hover,
+.project-block:focus-within{
+  border-color: rgba(0,255,240,.35);
+  box-shadow: 0 10px 30px rgba(0,255,240,.10), 0 6px 20px rgba(0,0,0,.35);
+  transform: translateY(-1px);
+}
+.project-block:hover::before,
+.project-block:focus-within::before{
+  opacity:1; filter: blur(22px);
+}
+
+/* motion sensitivity */
+@media (prefers-reduced-motion: reduce){
+  .project-block,
+  .project-block::before{
+    transition: none;
+  }
+}
