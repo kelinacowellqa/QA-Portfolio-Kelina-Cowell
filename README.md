@@ -124,71 +124,69 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <h2>✅ Coverage Map</h2>
 
-<div class="metrics-look">
-  <table>
-    <thead>
-      <tr>
-        <th>Project</th>
-        <th>QA Type</th>
-        <th>Platform</th>
-        <th>Focus</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Battletoads</td>
-        <td>Functional</td>
-        <td>PC (Game Pass)</td>
-        <td>Core flows · Input ownership · UI/menus</td>
-        <td><span class="pill pill--live">Live</span></td>
-      </tr>
-      <tr>
-        <td>Rebel Racing</td>
-        <td>Exploratory &amp; Edge-Case</td>
-        <td>Mobile</td>
-        <td>Scaling · Touch · Interruptions · Network</td>
-        <td>Coming soon</td>
-      </tr>
-      <tr>
-        <td>Sworn</td>
-        <td>Regression</td>
-        <td>PC</td>
-        <td>Save/load · Input mapping · UI scaling</td>
-        <td>Coming soon</td>
-      </tr>
-      <tr>
-        <td>Shadow Point</td>
-        <td>Cross-Platform (VR &amp; PCVR)</td>
-        <td>VR / PCVR</td>
-        <td>Comfort · Tracking · Parity</td>
-        <td>Coming soon</td>
-      </tr>
-      <tr>
-        <td>Recompile</td>
-        <td>Cross-Platform Input</td>
-        <td>PC / Controller</td>
-        <td>Mapping parity · Latency · Prompts</td>
-        <td>Coming soon</td>
-      </tr>
-      <tr>
-        <td>Oxenfree</td>
-        <td>Narrative / Localisation</td>
-        <td>Netflix Mobile</td>
-        <td>Subtitles · Timing · Readability</td>
-        <td>Coming soon</td>
-      </tr>
-      <tr>
-        <td>PowerWash Simulator</td>
-        <td>Automation</td>
-        <td>PC</td>
-        <td>Smoke scripts · Regression checks</td>
-        <td>Coming soon</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+<!-- ✅ Coverage Map — Metrics look, inline styles (theme-proof) -->
+<table style="width:100%;border-collapse:collapse;background:#0f1215;border:1px solid rgba(255,255,255,.08);margin:12px 0;">
+  <thead>
+    <tr style="background:rgba(0,255,240,.08);">
+      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);">Project</th>
+      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">QA Type</th>
+      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Platform</th>
+      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Focus</th>
+      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;">Battletoads</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Functional</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">PC (Game Pass)</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Core flows · Input ownership · UI/menus</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Live</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Rebel Racing</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Exploratory &amp; Edge-Case</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Mobile</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Scaling · Touch · Interruptions · Network</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Sworn</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Regression</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Save/load · Input mapping · UI scaling</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Shadow Point</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Cross-Platform (VR &amp; PCVR)</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">VR / PCVR</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Comfort · Tracking · Parity</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Recompile</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Cross-Platform Input</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC / Controller</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Mapping parity · Latency · Prompts</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Oxenfree</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Narrative / Localisation</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Netflix Mobile</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Subtitles · Timing · Readability</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+    <tr>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">PowerWash Simulator</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Automation</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Smoke scripts · Regression checks</td>
+      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
