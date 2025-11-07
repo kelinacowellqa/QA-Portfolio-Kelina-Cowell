@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/assets/css/site.css?v=7">
+<link rel="stylesheet" href="/assets/css/site.css?v=8">
 
 <!-- Hero -->
 <header class="hero">
