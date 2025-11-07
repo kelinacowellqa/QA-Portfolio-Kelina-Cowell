@@ -142,7 +142,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <h2>🧩 Project Lineup</h2>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/bt-poster.jpg" alt="Battletoads poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/bt-poster.jpg" alt="Battletoads poster">
 
   <h1>1: Functional Testing — <em>Battletoads (PC Game Pass)</em></h1>
   <ul>
@@ -169,18 +169,31 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <section markdown="1" class="project-block with-thumb">
   <img class="thumb" src="assets/img/rr-poster.png" alt="Rebel Racing poster">
+ 
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/rr-poster.png" alt="Rebel Racing poster">
 
-<h2>2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*</h2>
-<strong style="color:inherit">Goal:</strong> Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
-<strong style="color:inherit">Focus:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage  
-<strong style="color:inherit">Tools:</strong> Google Sheets session charters & notes · On-device recordings (iOS/Android) · Network throttling (Airplane/Low-bandwidth) · Device matrix  
-<strong style="color:inherit">Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips  
-<strong style="color:inherit">Result:</strong> In progress — early passes are mapping risks across device classes and network conditions.
+  <h1>2️: Exploratory & Edge-Case Testing – <em>Rebel Racing (Mobile)</em></h1>
+  <ul>
+    <li><strong>Goal:</strong> Probe the core loop and push edge cases to expose UX/stability cracks beyond the happy path.</li>
+    <li><strong>Scope:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</li>
+    <li><strong>Focus Areas:</strong>
+      <ul>
+        <li>Pause / Join-In / Resume behaviours under interruption</li>
+        <li>Input responsiveness and gesture handling</li>
+        <li>Orientation changes and safe UI scaling</li>
+        <li>Network loss/restore and degraded states</li>
+      </ul>
+    </li>
+    <li><strong>Tools:</strong> Google Sheets session charters/notes · On-device recordings (iOS/Android) · Network throttling (Airplane/low-bandwidth) · Device matrix</li>
+    <li><strong>Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips</li>
+    <li><strong>Status:</strong> In progress — early passes are mapping risks across device classes and network conditions.</li>
+    <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.</li>
+  </ul>
 
-🕹️ **Why this game?** Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
-
-**Coming soon:** full case study page with evidence, risk map, and metrics.
+  <p><em>Case study coming soon.</em></p>
 </section>
+
 
 <section markdown="1" class="project-block with-thumb">
   <img class="thumb" src="assets/img/s-poster.png" alt="Sworn poster">
