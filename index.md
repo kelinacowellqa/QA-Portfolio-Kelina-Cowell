@@ -1,6 +1,7 @@
 <!-- Hero -->
 <header class="hero">
-  <img src="/assets/img/profile-banner.webp" alt="Portfolio Banner">
+<link rel="stylesheet" href="assets/css/site.css?v=12">
+<img src="assets/img/profile-banner.webp" alt="Portfolio Banner">
 </header>
 
 ### Welcome to my QA portfolio.
@@ -16,7 +17,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 ## 🧩 Project Lineup
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/bt-poster.jpg"  alt="Battletoads poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/bt-poster.jpg"  alt="Battletoads poster">
 
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 <strong style="color:inherit">Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ↔ controller hand-off.  
@@ -33,7 +34,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/rr-poster.png"  alt="Rebel Racing poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/rr-poster.png"  alt="Rebel Racing poster">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 <strong style="color:inherit">Goal:</strong> Probe the core loop and push edge cases to see where UX and stability crack — not just “happy path” play.  
@@ -48,7 +49,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/s-poster.png"   alt="Sworn poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/s-poster.png"   alt="Sworn poster">
   
 ### 3: Regression Testing – *Sworn (PC)*
 <strong style="color:inherit">Goal:</strong> Re-test recent fixes to confirm they hold up and catch any side-effects before release.  
@@ -63,7 +64,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/sp-poster.png"  alt="Shadow Point poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/sp-poster.png"  alt="Shadow Point poster">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 <strong style="color:inherit">Goal:</strong> Show VR-specific QA awareness — comfort, tracking stability, and parity between standalone and PCVR.  
@@ -78,7 +79,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/rec-poster.png" alt="Recompile poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/rec-poster.png" alt="Recompile poster">
 
 ### 5: Multi-Input / Controller Parity QA – *Recompile (PC Game Pass)*
 <strong style="color:inherit">Goal:</strong> Validate controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers (Diswoe X360) on the PC (Game Pass) build.  
@@ -93,7 +94,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/o-poster.png"   alt="Oxenfree poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/o-poster.png"   alt="Oxenfree poster">
 
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
 <strong style="color:inherit">Goal:</strong> Ensure dialogue, subtitles, and UI text read naturally and stay in sync on mobile.  
@@ -108,7 +109,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 </section>
 
 <section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/pws-poster.png" alt="PowerWash Simulator poster">
+  <img class="thumb" src="{{ site.baseurl }}assets/img/pws-poster.png" alt="PowerWash Simulator poster">
 
 ### 7: Automation Testing – *PowerWash Simulator 2 (PC Game Pass)*
 <strong style="color:inherit">Goal:</strong> Demonstrate early automation via repeatable checks and quick regressions on core flows.  
