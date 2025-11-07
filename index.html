@@ -121,254 +121,250 @@ title: Manual QA Portfolio — Kelina Cowell
 <body>
   <main class="wrap">
 
-    <!-- >>>>>>>>>>>>>>>>>>>>>>> YOUR CONTENT (left 100% unchanged) <<<<<<<<<<<<<<<<<<<<<<< -->
-    <!-- BEGIN: do not edit/remove anything in this block per your instruction -->
-
     <!-- Hero -->
-<header class="hero">
-  <img class="thumb" src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Battletoads banner">
-</header>
+    <header class="hero">
+      <img src="{{ site.baseurl }}/assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png" alt="QA tester across PC, console, VR, mobile">
+    </header>
 
-<h1>Welcome to my QA portfolio.</h1>
+    <h1>Welcome to my QA portfolio.</h1>
 
-Here you’ll find eight full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
+    Here you’ll find eight full case studies that show a professional range of testing skills across PC, mobile, and VR — from functional and exploratory work to cross-platform, input, narrative/localisation, and early automation.
 
-### 🧠 Self-Directed QA Learning Programme
+    <h3>🧠 Self-Directed QA Learning Programme</h3>
+    This portfolio follows an eight-project roadmap I designed to mirror real studio workflows. Each project includes a clear goal, a complete practical QA workbook, Jira workflow, evidence clips and screenshots, and a concise STAR summary — focusing on reproducible bugs, readable documentation, and player-centred quality.
 
-This portfolio follows an eight-project roadmap I designed to mirror real studio workflows. Each project includes a clear goal, a complete practical QA workbook, Jira workflow, evidence clips and screenshots, and a concise STAR summary — focusing on reproducible bugs, readable documentation, and player-centred quality.
+    <hr>
 
----
+    <h1>🧩 Project Lineup</h1>
 
-<h1>🧩 Project Lineup</h1>
+    <!-- 1: Battletoads (LIVE) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/bt-poster.jpg" alt="Battletoads poster">
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}assets/img/bt-poster.jpg" alt="Battletoads poster">
-
-  <h1>1: Functional Testing — <em>Battletoads (PC Game Pass)</em></h1>
-  <ul>
-    <li><strong>Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ⇄ controller hand-off.</li>
-    <li><strong>Scope:</strong> Gameplay logic · UI/menus · Input parity · Audio cues · Performance sanity</li>
-    <li><strong>Focus Areas:</strong>
+      <h1>1: Functional Testing — <em>Battletoads (PC Game Pass)</em></h1>
       <ul>
-        <li>Pause / Join-In / Resume flows</li>
-        <li>Controller ownership and hand-off</li>
-        <li>Local co-op edge cases</li>
-        <li>Menu navigation and prompts</li>
+        <li><strong>Goal:</strong> Validate core gameplay and document repeatable defects, with extra attention to keyboard ⇄ controller hand-off.</li>
+        <li><strong>Scope:</strong> Gameplay logic · UI/menus · Input parity · Audio cues · Performance sanity</li>
+        <li><strong>Focus Areas:</strong>
+          <ul>
+            <li>Pause / Join-In / Resume flows</li>
+            <li>Controller ownership and hand-off</li>
+            <li>Local co-op edge cases</li>
+            <li>Menu navigation and prompts</li>
+          </ul>
+        </li>
+        <li><strong>Tools:</strong> Jira · Google Sheets QA workbook · Xbox Game Bar / OBS</li>
+        <li><strong>Deliverables:</strong> QA workbook (Sheets + PDF) · Evidence clips (YouTube) · Jira board with verified thumbnails</li>
+        <li><strong>Result:</strong> Stable overall; surfaced <strong>4</strong> high-impact input/hand-off defects. Test cases reproduced <strong>16/16</strong> times with clear steps and media.</li>
+        <li><strong>Why this game?</strong> A fast, recognisable brawler ideal for testing input ownership and local co-op edge cases.</li>
       </ul>
-    </li>
-    <li><strong>Tools:</strong> Jira · Google Sheets QA workbook · Xbox Game Bar / OBS</li>
-    <li><strong>Deliverables:</strong> QA workbook (Sheets + PDF) · Evidence clips (YouTube) · Jira board with verified thumbnails</li>
-    <li><strong>Result:</strong> Stable overall; surfaced <strong>4</strong> high-impact input/hand-off defects. Test cases reproduced <strong>16/16</strong> times with clear steps and media.</li>
-    <li><strong>Why this game?</strong> A fast, recognisable brawler ideal for testing input ownership and local co-op edge cases.</li>
-  </ul>
 
- <p class="cta">
-  <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
-</p>
-</section>
+      <p class="cta">
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
+      </p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="assets/img/rr-poster.png" alt="Rebel Racing poster">
- 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/rr-poster.png" alt="Rebel Racing poster">
+    <!-- 2: Rebel Racing (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/rr-poster.png" alt="Rebel Racing poster">
 
-  <h2>2️: Exploratory & Edge-Case Testing – <em>Rebel Racing (Mobile)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Probe the core loop and push edge cases to expose UX/stability cracks beyond the happy path.</li>
-    <li><strong>Scope:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</li>
-    <li><strong>Focus Areas:</strong>
+      <h1>2: Exploratory &amp; Edge-Case Testing — <em>Rebel Racing (Mobile)</em></h1>
       <ul>
-        <li>Pause / Join-In / Resume behaviours under interruption</li>
-        <li>Input responsiveness and gesture handling</li>
-        <li>Orientation changes and safe UI scaling</li>
-        <li>Network loss/restore and degraded states</li>
+        <li><strong>Goal:</strong> Probe the core loop and push edge cases to expose UX/stability cracks beyond the happy path.</li>
+        <li><strong>Scope:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</li>
+        <li><strong>Focus Areas:</strong>
+          <ul>
+            <li>Pause / Join-In / Resume behaviours under interruption</li>
+            <li>Input responsiveness and gesture handling</li>
+            <li>Orientation changes and safe UI scaling</li>
+            <li>Network loss/restore and degraded states</li>
+          </ul>
+        </li>
+        <li><strong>Tools:</strong> Google Sheets session charters/notes · On-device recordings (iOS/Android) · Network throttling (Airplane/low-bandwidth) · Device matrix</li>
+        <li><strong>Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips</li>
+        <li><strong>Status:</strong> In progress — early passes are mapping risks across device classes and network conditions.</li>
+        <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.</li>
       </ul>
-    </li>
-    <li><strong>Tools:</strong> Google Sheets session charters/notes · On-device recordings (iOS/Android) · Network throttling (Airplane/low-bandwidth) · Device matrix</li>
-    <li><strong>Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips</li>
-    <li><strong>Status:</strong> In progress — early passes are mapping risks across device classes and network conditions.</li>
-    <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.</li>
-  </ul>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/s-poster.png" alt="Sworn poster">
+    <!-- 3: Sworn (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/s-poster.png" alt="Sworn poster">
 
-  <h2>3: Regression Testing — <em>Sworn (PC)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Re-test recent fixes to confirm they hold and catch side-effects before release.</li>
-    <li><strong>Focus:</strong> Save/load integrity · Input/control mapping · UI scaling &amp; readability · Patch-notes verification</li>
-    <li><strong>Tools:</strong> Jira regression suite · Before/after evidence clips · Build notes</li>
-    <li><strong>Deliverables:</strong> Regression log · Verification matrix · Before/after screenshots &amp; short videos</li>
-    <li><strong>Status:</strong> In progress — working through the first patch set and tracking any reopens or knock-on issues.</li>
-    <li><strong>Why this game?</strong> Frequent updates and systems-heavy gameplay make it ideal for disciplined regression passes.</li>
-  </ul>
+      <h1>3: Regression Testing — <em>Sworn (PC)</em></h1>
+      <ul>
+        <li><strong>Goal:</strong> Re-test recent fixes to confirm they hold and catch side-effects before release.</li>
+        <li><strong>Focus:</strong> Save/load integrity · Input/control mapping · UI scaling &amp; readability · Patch-notes verification</li>
+        <li><strong>Tools:</strong> Jira regression suite · Before/after evidence clips · Build notes</li>
+        <li><strong>Deliverables:</strong> Regression log · Verification matrix · Before/after screenshots &amp; short videos</li>
+        <li><strong>Status:</strong> In progress — working through the first patch set and tracking any reopens or knock-on issues.</li>
+        <li><strong>Why this game?</strong> Frequent updates and systems-heavy gameplay make it ideal for disciplined regression passes.</li>
+      </ul>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/sp-poster.png" alt="Shadow Point poster">
+    <!-- 4: Shadow Point (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/sp-poster.png" alt="Shadow Point poster">
 
-  <h2>4: Cross-Platform QA — <em>Shadow Point (VR &amp; PCVR)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Demonstrate VR-specific QA awareness—comfort, tracking stability, and parity between standalone and PCVR.</li>
-    <li><strong>Focus:</strong> Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes</li>
-    <li><strong>Tools:</strong> Session charters &amp; test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side comparison notes</li>
-    <li><strong>Deliverables:</strong> Comfort checklist (ratings) · Tracking results · Parity clips/screens · Issue list with risk tags</li>
-    <li><strong>Status:</strong> In progress—like-for-like runs on headset and PCVR; logging comfort dips, judder, and interaction/visual parity gaps.</li>
-    <li><strong>Why this game?</strong> A calm, deliberate puzzle adventure—ideal for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.</li>
-  </ul>
+      <h1>4: Cross-Platform QA — <em>Shadow Point (VR &amp; PCVR)</em></h1>
+      <ul>
+        <li><strong>Goal:</strong> Demonstrate VR-specific QA awareness—comfort, tracking stability, and parity between standalone and PCVR.</li>
+        <li><strong>Focus:</strong> Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes</li>
+        <li><strong>Tools:</strong> Session charters &amp; test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side comparison notes</li>
+        <li><strong>Deliverables:</strong> Comfort checklist (ratings) · Tracking results · Parity clips/screens · Issue list with risk tags</li>
+        <li><strong>Status:</strong> In progress—like-for-like runs on headset and PCVR; logging comfort dips, judder, and interaction/visual parity gaps.</li>
+        <li><strong>Why this game?</strong> A calm, deliberate puzzle adventure—ideal for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.</li>
+      </ul>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/rec-poster.png" alt="Recompile poster">
+    <!-- 5: Recompile (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/rec-poster.png" alt="Recompile poster">
 
-  <h2>5: Multi-Input / Controller Parity QA — <em>Recompile (PC Game Pass)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Validate controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers (Diswoe X360) on the PC (Game Pass) build.</li>
-    <li><strong>Focus:</strong> Mapping accuracy · Input latency checks · Haptics/rumble behaviour · In-game prompt alignment (Xbox icons) · Hot-swap &amp; multi-controller handling · Rebinds &amp; edge cases</li>
-    <li><strong>Tools:</strong> Google Sheets test plan · 2× Diswoe X360 controllers · OBS capture + stopwatch overlay</li>
-    <li><strong>Deliverables:</strong> Input-response matrix · Latency report (ms table) · Prompt/binding screenshot pack · STAR paragraph</li>
-    <li><strong>Status:</strong> In progress — 60 cases run, 6 bugs logged, 0.18 s average input delay; parity checks underway across menus, gameplay, and overlay states.</li>
-    <li><strong>Why this game?</strong> Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.</li>
-  </ul>
+      <h1>5: Multi-Input / Controller Parity QA — <em>Recompile (PC Game Pass)</em></h1>
+      <ul>
+        <li><strong>Goal:</strong> Validate controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers (Diswoe X360) on the PC (Game Pass) build.</li>
+        <li><strong>Focus:</strong> Mapping accuracy · Input latency checks · Haptics/rumble behaviour · In-game prompt alignment (Xbox icons) · Hot-swap &amp; multi-controller handling · Rebinds &amp; edge cases</li>
+        <li><strong>Tools:</strong> Google Sheets test plan · 2× Diswoe X360 controllers · OBS capture + stopwatch overlay</li>
+        <li><strong>Deliverables:</strong> Input-response matrix · Latency report (ms table) · Prompt/binding screenshot pack · STAR paragraph</li>
+        <li><strong>Status:</strong> In progress — 60 cases run, 6 bugs logged, 0.18 s average input delay; parity checks underway across menus, gameplay, and overlay states.</li>
+        <li><strong>Why this game?</strong> Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.</li>
+      </ul>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/o-poster.png" alt="Oxenfree poster">
+    <!-- 6: Oxenfree (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/o-poster.png" alt="Oxenfree poster">
 
-  <h2>6: Narrative / Localisation QA — <em>Oxenfree (Netflix Mobile)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Ensure dialogue, subtitles, and UI text read naturally and stay in sync on mobile.</li>
-    <li><strong>Focus:</strong> Subtitle timing &amp; sync · Line breaks/overflow · Speaker tags · Tone/idiom checks · Punctuation &amp; typography · UI text legibility · Locale/device behaviour</li>
-    <li><strong>Tools:</strong> Script log &amp; timing notes · On-device recordings (Android) · Style/terminology checklist · Font/size legibility checks</li>
-    <li><strong>Deliverables:</strong> Timing log · Text/typo issue list with screenshots · Style notes · Short clips</li>
-    <li><strong>Status:</strong> In progress — mapping dialogue-heavy scenes, checking pacing vs VO/SFX, and flagging truncation or misattribution.</li>
-    <li><strong>Why this game?</strong> Choice-heavy dialogue with moody SFX makes timing, tone, and readability critical.</li>
-  </ul>
+      <h1>6: Narrative / Localisation QA — <em>Oxenfree (Netflix Mobile)</em></h1>
+      <ul>
+        <li><strong>Goal:</strong> Ensure dialogue, subtitles, and UI text read naturally and stay in sync on mobile.</li>
+        <li><strong>Focus:</strong> Subtitle timing &amp; sync · Line breaks/overflow · Speaker tags · Tone/idiom checks · Punctuation &amp; typography · UI text legibility · Locale/device behaviour</li>
+        <li><strong>Tools:</strong> Script log &amp; timing notes · On-device recordings (Android) · Style/terminology checklist · Font/size legibility checks</li>
+        <li><strong>Deliverables:</strong> Timing log · Text/typo issue list with screenshots · Style notes · Short clips</li>
+        <li><strong>Status:</strong> In progress — mapping dialogue-heavy scenes, checking pacing vs VO/SFX, and flagging truncation or misattribution.</li>
+        <li><strong>Why this game?</strong> Choice-heavy dialogue with moody SFX makes timing, tone, and readability critical.</li>
+      </ul>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="assets/img/pws-poster.png" alt="Powerwash Simulator 2 poster">
+    <!-- 7: PowerWash Simulator 2 (COMING SOON) -->
+    <section markdown="1" class="project-block with-thumb">
+      <img class="thumb" src="{{ site.baseurl }}/assets/img/pws2-poster.png" alt="PowerWash Simulator 2 poster">
 
-<section markdown="1" class="project-block with-thumb">
-  <img class="thumb" src="{{ site.baseurl }}/assets/img/pws2-poster.png" alt="PowerWash Simulator 2 poster">
+      <h1>7: Automation Testing — <em>PowerWash Simulator 2 (PC Game Pass)</em></h1>
+      <ul>
+        <li><strong>Goal:</strong> Demonstrate early automation via repeatable checks and quick regressions on core flows.</li>
+        <li><strong>Focus:</strong> Launch → menu → job select smoke · Settings persistence · Save/load state · Input macros (KB/mouse/controller) · Simple image comparisons</li>
+        <li><strong>Tools:</strong> AutoHotkey/Python (light scripts) · Timed macros · OBS capture · Trial image-compare snapshots</li>
+        <li><strong>Deliverables:</strong> Smoke scripts · Regression checklist · Short clips · Comparison snapshots</li>
+        <li><strong>Status:</strong> In progress — first smoke passes cover launch → job select &amp; settings; exploring image comparisons for “clean” states.</li>
+        <li><strong>Why this game?</strong> Clear, repeatable loops ideal for simple automation and fast regressions.</li>
+      </ul>
 
-  <h2>7: Automation Testing — <em>PowerWash Simulator 2 (PC Game Pass)</em></h2>
-  <ul>
-    <li><strong>Goal:</strong> Demonstrate early automation via repeatable checks and quick regressions on core flows.</li>
-    <li><strong>Focus:</strong> Launch → menu → job select smoke · Settings persistence · Save/load state · Input macros (KB/mouse/controller) · Simple image comparisons</li>
-    <li><strong>Tools:</strong> AutoHotkey/Python (light scripts) · Timed macros · OBS capture · Trial image-compare snapshots</li>
-    <li><strong>Deliverables:</strong> Smoke scripts · Regression checklist · Short clips · Comparison snapshots</li>
-    <li><strong>Status:</strong> In progress — first smoke passes cover launch → job select &amp; settings; exploring image comparisons for “clean” states.</li>
-    <li><strong>Why this game?</strong> Clear, repeatable loops ideal for simple automation and fast regressions.</li>
-  </ul>
+      <p><em>Case study coming soon.</em></p>
+    </section>
 
-  <p><em>Case study coming soon.</em></p>
-</section>
+    <h1>✅ Coverage Map</h1>
 
-<h1>✅ Coverage Map</h1>
+    <!-- Coverage Map — inline styles, theme-proof -->
+    <div class="metrics-look">
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>QA Type</th>
+            <th>Platform</th>
+            <th>Focus</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Battletoads</td>
+            <td>Functional</td>
+            <td>PC (Game Pass)</td>
+            <td>Core flows · Input ownership · UI/menus</td>
+            <td>Live</td>
+          </tr>
+          <tr>
+            <td>Rebel Racing</td>
+            <td>Exploratory &amp; Edge-Case</td>
+            <td>Mobile</td>
+            <td>Scaling · Touch · Interruptions · Network</td>
+            <td>Coming soon</td>
+          </tr>
+          <tr>
+            <td>Sworn</td>
+            <td>Regression</td>
+            <td>PC</td>
+            <td>Save/load · Input mapping · UI scaling</td>
+            <td>Coming soon</td>
+          </tr>
+          <tr>
+            <td>Shadow Point</td>
+            <td>Cross-Platform (VR &amp; PCVR)</td>
+            <td>VR / PCVR</td>
+            <td>Comfort · Tracking · Parity</td>
+            <td>Coming soon</td>
+          </tr>
+          <tr>
+            <td>Recompile</td>
+            <td>Cross-Platform Input</td>
+            <td>PC / Controller</td>
+            <td>Mapping parity · Latency · Prompts</td>
+            <td>Coming soon</td>
+          </tr>
+          <tr>
+            <td>Oxenfree</td>
+            <td>Narrative / Localisation</td>
+            <td>Netflix Mobile</td>
+            <td>Subtitles · Timing · Readability</td>
+            <td>Coming soon</td>
+          </tr>
+          <tr>
+            <td>PowerWash Simulator 2</td>
+            <td>Automation</td>
+            <td>PC</td>
+            <td>Smoke scripts · Regression checks</td>
+            <td>Coming soon</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<!-- ✅ Coverage Map — Metrics look, inline styles (theme-proof) -->
-<table style="width:100%;border-collapse:collapse;background:#0f1215;border:1px solid rgba(255,255,255,.08);margin:12px 0;">
-  <thead>
-    <tr style="background:rgba(0,255,240,.08);">
-      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);">Project</th>
-      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">QA Type</th>
-      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Platform</th>
-      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Focus</th>
-      <th style="color:#00fff0;text-align:left;font-weight:700;font-size:14px;padding:12px 14px;border-left:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;">Battletoads</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Functional</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">PC (Game Pass)</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Core flows · Input ownership · UI/menus</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);">Live</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Rebel Racing</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Exploratory &amp; Edge-Case</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Mobile</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Scaling · Touch · Interruptions · Network</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Sworn</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Regression</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Save/load · Input mapping · UI scaling</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Shadow Point</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Cross-Platform (VR &amp; PCVR)</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">VR / PCVR</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Comfort · Tracking · Parity</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Recompile</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Cross-Platform Input</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC / Controller</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Mapping parity · Latency · Prompts</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Oxenfree</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Narrative / Localisation</td>
-      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Netflix Mobile</td>
-      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Subtitles · Timing · Readability</td>
-      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-    <tr>
-      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">PowerWash Simulator</td>
-      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Automation</td>
-      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
-      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Smoke scripts · Regression checks</td>
-      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
-    </tr>
-  </tbody>
-</table>
+    <hr>
 
----
+    <h1>🛠️ Tools Used</h1>
+    - **Planning & tracking:** Jira · GitHub  
+    - **Docs & data:** Google Sheets (QA workbook)  
+    - **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording  
+    - **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)  
+    - **Automation:** AutoHotkey · Python (light scripts)
 
-<h1>🛠️ Tools Used</h1>
-- **Planning & tracking:** Jira · GitHub
-- **Docs & data:** Google Sheets (QA workbook)
-- **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording
-- **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
-- **Automation:** AutoHotkey · Python (light scripts)
+    <hr>
 
----
+    <h1>🧠 Skills</h1>
+    - **Core QA:** Functional · Exploratory & edge-case · Regression  
+    - **Platforms:** PC · Mobile · VR/PCVR · Controller/keyboard parity  
+    - **Specialisms:** Input QA · Narrative/localisation · Player experience  
+    - **Test design:** Test cases · Session charters · Risk/priority tagging  
+    - **Execution:** Clear repro steps · Evidence capture (video) · Jira workflows  
+    - **Automation (early):** Simple scripts/macros for smoke & regression
 
-<h1>🧠 Skills</h1>
-- **Core QA:** Functional · Exploratory & edge-case · Regression  
-- **Platforms:** PC · Mobile · VR/PCVR · Controller/keyboard parity  
-- **Specialisms:** Input QA · Narrative/localisation · Player experience  
-- **Test design:** Test cases · Session charters · Risk/priority tagging  
-- **Execution:** Clear repro steps · Evidence capture (video) · Jira workflows  
-- **Automation (early):** Simple scripts/macros for smoke & regression
+    <hr>
 
----
-
-<h1>🌟 Summary</h1>
-I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer experiences for players.
- 
-    <!-- END: your block (unchanged) -->
-    <!-- >>>>>>>>>>>>>>>>>>>>>>> END UNCHANGED BLOCK <<<<<<<<<<<<<<<<<<<<<<< -->
+    <h1>🌟 Summary</h1>
+    I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer experiences for players.
 
   </main>
 </body>
