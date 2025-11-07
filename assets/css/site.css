@@ -192,3 +192,18 @@ main li{ line-height:1.55; margin:6px 0; }   /* <-- fixes the “crammed” bull
 /* handy: space after details/embeds so the next section breathes */
 details + *{ margin-top:16px; }
 .embed{ margin:12px 0 18px; }
+
+/* --- FORCE comfy spacing for plain content sections (case-study pages) --- */
+main h2 { margin: 32px 0 12px !important; }
+main hr { margin: 28px 0 !important; }
+
+main p  { line-height: 1.7 !important; margin: 0 0 14px !important; }
+
+main ul,
+main ol { margin: 12px 0 20px !important; padding-left: 1.3rem !important; }
+
+main li  { line-height: 1.7 !important; margin: 8px 0 !important; }
+
+/* after a <details> block or video embed, give breathing room */
+details + * { margin-top: 16px !important; }
+.embed { margin: 12px 0 18px !important; }
