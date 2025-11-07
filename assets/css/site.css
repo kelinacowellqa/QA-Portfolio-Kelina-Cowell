@@ -121,3 +121,43 @@ footer{max-width:980px;margin:40px auto 0;padding:20px 18px 0;text-align:center;
   .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
   .hero{margin:22px auto 14px}
 }
+
+/* --- Right-docked thumbnails: harden sizing & padding --- */
+:root{ --thumb-w: 240px; --thumb-gap: 18px; } /* adjust width here */
+
+.card.with-thumb,
+.project-block.with-thumb{
+  position: relative;
+  padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px) !important;
+  min-height: calc(var(--thumb-w) * 1.25) !important;
+}
+
+.card.with-thumb .thumb,
+.project-block.with-thumb .thumb{
+  position: absolute !important;
+  top: 16px !important;
+  right: 18px !important;
+  width: var(--thumb-w) !important;
+  height: auto !important;
+  max-width: none !important;
+  aspect-ratio: 3/4 !important;
+  object-fit: cover !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35) !important;
+}
+
+/* Mobile stack */
+@media (max-width:780px){
+  .card.with-thumb,
+  .project-block.with-thumb{ padding-right:18px !important; min-height:auto !important; }
+  .card.with-thumb .thumb,
+  .project-block.with-thumb .thumb{
+    position: static !important;
+    display: block !important;
+    margin: 0 0 10px auto !important;
+    width: 60% !important;
+    max-width: 280px !important;
+    aspect-ratio: auto !important;
+  }
+}
