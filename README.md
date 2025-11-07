@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ '/assets/css/style.css?v=5' | relative_url }}">
+<link rel="stylesheet" href="/assets/css/site.css?v=6">
 
 <div class="container">
   <!-- your markdown/HTML content goes here (sections, tables, etc.) -->
