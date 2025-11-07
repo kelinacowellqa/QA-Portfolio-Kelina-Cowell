@@ -1,104 +1,60 @@
 <head>
-  <link rel="stylesheet" href="/assets/css/site.css?v=10"><!-- bump version when you change site.css -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/site.css?v=11"><!-- bump when site.css changes -->
+
   <style>
-/* HARD OVERRIDES – force the card + dark table look even if other CSS wins */
-:root{
-  --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --line:rgba(255,255,255,.08);
-  --teal:#00fff0; --thumb-w:240px; --thumb-gap:18px;
-}
+  /* === House palette (single source of truth) === */
+  :root{
+    --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --muted:#a9b3bd;
+    --line:rgba(255,255,255,.08); --teal:#00fff0; --teal-soft:#66fff7;
+    --thumb-w:240px; --thumb-gap:18px;
+  }
 
-html,body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
-h1,h2,h3,h4,h5,h6{color:var(--teal)}
+  /* Base */
+  html,body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
+  a{color:var(--teal);text-decoration:none} a:hover{color:var(--teal-soft)}
+  h1,h2,h3,h4,h5,h6{color:var(--teal)}
+  hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
 
-/* Cards */
-.project-block{
-  background:var(--panel);
-  border:1px solid rgba(0,255,240,.15);
-  border-radius:12px;
-  box-shadow:0 4px 20px rgba(0,0,0,.25);
-  margin:22px 0; padding:16px 18px; position:relative; overflow:hidden;
-}
-.project-block:hover{border-color:rgba(0,255,240,.35);box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)}
-.project-block.with-thumb{
-  padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px);
-  min-height: calc(var(--thumb-w) * 1.25);
-}
-.project-block .thumb{
-  position:absolute; top:16px; right:18px;
-  width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
-  border-radius:10px; border:1px solid var(--line);
-  box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
+  /* Cards */
+  .project-block{
+    background:var(--panel); border:1px solid rgba(0,255,240,.15); border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,.25); margin:22px 0; padding:16px 18px; position:relative; overflow:hidden;
+  }
+  .project-block:hover{border-color:rgba(0,255,240,.35);box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)}
+  .project-block.with-thumb{padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);min-height:calc(var(--thumb-w)*1.25)}
+  .project-block .thumb{
+    position:absolute;top:16px;right:18px;width:var(--thumb-w);aspect-ratio:3/4;object-fit:cover;
+    border-radius:10px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.35);
+  }
 
-/* CTA button */
-a.cta-btn{
-  display:inline-block; padding:12px 18px; border-radius:12px;
-  background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
-  text-decoration:none;
-}
-a.cta-btn:hover{background:var(--teal); color:var(--bg)}
+  /* CTA button */
+  a.cta-btn{
+    display:inline-block;padding:12px 18px;border-radius:12px;background:#0d1117;border:1px solid #2b2f36;color:var(--teal);font-weight:700;text-decoration:none;
+  }
+  a.cta-btn:hover{background:var(--teal);color:var(--bg)}
 
-/* ===== TABLES — dark, zebra, bulletproof ===== */
+  /* Hero */
+  .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
+  .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
 
-/* allow rounded corners + scrolling on narrow screens */
-.table-wrap{ overflow:auto; border-radius:14px; }
-
-/* kill any white backgrounds that may be injected by themes */
-table, th, td { background:transparent !important; }
-
-/* strong selectors so this beats markdown/normalize styles */
-.markdown-body table,
-.wrap table,
-table{
-  width:100% !important;
-  border-collapse:separate !important;   /* needed for radius */
-  border-spacing:0 !important;
-  background:var(--panel) !important;
-  border:1px solid var(--line) !important;
-  border-radius:12px !important;
-  overflow:hidden !important;
-  margin:12px 0 !important;
-}
-
-/* header cells */
-.markdown-body thead th,
-.wrap thead th,
-thead th{
-  background:rgba(255,255,255,.06) !important;
-  color:var(--text) !important;
-  text-align:left !important;
-  font-weight:700 !important;
-  font-size:14px !important;
-  padding:12px 14px !important;
-  border-bottom:1px solid var(--line) !important;
-}
-
-/* body cells */
-.markdown-body tbody td, .markdown-body tbody th,
-.wrap tbody td, .wrap tbody th,
-tbody td, tbody th{
-  padding:12px 14px !important;
-  vertical-align:top !important;
-  border-bottom:1px solid var(--line) !important;
-  border-right:none !important;
-}
-
-/* zebra + hover */
-.markdown-body tbody tr:nth-child(odd),
-.wrap tbody tr:nth-child(odd),
-tbody tr:nth-child(odd){
-  background:rgba(255,255,255,.02) !important;
-}
-.markdown-body tbody tr:hover,
-.wrap tbody tr:hover,
-tbody tr:hover{
-  background:rgba(0,255,240,.12) !important;
-}
-
-/* Hero */
-.hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
-.hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
-</style>
+  /* ===== Metrics-style table (matches your screenshot) ===== */
+  .table-wrap{overflow:auto;border-radius:8px}
+  .table-metrics table{
+    width:100%; border-collapse:separate; border-spacing:0;
+    background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:12px 0;
+  }
+  .table-metrics thead th{
+    background:rgba(0,255,240,.08); color:var(--teal);
+    text-align:left; font-weight:700; font-size:14px; padding:12px 14px; border-bottom:1px solid var(--line);
+  }
+  .table-metrics tbody th,
+  .table-metrics tbody td{
+    padding:12px 14px; vertical-align:top; border-top:1px solid var(--line);
+  }
+  /* no zebra, no hover — same as Metrics */
+  </style>
 </head>
 
 <!-- Hero -->
@@ -227,7 +183,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <h2>✅ Coverage Map</h2>
 
-<div class="table-metrics">
+<div class="table-wrap table-metrics">
   <table>
     <thead>
       <tr>
