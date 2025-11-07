@@ -44,7 +44,7 @@ th{background:rgba(0,255,240,.08);color:var(--teal)}
 .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
 </style>
 
-<link rel="stylesheet" href="/assets/css/site.css?v=9">
+<link rel="stylesheet" href="/assets/css/site.css?v=12">
 
 <!-- Page-scoped CSS (3-column grid) -->
 <style>
