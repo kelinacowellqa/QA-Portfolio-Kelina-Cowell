@@ -1,6 +1,6 @@
 <!-- Hero -->
 <header class="hero">
-  <img src="assets/img/profile-banner.webp" alt="Portfolio Banner">
+  <img src="assets/img/qa-tesrer-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner">
 </header>
 
 ### Welcome to my QA portfolio.
