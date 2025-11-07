@@ -290,7 +290,7 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 <h2>✅ Coverage Map</h2>
 
-<div id="coverage-map" class="table-wrap">
+<div class="metrics-look">
   <table>
     <thead>
       <tr>
