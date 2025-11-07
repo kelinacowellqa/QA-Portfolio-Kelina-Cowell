@@ -171,18 +171,73 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 **Coming soon:** scripts, run logs, before/after comparisons.
 </section>
 
-## ✅ Coverage Map
+<h2>✅ Coverage Map</h2>
 
-| Project              | QA Type                      | Platform       | Focus                                         | Status      |
-|----------------------|------------------------------|----------------|-----------------------------------------------|-------------|
-| Battletoads          | Functional                   | PC (Game Pass) | Core flows · Input ownership · UI/menus       | Live        |
-| Rebel Racing         | Exploratory & Edge-Case      | Mobile         | Scaling · Touch · Interruptions · Network     | Coming soon |
-| Sworn                | Regression                   | PC             | Save/load · Input mapping · UI scaling        | Coming soon |
-| Shadow Point         | Cross-Platform (VR & PCVR)   | VR / PCVR      | Comfort · Tracking · Parity                   | Coming soon |
-| Recompile            | Cross-Platform Input         | PC / Controller| Mapping parity · Latency · Prompts            | Coming soon |
-| Oxenfree             | Narrative / Localisation     | Netflix Mobile | Subtitles · Timing · Readability              | Coming soon |
-| Project 7            | (TBD)                        | (TBD)          | (TBD)                                         | Coming soon |
-| PowerWash Simulator  | Automation                   | PC             | Smoke scripts · Regression checks             | Coming soon |
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>QA Type</th>
+        <th>Platform</th>
+        <th>Focus</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Battletoads</td>
+        <td>Functional</td>
+        <td>PC (Game Pass)</td>
+        <td>Core flows · Input ownership · UI/menus</td>
+        <td><span class="pill pill--live">Live</span></td>
+      </tr>
+      <tr>
+        <td>Rebel Racing</td>
+        <td>Exploratory &amp; Edge-Case</td>
+        <td>Mobile</td>
+        <td>Scaling · Touch · Interruptions · Network</td>
+        <td>Coming soon</td>
+      </tr>
+      <tr>
+        <td>Sworn</td>
+        <td>Regression</td>
+        <td>PC</td>
+        <td>Save/load · Input mapping · UI scaling</td>
+        <td>Coming soon</td>
+      </tr>
+      <tr>
+        <td>Shadow Point</td>
+        <td>Cross-Platform (VR &amp; PCVR)</td>
+        <td>VR / PCVR</td>
+        <td>Comfort · Tracking · Parity</td>
+        <td>Coming soon</td>
+      </tr>
+      <tr>
+        <td>Recompile</td>
+        <td>Cross-Platform Input</td>
+        <td>PC / Controller</td>
+        <td>Mapping parity · Latency · Prompts</td>
+        <td>Coming soon</td>
+      </tr>
+      <tr>
+        <td>Oxenfree</td>
+        <td>Narrative / Localisation</td>
+        <td>Netflix Mobile</td>
+        <td>Subtitles · Timing · Readability</td>
+        <td>Coming soon</td>
+      </tr>
+      <tr>
+        <td>PowerWash Simulator</td>
+        <td>Automation</td>
+        <td>PC</td>
+        <td>Smoke scripts · Regression checks</td>
+        <td>Coming soon</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ---
 
