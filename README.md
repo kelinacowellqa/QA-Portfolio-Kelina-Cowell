@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="/assets/css/site.css?v=9">
 
-<link rel="stylesheet" href="/assets/css/site.css?v=9">
-
 <!-- Hero -->
 <header class="hero">
   <img src="/assets/img/profile-banner.webp" alt="Portfolio Banner">
