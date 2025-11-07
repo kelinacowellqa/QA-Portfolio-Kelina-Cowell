@@ -1,13 +1,9 @@
 <link rel="stylesheet" href="/assets/css/site.css?v=6">
 
-<div class="container">
-  <!-- your markdown/HTML content goes here (sections, tables, etc.) -->
-</div>
-
-<div class="hero">
-  <img src="./qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner" />
-</div>
-
+<!-- Hero -->
+<header class="hero">
+  <img src="/assets/img/profile-banner.webp" alt="Portfolio Banner">
+</header>
 
 ### Welcome to my QA portfolio.
 
@@ -21,11 +17,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 
 ## 🧩 Project Lineup
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/battletoads/media/bt-poster.jpg"
-       alt="Battletoads poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/battletoads/media/bt-poster.jpg" alt="Battletoads poster">
 
 ### 1️: Functional Testing – *Battletoads (PC Game Pass)*
 
@@ -40,14 +33,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 <p class="cta">
   <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/projects/battletoads/">Read the case study →</a>
 </p>
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/rebel-racing/media/rr-poster.png"
-       alt="Rebel Racing poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/rebel-racing/media/rr-poster.png" alt="Rebel Racing poster">
 
 ### 2️: Exploratory & Edge-Case Testing – *Rebel Racing (Mobile)*
 
@@ -60,14 +49,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.
 
 **Coming soon:** full case study page with evidence, risk map, and metrics.
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/sworn/media/s-poster.png"
-       alt="Sworn poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/sworn/media/s-poster.png" alt="Sworn poster">
 
 ### 3: Regression Testing – *Sworn (PC)*
 
@@ -80,14 +65,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** Frequent updates and systems-heavy gameplay make it perfect for disciplined regression passes.  
 
 **Coming soon:** full case study page with verification matrix, before/after clips, and regression metrics.
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/shadow-point/media/sp-poster.png"
-       alt="Shadow Point poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/shadow-point/media/sp-poster.png" alt="Shadow Point poster">
 
 ### 4: Cross-Platform QA – *Shadow Point (VR & PCVR)*
 
@@ -100,14 +81,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** A calm, deliberate puzzle adventure that’s perfect for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.
 
 **Coming soon:** full case study page with comfort metrics, frame-timing snapshots, and a parity gallery.
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/recompile/media/rec-poster.png"
-       alt="Recompile poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/recompile/media/rec-poster.png" alt="Recompile poster">
 
 ### 5: Multi-Input / Controller Parity QA – *Recompile (PC Game Pass)*
 
@@ -120,14 +97,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.
 
 **Coming soon:** full case study page with mapping matrix, timing clips, and parity findings.
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/oxenfree/media/o-poster.png"
-       alt="Oxenfree poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/oxenfree/media/o-poster.png" alt="Oxenfree poster">
   
 ### 6: Narrative / Localisation QA – *Oxenfree (Netflix Mobile)*
 
@@ -140,14 +113,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** Choice-heavy dialogue and moody SFX make timing, tone, and readability crucial — perfect for narrative/localisation checks on mobile.
 
 **Coming soon:** full case study page with timing examples, before/after text fixes, and readability findings across devices.
-
 </section>
 
-<section markdown="1" class="project-block with-thumb" style="position:relative; padding-right:235px;">
-  <img class="thumb"
-       src="{{ site.baseurl }}/projects/powerwash-simulator/media/pws-poster.png"
-       alt="PowerWash Simulator poster"
-       style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
+<section markdown="1" class="project-block with-thumb">
+  <img class="thumb" src="/projects/powerwash-simulator/media/pws-poster.png" alt="PowerWash Simulator poster">
 
 ### 7: Automation Testing – *PowerWash Simulator 2 (PC Game Pass)*
 
@@ -160,47 +129,8 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 🕹️ **Why this game?** Clear, repeatable loops make it ideal for simple automation and quick regression validation without full engine hooks.
 
 **Coming soon:** full case study page with scripts, run logs, and before/after comparisons.
-
 </section>
 
----
-
-## ✅ Coverage Map
-
-| Project              | QA Type                      | Platform            | Focus                                     | Status        |
-|----------------------|------------------------------|---------------------|-------------------------------------------|---------------|
-| Battletoads          | Functional                   | PC (Game Pass)      | Core flows · Input ownership · UI/menus   | Live          |
-| Rebel Racing         | Exploratory & Edge-Case      | Mobile              | Scaling · Touch · Interruptions · Network | Coming soon   |
-| Sworn                | Regression                   | PC                  | Save/load · Input mapping · UI scaling    | Coming soon   |
-| Shadow Point         | Cross-Platform (VR & PCVR)   | VR / PCVR           | Comfort · Tracking · Parity               | Coming soon   |
-| Recompile            | Cross-Platform Input         | PC / Controller     | Mapping parity · Latency · Prompts        | Coming soon   |
-| Oxenfree             | Narrative / Localisation     | Netflix Mobile      | Subtitles · Timing · Readability          | Coming soon   |
-| Project 7            | (TBD)                        | (TBD)               | (TBD)                                     | Coming soon   |
-| PowerWash Simulator  | Automation                   | PC                  | Smoke scripts · Regression checks         | Coming soon   |
-
----
-
-## 🧰 Tools Used
-- **Planning & tracking:** Jira · GitHub
-- **Docs & data:** Google Sheets (QA workbook)
-- **Capture & evidence:** OBS / Xbox Game Bar · YouTube · Android screen recording
-- **VR diagnostics:** SteamVR Frame Timing (PCVR) · OVR Metrics Tool (Quest 3)
-- **Automation:** AutoHotkey · Python (light scripts)
-
----
-
-## 🧠 Skills
-- **Core QA:** Functional · Exploratory & edge-case · Regression
-- **Platforms:** PC · Mobile · VR/PCVR · Controller/keyboard parity
-- **Specialisms:** Input QA · Narrative/localisation · Player experience
-- **Test design:** Test cases · Session charters · Risk/priority tagging
-- **Execution:** Clear repro steps · Evidence capture (video) · Jira workflows
-- **Automation (early):** Simple scripts/macros for smoke & regression
-
----
-
-## 🌟 Summary
-I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, cle
 
 
 
