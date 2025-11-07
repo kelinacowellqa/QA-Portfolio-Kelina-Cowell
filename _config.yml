@@ -1,4 +1,3 @@
-theme: null
+# If your site is served at https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell
+baseurl: /Manual-QA-Portfolio-Kelina-Cowell
 
-title: "Kelina Cowell – QA Portfolio"
-description: "Multiplatform Games Tester | Functional, Exploratory, and Cross-Platform QA"
