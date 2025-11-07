@@ -1,4 +1,4 @@
-/* === House palette === */
+/* === House palette (single source of truth) === */
 :root{
   --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --muted:#a9b3bd;
   --line:rgba(255,255,255,.08); --teal:#00fff0; --teal-soft:#66fff7;
@@ -9,18 +9,31 @@
 }
 
 /* Base */
-html,body{background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
-a{color:var(--teal);text-decoration:none} a:hover{color:var(--teal-soft)}
+html,body{
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  margin:0;
+}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:var(--teal-soft)}
 strong{color:inherit}
 hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
-h1,h2,h3,h4,h5,h6{color:var(--teal)} h2,h3{margin-top:34px;margin-bottom:12px}
+h1,h2,h3,h4,h5,h6{color:var(--teal)}
+h2,h3{margin-top:34px;margin-bottom:12px}
 
 /* Layout width */
 .wrap, .markdown-body, main, .page-content, .content, article, .post,
-body>:not(header):not(footer):not(.hero){max-width:980px;margin:0 auto;padding:0 18px}
+body>:not(header):not(footer):not(.hero){
+  max-width:980px; margin:0 auto; padding:0 18px;
+}
 
 /* Rhythm */
-p{line-height:1.65;margin:0 0 14px} ul,ol{margin:8px 0 16px;padding-left:1.2rem} li{margin:4px 0}
+p{line-height:1.65;margin:0 0 14px}
+ul,ol{margin:8px 0 16px;padding-left:1.2rem}
+li{margin:4px 0}
 
 /* Hero with glow */
 .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
@@ -46,56 +59,51 @@ p{line-height:1.65;margin:0 0 14px} ul,ol{margin:8px 0 16px;padding-left:1.2rem}
 .btn.block, a.cta-btn.block{display:block;width:max-content}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:10px}
 
-/* Project cards (single-column pages) */
-.project-block{
-  background:var(--panel);border:1px solid rgba(0,255,240,.15);border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.25);
-  transition:box-shadow .3s,border-color .3s;max-width:860px;margin:22px auto;padding:16px 18px;position:relative;overflow:hidden
+/* Project blocks (legacy) and cards (homepage) — shared look */
+.project-block,
+.card{
+  background:var(--panel);
+  border:1px solid rgba(0,255,240,.15);
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+  transition:box-shadow .3s,border-color .3s,transform .05s;
+  padding:16px 18px;
+  margin:22px 0;
+  position:relative;
+  overflow:hidden;
 }
-.project-block:hover,.project-block:focus-within{
+.project-block:hover, .project-block:focus-within,
+.card:hover, .card:focus-within{
   border-color:rgba(0,255,240,.35);
-  box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)
+  box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45);
 }
+.card:active, .project-block:active{transform:translateY(1px)}
+
+/* Typography niceties inside cards/blocks */
 .project-block p>strong:first-child{display:inline;margin:0 4px 0 0;white-space:nowrap}
 .project-block em{color:var(--muted)}
 .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
-
-/* Right-docked poster inside project blocks */
-.project-block.with-thumb{
-  padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px);
-  min-height: calc(var(--thumb-w) * 1.25);
-}
-.project-block .thumb{
-  position:absolute;top:16px;right:18px;width:var(--thumb-w);height:auto;aspect-ratio:3/4;object-fit:cover;
-  border-radius:10px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.35)
-}
-
-/* 3-column feature grid (homepage) */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 20px;align-items:stretch}
-.card{
-  background:var(--panel);border:1px solid rgba(0,255,240,.15);border-radius:12px;padding:16px 18px;box-shadow:0 4px 20px rgba(0,0,0,.25);
-  display:flex;flex-direction:column;transition:box-shadow .28s,border-color .28s,transform .05s
-}
 .card h3{color:var(--teal);margin:0 0 10px}
 .card p{margin:0 0 8px}
 .card .meta{color:var(--muted)}
-.grid-3 hr{display:none}
 
-/* Glow on hover */
-.card:hover,.card:focus-within{
-  border-color:rgba(0,255,240,.35);
-  box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)
-}
-.card:active{transform:translateY(1px)}
-
-/* Right-docked thumbnail variant for .card */
+/* Right-docked thumbnails (shared for both) */
+.project-block.with-thumb,
 .card.with-thumb{
-  position:relative;
   padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px);
   min-height: calc(var(--thumb-w) * 1.25);
 }
+.project-block.with-thumb .thumb,
 .card.with-thumb .thumb{
-  position:absolute;top:16px;right:18px;width:var(--thumb-w);height:auto;aspect-ratio:3/4;object-fit:cover;
-  border-radius:10px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.35)
+  position:absolute;
+  top:16px; right:18px;
+  width:var(--thumb-w);
+  height:auto;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 /* Tables */
@@ -104,60 +112,28 @@ th,td{border:1px solid var(--line);padding:8px}
 th{background:rgba(0,255,240,.08);color:var(--teal)}
 
 /* Media */
-img{border-radius:10px;transition:transform .12s} img:hover{transform:translateY(-1px)}
+img{border-radius:10px;transition:transform .12s}
+img:hover{transform:translateY(-1px)}
 
 /* Footer */
 footer{max-width:980px;margin:40px auto 0;padding:20px 18px 0;text-align:center;font-size:.85em;opacity:.8;border-top:1px solid rgba(255,255,255,.05)}
 
 /* Responsive */
-@media (max-width:980px){ .grid-3{grid-template-columns:1fr 1fr} }
+@media (max-width:980px){
+  .grid-3{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+}
 @media (max-width:780px){
-  .project-block.with-thumb{padding-right:18px;min-height:auto}
-  .project-block .thumb{position:static;display:block;margin:0 0 10px auto;width:60%;max-width:280px;aspect-ratio:auto}
-  .card.with-thumb{padding-right:18px;min-height:auto}
-  .card.with-thumb .thumb{position:static;display:block;margin:0 0 10px auto;width:60%;max-width:260px;aspect-ratio:auto}
+  .project-block.with-thumb,
+  .card.with-thumb{
+    padding-right:18px; min-height:auto;
+  }
+  .project-block.with-thumb .thumb,
+  .card.with-thumb .thumb{
+    position:static; display:block; margin:0 0 10px auto;
+    width:60%; max-width:280px; aspect-ratio:auto;
+  }
 }
 @media (max-width:760px){
   .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
   .hero{margin:22px auto 14px}
-}
-
-/* --- Right-docked thumbnails: harden sizing & padding --- */
-:root{ --thumb-w: 240px; --thumb-gap: 18px; } /* adjust width here */
-
-.card.with-thumb,
-.project-block.with-thumb{
-  position: relative;
-  padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px) !important;
-  min-height: calc(var(--thumb-w) * 1.25) !important;
-}
-
-.card.with-thumb .thumb,
-.project-block.with-thumb .thumb{
-  position: absolute !important;
-  top: 16px !important;
-  right: 18px !important;
-  width: var(--thumb-w) !important;
-  height: auto !important;
-  max-width: none !important;
-  aspect-ratio: 3/4 !important;
-  object-fit: cover !important;
-  border-radius: 10px !important;
-  border: 1px solid var(--line) !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,.35) !important;
-}
-
-/* Mobile stack */
-@media (max-width:780px){
-  .card.with-thumb,
-  .project-block.with-thumb{ padding-right:18px !important; min-height:auto !important; }
-  .card.with-thumb .thumb,
-  .project-block.with-thumb .thumb{
-    position: static !important;
-    display: block !important;
-    margin: 0 0 10px auto !important;
-    width: 60% !important;
-    max-width: 280px !important;
-    aspect-ratio: auto !important;
-  }
 }
