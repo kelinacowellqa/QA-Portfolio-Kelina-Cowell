@@ -1,3 +1,49 @@
+<style>
+/* HARD OVERRIDES – force the card look even if site.css isn't loading */
+:root{
+  --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --line:rgba(255,255,255,.08);
+  --teal:#00fff0; --thumb-w:240px; --thumb-gap:18px;
+}
+html,body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
+h1,h2,h3,h4,h5,h6{color:var(--teal)}
+/* Cards */
+.project-block{
+  background:var(--panel);
+  border:1px solid rgba(0,255,240,.15);
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+  margin:22px 0;
+  padding:16px 18px;
+  position:relative;
+  overflow:hidden;
+}
+.project-block:hover{border-color:rgba(0,255,240,.35);box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)}
+.project-block.with-thumb{
+  padding-right: calc(var(--thumb-w) + var(--thumb-gap) + 18px);
+  min-height: calc(var(--thumb-w) * 1.25);
+}
+.project-block .thumb{
+  position:absolute; top:16px; right:18px;
+  width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
+  border-radius:10px; border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+/* CTA button */
+a.cta-btn{
+  display:inline-block; padding:12px 18px; border-radius:12px;
+  background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
+  text-decoration:none;
+}
+a.cta-btn:hover{background:var(--teal); color:var(--bg)}
+/* Table */
+table{border-collapse:collapse;width:100%;margin:12px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+th,td{border:1px solid var(--line);padding:8px}
+th{background:rgba(0,255,240,.08);color:var(--teal)}
+/* Hero */
+.hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
+.hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
+</style>
+
 <link rel="stylesheet" href="/assets/css/site.css?v=9">
 
 <!-- Page-scoped CSS (3-column grid) -->
