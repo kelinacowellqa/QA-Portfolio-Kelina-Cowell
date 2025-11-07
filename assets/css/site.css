@@ -96,41 +96,48 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:
   box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
-/* === Metrics look (teal header, dark rows, thin grid lines, no hover/zebra) === */
+/* === Metrics table (teal header, dark rows, thin grid) === */
 .metrics-look table{
   width:100%;
-  border-collapse:collapse;           /* solid grid lines */
-  background:transparent;             /* same dark as page */
-  border:1px solid var(--line);       /* outer border */
+  border-collapse:collapse;                 /* crisp grid like Metrics */
+  background:#0f1215;                       /* same as --panel, hard set */
+  border:1px solid rgba(255,255,255,.08);   /* outer frame */
   margin:12px 0;
+  border-radius:8px;                         /* if your browser ignores with collapse, fine */
 }
+
 .metrics-look thead th{
-  background:rgba(0,255,240,.08);     /* teal strip */
-  color:var(--teal);
+  background:rgba(0,255,240,.08);           /* teal header strip */
+  color:#00fff0;                             /* teal */
   text-align:left;
   font-weight:700;
   font-size:14px;
   padding:12px 14px;
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
+
+/* body: flat dark cells */
 .metrics-look tbody th,
 .metrics-look tbody td{
+  background:#0f1215;                       /* hard dark (no transparency) */
+  color:#cfd6dd;                             /* text */
   padding:12px 14px;
   vertical-align:top;
-  color:var(--text);
-  background:transparent;
 }
-/* vertical lines between columns */
+
+/* vertical lines */
 .metrics-look thead th + th,
 .metrics-look tbody td + td,
 .metrics-look tbody th + td{
-  border-left:1px solid var(--line);
+  border-left:1px solid rgba(255,255,255,.08);
 }
-/* horizontal lines between rows */
+
+/* horizontal lines */
 .metrics-look tbody tr + tr td,
 .metrics-look tbody tr + tr th{
-  border-top:1px solid var(--line);
+  border-top:1px solid rgba(255,255,255,.08);
 }
+
 /* no hover, no zebra */
 
 /* Media */
