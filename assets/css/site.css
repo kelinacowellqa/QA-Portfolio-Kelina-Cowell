@@ -1,18 +1,18 @@
 /* === House palette (single source of truth) === */
 :root{
-  --bg:#0b0f14; 
-  --panel:#0f1215; 
-  --text:#cfd6dd; 
+  --bg:#0b0f14;
+  --panel:#0f1215;
+  --text:#cfd6dd;
   --muted:#a9b3bd;
-  --line:rgba(255,255,255,.08); 
-  --teal:#00fff0; 
+  --line:rgba(255,255,255,.08);
+  --teal:#00fff0;
   --teal-soft:#66fff7;
 
-  --thumb-w:240px;            /* poster width; tweak 200–260px */
+  --thumb-w:240px;   /* poster width; tweak 200–260px */
   --thumb-gap:18px;
 }
 
-/* Base */
+/* ===== Base ===== */
 html,body{
   background:var(--bg);
   color:var(--text);
@@ -28,9 +28,8 @@ hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
 h1,h2,h3,h4,h5,h6{color:var(--teal)}
 h2,h3{margin-top:34px;margin-bottom:12px}
 
-/* Layout width */
-.wrap, .markdown-body, main, .page-content, .content, article, .post,
-body>:not(header):not(footer):not(.hero){
+/* Layout width (works with/without Jekyll themes) */
+.wrap, .markdown-body, main, .page-content, .content, article, .post, body>:not(header):not(footer):not(.hero){
   max-width:980px;margin:0 auto;padding:0 18px;
 }
 
@@ -39,7 +38,7 @@ p{line-height:1.65;margin:0 0 14px}
 ul,ol{margin:8px 0 16px;padding-left:1.2rem}
 li{margin:4px 0}
 
-/* Hero with glow */
+/* ===== Hero with glow ===== */
 .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
 .hero img, img[alt*="Portfolio Banner"]{
   display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px;
@@ -52,7 +51,7 @@ li{margin:4px 0}
   50%{box-shadow:0 22px 62px rgba(0,255,240,.36),0 10px 28px rgba(0,0,0,.60)}
 }
 
-/* Buttons / CTAs */
+/* ===== Buttons / CTAs ===== */
 .btn, a.cta-btn{
   display:inline-block;padding:12px 18px;border-radius:12px;background:#0d1117;border:1px solid #2b2f36;
   color:var(--teal);font-weight:700;letter-spacing:.2px;box-shadow:0 2px 10px rgba(0,0,0,.25);
@@ -62,114 +61,23 @@ li{margin:4px 0}
 .btn:active, a.cta-btn:active{transform:translateY(1px)}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:10px}
 
-/* === Project case-study blocks === */
+/* ===== Project case-study blocks (with teal glow) ===== */
 .project-block{
+  position:relative;
   background:var(--panel);
   border:1px solid rgba(0,255,240,.15);
   border-radius:12px;
   box-shadow:0 4px 20px rgba(0,0,0,.25);
-  transition:box-shadow .3s,border-color .3s,transform .05s;
   margin:22px 0;
   padding:16px 18px;
-  position:relative;
   overflow:hidden;
-}
-.project-block:hover, .project-block:focus-within{
-  border-color:rgba(0,255,240,.35);
-  box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45);
-}
-.project-block:active{transform:translateY(1px)}
-.project-block p>strong:first-child{display:inline;margin:0 4px 0 0;white-space:nowrap}
-.project-block em{color:var(--muted)}
-.project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
 
-/* Right-docked poster */
-.project-block.with-thumb{
-  padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);
-  min-height:calc(var(--thumb-w) * 1.25);
-}
-.project-block.with-thumb .thumb{
-  position:absolute; top:16px; right:18px;
-  width:var(--thumb-w); height:auto;
-  aspect-ratio:3/4; object-fit:cover;
-  border-radius:10px; border:1px solid var(--line);
-  box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
-
-/* === Metrics table (teal header, dark rows, thin grid) === */
-.metrics-look table{
-  width:100%;
-  border-collapse:collapse;                 /* crisp grid like Metrics */
-  background:#0f1215;                       /* same as --panel, hard set */
-  border:1px solid rgba(255,255,255,.08);   /* outer frame */
-  margin:12px 0;
-  border-radius:8px;                         /* if your browser ignores with collapse, fine */
-}
-
-.metrics-look thead th{
-  background:rgba(0,255,240,.08);           /* teal header strip */
-  color:#00fff0;                             /* teal */
-  text-align:left;
-  font-weight:700;
-  font-size:14px;
-  padding:12px 14px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-/* body: flat dark cells */
-.metrics-look tbody th,
-.metrics-look tbody td{
-  background:#0f1215;                       /* hard dark (no transparency) */
-  color:#cfd6dd;                             /* text */
-  padding:12px 14px;
-  vertical-align:top;
-}
-
-/* vertical lines */
-.metrics-look thead th + th,
-.metrics-look tbody td + td,
-.metrics-look tbody th + td{
-  border-left:1px solid rgba(255,255,255,.08);
-}
-
-/* horizontal lines */
-.metrics-look tbody tr + tr td,
-.metrics-look tbody tr + tr th{
-  border-top:1px solid rgba(255,255,255,.08);
-}
-
-/* no hover, no zebra */
-
-/* Media */
-img{border-radius:10px;transition:transform .12s}
-img:hover{transform:translateY(-1px)}
-
-/* Footer */
-footer{
-  max-width:980px;margin:40px auto 0;padding:20px 18px 0;
-  text-align:center;font-size:.85em;opacity:.8;
-  border-top:1px solid rgba(255,255,255,.05)
-}
-
-/* Responsive */
-@media (max-width:780px){
-  .project-block.with-thumb{padding-right:18px;min-height:auto}
-  .project-block.with-thumb .thumb{
-    position:static;display:block;margin:0 0 10px auto;width:60%;max-width:280px;aspect-ratio:auto;
-  }
-}
-@media (max-width:760px){
-  .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
-  .hero{margin:22px auto 14px}
-}
-
-/* === Teal glow on project cards === */
-.project-block{
+  /* hover/focus effects */
   transition: box-shadow .22s ease, border-color .22s ease, transform .18s ease;
 }
-.project-block > *{ position: relative; z-index: 1; }
+.project-block > *{ position:relative; z-index:1; }
 
-/* glow layer */
+/* teal “glow” layer */
 .project-block::before{
   content:"";
   position:absolute; inset:-2px;
@@ -183,7 +91,6 @@ footer{
   transition: opacity .22s ease, filter .22s ease;
   z-index:0;
 }
-
 .project-block:hover,
 .project-block:focus-within{
   border-color: rgba(0,255,240,.35);
@@ -194,11 +101,80 @@ footer{
 .project-block:focus-within::before{
   opacity:1; filter: blur(22px);
 }
+.project-block:active{transform:translateY(1px)}
 
-/* motion sensitivity */
-@media (prefers-reduced-motion: reduce){
-  .project-block,
-  .project-block::before{
-    transition: none;
+.project-block em{color:var(--muted)}
+.project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
+
+/* Right-docked poster */
+.project-block.with-thumb{
+  padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);
+  min-height:calc(var(--thumb-w) * 1.25);
+}
+.project-block.with-thumb .thumb{
+  position:absolute; top:16px; right:18px;
+  width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
+  border-radius:10px; border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+
+/* ===== Metrics table (teal header, dark rows, thin grid) ===== */
+.metrics-look table{
+  width:100%;
+  border-collapse:collapse;
+  background:#0f1215;
+  border:1px solid rgba(255,255,255,.08);
+  margin:12px 0;
+  border-radius:8px;
+}
+.metrics-look thead th{
+  background:rgba(0,255,240,.08);
+  color:#00fff0;
+  text-align:left;
+  font-weight:700;
+  font-size:14px;
+  padding:12px 14px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.metrics-look tbody th,
+.metrics-look tbody td{
+  background:#0f1215;
+  color:#cfd6dd;
+  padding:12px 14px;
+  vertical-align:top;
+}
+.metrics-look thead th + th,
+.metrics-look tbody td + td,
+.metrics-look tbody th + td{ border-left:1px solid rgba(255,255,255,.08); }
+.metrics-look tbody tr + tr td,
+.metrics-look tbody tr + tr th{ border-top:1px solid rgba(255,255,255,.08); }
+
+/* Media */
+img{border-radius:10px;transition:transform .12s}
+img:hover{transform:translateY(-1px)}
+
+/* Footer */
+footer{
+  max-width:980px;margin:40px auto 0;padding:20px 18px 0;
+  text-align:center;font-size:.85em;opacity:.8;
+  border-top:1px solid rgba(255,255,255,.05)
+}
+
+/* ===== Responsive ===== */
+@media (max-width:780px){
+  .project-block.with-thumb{padding-right:18px;min-height:auto}
+  .project-block.with-thumb .thumb{
+    position:static;display:block;margin:0 0 10px auto;width:60%;max-width:280px;aspect-ratio:auto;
   }
 }
+@media (max-width:760px){
+  .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
+  .hero{margin:22px auto 14px}
+}
+
+/* Motion sensitivity */
+@media (prefers-reduced-motion: reduce){
+  .project-block, .project-block::before,
+  .btn, a.cta-btn, img{ transition:none; animation:none; }
+}
+
