@@ -109,15 +109,15 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
        alt="Recompile poster"
        style="position:absolute; top:16px; right:18px; width:170px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.35);">
 
-### 5: Cross-Platform Input QA – *Recompile (PC / Controller)*
+### 5: Multi-Input / Controller Parity QA – *Recompile (PC Game Pass)*
 
-<strong style="color:inherit">Goal:</strong> Validate controller responsiveness and ensure input mappings behave consistently across devices and contexts.  
-<strong style="color:inherit">Focus:</strong> Mapping parity (Xbox/PlayStation layouts) · Latency & responsiveness · Haptics/rumble cues · UI prompts vs. active device · Keyboard/controller hand-off · Rebinds & edge cases  
-<strong style="color:inherit">Tools:</strong> Google Sheets test matrix · Input latency notes (video timestamps) · OBS/Game Bar captures · Controller layout references  
-<strong style="color:inherit">Deliverables:</strong> Input mapping matrix · Latency observations with clips · Mismatch log (prompts vs. device) · Rebind test results  
-<strong style="color:inherit">Result:</strong> In progress — building parity checks and timing captures across menus, gameplay, and pause/overlay states.  
+<strong style="color:inherit">Goal:</strong> Validate controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers (Diswoe X360) on the PC (Game Pass) build.  
+<strong style="color:inherit">Focus:</strong> Mapping accuracy • Input latency checks • Haptics/rumble behaviour • In-game prompt alignment (Xbox icons) • Hot-swap & multi-controller handling • Rebinds & edge cases  
+<strong style="color:inherit">Tools:</strong> Google Sheets test plan • 2× Diswoe X360 (Xbox-compatible) controllers • OBS capture + stopwatch overlay  
+<strong style="color:inherit">Deliverables:</strong> Input-response matrix • Latency report (ms table) • Screenshot pack of binding & prompt screens • STAR result paragraph  
+<strong style="color:inherit">Result:</strong> In progress — 60 cases run, 6 bugs logged, 0.18 s avg input delay; parity checks underway across menus, gameplay, and overlay states.  
 
-🕹️ **Why this game?** Fast, precise movement and frequent mode switches make input mismatches and latency spikes easy to spot.
+🕹️ **Why this game?** Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.
 
 **Coming soon:** full case study page with mapping matrix, timing clips, and parity findings.
 
