@@ -96,25 +96,16 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:
   box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
-/* ===== Tables — match "Metrics" style (no zebra/hover) ===== */
-
-/* optional scroll container for narrow screens */
-.table-wrap{ overflow:auto; border-radius:8px; }
-
-.table-wrap table{
+/* === Metrics look (teal header, dark rows, thin grid lines, no hover/zebra) === */
+.metrics-look table{
   width:100%;
-  border-collapse:separate;        /* keep rounded corners */
-  border-spacing:0;
-  background:var(--panel);         /* dark slab */
-  border:1px solid var(--line);
-  border-radius:8px;               /* matches Metrics screenshot */
-  overflow:hidden;
+  border-collapse:collapse;           /* solid grid lines */
+  background:transparent;             /* same dark as page */
+  border:1px solid var(--line);       /* outer border */
   margin:12px 0;
 }
-
-/* teal header strip */
-.table-wrap thead th{
-  background:rgba(0,255,240,.08);  /* subtle teal tint */
+.metrics-look thead th{
+  background:rgba(0,255,240,.08);     /* teal strip */
   color:var(--teal);
   text-align:left;
   font-weight:700;
@@ -122,16 +113,25 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:
   padding:12px 14px;
   border-bottom:1px solid var(--line);
 }
-
-/* flat rows with thin separators (no zebra, no hover) */
-.table-wrap tbody th,
-.table-wrap tbody td{
-  background:var(--panel);         /* key: cells are dark, not transparent */
-  color:var(--text);
+.metrics-look tbody th,
+.metrics-look tbody td{
   padding:12px 14px;
   vertical-align:top;
+  color:var(--text);
+  background:transparent;
+}
+/* vertical lines between columns */
+.metrics-look thead th + th,
+.metrics-look tbody td + td,
+.metrics-look tbody th + td{
+  border-left:1px solid var(--line);
+}
+/* horizontal lines between rows */
+.metrics-look tbody tr + tr td,
+.metrics-look tbody tr + tr th{
   border-top:1px solid var(--line);
 }
+/* no hover, no zebra */
 
 /* Media */
 img{border-radius:10px;transition:transform .12s}
