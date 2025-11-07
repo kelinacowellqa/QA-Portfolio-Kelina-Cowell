@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ '/assets/css/style.css?v=5' | relative_url }}">
+<link rel="stylesheet" href="/assets/css/site.css?v=8">
 
 <!-- Page-scoped CSS (3-column grid) -->
 <style>
