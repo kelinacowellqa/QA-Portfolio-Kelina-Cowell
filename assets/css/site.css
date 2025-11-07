@@ -1,24 +1,43 @@
 /* === House palette (single source of truth) === */
 :root{
-  --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --muted:#a9b3bd;
-  --line:rgba(255,255,255,.08); --teal:#00fff0; --teal-soft:#66fff7;
+  --bg:#0b0f14; 
+  --panel:#0f1215; 
+  --text:#cfd6dd; 
+  --muted:#a9b3bd;
+  --line:rgba(255,255,255,.08); 
+  --teal:#00fff0; 
+  --teal-soft:#66fff7;
+
   --thumb-w:240px;            /* poster width; tweak 200–260px */
   --thumb-gap:18px;
 }
 
 /* Base */
-html,body{background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
-a{color:var(--teal);text-decoration:none} a:hover{color:var(--teal-soft)}
+html,body{
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  margin:0;
+}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:var(--teal-soft)}
 strong{color:inherit}
 hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
-h1,h2,h3,h4,h5,h6{color:var(--teal)} h2,h3{margin-top:34px;margin-bottom:12px}
+h1,h2,h3,h4,h5,h6{color:var(--teal)}
+h2,h3{margin-top:34px;margin-bottom:12px}
 
 /* Layout width */
 .wrap, .markdown-body, main, .page-content, .content, article, .post,
-body>:not(header):not(footer):not(.hero){max-width:980px;margin:0 auto;padding:0 18px}
+body>:not(header):not(footer):not(.hero){
+  max-width:980px;margin:0 auto;padding:0 18px;
+}
 
 /* Rhythm */
-p{line-height:1.65;margin:0 0 14px} ul,ol{margin:8px 0 16px;padding-left:1.2rem} li{margin:4px 0}
+p{line-height:1.65;margin:0 0 14px}
+ul,ol{margin:8px 0 16px;padding-left:1.2rem}
+li{margin:4px 0}
 
 /* Hero with glow */
 .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
@@ -43,7 +62,7 @@ p{line-height:1.65;margin:0 0 14px} ul,ol{margin:8px 0 16px;padding-left:1.2rem}
 .btn:active, a.cta-btn:active{transform:translateY(1px)}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:10px}
 
-/* === Project case-study blocks (single source of truth) === */
+/* === Project case-study blocks === */
 .project-block{
   background:var(--panel);
   border:1px solid rgba(0,255,240,.15);
@@ -89,15 +108,15 @@ table, th, td { background: transparent; }
 .table-wrap table{
   width:100%;
   border-collapse:separate; border-spacing:0;
-  background:var(--panel);              /* needs --panel defined in :root */
+  background:var(--panel);
   border:1px solid var(--line);
-  border-radius:14px; overflow:hidden;  /* ensures rounded header/corners */
+  border-radius:14px; overflow:hidden;
 }
 
 /* header */
 .table-wrap thead th{
   background:rgba(255,255,255,.06);
-  color:var(--ink);
+  color:var(--text);
   text-align:left; font-weight:600; font-size:14px;
   padding:12px 14px;
   border-bottom:1px solid var(--line);
@@ -111,10 +130,13 @@ table, th, td { background: transparent; }
 
 /* zebra + hover */
 .table-wrap tbody tr:nth-child(odd){ background:rgba(255,255,255,.02); }
-.table-wrap tbody tr:hover{ background:rgba(15,181,201,.08); }
+.table-wrap tbody tr:hover{ background:rgba(0,255,240,.12); }
 
 /* status pills (optional) */
-.pill{ display:inline-block; padding:.2rem .5rem; border-radius:10px; border:1px solid var(--line); background:rgba(255,255,255,.06); }
+.pill{
+  display:inline-block; padding:.2rem .5rem; border-radius:10px;
+  border:1px solid var(--line); background:rgba(255,255,255,.06);
+}
 .pill--live{ background:var(--teal); color:#001014; border-color:transparent; }
 
 /* Media */
@@ -122,7 +144,11 @@ img{border-radius:10px;transition:transform .12s}
 img:hover{transform:translateY(-1px)}
 
 /* Footer */
-footer{max-width:980px;margin:40px auto 0;padding:20px 18px 0;text-align:center;font-size:.85em;opacity:.8;border-top:1px solid rgba(255,255,255,.05)}
+footer{
+  max-width:980px;margin:40px auto 0;padding:20px 18px 0;
+  text-align:center;font-size:.85em;opacity:.8;
+  border-top:1px solid rgba(255,255,255,.05)
+}
 
 /* Responsive */
 @media (max-width:780px){
@@ -135,4 +161,3 @@ footer{max-width:980px;margin:40px auto 0;padding:20px 18px 0;text-align:center;
   .wrap, body>*:not(header):not(footer):not(.hero){padding:0 14px}
   .hero{margin:22px auto 14px}
 }
-
