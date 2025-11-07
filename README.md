@@ -1,21 +1,22 @@
-<style>
-/* HARD OVERRIDES – force the card look even if site.css isn't loading */
+<head>
+  <link rel="stylesheet" href="/assets/css/site.css?v=10"><!-- bump version when you change site.css -->
+  <style>
+/* HARD OVERRIDES – force the card + dark table look even if other CSS wins */
 :root{
   --bg:#0b0f14; --panel:#0f1215; --text:#cfd6dd; --line:rgba(255,255,255,.08);
   --teal:#00fff0; --thumb-w:240px; --thumb-gap:18px;
 }
+
 html,body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0}
 h1,h2,h3,h4,h5,h6{color:var(--teal)}
+
 /* Cards */
 .project-block{
   background:var(--panel);
   border:1px solid rgba(0,255,240,.15);
   border-radius:12px;
   box-shadow:0 4px 20px rgba(0,0,0,.25);
-  margin:22px 0;
-  padding:16px 18px;
-  position:relative;
-  overflow:hidden;
+  margin:22px 0; padding:16px 18px; position:relative; overflow:hidden;
 }
 .project-block:hover{border-color:rgba(0,255,240,.35);box-shadow:0 0 20px rgba(0,255,240,.25),0 0 40px rgba(0,255,240,.15),0 6px 24px rgba(0,0,0,.45)}
 .project-block.with-thumb{
@@ -28,6 +29,7 @@ h1,h2,h3,h4,h5,h6{color:var(--teal)}
   border-radius:10px; border:1px solid var(--line);
   box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
+
 /* CTA button */
 a.cta-btn{
   display:inline-block; padding:12px 18px; border-radius:12px;
@@ -35,17 +37,69 @@ a.cta-btn{
   text-decoration:none;
 }
 a.cta-btn:hover{background:var(--teal); color:var(--bg)}
-/* Table */
-table{border-collapse:collapse;width:100%;margin:12px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}
-th,td{border:1px solid var(--line);padding:8px}
-th{background:rgba(0,255,240,.08);color:var(--teal)}
+
+/* ===== TABLES — dark, zebra, bulletproof ===== */
+
+/* allow rounded corners + scrolling on narrow screens */
+.table-wrap{ overflow:auto; border-radius:14px; }
+
+/* kill any white backgrounds that may be injected by themes */
+table, th, td { background:transparent !important; }
+
+/* strong selectors so this beats markdown/normalize styles */
+.markdown-body table,
+.wrap table,
+table{
+  width:100% !important;
+  border-collapse:separate !important;   /* needed for radius */
+  border-spacing:0 !important;
+  background:var(--panel) !important;
+  border:1px solid var(--line) !important;
+  border-radius:12px !important;
+  overflow:hidden !important;
+  margin:12px 0 !important;
+}
+
+/* header cells */
+.markdown-body thead th,
+.wrap thead th,
+thead th{
+  background:rgba(255,255,255,.06) !important;
+  color:var(--text) !important;
+  text-align:left !important;
+  font-weight:700 !important;
+  font-size:14px !important;
+  padding:12px 14px !important;
+  border-bottom:1px solid var(--line) !important;
+}
+
+/* body cells */
+.markdown-body tbody td, .markdown-body tbody th,
+.wrap tbody td, .wrap tbody th,
+tbody td, tbody th{
+  padding:12px 14px !important;
+  vertical-align:top !important;
+  border-bottom:1px solid var(--line) !important;
+  border-right:none !important;
+}
+
+/* zebra + hover */
+.markdown-body tbody tr:nth-child(odd),
+.wrap tbody tr:nth-child(odd),
+tbody tr:nth-child(odd){
+  background:rgba(255,255,255,.02) !important;
+}
+.markdown-body tbody tr:hover,
+.wrap tbody tr:hover,
+tbody tr:hover{
+  background:rgba(0,255,240,.12) !important;
+}
+
 /* Hero */
 .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
 .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
 </style>
-
-
-<link rel="stylesheet" href="/assets/css/site.css?v=9">
+</head>
 
 <!-- Hero -->
 <header class="hero">
