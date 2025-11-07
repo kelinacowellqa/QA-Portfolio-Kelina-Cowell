@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/assets/css/site.css?v=8">
+<link rel="stylesheet" href="/assets/css/site.css?v=9">
 
 <!-- Page-scoped CSS (3-column grid) -->
 <style>
