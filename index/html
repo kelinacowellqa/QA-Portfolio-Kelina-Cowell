@@ -1,4 +1,130 @@
-<!-- Hero -->
+---
+# keep this front matter so GitHub Pages/Jekyll will render the markdown inside your <section markdown="1"> blocks
+title: Manual QA Portfolio — Kelina Cowell
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manual QA Portfolio — Kelina Cowell</title>
+
+  <style>
+  /* === House palette (single source of truth) === */
+  :root{
+    --bg:#0b0f14; 
+    --panel:#0f1215; 
+    --text:#cfd6dd; 
+    --muted:#a9b3bd;
+    --line:rgba(255,255,255,.08); 
+    --teal:#00fff0; 
+    --teal-soft:#66fff7;
+
+    --thumb-w:240px;            /* poster width; tweak 200–260px */
+    --thumb-gap:18px;
+  }
+
+  /* Base */
+  html,body{
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0;
+  }
+  a{color:var(--teal);text-decoration:none}
+  a:hover{color:var(--teal-soft)}
+  strong{color:inherit}
+  hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
+  h1,h2,h3,h4,h5,h6{color:var(--teal)}
+  h2,h3{margin-top:34px;margin-bottom:12px}
+
+  /* Layout width */
+  .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+
+  /* Hero */
+  .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
+  .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
+
+  /* CTA button */
+  .cta-btn{
+    display:inline-block; padding:12px 18px; border-radius:12px;
+    background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
+    text-decoration:none;
+  }
+  .cta-btn:hover{background:var(--teal); color:var(--bg)}
+
+  /* === Project case-study blocks === */
+  .project-block{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    margin:22px 0;
+    padding:16px 18px;
+    position:relative;
+    overflow:hidden;
+  }
+  .project-block.with-thumb{
+    padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);
+    min-height:calc(var(--thumb-w) * 1.25);
+  }
+  .project-block .thumb{
+    position:absolute; top:16px; right:18px;
+    width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
+    border-radius:10px; border:1px solid var(--line);
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+  }
+  .project-block em{color:var(--muted)}
+  .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
+
+  /* ===== Metrics-style table (teal header, dark rows, thin grid, no hover/zebra) ===== */
+  .metrics-look table{
+    width:100%;
+    border-collapse:collapse;
+    background:transparent;
+    border:1px solid var(--line);
+    margin:12px 0;
+  }
+  .metrics-look thead th{
+    background:rgba(0,255,240,.08);
+    color:var(--teal);
+    text-align:left;
+    font-weight:700;
+    font-size:14px;
+    padding:12px 14px;
+    border-bottom:1px solid var(--line);
+  }
+  .metrics-look tbody th,
+  .metrics-look tbody td{
+    padding:12px 14px;
+    vertical-align:top;
+    color:var(--text);
+    background:transparent;
+  }
+  .metrics-look thead th + th,
+  .metrics-look tbody td + td,
+  .metrics-look tbody th + td{ border-left:1px solid var(--line); }
+  .metrics-look tbody tr + tr td,
+  .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
+
+  /* Footer */
+  footer{
+    max-width:980px;margin:40px auto 0;padding:20px 18px 0;
+    text-align:center;font-size:.85em;opacity:.8;
+    border-top:1px solid rgba(255,255,255,.05)
+  }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>>> YOUR CONTENT (left 100% unchanged) <<<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- BEGIN: do not edit/remove anything in this block per your instruction -->
+
+    <!-- Hero -->
 <header class="hero">
   <img src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png" alt="Portfolio Banner">
 </header>
@@ -174,16 +300,16 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
     <tr>
       <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">Oxenfree</td>
       <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Narrative / Localisation</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Netflix Mobile</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Subtitles · Timing · Readability</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Netflix Mobile</td>
+      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Subtitles · Timing · Readability</td>
+      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
     </tr>
     <tr>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">PowerWash Simulator</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Automation</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Smoke scripts · Regression checks</td>
-      <td style="color:#cfd6dd;background:#0f1215;padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
+      <td style="color:#cfd6dd	background:#0f1215;padding:12px 14px;vertical-align:top;border-top:1px solid rgba(255,255,255,.08);">PowerWash Simulator</td>
+      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Automation</td>
+      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">PC</td>
+      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Smoke scripts · Regression checks</td>
+      <td style="color:#cfd6dd	background:#0f1215	padding:12px 14px;vertical-align:top;border-left:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.08);">Coming soon</td>
     </tr>
   </tbody>
 </table>
@@ -212,3 +338,10 @@ This portfolio follows an eight-project roadmap I designed to mirror real studio
 ## 🌟 Summary
 I test games the way players experience them: clearly, patiently, and with evidence. This portfolio shows practical QA across PC, mobile, and VR—backed by tidy documentation, reproducible bugs, and short clips that make issues easy to understand. My aim is simple: help teams ship smoother, clearer experiences for players.
  
+    <!-- END: your block (unchanged) -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>>> END UNCHANGED BLOCK <<<<<<<<<<<<<<<<<<<<<<< -->
+
+  </main>
+</body>
+</html>
+
