@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/assets/css/site.css?v=11"><!-- bump when site.css changes -->
+  <link rel="stylesheet" href="/assets/css/site.css?v=12"><!-- bump when site.css changes -->
 
   <style>
   /* === House palette (single source of truth) === */
