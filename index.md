@@ -1,7 +1,6 @@
 <!-- Hero -->
 <header class="hero">
-<link rel="stylesheet" href="assets/css/site.css?v=12">
-<img src="assets/img/profile-banner.webp" alt="Portfolio Banner">
+  <img src="assets/img/profile-banner.webp" alt="Portfolio Banner">
 </header>
 
 ### Welcome to my QA portfolio.
