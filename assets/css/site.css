@@ -178,3 +178,17 @@ footer{
   .btn, a.cta-btn, img{ transition:none; animation:none; }
 }
 
+/* --- Global content rhythm (applies across case-study pages) --- */
+main h2{ margin:28px 0 10px; }
+main hr{ margin:24px 0; }
+
+main p{ line-height:1.65; margin:0 0 14px; }
+
+main ul,
+main ol{ margin:10px 0 18px; padding-left:1.25rem; }
+
+main li{ line-height:1.55; margin:6px 0; }   /* <-- fixes the “crammed” bullets */
+
+/* handy: space after details/embeds so the next section breathes */
+details + *{ margin-top:16px; }
+.embed{ margin:12px 0 18px; }
