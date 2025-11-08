@@ -220,3 +220,37 @@ details + * { margin-top: 16px !important; }
   border-radius: 10px; border: 1px solid var(--line);
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
 }
+
+/* Certificates table */
+.table-certs{
+  width:100%; border-collapse:collapse; background:#0f1215;
+  border:1px solid rgba(255,255,255,.08); margin:12px 0; border-radius:8px;
+}
+.table-certs th{
+  background:rgba(0,255,240,.08); color:#00fff0; text-align:left;
+  font-weight:700; font-size:14px; padding:12px 14px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.table-certs td{
+  padding:12px 14px; vertical-align:top; border-top:1px solid rgba(255,255,255,.08);
+}
+.table-certs th + th, .table-certs td + td{ border-left:1px solid rgba(255,255,255,.08); }
+.table-certs .evidence{ width:160px; text-align:center; }
+
+/* Small clickable PDF thumbnail */
+.pdf-thumb{
+  width: 96px;   /* change to 120px if you want larger */
+  height:auto; display:block; margin:0 auto;
+  border-radius:8px; border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 6px 18px rgba(0,0,0,.35); transition:transform .12s ease;
+}
+.pdf-thumb:hover{ transform:translateY(-1px); }
+
+/* Mobile: stack rows nicely */
+@media (max-width:820px){
+  .table-certs{ display:block; }
+  .table-certs thead{ display:none; }
+  .table-certs tr{ display:block; }
+  .table-certs td{ display:block; border-left:0 !important; }
+  .table-certs .evidence{ width:auto; margin-top:8px; }
+}
