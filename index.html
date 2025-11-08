@@ -20,7 +20,7 @@
       --teal:#00fff0; 
       --teal-soft:#66fff7;
 
-      --thumb-w:240px;            /* poster width; tweak 200–260px */
+      --thumb-w:240px;
       --thumb-gap:18px;
     }
 
@@ -32,13 +32,13 @@
       -moz-osx-font-smoothing:grayscale;
       font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
       margin:0;
+      line-height:1.55; /* global readibility baseline */
     }
     a{color:var(--teal);text-decoration:none}
     a:hover{color:var(--teal-soft)}
     strong{color:inherit}
-    hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
     h1,h2,h3,h4,h5,h6{color:var(--teal)}
-    /* removed old h2,h3 margin rule to avoid conflicts */
+    hr{border:0;border-top:1px solid var(--teal);opacity:.35}
 
     /* Layout width */
     .wrap{max-width:980px;margin:0 auto;padding:0 18px}
@@ -77,9 +77,9 @@
       box-shadow:0 6px 18px rgba(0,0,0,.35);
     }
     .project-block em{color:var(--muted)}
-    .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
+    .project-block p{margin:6px 0 8px;max-width:78ch}
 
-    /* ===== Metrics-style table (teal header, dark rows, thin grid) ===== */
+    /* ===== Metrics-style table ===== */
     .metrics-look table{
       width:100%;
       border-collapse:collapse;
@@ -111,75 +111,42 @@
 
     /* === Compact tags (Option A) — SKILLS ONLY === */
     .skills-block .chips { 
-      display: flex; 
-      flex-wrap: wrap; 
-      gap: 8px 10px; 
-      margin: 0; 
-      padding: 0; 
-      list-style: none; 
+      display:flex; flex-wrap:wrap; gap:8px 10px; margin:0; padding:0; list-style:none;
     }
     .skills-block .chips li {
-      display: inline-flex; 
-      align-items: center;
-      padding: .35rem .6rem;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      line-height: 1.2;
-      font-weight: 500;
+      display:inline-flex; align-items:center;
+      padding:.35rem .6rem; border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text); line-height:1.2; font-weight:500;
     }
-    .skills-block .chips li:focus-within { 
-      outline: 2px solid var(--teal); 
-      outline-offset: 2px; 
-    }
-    .section .hint { 
-      color: var(--muted); 
-      margin: .25rem 0 0; 
-      font-size: .95rem; 
-    }
-    .skills-block { margin: 12px 0 20px; }
+    .skills-block .chips li:focus-within { outline:2px solid var(--teal); outline-offset:2px; }
+    .section .hint { color:var(--muted); margin:.25rem 0 0; font-size:.95rem; }
+    .skills-block { margin:12px 0 20px; }
 
-    /* ===== GLOBAL TEXT SPACING (high-priority, wins everywhere) ===== */
-    :root{
-      --space-1: 6px;
-      --space-2: 10px;
-      --space-3: 14px;
-      --space-4: 20px;
-      --space-5: 28px;
-    }
-    /* Reset built-in margins so we own them */
+    /* ===== NUCLEAR TEXT SPACING OVERRIDES (win everywhere) ===== */
+    /* wipe default margins so we own them */
     body :where(h1,h2,h3,h4,h5,h6,p,ul,ol){ margin:0 !important; }
 
-    /* Headings */
-    h2 { margin-top: 28px !important; margin-bottom: 10px !important; }
-    h3 { margin-top: 20px !important; margin-bottom: 8px !important; }
+    /* universal rhythm */
+    h2{ margin:28px 0 12px 0 !important; }
+    h3{ margin:20px 0 10px 0 !important; }
+    p { margin:12px 0 14px 0 !important; max-width:78ch; }
+    ul,ol{ margin:12px 0 14px 0 !important; padding-left:1.25rem !important; }
+    li + li{ margin-top:6px !important; }
+    hr{ margin:24px 0 !important; }
 
-    /* Paragraphs */
-    p  { margin-top: 10px !important; margin-bottom: 14px !important; line-height: 1.55 !important; max-width: 78ch; }
+    /* hero neighborhood */
+    .hero + * p  { margin-top:14px !important; }
+    .hero + * h2 { margin-top:20px !important; }
 
-    /* Lists */
-    ul, ol { margin-top: 10px !important; margin-bottom: 14px !important; padding-left: 1.25rem !important; }
-    li + li { margin-top: 6px !important; }
+    /* lists inside project cards */
+    .project-block ul, .project-block ol{ margin:10px 0 14px !important; }
+    .project-block li + li{ margin-top:6px !important; }
 
-    /* Horizontal rule */
-    hr { margin: 24px 0 !important; }
-
-    /* Intro spacing right under hero */
-    .hero + * p  { margin-top: 12px !important; }
-    .hero + * h2 { margin-top: 18px !important; }
-
-    /* Inside project cards */
-    .project-block ul, 
-    .project-block ol { margin: 10px 0 14px !important; }
-    .project-block li + li { margin-top: 6px !important; }
-
-    /* Summary spacing after Skills */
-    #summary { margin-top: 28px !important; }
-
-    /* Trim accidental crowding at container edges */
-    .wrap > *:first-child { margin-top: 0 !important; }
-    .wrap > *:last-child  { margin-bottom: 0 !important; }
+    /* edge trim */
+    .wrap > *:first-child{ margin-top:0 !important; }
+    .wrap > *:last-child { margin-bottom:0 !important; }
 
     /* Footer */
     footer{
