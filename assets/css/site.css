@@ -220,7 +220,3 @@ details + * { margin-top: 16px !important; }
   border-radius: 10px; border: 1px solid var(--line);
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
 }
-
-/* If you want a stricter cap regardless of class */
-.table-insight .evidence img{ max-width: 140px !important; height: auto !important; }
-
