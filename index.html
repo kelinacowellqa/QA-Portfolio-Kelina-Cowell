@@ -179,6 +179,29 @@
 .intro + hr{ margin: 28px 0 22px !important; }  /* gap around the divider */
 
 #projects{ margin-top: 34px !important; margin-bottom: 14px !important; } /* “Project Lineup” H2 */
+    /* === Final intro spacing + measure tweak === */
+.intro{
+  padding-top: 32px !important;     /* more breath above */
+  padding-bottom: 24px !important;  /* more breath below */
+}
+.intro h2{
+  margin: 0 0 16px 0 !important;    /* clearer gap under the heading */
+}
+.intro p{
+  margin: 12px 0 16px 0 !important;
+  line-height: 1.6 !important;
+  max-width: 72ch;                  /* slightly narrower = easier reading */
+}
+.intro p:last-child{
+  margin-bottom: 0 !important;      /* avoid extra gap above the rule */
+}
+.intro + hr{
+  margin: 30px 0 22px !important;   /* tidy spacing around the divider */
+}
+#projects{
+  margin-top: 36px !important;      /* ensure header doesn’t crowd the rule */
+  margin-bottom: 14px !important;
+}
   </style>
 </head>
 
