@@ -177,6 +177,38 @@ body :where(hr){ margin: var(--space-4) 0 !important; }
     text-align:center;font-size:.85em;opacity:.8;
     border-top:1px solid rgba(255,255,255,.05)
   }
+   /* ===== FINAL EMERGENCY SPACING PATCH (wins everywhere) ===== */
+
+/* Headings */
+h2 { margin-top: 28px !important; margin-bottom: 10px !important; }
+h3 { margin-top: 20px !important; margin-bottom: 8px !important; }
+
+/* Paragraphs */
+p  { margin-top: 10px !important; margin-bottom: 14px !important; line-height: 1.55 !important; max-width: 78ch; }
+
+/* Lists */
+ul, ol { margin-top: 10px !important; margin-bottom: 14px !important; padding-left: 1.25rem !important; }
+li + li { margin-top: 6px !important; }
+
+/* Horizontal rule */
+hr { margin: 24px 0 !important; }
+
+/* Intro (paragraphs immediately under the welcome area) */
+.hero + * p { margin-top: 12px !important; }         /* space after the hero image */
+.hero + * h2 { margin-top: 18px !important; }        /* first H2 below hero */
+
+/* Inside project cards (bulleted lists looked tight) */
+.project-block ul, 
+.project-block ol { margin: 10px 0 14px !important; }
+.project-block li + li { margin-top: 6px !important; }
+
+/* Skills block (you asked for tags only here) */
+.skills-block { margin: 12px 0 20px !important; }
+#summary { margin-top: 28px !important; }
+
+/* Trim accidental crowding at container edges */
+.wrap > *:first-child { margin-top: 0 !important; }
+.wrap > *:last-child  { margin-bottom: 0 !important; }
 </style>
 
     <!-- Hero -->
