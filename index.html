@@ -9,207 +9,186 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Manual QA Portfolio — Kelina Cowell</title>
 
- <style>
-  /* === House palette (single source of truth) === */
-  :root{
-    --bg:#0b0f14; 
-    --panel:#0f1215; 
-    --text:#cfd6dd; 
-    --muted:#a9b3bd;
-    --line:rgba(255,255,255,.08); 
-    --teal:#00fff0; 
-    --teal-soft:#66fff7;
+  <style>
+    /* === House palette (single source of truth) === */
+    :root{
+      --bg:#0b0f14; 
+      --panel:#0f1215; 
+      --text:#cfd6dd; 
+      --muted:#a9b3bd;
+      --line:rgba(255,255,255,.08); 
+      --teal:#00fff0; 
+      --teal-soft:#66fff7;
 
-    --thumb-w:240px;            /* poster width; tweak 200–260px */
-    --thumb-gap:18px;
-  }
+      --thumb-w:240px;            /* poster width; tweak 200–260px */
+      --thumb-gap:18px;
+    }
 
-  /* Base */
-  html,body{
-    background:var(--bg);
-    color:var(--text);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    margin:0;
-  }
-  a{color:var(--teal);text-decoration:none}
-  a:hover{color:var(--teal-soft)}
-  strong{color:inherit}
-  hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
-  h1,h2,h3,h4,h5,h6{color:var(--teal)}
-  h2,h3{margin-top:34px;margin-bottom:12px}
+    /* Base */
+    html,body{
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+    }
+    a{color:var(--teal);text-decoration:none}
+    a:hover{color:var(--teal-soft)}
+    strong{color:inherit}
+    hr{border:0;border-top:1px solid var(--teal);opacity:.35;margin:18px 0}
+    h1,h2,h3,h4,h5,h6{color:var(--teal)}
+    /* removed old h2,h3 margin rule to avoid conflicts */
 
-  /* Layout width */
-  .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+    /* Layout width */
+    .wrap{max-width:980px;margin:0 auto;padding:0 18px}
 
-  /* Hero */
-  .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
-  .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
+    /* Hero */
+    .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
+    .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
 
-  /* CTA button */
-  .cta-btn{
-    display:inline-block; padding:12px 18px; border-radius:12px;
-    background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
-    text-decoration:none;
-  }
-  .cta-btn:hover{background:var(--teal); color:var(--bg)}
+    /* CTA button */
+    .cta-btn{
+      display:inline-block; padding:12px 18px; border-radius:12px;
+      background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
+      text-decoration:none;
+    }
+    .cta-btn:hover{background:var(--teal); color:var(--bg)}
 
-  /* === Project case-study blocks === */
-  .project-block{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:12px;
-    box-shadow:0 4px 20px rgba(0,0,0,.25);
-    margin:22px 0;
-    padding:16px 18px;
-    position:relative;
-    overflow:hidden;
-  }
-  .project-block.with-thumb{
-    padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);
-    min-height:calc(var(--thumb-w) * 1.25);
-  }
-  .project-block .thumb{
-    position:absolute; top:16px; right:18px;
-    width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
-    border-radius:10px; border:1px solid var(--line);
-    box-shadow:0 6px 18px rgba(0,0,0,.35);
-  }
-  .project-block em{color:var(--muted)}
-  .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
+    /* === Project case-study blocks === */
+    .project-block{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:12px;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      margin:22px 0;
+      padding:16px 18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .project-block.with-thumb{
+      padding-right:calc(var(--thumb-w) + var(--thumb-gap) + 18px);
+      min-height:calc(var(--thumb-w) * 1.25);
+    }
+    .project-block .thumb{
+      position:absolute; top:16px; right:18px;
+      width:var(--thumb-w); height:auto; aspect-ratio:3/4; object-fit:cover;
+      border-radius:10px; border:1px solid var(--line);
+      box-shadow:0 6px 18px rgba(0,0,0,.35);
+    }
+    .project-block em{color:var(--muted)}
+    .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
 
-  /* ===== Metrics-style table (teal header, dark rows, thin grid) ===== */
-  .metrics-look table{
-    width:100%;
-    border-collapse:collapse;
-    background:transparent;
-    border:1px solid var(--line);
-    margin:12px 0;
-  }
-  .metrics-look thead th{
-    background:rgba(0,255,240,.08);
-    color:var(--teal);
-    text-align:left;
-    font-weight:700;
-    font-size:14px;
-    padding:12px 14px;
-    border-bottom:1px solid var(--line);
-  }
-  .metrics-look tbody th,
-  .metrics-look tbody td{
-    padding:12px 14px;
-    vertical-align:top;
-    color:var(--text);
-    background:transparent;
-  }
-  .metrics-look thead th + th,
-  .metrics-look tbody td + td,
-  .metrics-look tbody th + td{ border-left:1px solid var(--line); }
-  .metrics-look tbody tr + tr td,
-  .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
+    /* ===== Metrics-style table (teal header, dark rows, thin grid) ===== */
+    .metrics-look table{
+      width:100%;
+      border-collapse:collapse;
+      background:transparent;
+      border:1px solid var(--line);
+      margin:12px 0;
+    }
+    .metrics-look thead th{
+      background:rgba(0,255,240,.08);
+      color:var(--teal);
+      text-align:left;
+      font-weight:700;
+      font-size:14px;
+      padding:12px 14px;
+      border-bottom:1px solid var(--line);
+    }
+    .metrics-look tbody th,
+    .metrics-look tbody td{
+      padding:12px 14px;
+      vertical-align:top;
+      color:var(--text);
+      background:transparent;
+    }
+    .metrics-look thead th + th,
+    .metrics-look tbody td + td,
+    .metrics-look tbody th + td{ border-left:1px solid var(--line); }
+    .metrics-look tbody tr + tr td,
+    .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
 
-  /* === Compact tags (Option A) — SKILLS ONLY === */
-  .skills-block .chips { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 8px 10px; 
-    margin: 0; 
-    padding: 0; 
-    list-style: none; 
-  }
-  .skills-block .chips li {
-    display: inline-flex; 
-    align-items: center;
-    padding: .35rem .6rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,.14);
-    background: rgba(255,255,255,.04);
-    color: var(--text);
-    line-height: 1.2;
-    font-weight: 500;
-  }
-  .skills-block .chips li:focus-within { 
-    outline: 2px solid var(--teal); 
-    outline-offset: 2px; 
-  }
-  .section .hint { 
-    color: var(--muted); 
-    margin: .25rem 0 0; 
-    font-size: .95rem; 
-  }
-  /* Layout tweak: space the Skills block nicely */
-  .skills-block { margin: 8px 0 14px; }
+    /* === Compact tags (Option A) — SKILLS ONLY === */
+    .skills-block .chips { 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 8px 10px; 
+      margin: 0; 
+      padding: 0; 
+      list-style: none; 
+    }
+    .skills-block .chips li {
+      display: inline-flex; 
+      align-items: center;
+      padding: .35rem .6rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      line-height: 1.2;
+      font-weight: 500;
+    }
+    .skills-block .chips li:focus-within { 
+      outline: 2px solid var(--teal); 
+      outline-offset: 2px; 
+    }
+    .section .hint { 
+      color: var(--muted); 
+      margin: .25rem 0 0; 
+      font-size: .95rem; 
+    }
+    .skills-block { margin: 12px 0 20px; }
 
-/* ===== HARD OVERRIDES: Text margins & rhythm (global) ===== */
-:root{
-  --space-1: 6px;
-  --space-2: 10px;
-  --space-3: 14px;
-  --space-4: 20px;
-  --space-5: 28px;
-}
+    /* ===== GLOBAL TEXT SPACING (high-priority, wins everywhere) ===== */
+    :root{
+      --space-1: 6px;
+      --space-2: 10px;
+      --space-3: 14px;
+      --space-4: 20px;
+      --space-5: 28px;
+    }
+    /* Reset built-in margins so we own them */
+    body :where(h1,h2,h3,h4,h5,h6,p,ul,ol){ margin:0 !important; }
 
-/* Zero out default margins so we control them */
-body :where(h1,h2,h3,h4,h5,h6,p,ul,ol){ margin:0 !important; }
+    /* Headings */
+    h2 { margin-top: 28px !important; margin-bottom: 10px !important; }
+    h3 { margin-top: 20px !important; margin-bottom: 8px !important; }
 
-/* Headings — applies at any nesting depth */
-body :where(h2){ margin-top: var(--space-5) !important; margin-bottom: var(--space-2) !important; }
-body :where(h3){ margin-top: var(--space-4) !important; margin-bottom: var(--space-2) !important; }
+    /* Paragraphs */
+    p  { margin-top: 10px !important; margin-bottom: 14px !important; line-height: 1.55 !important; max-width: 78ch; }
 
-/* Paragraphs — any depth */
-body :where(p){ margin-top: var(--space-2) !important; margin-bottom: var(--space-3) !important; line-height:1.55 !important; max-width:78ch; }
+    /* Lists */
+    ul, ol { margin-top: 10px !important; margin-bottom: 14px !important; padding-left: 1.25rem !important; }
+    li + li { margin-top: 6px !important; }
 
-/* Lists — any depth */
-body :where(ul,ol){ margin-top: var(--space-2) !important; margin-bottom: var(--space-3) !important; padding-left:1.25rem !important; }
-body :where(li + li){ margin-top: var(--space-1) !important; }
+    /* Horizontal rule */
+    hr { margin: 24px 0 !important; }
 
-/* Horizontal rule */
-body :where(hr){ margin: var(--space-4) 0 !important; }
+    /* Intro spacing right under hero */
+    .hero + * p  { margin-top: 12px !important; }
+    .hero + * h2 { margin-top: 18px !important; }
 
-/* Skills block spacing (your tags) */
-.skills-block{ margin: 12px 0 20px !important; }
-#summary{ margin-top: var(--space-5) !important; }
+    /* Inside project cards */
+    .project-block ul, 
+    .project-block ol { margin: 10px 0 14px !important; }
+    .project-block li + li { margin-top: 6px !important; }
 
-  /* Footer */
-  footer{
-    max-width:980px;margin:40px auto 0;padding:20px 18px 0;
-    text-align:center;font-size:.85em;opacity:.8;
-    border-top:1px solid rgba(255,255,255,.05)
-  }
-   /* ===== FINAL EMERGENCY SPACING PATCH (wins everywhere) ===== */
+    /* Summary spacing after Skills */
+    #summary { margin-top: 28px !important; }
 
-/* Headings */
-h2 { margin-top: 28px !important; margin-bottom: 10px !important; }
-h3 { margin-top: 20px !important; margin-bottom: 8px !important; }
+    /* Trim accidental crowding at container edges */
+    .wrap > *:first-child { margin-top: 0 !important; }
+    .wrap > *:last-child  { margin-bottom: 0 !important; }
 
-/* Paragraphs */
-p  { margin-top: 10px !important; margin-bottom: 14px !important; line-height: 1.55 !important; max-width: 78ch; }
-
-/* Lists */
-ul, ol { margin-top: 10px !important; margin-bottom: 14px !important; padding-left: 1.25rem !important; }
-li + li { margin-top: 6px !important; }
-
-/* Horizontal rule */
-hr { margin: 24px 0 !important; }
-
-/* Intro (paragraphs immediately under the welcome area) */
-.hero + * p { margin-top: 12px !important; }         /* space after the hero image */
-.hero + * h2 { margin-top: 18px !important; }        /* first H2 below hero */
-
-/* Inside project cards (bulleted lists looked tight) */
-.project-block ul, 
-.project-block ol { margin: 10px 0 14px !important; }
-.project-block li + li { margin-top: 6px !important; }
-
-/* Skills block (you asked for tags only here) */
-.skills-block { margin: 12px 0 20px !important; }
-#summary { margin-top: 28px !important; }
-
-/* Trim accidental crowding at container edges */
-.wrap > *:first-child { margin-top: 0 !important; }
-.wrap > *:last-child  { margin-bottom: 0 !important; }
-</style>
+    /* Footer */
+    footer{
+      max-width:980px;margin:40px auto 0;padding:20px 18px 0;
+      text-align:center;font-size:.85em;opacity:.8;
+      border-top:1px solid rgba(255,255,255,.05)
+    }
+  </style>
+</head>
 
     <!-- Hero -->
     <header class="hero">
