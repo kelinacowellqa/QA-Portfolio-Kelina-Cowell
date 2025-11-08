@@ -141,6 +141,43 @@
   /* Layout tweak: space the Skills block nicely */
   .skills-block { margin: 8px 0 14px; }
 
+   /* ==== TEXT MARGIN FIX (global rhythm) ==== */
+:root{
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 14px;
+  --space-4: 20px;
+  --space-5: 28px;
+}
+
+/* Headings */
+.wrap > h2 { margin-top: var(--space-5); margin-bottom: var(--space-2); }
+.wrap > h3 { margin-top: var(--space-4); margin-bottom: var(--space-2); }
+
+/* Paragraphs (outside .project-block) */
+.wrap > p { margin: var(--space-2) 0 var(--space-3); line-height: 1.55; max-width: 78ch; }
+
+/* Lists */
+.wrap > ul, .wrap > ol { 
+  margin: var(--space-2) 0 var(--space-3); 
+  padding-left: 1.25rem;
+}
+.wrap li + li { margin-top: var(--space-1); }
+
+/* Horizontal rule */
+hr { margin: var(--space-4) 0; }
+
+/* Trim edges so first/last items don't add weird extra space */
+.wrap > *:first-child { margin-top: 0 !important; }
+.wrap > *:last-child  { margin-bottom: 0 !important; }
+
+/* Section spacing helpers */
+.section + .section { margin-top: var(--space-4); }
+
+/* Skills block spacing (keeps your new chips tidy) */
+.skills-block { margin: 10px 0 18px; }
+#summary { margin-top: var(--space-5); }
+
   /* Footer */
   footer{
     max-width:980px;margin:40px auto 0;padding:20px 18px 0;
