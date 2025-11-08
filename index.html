@@ -41,7 +41,7 @@
     hr{border:0;border-top:1px solid var(--teal);opacity:.35}
 
     /* Layout width */
-    .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+   .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 
     /* Hero */
     .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
@@ -77,7 +77,10 @@
       box-shadow:0 6px 18px rgba(0,0,0,.35);
     }
     .project-block em{color:var(--muted)}
-    .project-block p{margin:6px 0 8px;max-width:78ch}
+    .project-block p{margin:6px 0 8px;}
+    @media (min-width:1400px){
+  .wrap{ max-width:1280px; }
+}
 
     /* ===== Metrics-style table ===== */
     .metrics-look table{
@@ -179,7 +182,7 @@ footer{
 }
 
 /* Intro */
-.intro p{ line-height: 1.6; max-width: 72ch; }
+.intro p{ line-height: 1.6; }
 .intro p:last-child{ margin-bottom: 0; }
 
 /* Project lineup heading spacing */
