@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Manual QA Portfolio — Kelina Cowell</title>
 
-  <style>
+ <style>
   /* === House palette (single source of truth) === */
   :root{
     --bg:#0b0f14; 
@@ -79,7 +79,7 @@
   .project-block em{color:var(--muted)}
   .project-block p{margin:6px 0 8px;line-height:1.5;max-width:78ch}
 
-  /* ===== Metrics-style table (teal header, dark rows, thin grid, no hover/zebra) ===== */
+  /* ===== Metrics-style table (teal header, dark rows, thin grid) ===== */
   .metrics-look table{
     width:100%;
     border-collapse:collapse;
@@ -108,38 +108,38 @@
   .metrics-look tbody th + td{ border-left:1px solid var(--line); }
   .metrics-look tbody tr + tr td,
   .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
-    
- /* === Compact tags (Option A) — SKILLS ONLY === */
-.skills-block .chips { 
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 8px 10px; 
-  margin: 0; 
-  padding: 0; 
-  list-style: none; 
-}
-.skills-block .chips li {
-  display: inline-flex; 
-  align-items: center;
-  padding: .35rem .6rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.04);
-  color: var(--text);           /* your palette uses --text, not --ink */
-  line-height: 1.2;
-  font-weight: 500;
-}
-.skills-block .chips li:focus-within { 
-  outline: 2px solid var(--teal); 
-  outline-offset: 2px; 
-}
-.section .hint { 
-  color: var(--muted); 
-  margin: .25rem 0 0; 
-  font-size: .95rem; 
-}
-/* END: Skills-only tags */
-</style>
+
+  /* === Compact tags (Option A) — SKILLS ONLY === */
+  .skills-block .chips { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px 10px; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+  .skills-block .chips li {
+    display: inline-flex; 
+    align-items: center;
+    padding: .35rem .6rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .skills-block .chips li:focus-within { 
+    outline: 2px solid var(--teal); 
+    outline-offset: 2px; 
+  }
+  .section .hint { 
+    color: var(--muted); 
+    margin: .25rem 0 0; 
+    font-size: .95rem; 
+  }
+  /* Layout tweak: space the Skills block nicely */
+  .skills-block { margin: 8px 0 14px; }
 
   /* Footer */
   footer{
@@ -147,6 +147,7 @@
     text-align:center;font-size:.85em;opacity:.8;
     border-top:1px solid rgba(255,255,255,.05)
   }
+</style>
 
     <!-- Hero -->
     <header class="hero">
