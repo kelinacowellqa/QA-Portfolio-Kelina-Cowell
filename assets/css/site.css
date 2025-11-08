@@ -254,3 +254,10 @@ details + * { margin-top: 16px !important; }
   .table-certs td{ display:block; border-left:0 !important; }
   .table-certs .evidence{ width:auto; margin-top:8px; }
 }
+
+.disclaimer {
+  max-width: 72ch;
+  margin: 0 auto 2rem;
+  font-style: italic;
+  display: block;
+}
