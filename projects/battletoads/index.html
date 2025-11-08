@@ -374,10 +374,16 @@ age <!doctype html>
 <ul>
   <li>Executed 18 test cases (total designed: 11); <strong>78.00% pass rate</strong> — 14 passed, 4 failed, 0 blocked.</li>
   <li><strong>4 defects</strong> logged (Critical: 0, High: 4, Medium: 0, Low: 0).</li>
-  <li><strong>Key risks:</strong> Input ownership / focus — Keyboard-triggered UI remains focused when returning to controller; shared ownership creates inconsistent navigation states.</li>
-  <li><strong>Notable observations:</strong> HUD restores after Pause 5/5 cycles — stable across checkpoints; tooltips occasionally overlap during rapid input changes.</li>
+
+  <!-- Key risks from your “Key Risks” field, written plainly with evidence -->
+  <li><strong>Mixed-input focus:</strong> using the keyboard after the controller can leave the controller unresponsive on Join In and Pause. Evidence: <code>RUN-20251101-004</code> (TC-008 — Fail).</li>
+  <li><strong>Pause keyboard parity:</strong> with a controller connected, the Pause menu ignores keyboard input (↑/↓/Enter/Esc/P). Evidence: <code>RUN-20251027-006</code>, <code>RUN-20251030-001</code> (both TC-006 — Fail).</li>
+  <li><strong>Resume misroute:</strong> pressing Enter on <em>Resume</em> can open the Join overlay instead of returning to gameplay. Evidence: <code>RUN-20251030-001</code> (TC-006 — Fail).</li>
+
+  <!-- Performance summary from Observations -->
+  <li><strong>Performance:</strong> baseline ~140–144 FPS; >40&nbsp;ms spikes: <strong>0</strong>. Evidence: <code>RUN-20251029-001</code>, <code>RUN-20251029-002</code>.</li>
 </ul>
-<p class="method-note">See <a href="#metrics">Metrics</a> above for the full table.</p>
+<p class="method-note">See <a href="#metrics">Metrics</a> above for the full table and run references.</p>
 
  <hr>
 
