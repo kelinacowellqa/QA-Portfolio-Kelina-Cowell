@@ -207,3 +207,20 @@ main li  { line-height: 1.7 !important; margin: 8px 0 !important; }
 /* after a <details> block or video embed, give breathing room */
 details + * { margin-top: 16px !important; }
 .embed { margin: 12px 0 18px !important; }
+
+/* Smaller evidence thumbnail in the insight table */
+.table-insight .evidence{ width: 160px; text-align: center; }
+
+.table-insight .evidence img.thumb-sm{
+  width: 120px !important;       /* tweak: 120 → 96 if you want even smaller */
+  height: auto !important;
+  aspect-ratio: 4 / 3;           /* keeps it compact; drop if you prefer free ratio */
+  object-fit: cover;
+  display: block; margin: 0 auto 6px;
+  border-radius: 10px; border: 1px solid var(--line);
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+
+/* If you want a stricter cap regardless of class */
+.table-insight .evidence img{ max-width: 140px !important; height: auto !important; }
+
