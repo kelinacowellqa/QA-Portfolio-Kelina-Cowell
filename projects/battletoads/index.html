@@ -413,10 +413,10 @@ rioritise issues and produce clearer bug reports.
       </td>
       <td>
         <ul>
-          <li>Added a comparative pass: <em>Battletoads</em> vs <em>Disney Illusion Island</em> (same dev) and <em>Teenage Mutant Ninja Turtles: Shredder’s Revenge</em> (different dev - same genre).</li>
-          <li>Logged <strong>presses to first control</strong>, <strong>Pause → Back</strong> behaviour, and <strong>HUD readability</strong> with “why it matters” notes.</li>
-          <li>Turned notes into a <strong>comparison table + metrics</strong> (next section).</li>
-        </ul>
+          <li>Scoped two comparators: <em>Battletoads</em> vs <em>Disney Illusion Island</em> (same dev) and <em>TMNT: Shredder’s Revenge</em> (same genre).</li>
+      <li>Measured onboarding speed (presses to first control), Pause → Back behaviour consistency, and HUD legibility with “what/why” notes.</li>
+      <li>Converted results into a comparison table and player-impact metrics to prioritise Battletoads issues and sharpen repro steps.</li>
+    </ul>
       </td>
      <td class="evidence">
   <a href="./media/linkedin-radu-posoi-qa-mindset.png" target="_blank" rel="noopener">
@@ -436,9 +436,9 @@ rioritise issues and produce clearer bug reports.
   </td>
   <td>
     <ul>
-      <li>Added accessibility checks to the comparative pass: text size/contrast, button affordance, focus states, colour-only indicators.</li>
-      <li>Flagged early-navigation issues (e.g., Pause → Back semantics, menu discoverability) with “why it matters” notes.</li>
-      <li>Converted findings into acceptance-style checks and added them to the regression list.</li>
+       <li>Ran an accessibility sweep on Battletoads menus/HUD: subtitle size/contrast, safe-area, focus indication, and colour-only indicators.</li>
+      <li>Documented who is affected and why (player-impact notes) and wrote acceptance-style criteria for expected behaviour.</li>
+      <li>Added an <strong>Accessibility</strong> label and a regression checklist in Jira to retest affected areas each build.</li>
     </ul>
   </td>
   <td class="evidence">
