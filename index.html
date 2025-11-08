@@ -108,6 +108,38 @@
   .metrics-look tbody th + td{ border-left:1px solid var(--line); }
   .metrics-look tbody tr + tr td,
   .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
+    
+ /* === Compact tags (Option A) — SKILLS ONLY === */
+.skills-block .chips { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 8px 10px; 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+.skills-block .chips li {
+  display: inline-flex; 
+  align-items: center;
+  padding: .35rem .6rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  color: var(--text);           /* your palette uses --text, not --ink */
+  line-height: 1.2;
+  font-weight: 500;
+}
+.skills-block .chips li:focus-within { 
+  outline: 2px solid var(--teal); 
+  outline-offset: 2px; 
+}
+.section .hint { 
+  color: var(--muted); 
+  margin: .25rem 0 0; 
+  font-size: .95rem; 
+}
+/* END: Skills-only tags */
+</style>
 
   /* Footer */
   footer{
@@ -359,28 +391,26 @@
 </section>
 
     <hr>
-
- <section class="section" aria-labelledby="skills">
-  <h2 id="skills"> Skills</h2>
+<section class="skills-block">
   <p class="hint">Manual & early automation across platforms; strong evidence capture & clean repro.</p>
   <ul class="chips" role="list">
-    <li><span class="k">Core QA</span> Functional</li>
+    <li>Core QA — Functional</li>
     <li>Exploratory & edge-case</li>
     <li>Regression</li>
-    <li><span class="k">Platforms</span> PC</li>
+    <li>PC</li>
     <li>Mobile</li>
     <li>VR/PCVR</li>
-    <li><span class="k">Parity</span> Controller/keyboard</li>
-    <li><span class="k">Specialisms</span> Input QA</li>
+    <li>Controller/keyboard parity</li>
+    <li>Input QA</li>
     <li>Narrative/localisation</li>
     <li>Player experience</li>
-    <li><span class="k">Test design</span> Test cases</li>
+    <li>Test cases</li>
     <li>Session charters</li>
-    <li><span class="k">Risk</span> Priority tagging</li>
-    <li><span class="k">Execution</span> Clear repro steps</li>
+    <li>Risk/priority tagging</li>
+    <li>Clear repro steps</li>
     <li>Evidence capture (video)</li>
     <li>Jira workflows</li>
-    <li><span class="k">Automation</span> Early scripts/macros</li>
+    <li>Automation (early scripts/macros)</li>
     <li>Smoke & regression</li>
   </ul>
 </section>
