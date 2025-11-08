@@ -297,15 +297,53 @@ age <!doctype html>
     </table>
     <p><sub>Repro totals = sum of all successful attempts ÷ sum of attempts (e.g., 5/5 + 5/5 + 3/3 + 3/3 = 16/16 = 100%).</sub></p>
 
-       <details id="inline-videos">
-      <summary><span class="details-btn">Show inline videos</span></summary>
-      <p><em>If you’re viewing this on github.com, embeds may not display. Use the thumbnails/links above or open this page on the published site (GitHub Pages) to watch inline.</em></p>
-      <div class="embed"><iframe src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0" title="Bug 01 — Pause: keyboard does not open Pause" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
-      <div class="embed"><iframe src="https://www.youtube.com/embed/5DZjJc4y_yA?modestbranding=1&rel=0" title="Bug 02 — Keyboard input ignored on Pause menu after controller use" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
-      <div class="embed"><iframe src="https://www.youtube.com/embed/EJFduFM28Is?modestbranding=1&rel=0" title="Bug 03 — Pause menu keyboard/controller hand-off" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
-      <div class="embed"><iframe src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0" title="Bug 04 — Pause/Join In: Enter opens Join In & disables controller input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+    <details id="inline-videos">
+  <summary><span class="details-btn">Show inline videos</span></summary>
+  <p><em>If you’re viewing this on github.com, embeds may not display. Use the thumbnails/links above or open this page on the published site (GitHub Pages) to watch inline.</em></p>
 
+  <div class="embed">
+    <iframe
+      src="https://www.youtube.com/embed/2CAUt8gxH3M?modestbranding=1&rel=0"
+      title="Bug 01 — Pause: keyboard does not open Pause"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="embed">
+    <iframe
+      src="https://www.youtube.com/embed/5DZjJc4y_yA?modestbranding=1&rel=0"
+      title="Bug 02 — Keyboard input ignored on Pause menu after controller use"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="embed">
+    <iframe
+      src="https://www.youtube.com/embed/EJFduFM28Is?modestbranding=1&rel=0"
+      title="Bug 03 — Pause menu keyboard/controller hand-off"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="embed">
+    <iframe
+      src="https://www.youtube.com/embed/CXFI2a6DEpM?modestbranding=1&rel=0"
+      title="Bug 04 — Pause/Join In: Enter opens Join In &amp; disables controller input"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
 </details>
+
+<!-- break margin-collapsing + clear any floats before the next section -->
+<div style="clear:both; padding-top:8px;"></div>
 
 <h2 id="results">📈 Results</h2>
 <ul>
@@ -315,10 +353,6 @@ age <!doctype html>
   <li>Evidence attached to Jira …</li>
 </ul>
 <p class="method-note">See <a href="#metrics">Metrics</a> above for totals and repro rate.</p>
-
-</main>
-</body>
-</html>
 
  <hr>
 
