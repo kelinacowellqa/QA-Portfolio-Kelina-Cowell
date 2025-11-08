@@ -255,9 +255,12 @@ details + * { margin-top: 16px !important; }
   .table-certs .evidence{ width:auto; margin-top:8px; }
 }
 
-.disclaimer {
-  max-width: 72ch;
-  margin: 0 auto 2rem;
-  font-style: italic;
-  display: block;
+/* high-specificity + !important to beat theme styles */
+.wrap main p.disclaimer{
+  max-width:72ch !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  margin-bottom:2rem !important;
+  font-style:italic;
+  display:block;
 }
