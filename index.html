@@ -141,7 +141,7 @@
   /* Layout tweak: space the Skills block nicely */
   .skills-block { margin: 8px 0 14px; }
 
-   /* ==== TEXT MARGIN FIX (global rhythm) ==== */
+/* ===== HARD OVERRIDES: Text margins & rhythm (global) ===== */
 :root{
   --space-1: 6px;
   --space-2: 10px;
@@ -150,33 +150,26 @@
   --space-5: 28px;
 }
 
-/* Headings */
-.wrap > h2 { margin-top: var(--space-5); margin-bottom: var(--space-2); }
-.wrap > h3 { margin-top: var(--space-4); margin-bottom: var(--space-2); }
+/* Zero out default margins so we control them */
+body :where(h1,h2,h3,h4,h5,h6,p,ul,ol){ margin:0 !important; }
 
-/* Paragraphs (outside .project-block) */
-.wrap > p { margin: var(--space-2) 0 var(--space-3); line-height: 1.55; max-width: 78ch; }
+/* Headings — applies at any nesting depth */
+body :where(h2){ margin-top: var(--space-5) !important; margin-bottom: var(--space-2) !important; }
+body :where(h3){ margin-top: var(--space-4) !important; margin-bottom: var(--space-2) !important; }
 
-/* Lists */
-.wrap > ul, .wrap > ol { 
-  margin: var(--space-2) 0 var(--space-3); 
-  padding-left: 1.25rem;
-}
-.wrap li + li { margin-top: var(--space-1); }
+/* Paragraphs — any depth */
+body :where(p){ margin-top: var(--space-2) !important; margin-bottom: var(--space-3) !important; line-height:1.55 !important; max-width:78ch; }
+
+/* Lists — any depth */
+body :where(ul,ol){ margin-top: var(--space-2) !important; margin-bottom: var(--space-3) !important; padding-left:1.25rem !important; }
+body :where(li + li){ margin-top: var(--space-1) !important; }
 
 /* Horizontal rule */
-hr { margin: var(--space-4) 0; }
+body :where(hr){ margin: var(--space-4) 0 !important; }
 
-/* Trim edges so first/last items don't add weird extra space */
-.wrap > *:first-child { margin-top: 0 !important; }
-.wrap > *:last-child  { margin-bottom: 0 !important; }
-
-/* Section spacing helpers */
-.section + .section { margin-top: var(--space-4); }
-
-/* Skills block spacing (keeps your new chips tidy) */
-.skills-block { margin: 10px 0 18px; }
-#summary { margin-top: var(--space-5); }
+/* Skills block spacing (your tags) */
+.skills-block{ margin: 12px 0 20px !important; }
+#summary{ margin-top: var(--space-5) !important; }
 
   /* Footer */
   footer{
