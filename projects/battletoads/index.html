@@ -247,44 +247,60 @@
  <hr>
 
      <hr>
-    <h2 id="applied-insight">🤝 Networking &amp; Applied Insight</h2>
+ <hr>
+<h2 id="applied-insight">🤝 Networking & Applied Insight</h2>
 
-    <p><strong>Source:</strong> <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">Radu Posoi — Founder, Alkotech Labs (ex-Ubisoft QA Lead)</a></p>
+<table class="table-insight">
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Key takeaway</th>
+      <th>How I applied it in this project</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://www.linkedin.com/in/raduposoi/" target="_blank" rel="noopener">
+          Radu Posoi — Founder, Alkotech Labs (ex-Ubisoft QA Lead)
+        </a>
+      </td>
+      <td>
+        Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down
+        <em>what happened</em> + <em>why it matters</em> for the player.
+      </td>
+      <td>
+        <ul>
+          <li>Added a comparative pass: <em>Battletoads</em> vs <em>Disney Illusion Island</em> (same dev) and <em>TMNT: Shredder’s Revenge</em> (same genre).</li>
+          <li>Logged <strong>presses to first control</strong>, <strong>Pause → Back</strong> behaviour, and <strong>HUD readability</strong> with “why it matters” notes.</li>
+          <li>Turned notes into a <strong>comparison table + metrics</strong> (next section).</li>
+        </ul>
+      </td>
+      <td class="evidence">
+        <a href="./media/linkedin-radu-posoi-qa-mindset.png" target="_blank" rel="noopener">
+          <img src="./media/linkedin-radu-posoi-qa-mindset.png"
+               alt="LinkedIn conversation with Radu Posoi about QA mindset">
+        </a>
+        <small>Click to enlarge</small>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-    <p><strong>Takeaway:</strong> Be deliberate — compare <em>same-dev</em> and <em>same-genre</em> titles, and write down <em>what happened</em> + <em>why it matters</em> for the player.</p>
+<p class="method-note">
+  <strong>Concrete outcome:</strong> <em>Battletoads</em> reaches first control in <strong>4 presses</strong> (faster than TMNT 6 and Illusion Island 13) and resumes cleanly from Pause — a UX strength to highlight.
+</p>
 
-    <p><strong>How I applied it in this project</strong></p>
-    <ul>
-      <li>Added a comparative pass: <em>Battletoads</em> vs <em>Disney Illusion Island</em> (same dev) and <em>Teenage Mutant Ninja Turtles: Shredder's Revenge</em> (same genre).</li>
-      <li>Logged <strong>presses to first control</strong>, <strong>Pause → Back</strong> behaviour, and <strong>HUD readability</strong> with “why it matters” notes.</li>
-      <li>Turned notes into a <strong>comparison table + metrics</strong> (see next section).</li>
-    </ul>
-
-    <!-- Screenshot proof of networking (click to open full size) -->
-    <p>
-      <a href="./media/linkedin-radu-posoi-qa-mindset.png" target="_blank" rel="noopener">
-        <img src="./media/linkedin-radu-posoi-qa-mindset.png"
-             alt="LinkedIn conversation with Radu Posoi about QA mindset"
-             style="max-width:100%; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,.08); box-shadow:0 6px 18px rgba(0,0,0,.35);">
-      </a>
-      <br><sub>Screenshot of LinkedIn exchange — demonstrating industry networking and applied learning.</sub>
-    </p>
-
-    <p><strong>Concrete outcome</strong></p>
-    <ul>
-      <li><em>Battletoads</em> reaches first control in <strong>4 presses</strong> (faster than TMNT <strong>6</strong> and Illusion Island <strong>13</strong>) and resumes cleanly from Pause — a UX strength to highlight.</li>
-    </ul>
-    <hr>
-
-    <h2>🧭 Comparative Findings — First-Minute to Control, Pause → Back, HUD Readability</h2>
+    <h2>🧭 Add-on Study — Comparative Findings — First-Minute to Control, Pause → Back, HUD Readability</h2>
     <p class="method-note">Method: <strong>hands-on</strong> for Battletoads/TMNT; <strong>footage review</strong> for Illusion Island.</p>
 
 <section class="project-block" id="addon-intro">
-  <h2>🔎 Add-on Study — Comparative Findings (Micro-STAR)</h2>
+  <h2>🔎 Comparative Findings (Micro-STAR)</h2>
   <p><strong>Situation:</strong> Post-pass curiosity: how do similar titles handle first-minute flow, Pause→Back, and HUD readability?</p>
   <p><strong>Task:</strong> Benchmark Battletoads against TMNT and Illusion Island to highlight UX strengths/risks.</p>
   <p><strong>Action:</strong> Timed title→control presses; reviewed Pause→Back behaviour; captured HUD readability snapshots.</p>
-  <p><strong>Result:</strong> Battletoads reached control fastest (4 presses) and resumed cleanly; biggest risk: HUD readability in combat. Details in <a href="#addon-comparative">Comparative Findings</a>.</p>
+  <p><strong>Result:</strong> Battletoads reached control fastest (4 presses) and resumed cleanly; biggest risk: HUD readability in combat.</p>
 </section>
     
     <h3>Summary metrics (across all three tests)</h3>
@@ -433,6 +449,12 @@
 
     <p><sub><strong>Method (Illusion Island rows):</strong> Not hands-on — I reviewed public longplay/stream footage. Where behaviour wasn’t visible, it’s recorded as <em>Not observed in available footage</em> rather than guessed.</sub></p>
 
+      <p><strong>Concrete outcome</strong></p>
+    <ul>
+      <li><em>Battletoads</em> reaches first control in <strong>4 presses</strong> (faster than TMNT <strong>6</strong> and Illusion Island <strong>13</strong>) and resumes cleanly from Pause — a UX strength to highlight.</li>
+    </ul>
+    <hr>
+    
     <blockquote><strong>Takeaway:</strong> Battletoads reaches first control fastest (<strong>4 presses</strong>) and resumes cleanly from Pause. Biggest risk is <strong>HUD readability</strong> during combat. Next test: verify onboarding prompt timing and confirm Pause → Back on Illusion Island with hands-on capture.</blockquote>
 
     <hr>
