@@ -228,6 +228,43 @@ header.hero::after{
   .banner-pulse{ animation:none !important; filter:none !important; }
 }
 
+    /* === Hover/focus outward glow for project cards === */
+.project-block{
+  /* smooth, snappy feel */
+  transition: transform .22s ease, filter .22s ease, box-shadow .22s ease;
+  will-change: transform, filter;
+  /* start with no glow */
+  filter: drop-shadow(0 0 0 rgba(15,181,201,0));
+}
+
+/* mouse hover */
+.project-block:hover{
+  transform: translateY(-2px); /* tiny lift */
+  /* outward teal halo (brand teal #0fb5c9) */
+  filter: drop-shadow(0 0 28px rgba(15,181,201,.38));
+}
+
+/* keyboard focus inside the card gets the same effect */
+.project-block:focus-within{
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 28px rgba(15,181,201,.38));
+  outline: 2px solid rgba(15,181,201,.55);
+  outline-offset: 2px;
+}
+
+/* optional: slightly stronger when both hover + focus */
+.project-block:hover:focus-within{
+  filter: drop-shadow(0 0 34px rgba(15,181,201,.45));
+}
+
+/* reduced motion users still get the affordance without the lift */
+@media (prefers-reduced-motion: reduce){
+  .project-block,
+  .project-block:hover,
+  .project-block:focus-within{
+    transition: filter .01s linear, box-shadow .01s linear;
+    transform: none;
+  }
 </style>
 </head>
 <body>
