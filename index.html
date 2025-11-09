@@ -196,44 +196,36 @@ footer{
 
     /* kill any leftover paragraph caps */
 p, .intro p, .project-block p{ max-width:none !important; }
-
-/* Pulse scoped to the image only */
-.pulse-teal{
-  position: relative;
-  display: inline-block;   /* wrapper shrinks to image width */
-  overflow: hidden;        /* keep glow inside the rounded corners */
-  border-radius: 16px;
+/* kill any old header-level halo on this page */
+header.hero::before,
+header.hero::after{
+  content:none !important;
+  animation:none !important;
+  box-shadow:none !important;
 }
 
-.pulse-teal::after{
-  content:"";
-  position:absolute;
-  inset: 10px;             /* pull glow inside so header box doesn't grow */
-  border-radius: inherit;
-  pointer-events:none;
-  animation: bannerPulse 4s ease-in-out infinite;
-  box-shadow:
-    0 0 22px rgba(15,181,201,.35) inset,
-    0 0 2px  rgba(15,181,201,.55) inset;
+/* Outward teal pulse on the IMAGE itself (matches image/header size exactly) */
+.banner-pulse{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:16px;
+  animation: imgOutPulse 4s ease-in-out infinite;
 }
 
-@keyframes bannerPulse{
+/* outward-only: drop-shadow grows, layout size stays the same */
+@keyframes imgOutPulse{
   0%,100%{
-    box-shadow:
-      0 0 22px rgba(15,181,201,.35) inset,
-      0 0 2px  rgba(15,181,201,.55) inset;
-    filter: brightness(1);
+    filter: drop-shadow(0 0 0 rgba(15,181,201,0)) brightness(1);
   }
   50%{
-    box-shadow:
-      0 0 46px rgba(15,181,201,.65) inset,
-      0 0 3px  rgba(15,181,201,.65) inset;
-    filter: brightness(1.08) saturate(1.06);
+    filter: drop-shadow(0 0 34px rgba(15,181,201,.75)) brightness(1.06) saturate(1.04);
   }
 }
 
+/* accessibility */
 @media (prefers-reduced-motion: reduce){
-  .pulse-teal::after{ animation:none!important; }
+  .banner-pulse{ animation:none !important; filter:none !important; }
 }
 
 </style>
@@ -242,14 +234,10 @@ p, .intro p, .project-block p{ max-width:none !important; }
   <main>
     <div class="wrap">
       <!-- Hero -->
-     <!-- Hero -->
 <header class="hero">
-  <div class="pulse-teal">
-    <img
-      src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
-      alt="QA tester across PC, console, VR, mobile"
-      style="display:block;max-width:100%;height:auto;border-radius:16px">
-  </div>
+  <img class="banner-pulse"
+       src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
+       alt="QA tester across PC, console, VR, mobile">
 </header>
 
     <section class="intro">
