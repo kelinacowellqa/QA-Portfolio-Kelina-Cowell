@@ -208,7 +208,7 @@ p, .intro p, .project-block p{ max-width:none !important; }
 .pulse-teal::after{
   content:"";
   position:absolute;
-  inset: 10px;             /* key: pull inset *inside* the image box */
+  inset: 10px;             /* pull glow inside so header box doesn't grow */
   border-radius: inherit;
   pointer-events:none;
   animation: bannerPulse 4s ease-in-out infinite;
@@ -242,14 +242,15 @@ p, .intro p, .project-block p{ max-width:none !important; }
   <main>
     <div class="wrap">
       <!-- Hero -->
-      <header class="hero">
-        <div class="pulse-teal">
-          <img
-            src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
-            alt="QA tester across PC, console, VR, mobile"
-            style="display:block;max-width:100%;height:auto;border-radius:16px">
-        </div>
-      </header>
+     <!-- Hero -->
+<header class="hero">
+  <div class="pulse-teal">
+    <img
+      src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
+      alt="QA tester across PC, console, VR, mobile"
+      style="display:block;max-width:100%;height:auto;border-radius:16px">
+  </div>
+</header>
 
     <section class="intro">
   <h1>Welcome to my QA portfolio.</h1>
