@@ -349,13 +349,13 @@ header.hero::after{
 
       <h2>3: Regression Testing — <em>Sworn (PC)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Re-test recent fixes to confirm they hold and catch side-effects before release.</li>
-        <li><strong>Focus:</strong> Save/load integrity · Input/control mapping · UI scaling &amp; readability · Patch-notes verification</li>
-        <li><strong>Tools:</strong> Jira regression suite · Before/after evidence clips · Build notes</li>
-        <li><strong>Deliverables:</strong> Regression log · Verification matrix · Before/after screenshots &amp; short videos</li>
-        <li><strong>Status:</strong> In progress — working through the first patch set and tracking any reopens or knock-on issues.</li>
-        <li><strong>Why this game?</strong> Frequent updates and systems-heavy gameplay make it ideal for disciplined regression passes.</li>
-      </ul>
+  <li><strong>Goal:</strong> Run disciplined regression passes after each patch to confirm that previously fixed defects still hold, surface any side-effects introduced by the new build, and document risk areas clearly before release.</li>
+  <li><strong>Focus:</strong> Validate save/load integrity across multiple slots and edge cases; verify input and control mapping for keyboard, mouse, and controllers; check UI scaling and readability at different resolutions; and cross-check patch notes against actual in-game changes to ensure nothing is missed.</li>
+  <li><strong>Tools:</strong> Execute a structured Jira regression suite, capture before/after evidence clips with time stamps, and keep running build notes so engineers and designers can trace what changed and why it matters.</li>
+  <li><strong>Deliverables:</strong> A living regression log with pass/fail status and repro steps, a compact verification matrix for feature coverage, and a media folder with before/after screenshots and short videos to make issues unambiguous.</li>
+  <li><strong>Status:</strong> In progress — working through the first post-patch set, retesting the high-risk areas first, and tracking any reopens or knock-on defects that appear during stabilization.</li>
+  <li><strong>Why this game?</strong> Frequent content updates and systems-heavy gameplay make Sworn ideal for disciplined regression passes; it rewards methodical checklists and catches subtle breakage that slips past ad-hoc testing.</li>
+</ul>
 
       <p><em>Case study coming soon.</em></p>
     </section>
