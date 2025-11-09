@@ -309,6 +309,7 @@ header.hero::after{
         <li><strong>Tools:</strong> Jira · Google Sheets QA workbook · Xbox Game Bar / OBS</li>
         <li><strong>Deliverables:</strong> QA workbook (Sheets + PDF) · Evidence clips (YouTube) · Jira board with verified thumbnails</li>
         <li><strong>Result:</strong> Stable overall; surfaced <strong>4</strong> high-impact input/hand-off defects. Test cases reproduced <strong>16/16</strong> times with clear steps and media.</li>
+      
         <li><strong>Why this game?</strong> A fast, recognisable brawler ideal for testing input ownership and local co-op edge cases.</li>
       </ul>
 
@@ -336,7 +337,7 @@ header.hero::after{
         </li>
         <li><strong>Tools:</strong> Google Sheets session charters/notes · On-device recordings (iOS/Android) · Network throttling (Airplane/low-bandwidth) · Device matrix</li>
         <li><strong>Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips</li>
-        <li><strong>Status:</strong> In progress — early passes are mapping risks across device classes and network conditions.</li>
+        <li><strong>Status:</strong> In progress.</li>
         <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.</li>
       </ul>
 
@@ -361,7 +362,8 @@ header.hero::after{
   </li>
   <li><strong>Tools:</strong> Jira regression suite · Before/after evidence clips · Build notes.</li>
   <li><strong>Deliverables:</strong> Regression log · Verification matrix · Before/after screenshots & short videos.</li>
-  <li><strong>Status:</strong> In progress — retesting high-risk areas; tracking reopens and knock-ons.</li>
+  <li><strong>Status:</strong> Scheduled — target start date to be confirmed.</li>
+
   <li><strong>Why this game?</strong> Systems-heavy, frequently updated—ideal for disciplined regression passes.</li>
 </ul>
 
@@ -374,13 +376,22 @@ header.hero::after{
 
       <h2>4: Cross-Platform QA — <em>Shadow Point (VR &amp; PCVR)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Demonstrate VR-specific QA awareness—comfort, tracking stability, and parity between standalone and PCVR.</li>
-        <li><strong>Focus:</strong> Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes</li>
-        <li><strong>Tools:</strong> Session charters &amp; test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side comparison notes</li>
-        <li><strong>Deliverables:</strong> Comfort checklist (ratings) · Tracking results · Parity clips/screens · Issue list with risk tags</li>
-        <li><strong>Status:</strong> In progress—like-for-like runs on headset and PCVR; logging comfort dips, judder, and interaction/visual parity gaps.</li>
-        <li><strong>Why this game?</strong> A calm, deliberate puzzle adventure—ideal for spotting micro-judder, text legibility issues, and subtle interaction differences across platforms.</li>
-      </ul>
+         <li><strong>Goal:</strong> Show VR-specific QA awareness—comfort, stable tracking, and parity between standalone and PCVR.</li>
+  <li><strong>Focus:</strong> Frame stability · Tracking accuracy · Motion/rotation comfort · Guardian/boundary behaviour · Visual/text parity · Interaction parity · Performance spikes.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Comfort checks: micro-judder, motion sickness risk, headset fit edge cases</li>
+      <li>Guardian/boundary: warn/clip behaviour, reset logic, edge interactions</li>
+      <li>Visual parity: text legibility, UI scaling, clarity vs. performance modes</li>
+      <li>Interaction parity: hand/controller mapping, grab/use prompts, affordances</li>
+    </ul>
+  </li>
+  <li><strong>Tools:</strong> Session charters & test matrix · OBS/Quest capture · SteamVR/OVR frame-timing overlays · Side-by-side notes.</li>
+  <li><strong>Deliverables:</strong> Comfort checklist (ratings) · Tracking results · Parity clips/screens · Issue list with risk tags.</li>
+  <li><strong>Status:</strong> Scheduled — target start date to be confirmed.</li>
+
+  <li><strong>Why this game?</strong> Calm, deliberate puzzle loop—great for spotting micro-judder, text issues, and subtle interaction differences across platforms.</li>
+</ul>
 
       <p><em>Case study coming soon.</em></p>
     </section>
@@ -391,13 +402,24 @@ header.hero::after{
 
       <h2>5: Multi-Input / Controller Parity QA — <em>Recompile (PC Game Pass)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Validate controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers (Diswoe X360) on the PC (Game Pass) build.</li>
-        <li><strong>Focus:</strong> Mapping accuracy · Input latency checks · Haptics/rumble behaviour · In-game prompt alignment (Xbox icons) · Hot-swap &amp; multi-controller handling · Rebinds &amp; edge cases</li>
-        <li><strong>Tools:</strong> Google Sheets test plan · 2× Diswoe X360 controllers · OBS capture + stopwatch overlay</li>
-        <li><strong>Deliverables:</strong> Input-response matrix · Latency report (ms table) · Prompt/binding screenshot pack · STAR paragraph</li>
-        <li><strong>Status:</strong> In progress — 60 cases run, 6 bugs logged, 0.18 s average input delay; parity checks underway across menus, gameplay, and overlay states.</li>
-        <li><strong>Why this game?</strong> Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.</li>
-      </ul>
+       <li><strong>Goal:</strong> Verify controller responsiveness, input-mapping clarity, and parity across two Xbox-compatible controllers on PC (Game Pass).</li>
+  <li><strong>Focus:</strong> Mapping accuracy · Input latency · Haptics/rumble behaviour · Prompt/icon alignment (Xbox) · Hot-swap & multi-controller handling · Rebinds & edge cases.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Latency timing with video/stopwatch overlay (menu vs gameplay)</li>
+      <li>Dead zones, drift, and axis ranges per controller</li>
+      <li>Button/axis parity + on-screen Xbox icons and prompts</li>
+      <li>Hot-swap ownership, join/leave flows, and error prompts</li>
+      <li>Rebind conflicts, persistence, and reset logic</li>
+      <li>Mode changes: inventory/menus vs active gameplay consistency</li>
+    </ul>
+  </li>
+  <li><strong>Tools:</strong> Google Sheets test plan · 2× Diswoe X360 controllers · OBS capture + stopwatch overlay.</li>
+  <li><strong>Deliverables:</strong> Input-response matrix · Latency report (ms table) · Prompt/binding screenshot pack · STAR paragraph.</li>
+  <li><strong>Status:</strong> Scheduled — target start date to be confirmed.</li>
+        
+  <li><strong>Why this game?</strong> Fast, precise movement and frequent mode switches surface input mismatches and latency spikes quickly.</li>
+</ul>
 
       <p><em>Case study coming soon.</em></p>
     </section>
@@ -408,13 +430,24 @@ header.hero::after{
 
       <h2>6: Narrative / Localisation QA — <em>Oxenfree (Netflix Mobile)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Ensure dialogue, subtitles, and UI text read naturally and stay in sync on mobile.</li>
-        <li><strong>Focus:</strong> Subtitle timing &amp; sync · Line breaks/overflow · Speaker tags · Tone/idiom checks · Punctuation &amp; typography · UI text legibility · Locale/device behaviour</li>
-        <li><strong>Tools:</strong> Script log &amp; timing notes · On-device recordings (Android) · Style/terminology checklist · Font/size legibility checks</li>
-        <li><strong>Deliverables:</strong> Timing log · Text/typo issue list with screenshots · Style notes · Short clips</li>
-        <li><strong>Status:</strong> In progress — mapping dialogue-heavy scenes, checking pacing vs VO/SFX, and flagging truncation or misattribution.</li>
-        <li><strong>Why this game?</strong> Choice-heavy dialogue with moody SFX makes timing, tone, and readability critical.</li>
-      </ul>
+         <li><strong>Goal:</strong> Ensure dialogue, subtitles, and UI text read naturally and stay in sync on mobile.</li>
+  <li><strong>Focus:</strong> Subtitle timing/sync · Line breaks & overflow · Speaker tags · Tone/idiom checks · Punctuation/typography · UI legibility · Locale/device behaviour.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Timing offsets vs VO/SFX (start/end, gaps, interruptions)</li>
+      <li>Line breaks, hyphenation, truncation, and scrolling captions</li>
+      <li>Speaker attribution, overlapping lines, and off-screen dialogue</li>
+      <li>Style/terminology consistency and sensitive phrasing</li>
+      <li>Font size & scaling across devices; dark/light background contrast</li>
+      <li>Locale behaviour (date/time formats, special characters, encoding)</li>
+    </ul>
+  </li>
+  <li><strong>Tools:</strong> Script log & timing notes · On-device recordings (Android) · Style/terminology checklist · Font/size legibility checks.</li>
+  <li><strong>Deliverables:</strong> Timing log · Text/typo issue list with screenshots · Style notes · Short evidence clips.</li>
+  <li><strong>Status:</strong> Scheduled — target start date to be confirmed.</li>
+        
+  <li><strong>Why this game?</strong> Choice-heavy dialogue with moody SFX makes timing, tone, and readability critical.</li>
+</ul>
 
       <p><em>Case study coming soon.</em></p>
     </section>
@@ -425,13 +458,23 @@ header.hero::after{
 
       <h2>7: Automation Testing — <em>PowerWash Simulator 2 (PC Game Pass)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Demonstrate early automation via repeatable checks and quick regressions on core flows.</li>
-        <li><strong>Focus:</strong> Launch → menu → job select smoke · Settings persistence · Save/load state · Input macros (KB/mouse/controller) · Simple image comparisons</li>
-        <li><strong>Tools:</strong> AutoHotkey/Python (light scripts) · Timed macros · OBS capture · Trial image-compare snapshots</li>
-        <li><strong>Deliverables:</strong> Smoke scripts · Regression checklist · Short clips · Comparison snapshots</li>
-        <li><strong>Status:</strong> In progress — first smoke passes cover launch → job select &amp; settings; exploring image comparisons for “clean” states.</li>
-        <li><strong>Why this game?</strong> Clear, repeatable loops ideal for simple automation and fast regressions.</li>
-      </ul>
+       <li><strong>Goal:</strong> Show early automation value via repeatable checks and quick regressions on core flows.</li>
+  <li><strong>Focus:</strong> Launch→menu→job select smoke · Settings persistence · Save/load state · Input macros (KB/mouse/controller) · Simple image comparisons.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Smoke path: launch → main menu → job select → start/exit</li>
+      <li>Settings persistence: video/audio/input options across sessions</li>
+      <li>Save/load: clean state creation, resume, and integrity checks</li>
+      <li>Input macros: repeatable KB/mouse/controller sequences for sanity</li>
+      <li>Image-compare trials: baseline vs “clean” state snapshots</li>
+    </ul>
+  </li>
+  <li><strong>Tools:</strong> AutoHotkey/Python (light scripts) · Timed macros · OBS capture · Trial image-compare snapshots.</li>
+  <li><strong>Deliverables:</strong> Smoke scripts · Regression checklist · Short clips · Comparison snapshots.</li>
+  <li><strong>Status:</strong> Scheduled — target start date to be confirmed.</li>
+        
+  <li><strong>Why this game?</strong> Clear, repeatable loops are ideal for simple automation and fast regressions.</li>
+</ul>
 
       <p><em>Case study coming soon.</em></p>
     </section>
