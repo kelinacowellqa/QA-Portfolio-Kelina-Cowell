@@ -196,6 +196,34 @@ footer{
     /* kill any leftover paragraph caps */
 p, .intro p, .project-block p{ max-width:none !important; }
 
+    /* Re-enable the teal pulse on the homepage banner (matches working pages) */
+.pulse-teal{ position: relative; overflow: hidden; border-radius: 16px; }
+.pulse-teal::after{
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  box-shadow:
+    0 0 26px rgba(15,181,201,.28),
+    0 0 1px  rgba(15,181,201,.50) inset;
+  animation: bannerPulse 4s ease-in-out infinite;
+}
+@keyframes bannerPulse{
+  0%,100%{
+    box-shadow:
+      0 0 26px rgba(15,181,201,.28),
+      0 0 1px  rgba(15,181,201,.50) inset;
+    filter: brightness(1);
+  }
+  50%{
+    box-shadow:
+      0 0 64px rgba(15,181,201,.60),
+      0 0 1px  rgba(15,181,201,.62) inset;
+    filter: brightness(1.08) saturate(1.06);
+  }
+}
+/* Accessibility */
+@media (prefers-reduced-motion: reduce){
+  .pulse-teal::after{ animation: none !important; }
+}
+
   </style>
 </head>
 <body>
