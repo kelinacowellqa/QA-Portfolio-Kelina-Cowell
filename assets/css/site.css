@@ -264,3 +264,11 @@ details + * { margin-top: 16px !important; }
   font-style:italic;
   display:block;
 }
+
+/* Active nav state */
+.site-nav a.active,
+.site-nav a[aria-current="page"]{
+  color: var(--teal);
+  font-weight: 700;
+  border-bottom: 2px solid var(--teal);
+}
