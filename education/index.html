@@ -2,43 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Education & Certifications — Kelina Cowell</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jira training, QA courses, and certifications with verification links." />
-  <link rel="stylesheet" href="../assets/site.css" />
+
+  <!-- Use your site stylesheet (Jekyll) -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <nav><a href="../">Home</a> · <a href="../projects/">Projects</a> · <strong>Education</strong> · <a href="../contact/">Contact</a></nav>
-    <h1>Education & Certifications</h1>
-    <p>Jira-focused training and hands-on QA coursework with links to proof.</p>
-  </header>
-
   <main>
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li><strong>Course/Cert Title</strong> — Issuer, YYYY-MM · <a href="#">Verify</a></li>
-      </ul>
-    </section>
+    <div class="wrap">
 
-    <section>
-      <h2>Courses</h2>
-      <ul>
-        <li><strong>Course Name</strong> — Provider, YYYY-MM · Key skills: X, Y, Z · <a href="#">Evidence</a></li>
-      </ul>
-    </section>
+      <!-- Optional hero: remove if you don't want the banner -->
+      <header class="hero">
+        <img class="banner-pulse"
+             src="../assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
+             alt="QA tester across PC, console, VR, mobile">
+      </header>
 
-    <section>
-      <h2>Applied Learning</h2>
-      <ul>
-        <li>Jira workflows used across projects — see <a href="../jira_training/jira_courses_summary.html">summary</a></li>
-      </ul>
-    </section>
+      <!-- CTA row (optional) -->
+      <p class="cta-row" style="text-align:center;">
+        <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email Me</a>
+        <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="cta-btn" href="../">Back to Homepage</a>
+      </p>
+
+      <!-- Page intro -->
+      <section class="project-block">
+        <h1>Education & Certifications</h1>
+        <p>This page lists recent QA-focused training and certifications. I apply each course directly in my project work and link to proof where possible.</p>
+      </section>
+
+      <!-- === ITEM 1 (newest) === -->
+      <section class="project-block">
+        <h2>Game Academy Bootcamp <small>(MM/YYYY — 10 weeks)</small></h2>
+        <p><strong>Provider:</strong> Game Academy</p>
+        <p><strong>Why:</strong> One sentence on intent (e.g., team-based test planning, triage, and reporting practice).</p>
+        <p><strong>Key skills:</strong> test planning, exploratory → regression passes, Jira workflows, evidence capture</p>
+        <p><strong>Applied in:</strong>
+          <a href="../projects/battletoads/">Battletoads</a> (logged X issues; Y critical) ·
+          <a href="../projects/powerwash/">PowerWash</a> (custom Jira board/workflow)
+        </p>
+        <p>
+          <a href="https://verify.example/bootcamp" target="_blank" rel="noopener">Verify certificate</a> ·
+          <a href="../assets/certs/game-academy-bootcamp.pdf" target="_blank" rel="noopener">View certificate</a>
+        </p>
+      </section>
+
+      <!-- === ITEM 2 === -->
+      <section class="project-block">
+        <h2>Introduction to JIRA <small>(MM/YYYY — 12 hrs)</small></h2>
+        <p><strong>Provider:</strong> Simplilearn</p>
+        <p><strong>Why:</strong> One sentence (e.g., formalise fundamentals before migrating portfolio boards).</p>
+        <p><strong>Key skills:</strong> issues, boards, swimlanes, basic reporting</p>
+        <p><strong>Applied in:</strong>
+          <a href="../projects/powerwash/">PowerWash</a> (board setup + filters)
+        </p>
+        <p>
+          <a href="https://verify.example/intro-jira" target="_blank" rel="noopener">Verify certificate</a> ·
+          <a href="../assets/certs/intro-jira.pdf" target="_blank" rel="noopener">View certificate</a>
+        </p>
+      </section>
+
+      <!-- === ITEM 3 (oldest of the three) === -->
+      <section class="project-block">
+        <h2>Get Started with JIRA <small>(MM/YYYY — X hrs)</small></h2>
+        <p><strong>Provider:</strong> Coursera</p>
+        <p><strong>Why:</strong> One sentence (e.g., build a baseline before deeper workflow customisation).</p>
+        <p><strong>Key skills:</strong> creating issues, basic boards, simple workflows</p>
+        <p><strong>Applied in:</strong>
+          <a href="../projects/powerwash/">PowerWash</a>
+        </p>
+        <p>
+          <a href="https://verify.example/get-started-jira" target="_blank" rel="noopener">Verify certificate</a> ·
+          <a href="../assets/certs/get-started-jira.pdf" target="_blank" rel="noopener">View certificate</a>
+        </p>
+      </section>
+
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p><a href="../">← Back to Home</a></p>
+    <div class="wrap">© <script>document.write(new Date().getFullYear())</script> Kelina Cowell • QA Portfolio</div>
   </footer>
 </body>
 </html>
+
