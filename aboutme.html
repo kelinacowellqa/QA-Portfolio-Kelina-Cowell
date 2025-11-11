@@ -1,1 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Kelina Cowell | Manual & Automation QA</title>
+  <meta name="description" content="About Kelina Cowell — Manual & Automation QA Engineer. Player-first testing across PC, console, VR, and mobile.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Kelina Cowell | QA Portfolio">
+  <meta property="og:description" content="Manual & Automation QA — player-first testing across PC, console, VR, and mobile.">
+  <meta property="og:image" content="https://kelinacowellqa.github.io/assets/img/profile-banner.webp">
+  <meta property="og:url" content="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/aboutme.html">
+  <link rel="canonical" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/aboutme.html">
+
+  <!-- (If your site builds via Jekyll, this keeps shared CSS available) -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+  <style>
+    /* === House palette (single source of truth) === */
+    :root{
+      --bg:#0b0f14; 
+      --panel:#0f1215; 
+      --text:#cfd6dd; 
+      --muted:#a9b3bd;
+      --line:rgba(255,255,255,.08); 
+      --teal:#00fff0; 
+      --teal-soft:#66fff7;
+
+      --thumb-w:240px;
+      --thumb-gap:18px;
+    }
+
+    /* Base */
+    html,body{
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      line-height:1.55;
+    }
+    a{color:var(--teal);text-decoration:none}
+    a:hover{color:var(--teal-soft)}
+    strong{color:inherit}
+    h1,h2,h3,h4,h5,h6{color:var(--teal)}
+    hr{border:0;border-top:1px solid var(--teal);opacity:.35}
+
+    /* Layout width */
+    .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+    /* Hero */
+    .hero{max-width:1100px;margin:30px auto 20px;padding:0 18px;text-align:center}
+    .hero img{display:block;max-width:100%;height:auto;margin:0 auto 24px;border-radius:14px}
+
+    /* CTA button */
+    .cta-btn{
+      display:inline-block; padding:12px 18px; border-radius:12px;
+      background:#0d1117; border:1px solid #2b2f36; color:var(--teal); font-weight:700;
+      text-decoration:none;
+    }
+    .cta-btn:hover{background:var(--teal); color:var(--bg)}
+
+    /* Project-style blocks reused for About sections */
+    .project-block{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:12px;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      margin:22px 0;
+      padding:16px 18px;
+      position:relative;
+      overflow:hidden;
+      transition: transform .22s ease, filter .22s ease, box-shadow .22s ease;
+      will-change: transform, filter;
+      filter: drop-shadow(0 0 0 rgba(15,181,201,0));
+    }
+    .project-block:hover{
+      transform: translateY(-2px);
+      filter: drop-shadow(0 0 28px rgba(15,181,201,.38));
+    }
+    .project-block:focus-within{
+      transform: translateY(-2px);
+      filter: drop-shadow(0 0 28px rgba(15,181,201,.38));
+      outline: 2px solid rgba(15,181,201,.55);
+      outline-offset: 2px;
+    }
+    @media (prefers-reduced-motion: reduce){
+      .project-block,
+      .project-block:hover,
+      .project-block:focus-within{
+        transition: filter .01s linear, box-shadow .01s linear;
+        transform: none;
+      }
+    }
+
+    /* Metrics-look table (for Quick Facts) */
+    .metrics-look table{
+      width:100%;
+      border-collapse:collapse;
+      background:transparent;
+      border:1px solid var(--line);
+      margin:12px 0;
+    }
+    .metrics-look thead th{
+      background:rgba(0,255,240,.08);
+      color:var(--teal);
+      text-align:left;
+      font-weight:700;
+      font-size:14px;
+      padding:12px 14px;
+      border-bottom:1px solid var(--line);
+    }
+    .metrics-look tbody th,
+    .metrics-look tbody td{
+      padding:12px 14px;
+      vertical-align:top;
+      color:var(--text);
+      background:transparent;
+    }
+    .metrics-look thead th + th,
+    .metrics-look tbody td + td,
+    .metrics-look tbody th + td{ border-left:1px solid var(--line); }
+    .metrics-look tbody tr + tr td,
+    .metrics-look tbody tr + tr th{ border-top:1px solid var(--line); }
+
+    /* Skills chips */
+    .skills-block .chips { display:flex; flex-wrap:wrap; gap:8px 10px; margin:0; padding:0; list-style:none; }
+    .skills-block .chips li {
+      display:inline-flex; align-items:center;
+      padding:.35rem .6rem; border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      color:var(--text); line-height:1.2; font-weight:500;
+    }
+    .skills-block { margin:12px 0 20px; }
+    .section .hint { color:var(--muted); margin:.25rem 0 0; font-size:.95rem; }
+
+    /* Rhythm & spacing */
+    :root{ --s-1:8px; --s-2:12px; --s-3:16px; --s-4:20px; --s-5:28px; --s-6:36px; }
+    h1{ margin-block: var(--s-5) var(--s-3); }
+    h2{ margin-block: var(--s-5) var(--s-2); }
+    h3{ margin-block: var(--s-4) var(--s-2); }
+    p, ul, ol{ margin-block: var(--s-2) var(--s-3); }
+    li + li{ margin-top: var(--s-1); }
+    hr{ margin-block: var(--s-5); }
+
+    /* Sections that previously collapsed */
+    .intro,.project-block,.section,header.hero,footer{ display:flow-root; padding-block:.5px; }
+
+    /* Banner image pulse */
+    .banner-pulse{ display:block; width:100%; height:auto; border-radius:16px; animation: imgOutPulse 4s ease-in-out infinite; }
+    @keyframes imgOutPulse{
+      0%,100%{ filter: drop-shadow(0 0 0 rgba(15,181,201,0)) brightness(1); }
+      50%{ filter: drop-shadow(0 0 34px rgba(15,181,201,.75)) brightness(1.06) saturate(1.04); }
+    }
+    @media (prefers-reduced-motion: reduce){ .banner-pulse{ animation:none !important; filter:none !important; } }
+
+    /* Footer */
+    footer{
+      max-width:980px;margin:40px auto 0;padding:20px 18px 0;
+      text-align:center;font-size:.85em;opacity:.8;
+      border-top:1px solid rgba(255,255,255,.05)
+    }
+  </style>
+
+  <!-- GoatCounter analytics -->
+  <script data-goatcounter="https://kelina.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+  <!-- JSON-LD (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kelina Cowell",
+    "jobTitle": "Manual & Automation QA Engineer",
+    "description": "Guardian of the Player Experience — Games & Software Testing Portfolio.",
+    "url": "https://kelinacowellqa.github.io/",
+    "image": "https://kelinacowellqa.github.io/assets/img/profile-banner.webp",
+    "sameAs": [
+      "https://github.com/kelinacowellqa",
+      "https://www.linkedin.com/in/kelina-cowell-qa-tester/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <!-- Hero -->
+      <header class="hero">
+        <img class="banner-pulse"
+             src="assets/img/qa-tester-multi-platform-pc-console-vr-mobile.png"
+             alt="Cinematic banner: controller, VR headset, phone, and macro keypad — multi-platform QA focus.">
+      </header>
+
+      <!-- Nav (same style as portfolio pages) -->
+      <nav class="site-nav cta-row"
+           style="display:flex;justify-content:center;flex-wrap:wrap;gap:10px 12px;margin:10px auto 0;text-align:initial;">
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/">Home</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/">Portfolio Hub</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/education/">Education</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/QA-Chronicles-Kelina-Cowell/">QA Chronicles</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/contact/">Contact</a>
+      </nav>
+
+      <hr>
+
+      <!-- Intro -->
+      <section class="intro" aria-labelledby="about-title">
+        <h1 id="about-title">About Me — Kelina Cowell</h1>
+        <p>I test games the way players experience them: clearly, patiently, and with evidence. I’m a Manual & early Automation QA Engineer focused on player-centred quality — the kind that removes friction and keeps the fun intact.</p>
+        <p>My toolkit spans PC, console, VR/PCVR, and mobile. I’m comfortable switching between tidy test cases, exploratory charters, and light scripting to speed up the boring bits. If it helps a team ship smoother, I’m in.</p>
+      </section>
+
+      <!-- Quick facts -->
+      <section class="project-block" aria-labelledby="facts">
+        <h2 id="facts">Quick Facts</h2>
+        <div class="metrics-look" role="region" aria-label="Profile facts">
+          <table>
+            <thead>
+              <tr><th>Area</th><th>Details</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Platforms</th>
+                <td>PC • Console • VR/PCVR • Mobile</td>
+              </tr>
+              <tr>
+                <th scope="row">Strengths</th>
+                <td>Readable repro steps • Solid evidence capture • Calm debug under pressure • Player empathy</td>
+              </tr>
+              <tr>
+                <th scope="row">QA Modes</th>
+                <td>Functional • Exploratory • Regression • Input parity • Narrative/localisation • Smoke & early automation</td>
+              </tr>
+              <tr>
+                <th scope="row">Tooling</th>
+                <td>Jira • Google Sheets • OBS / Xbox Game Bar • Python (light scripts) • AutoHotkey • SteamVR/OVR metrics</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Skills / chips -->
+      <section class="project-block" aria-labelledby="skills">
+        <h2 id="skills">Skills Snapshot</h2>
+        <p class="hint">Hand-tested discipline with early automation to speed regressions.</p>
+        <section class="skills-block">
+          <ul class="chips" role="list">
+            <li>Functional QA</li><li>Exploratory</li><li>Regression</li><li>PC</li><li>Mobile</li>
+            <li>VR/PCVR</li><li>Controller/KB parity</li><li>Input QA</li><li>Narrative/localisation</li>
+            <li>Test cases</li><li>Session charters</li><li>Risk/priority tagging</li><li>Evidence capture</li>
+            <li>Jira workflows</li><li>Automation (early scripts/macros)</li><li>Smoke & regression</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Working style -->
+      <section class="project-block" aria-labelledby="style">
+        <h2 id="style">How I Work</h2>
+        <ul>
+          <li><strong>Evidence first:</strong> short clips/screens that make issues obvious and reproducible.</li>
+          <li><strong>Player lens:</strong> I prioritise fixes that unblock fun and reduce friction.</li>
+          <li><strong>Clear comms:</strong> tidy repro steps; STAR summaries; risk tags; quick sanity checks before escalation.</li>
+          <li><strong>Small automation wins:</strong> macros/scripts for smoke paths and repeatable checks.</li>
+        </ul>
+      </section>
+
+      <!-- CTA -->
+      <p class="cta-row" style="text-align:center;">
+        <a class="cta-btn" href="mailto:kelinacowell.qa@gmail.com">Email Me</a>
+        <a class="cta-btn" href="https://www.linkedin.com/in/kelina-cowell-qa-tester" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/Manual-QA-Portfolio-Kelina-Cowell/" target="_blank" rel="noopener">Back to Portfolio Hub</a>
+        <a class="cta-btn" href="https://kelinacowellqa.github.io/" target="_blank" rel="noopener">Back to Homepage</a>
+      </p>
+
+      <hr>
+    </div> <!-- /.wrap -->
+  </main>
+
+  <footer>© <script>document.write(new Date().getFullYear())</script> Kelina Cowell • QA Portfolio  
+    <br>📎 Disclaimer: This is a personal, non-commercial portfolio for educational and recruitment purposes. I’m not affiliated with or endorsed by any game studios or publishers. All trademarks, logos, and game assets are the property of their respective owners. Any screenshots or short clips are included solely to document testing outcomes. If anything here needs to be removed or credited differently, please contact me and I’ll update it promptly.
+  </footer>
+</body>
+</html>
 
