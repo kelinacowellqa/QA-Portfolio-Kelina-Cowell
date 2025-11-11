@@ -46,6 +46,22 @@
     .metrics-look thead th+th,.metrics-look tbody td+td,.metrics-look tbody th+td{border-left:1px solid var(--line)}
     .metrics-look tbody tr+tr td,.metrics-look tbody tr+tr th{border-top:1px solid var(--line)}
     footer{max-width:980px;margin:40px auto 0;padding:20px 18px 0;text-align:center;font-size:.85em;opacity:.8;border-top:1px solid rgba(255,255,255,.05)}
+ 
+  /* About: thumbnail layout */
+.about-media{
+  display:flex; gap:16px; align-items:flex-start;
+}
+.about-media .headshot{
+  width:128px; height:128px; object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+  flex:0 0 auto;
+}
+@media (max-width:560px){
+  .about-media{ flex-direction:column; }
+  .about-media .headshot{ width:120px; height:120px; }
+}
   </style>
 
   <script data-goatcounter="https://kelina.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -78,11 +94,24 @@
       <hr>
 
       <!-- About -->
-      <section class="intro" aria-labelledby="about-title">
-        <h1 id="about-title">About Me — Kelina Cowell</h1>
-        <p>🎮 I’m an aspiring Game QA / QA Tester learning to do the unglamorous bits properly: clear repros, disciplined manual testing, and player-impact-focused bug reports.</p>
-        <p>I’m building an entry-level Game QA portfolio across real shipped games, with each project focused on a different testing discipline.</p>
-      </section>
+     <section class="intro" aria-labelledby="about-title">
+  <h1 id="about-title">About Me — Kelina Cowell</h1>
+
+  <div class="about-media">
+    <img
+      class="headshot"
+      src="assets/img/kelina_cowell_qa.jpg"
+      alt="Portrait of Kelina Cowell, Manual & Automation QA Engineer"
+      width="128" height="128"
+      loading="lazy" decoding="async"
+    >
+
+    <div>
+      <p>🎮 I’m an aspiring Game QA / QA Tester learning to do the unglamorous bits properly: clear repros, disciplined manual testing, and player-impact-focused bug reports.</p>
+      <p>I’m building an entry-level Game QA portfolio across real shipped games, with each project focused on a different testing discipline.</p>
+    </div>
+  </div>
+</section>
 
       <!-- Project lineup summary -->
       <section class="project-block" aria-labelledby="lineup">
