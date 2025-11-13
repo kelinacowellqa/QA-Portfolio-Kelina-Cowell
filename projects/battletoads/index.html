@@ -389,7 +389,7 @@ age <!doctype html>
 
   <!-- Key risks from your “Key Risks” field, written plainly with evidence -->
   <li><strong>Mixed-input focus:</strong> using the keyboard after the controller can leave the controller unresponsive on Join In and Pause. Evidence: <code>RUN-20251101-004</code> (TC-008 — Fail).</li>
-  <li><strong>Pause keyboard parity:</strong> with a controller connected, the Pause menu ignores keyboard input (↑/↓/Enter/Esc/P). Evidence: <code>RUN-20251027-006</code>, <code>RUN-20251030-001</code> (both TC-006 — Fail).</li>
+ <li><strong>Pause keyboard parity:</strong> with a controller connected, the Pause menu ignores keyboard navigation and confirm keys (↑/↓/Enter/Esc), even though Esc/Enter are bound in the Controls menu. Evidence: <code>RUN-20251027-006</code>, <code>RUN-20251030-001</code> (both TC-006 — Fail).</li>
   <li><strong>Resume misroute:</strong> pressing Enter on <em>Resume</em> can open the Join overlay instead of returning to gameplay. Evidence: <code>RUN-20251030-001</code> (TC-006 — Fail).</li>
 
   <!-- Performance summary from Observations -->
