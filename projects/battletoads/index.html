@@ -107,7 +107,7 @@ age <!doctype html>
     <ul>
      <li><strong>Scope:</strong> start → first control, Pause/Resume, keyboard ↔ controller hand-off, local co-op join/leave, HUD/readability, respawn & checkpoints, Game Over flow, and stability/performance sanity.</li>
       <li><strong>Approach:</strong> before running the detailed test cases, I started each session with a quick smoke pass (launch → main menu → start Level 1 → open/close Pause & Settings → clean exit) to make sure the build was stable enough to test.</li>
-      <li><strong>Outcome:</strong> <strong>4 input-ownership issues</strong> with <strong>100% repro</strong> (16/16), each with a 10–30s video thumbnail below.</li>
+      <li><strong>Outcome:</strong> <strong>4 input-ownership issues</strong> with <strong>100% repro</strong>, each with a 10–30s video thumbnail below.</li>
       <li><strong>Evidence:</strong> comparison snapshots, bugs table with YouTube thumbnails, and Jira board screenshots.</li>
     </ul>
 
@@ -164,7 +164,7 @@ age <!doctype html>
         <tr><td>Critical</td><td>0</td></tr>
         <tr><td>Major</td><td>4</td></tr>
         <tr><td>Minor</td><td>0</td></tr>
-        <tr><td>Repro Consistency</td><td><strong>100%</strong> (16/16 across 4 issues)</td></tr>
+        <tr><td>Repro Consistency</td><td><strong>100%</strong> (across 4 issues)</td></tr>
       </tbody>
     </table>
 
@@ -173,7 +173,7 @@ age <!doctype html>
     <p><strong>Situation:</strong> One-week functional test of Battletoads on Win11, Game Pass build 1.1F.42718, 1920×1080@144Hz, Xbox-layout controllers + keyboard.</p>
     <p><strong>Task:</strong> Validate core gameplay logic, UI flow, input handling (keyboard/controller focus), audio cues, and basic performance.</p>
     <p><strong>Action:</strong> Built a test plan, executed the suite daily, captured repro video with Xbox Game Bar/OBS, and logged defects in Jira with clear titles, steps, and evidence.</p>
-    <p><strong>Result:</strong> All four issues were fully reproducible (<strong>16/16 attempts</strong>), with clear evidence clips for each.</p>
+    <p><strong>Result:</strong> All four issues were fully reproducible, with clear evidence clips for each.</p>
 
     <hr>
     <h2>📚 JIRA Courses & Application</h2>
@@ -646,7 +646,7 @@ Executed test cases and logged 4 High-severity input-ownership defects, all cons
     <hr>
 
     <h2>🔚 Conclusion</h2>
-    <p>Full functional pass complete on <em>Battletoads</em> (PC Game Pass). I validated core flows end-to-end, stress-checked stability/performance, and documented <strong>4 input-ownership defects</strong> with <strong>100% repro</strong> (16/16), each backed by short videos and tidy Jira cards.</p>
+    <p>Full functional pass complete on <em>Battletoads</em> (PC Game Pass). I validated core flows end-to-end, stress-checked stability/performance, and documented <strong>4 input-ownership defects</strong> with <strong>100% repro</strong>, each backed by short videos and tidy Jira cards.</p>
     <ul>
       <li><strong>Coverage delivered:</strong> start→first control (4-press baseline), Pause/Resume behaviour, keyboard↔controller focus/hand-off, local co-op Join/Leave, respawn & checkpoint integrity, arena-clear progression timing, audio pause/resume, HUD restoration/readability, Game Over flow, controller disconnect/reconnect, performance sanity (avg ~140 FPS; no sustained dips), and stress/transition checks.</li>
       <li><strong>Highest-impact finding:</strong> Pause/Join-In hand-off issues that can confuse or block input ownership.</li>
