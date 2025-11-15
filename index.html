@@ -339,20 +339,21 @@ header.hero::after{
 
       <h2>2: Exploratory &amp; Edge-Case Testing — <em>Rebel Racing (Mobile)</em></h2>
       <ul>
-        <li><strong>Goal:</strong> Probe the core loop and push edge cases to expose UX/stability cracks beyond the happy path.</li>
-        <li><strong>Scope:</strong> Device compatibility · Screen scaling · Touch responsiveness · Interruptions (calls/notifications) · Offline/poor network · Orientation switches · Low battery/storage</li>
+        <li><strong>Goal:</strong> Run a 1-week, charter-based exploratory pass on a live mobile racer—daily golden-path smoke tests plus focused edge-case sessions to expose UX/stability cracks beyond the happy path.</li>
+        <li><strong>Scope:</strong> Daily menu→race→rewards→hub smoke · Device / network variation · Screen scaling · Touch responsiveness · Interruptions (calls / notifications / app switching) · Offline / poor network · Orientation switches · Low battery / storage.</li>
         <li><strong>Focus Areas:</strong>
           <ul>
-            <li>Pause / Join-In / Resume behaviours under interruption</li>
+            <li>Golden path & race lifecycle (start, collisions, finish, rewards, exit)</li>
+            <li>Pause / join-in / resume behaviours under interruption</li>
             <li>Input responsiveness and gesture handling</li>
             <li>Orientation changes and safe UI scaling</li>
-            <li>Network loss/restore and degraded states</li>
+             <li>Network loss / restore and degraded states</li>
           </ul>
         </li>
-        <li><strong>Tools:</strong> Google Sheets session charters/notes · On-device recordings (iOS/Android) · Network throttling (Airplane/low-bandwidth) · Device matrix</li>
-        <li><strong>Deliverables:</strong> Session charters · Edge-case checklist · Issue list with risk tags · Short evidence clips</li>
+        <li><strong>Tools:</strong> Google Sheets session charters / notes + daily smoke checklist · On-device Android recordings · Network profiles (Wi-Fi, 4G, Airplane / low-bandwidth) · Device / network matrix · adb / logcat for client logs where useful.</li>
+        <li><strong>Deliverables:</strong> Session charter summaries · Edge-case checklist · Device / network coverage matrix · Issue list with severity / risk wording tuned for crashes vs. lost-reward vs. UI issues · Short evidence clips + log snippets for high-impact bugs.</li>
         <li><strong>Status:</strong> In progress.</li>
-        <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI — ideal for surfacing scaling, input, and interruption edge cases on mobile.</li>
+        <li><strong>Why this game?</strong> Tight, repeatable loop with live-ops UI—ideal for practising charter-based exploratory testing and surfacing scaling, input, and interruption edge cases on mobile.</li>
       </ul>
 
       <p><em>Case study coming soon.</em></p>
